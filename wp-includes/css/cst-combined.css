@@ -1,0 +1,20 @@
+/*
+Theme Name:     The DOAP Child Theme
+Description:    This theme is a child theme that relies on the main \"The DOAP Theme\" by DevOps and Platforms
+Author:         DevOps and Platforms
+Template:       doap
+
+(optional values you can add: Theme URI, Author URI, Version)
+*/
+
+@import url("../doap/style.css");
+.ss-footer { visibility:hidden;display:none; }
+
+/*
+Theme Name:     The DOAP Child Theme
+Template:       
+
+Right to Left text support.
+*/
+@import url("../doap/rtl.css");
+

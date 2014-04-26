@@ -1,0 +1,1286 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Responsive Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
+"PO-Revision-Date: 2013-07-06 07:01:59 UTC\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Turkish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WebTranslateIt.com\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: archive.php
+#: core/includes/functions.php
+#: search.php
+#: single.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: page.php
+#: landing-page.php
+#: index.php
+#: image.php
+#: home.php
+#: full-width-page.php
+#: content-sidebar-page.php
+#: content-sidebar-half-page.php
+#: blog.php
+msgid "Read more &#8250;"
+msgstr "Devamını oku ›"
+
+#: sitemap.php
+#: single.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: search.php
+#: page.php
+#: landing-page.php
+#: index.php
+#: image.php
+#: home.php
+#: full-width-page.php
+#: content-sidebar-page.php
+#: content-sidebar-half-page.php
+#: blog.php
+#: blog-excerpt.php
+#: archive.php
+msgid "Pages:"
+msgstr "Sayfalar"
+
+#: loop-nav.php
+#: blog.php
+#: blog-excerpt.php
+msgid "&#8249; Older posts"
+msgstr "‹ Eski Yazılar"
+
+#: loop-nav.php
+#: blog.php
+#: blog-excerpt.php
+msgid "Newer posts &#8250;"
+msgstr "Yeni Yazılar ›"
+
+#: comments.php
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Bu yazı şifre korumalıdır. Yorumları görmek için şifreyi giriniz."
+
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php
+#: comments.php
+msgid "&#8249; Older comments"
+msgstr "‹ Eski yorumlar"
+
+#: comments.php
+#: comments.php
+msgid "Newer comments &#8250;"
+msgstr "Yeni yorumlar ›"
+
+#: comments.php
+msgid "Pings&#47;Trackbacks"
+msgstr "Ping / Trackbacks"
+
+#: comments.php
+msgid "%1$d %2$s for \"%3$s\""
+msgstr "%1$d %2$s için \"%3$s\""
+
+#: comments.php
+msgid "Name"
+msgstr "Ad"
+
+#: comments.php
+msgid "E-mail"
+msgstr "E-posta"
+
+#: comments.php
+msgid "Website"
+msgstr "Web sitesi"
+
+#: footer.php
+msgid "&copy;"
+msgstr "©"
+
+#: footer.php
+msgid "scroll to top"
+msgstr "başa dön"
+
+#: footer.php
+msgid "&uarr;"
+msgstr "&uarr;"
+
+#: footer.php
+msgid "Responsive Theme"
+msgstr "Duyarlı Tema"
+
+#: footer.php
+msgid "powered by"
+msgstr "'in desteğiyle"
+
+#: footer.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Hello, World!"
+msgstr "Merhaba, Dünya!"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Your H2 subheadline here"
+msgstr "H2 alt anabaşlık buraya"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Call to Action"
+msgstr ""
+
+#: image.php
+msgid "&#8249; Return to"
+msgstr "&#8249; Geri dön"
+
+#: pro/functions.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-meta-page.php
+#: image.php
+msgid "No Comments &darr;"
+msgstr "Yorum Eklenmemiş &darr;"
+
+#: pro/functions.php
+#: image.php
+#: post-meta-page.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+msgid "1 Comment &darr;"
+msgstr "1 Yorum &darr;"
+
+#: pro/functions.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-meta-page.php
+#: image.php
+msgid "% Comments &darr;"
+msgstr "% Yorum &darr;"
+
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: image.php
+msgid "Tagged with:"
+msgstr "Etiketler:"
+
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: image.php
+msgid "Posted in %s"
+msgstr "%s kategorisine eklendi"
+
+#: sitemap.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-data.php
+#: image.php
+msgid "Edit"
+msgstr "Düzen"
+
+#: loop-header.php
+msgid "Daily Archives: %s"
+msgstr "Günlük Arşiv: %s"
+
+#: loop-header.php
+msgid "Monthly Archives: %s"
+msgstr "Aylık Arşiv: %s"
+
+#: loop-header.php
+msgid "Yearly Archives: %s"
+msgstr "Yıllık arşiv: %s"
+
+#: loop-header.php
+msgid "Blog Archives"
+msgstr "Blog Arşivleri"
+
+#: loop-no-posts.php
+msgid "Your search for %s did not match any entries."
+msgstr ""
+
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "404 - Sayfa Bulunamadı."
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "Panik Yapma, bunu beraber atlatacağız. Seçenekleri beraber gözden geçirelim."
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "Geri dönebilirsin %s ya da gitmek istediğiniz sayfayı arayın"
+
+#: core/includes/functions.php
+#: loop-no-posts.php
+msgid "Home"
+msgstr "Ev"
+
+#: loop-no-posts.php
+msgid "&larr; Home"
+msgstr "&larr; Anasayfa"
+
+#: core/includes/functions.php
+#: search.php
+msgid "Search results for: %s"
+msgstr "Arama sonuçları: %s"
+
+#: searchform.php
+msgid "search here &hellip;"
+msgstr "ara &hellip;"
+
+#: searchform.php
+msgid "Go"
+msgstr "Git"
+
+#: sidebar-gallery.php
+msgid "Image Information"
+msgstr "Resim Bilgisi"
+
+#: sidebar-gallery.php
+msgid "Full Size:"
+msgstr "Tam Boyut"
+
+#: sidebar-gallery.php
+msgid "Aperture: f&#47;"
+msgstr "Diyafram: f&#47;"
+
+#: sidebar-gallery.php
+msgid "Focal Length:"
+msgstr "Odak Uzaklığı"
+
+#: sidebar-gallery.php
+msgid "mm"
+msgstr ""
+
+#: sidebar-gallery.php
+msgid "ISO:"
+msgstr "ISO"
+
+#: sidebar-gallery.php
+msgid "Shutter:"
+msgstr "Enstantane"
+
+#: sidebar-gallery.php
+msgid "Camera:"
+msgstr "Fotoğraf Makinası"
+
+#: sidebar.php
+#: sidebar-right.php
+#: sidebar-right-half.php
+#: sidebar-left.php
+#: sidebar-left-half.php
+#: sidebar-half-left.php
+msgid "In Archive"
+msgstr "Arşivde"
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 1"
+msgstr "Ana Sayfa Widget 1"
+
+#: sidebar-home.php
+msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
+msgstr ""
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 2"
+msgstr "Ana Sayfa Widget 2"
+
+#: sidebar-home.php
+msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
+msgstr ""
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 3"
+msgstr "Ana Sayfa Widget 3"
+
+#: sidebar-home.php
+msgid "This is your third home widget box. To edit please go to Appearance > Widgets and choose 8th widget from the top in area 8 called Home Widget 3. Title is also manageable from widgets as well."
+msgstr ""
+
+#: single.php
+msgid "About"
+msgstr "Hakkında"
+
+#: sitemap.php
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: sitemap.php
+msgid "Latest Posts"
+msgstr "Son İletiler"
+
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "%s için Kalıcı Link"
+
+#: sitemap.php
+msgid "Pages"
+msgstr "Sayfaları"
+
+#: core/includes/functions.php
+msgid "Top Menu"
+msgstr "Üst menü"
+
+#: core/includes/functions.php
+msgid "Header Menu"
+msgstr "Başlık Menüsü"
+
+#: core/includes/functions.php
+msgid "Sub-Header Menu"
+msgstr "Alt Başlık Menüsü"
+
+#: core/includes/functions.php
+msgid "Footer Menu"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Page %s"
+msgstr "%S sayfa"
+
+#: core/includes/functions.php
+msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
+msgstr "<span class=\"%1$s\">tarihinde eklendi </span>%2$s<span class=\"%3$s\"> tarafından </span>%4$s"
+
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "View all posts by %s"
+msgstr "%S tarafından ait bütün mesajları"
+
+#: core/includes/functions.php
+msgid "Archive for %s"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Posts tagged %s"
+msgstr "Etiketlenen iletiler %s"
+
+#: core/includes/functions.php
+msgid "Error 404"
+msgstr "Hata 404"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr "Açıklamalar"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr "Yardım"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr "Çeviri"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr ""
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "More Themes"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Main Sidebar"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 1 - sidebar.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Right Sidebar"
+msgstr "Sağ menü"
+
+#: core/includes/functions.php
+msgid "Area 2 - sidebar-right.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Left Sidebar"
+msgstr "Sol menü"
+
+#: core/includes/functions.php
+msgid "Area 3 - sidebar-left.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Left Sidebar Half Page"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 4 - sidebar-left-half.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Right Sidebar Half Page"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 5 - sidebar-right-half.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 6 - sidebar-home.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 7 - sidebar-home.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 8 - sidebar-home.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Gallery Sidebar"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 9 - sidebar-gallery.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Colophon Widget"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 10 - sidebar-colophon.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Top Widget"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 11 - sidebar-top.php"
+msgstr ""
+
+#: blog.php
+msgid "Blog (full posts)"
+msgstr ""
+
+#: blog-excerpt.php
+msgid "Blog Excerpt (summary)"
+msgstr ""
+
+#: content-sidebar-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Content/Sidebar"
+msgstr ""
+
+#: sidebar-content-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Sidebar/Content"
+msgstr ""
+
+#: content-sidebar-half-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Content/Sidebar Half Page"
+msgstr ""
+
+#: sidebar-content-half-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Sidebar/Content Half Page"
+msgstr ""
+
+#: full-width-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Full Width Page (no sidebar)"
+msgstr ""
+
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr "Yerleşim"
+
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr "Öntanımlı"
+
+#: landing-page.php
+msgid "Landing Page (no menu)"
+msgstr ""
+
+#: sitemap.php
+msgid "Sitemap"
+msgstr ""
+
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Theme Options"
+msgstr "Tema seçenekleri"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Options Saved"
+msgstr "Tercihler Kaydedildi"
+
+#: core/includes/theme-options.php
+msgid "Theme Elements"
+msgstr "Tema Elemanları"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Disable Breadcrumb Lists?"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Check to disable"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Disable Call to Action Button?"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Save Options"
+msgstr "Değişiklikleri Kaydet."
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Restore Defaults"
+msgstr "Varsayılanlara Dön"
+
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Logo Upload"
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "Custom Header"
+msgstr "Özel başlık"
+
+#: core/includes/theme-options.php
+msgid "Need to replace or remove default logo?"
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "<a href=\"%s\">Click here</a>."
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Home Page"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
+msgstr "Özel ön sayfasını etkinleştir"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr "WordPress % 1sfront sayfa seçeneği % 2s geçersiz kılar"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Headline"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your headline"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Subheadline"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your subheadline"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Content Area"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your content"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Call to Action (URL)"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Enter your call to action URL"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Call to Action (Text)"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Enter your call to action text"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Featured Content"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "See Docs"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Paste your shortcode, video or image source"
+msgstr ""
+
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Layouts"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Static Page Layout"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Single Blog Post Layout"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Blog Posts Index Layout"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Webmaster Tools"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google Site Verification"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Google ID number only"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Bing Site Verification"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Bing ID number only"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Yahoo Site Verification"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Yahoo ID number only"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Site Statistics Tracker"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Leave blank if plugin handles your webmaster tools"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google Analytics, StatCounter, any other or all of them."
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Social Icons"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Twitter"
+msgstr "Twitter"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Twitter URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Facebook"
+msgstr "Facebook"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Facebook URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your LinkedIn URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "YouTube"
+msgstr "YouTube"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your YouTube URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "StumbleUpon"
+msgstr "StumbleUpon"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your StumbleUpon URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "RSS Feed"
+msgstr "RSS Yayını"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your RSS Feed URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google+"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Google+ URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Instagram"
+msgstr "Instagram"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Instagram URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Pinterest URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Yelp!"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Yelp! URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Vimeo URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "foursquare"
+msgstr "oturaklı"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your foursquare URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Custom CSS Styles"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "https://developer.mozilla.org/en/CSS"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "CSS Tutorial"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom CSS styles."
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "Custom Scripts"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Custom Scripts for Header and Footer"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Quick Tutorial"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Embeds to header.php &darr;"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom header script."
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Embeds to footer.php &darr;"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom footer script."
+msgstr ""
+
+#: pro/functions.php
+msgid "Posted on "
+msgstr "Yayınlanan "
+
+#: pro/functions.php
+msgid " by "
+msgstr "yapan"
+
+#: pro/functions.php
+msgid "Posted in"
+msgstr ""
+
+#: pro/functions.php
+msgid "Tags:"
+msgstr "Etiketler"
+
+#: pro/functions.php
+msgid "Permalink to %s"
+msgstr "Kalıcı %s"
+
+#: pro/functions.php
+msgid "Responsive Pro Options"
+msgstr "Duyarlı Pro seçenekleri"
+
+#: pro/options/options-customizer.php
+msgid "Customize"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Skins"
+msgstr "Dış görünümler"
+
+#: pro/options/options-customizer.php
+msgid "Skin Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Typography"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Heading Font"
+msgstr "Başlık yazı tipi"
+
+#: pro/options/options-customizer.php
+msgid "Google Heading Font"
+msgstr "Google başlık yazı tipi"
+
+#: pro/options/options-customizer.php
+msgid "Text Font"
+msgstr "Metin yazı tipi"
+
+#: pro/options/options-customizer.php
+msgid "Google Text Font"
+msgstr "Google metin yazı tipi"
+
+#: pro/options/options-customizer.php
+msgid "Font Size"
+msgstr "Yazıtipi boyutu"
+
+#: pro/options/options-customizer.php
+msgid "Headings Color"
+msgstr "Başlık rengi"
+
+#: pro/options/options-customizer.php
+msgid "Text Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Link Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Link Hover Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Enable custom front page"
+msgstr "Özel ön sayfasını etkinleştir"
+
+#: pro/options/options-customizer.php
+msgid "Content"
+msgstr "içerik"
+
+#: pro/options/options.php
+msgid "Personalize"
+msgstr "Kişiselleştirme"
+
+#: pro/options/options.php
+msgid "Favicon"
+msgstr "Favicon"
+
+#: pro/options/options.php
+msgid "maximum width and height 32px"
+msgstr "maksimum genişlik ve yükseklik 32px"
+
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Upload"
+msgstr "Yükle"
+
+#: pro/options/options.php
+msgid "Apple Touch Icon"
+msgstr "Apple dokunmatik simgesi"
+
+#: pro/options/options.php
+msgid "Custom mobile menu title"
+msgstr "Özel telefon menü başlığı"
+
+#: pro/options/options.php
+msgid "Enter a custom mobile menu title"
+msgstr "Özel telefon menüsünde başlık girin"
+
+#: pro/options/options.php
+msgid "Design"
+msgstr "Tasarım"
+
+#: pro/options/options.php
+msgid "Change fonts, colors and much more using the theme %1s"
+msgstr "Yazı tiplerini, renkleri ve çok fazla tema %1 öğelerini kullanarak değiştirme"
+
+#: pro/options/options.php
+msgid "Customizer"
+msgstr "Customizer"
+
+#: pro/options/options.php
+msgid "Templates"
+msgstr "Şablonlar"
+
+#: pro/options/options.php
+msgid "Excerpt Text"
+msgstr "Pasaj metin"
+
+#: pro/options/options.php
+msgid "Read More..."
+msgstr "Devamını oku..."
+
+#: pro/options/options.php
+msgid "Excerpt Length"
+msgstr ""
+
+#: pro/options/options.php
+msgid "50"
+msgstr "50"
+
+#: pro/options/options.php
+msgid "Page"
+msgstr "Dans"
+
+#: pro/options/options.php
+msgid "Blog Post Page"
+msgstr "Blog Post sayfa"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Excerpts"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Featured Images"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Author"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Categories"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Date"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Comments"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Tags"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Single post page"
+msgstr "Tekil Mesaj sayfası"
+
+#: pro/options/options.php
+msgid "Archive page"
+msgstr "Arşiv sayfası"
+
+#: pro/options/options.php
+msgid "Search page"
+msgstr ""
+
+#: pro/options/options.php
+msgid "404 page"
+msgstr "404 sayfa"
+
+#: pro/options/options.php
+msgid "404 Title"
+msgstr "404 Başlık"
+
+#: pro/options/options.php
+msgid "404 error"
+msgstr "404 hatası"
+
+#: pro/options/options.php
+msgid "404 Content"
+msgstr "404 İçeriği"
+
+#: pro/options/options.php
+msgid "Sorry, the content is not found...!!!"
+msgstr "Üzgünüz, içerik bulunmamaktadır...!!!"
+
+#: pro/options/options.php
+msgid "Scripts"
+msgstr "Komut dosyaları"
+
+#: pro/options/options.php
+msgid "Plugins"
+msgstr "Eklentiler"
+
+#: pro/options/options.php
+msgid "Events Plugin Options"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Please activate The Events Calendar plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Install Events Calendar Plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "WooCommerce Settings"
+msgstr "WooCommerce ayarları"
+
+#: pro/options/options.php
+msgid "Please activate WooCommerce plugin"
+msgstr "Lütfen WooCommerce eklentisini etkinleştirin"
+
+#: pro/options/options.php
+msgid "Install WooCommerce Plugin"
+msgstr "WooCommerce eklentiyi kurmak"
+
+#: pro/options/options.php
+msgid "BBPress Settings"
+msgstr "BBPress ayarları"
+
+#: pro/options/options.php
+msgid "Please activate BBPress plugin"
+msgstr "Lütfen BBPress eklentisini etkinleştirin"
+
+#: pro/options/options.php
+msgid "Install BBPress Plugin"
+msgstr "BBPress eklentiyi kurmak"
+
+#: pro/options/options.php
+msgid "Digital Downloads Settings"
+msgstr "Dijital indirme ayarları"
+
+#: pro/options/options.php
+msgid "Please activate Easy Digital Downloads plugin"
+msgstr "Mutlu etmek harekete geçirmek kolay dijital indirme eklentisi"
+
+#: pro/options/options.php
+msgid "Install Easy Digital Downloads Plugin"
+msgstr "Kolay dijital indirme eklentisi yükleme"
+
+#: pro/options/options.php
+msgid "%1$s upload failed, make sure you are entering a URL"
+msgstr "%1$ s yükleme başarısız oldu, bir URL giriyorsanız emin olun"
+
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Enter the Google Font name"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Welcome to %1$s! Upgrade to %2$s today."
+msgstr ""
+

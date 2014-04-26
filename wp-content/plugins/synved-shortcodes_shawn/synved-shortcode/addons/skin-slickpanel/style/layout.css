@@ -1,0 +1,39 @@
+.synved-box-message {
+padding-left:70px;
+border:solid 1px #e2e2e2;
+-moz-border-radius:7px;
+border-radius:7px;
+-moz-box-shadow: 0px 1px 4px 0px #bbb;
+-webkit-box-shadow: 0px 1px 4px 0px #bbb;
+box-shadow: 0px 1px 4px 0px #bbb;
+}
+.synved-box-success {
+background-image:url('../image/box/ok.png');
+}
+.synved-box-info {
+background-image:url('../image/box/info.png');
+}
+.synved-box-warning {
+background-image:url('../image/box/warning.png');
+}
+.synved-box-error {
+background-image:url('../image/box/error.png');
+}
+
+.synved-link-template-card,
+.synved-link-template-card:link,
+.synved-link-template-card:visited,
+.synved-link-template-card:active {
+border-width:4px;
+border-color:#fafafa;
+}
+.synved-link-template-card:hover {
+border-color:#fcfcfc;
+}
+.synved-link-template-card {
+-moz-border-radius:0 8px 0 0;
+border-radius:0 8px 0 0;
+-moz-box-shadow:0 2px 4px 0 #d0d0d0, 0 1px 3px #e0e0e0 inset;
+-webkit-box-shadow: 0 2px 4px 0 #d0d0d0, 0 1px 3px #e0e0e0 inset;
+box-shadow:0 2px 4px 0 #d0d0d0, 0 1px 3px #e0e0e0 inset;
+}

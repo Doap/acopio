@@ -1,0 +1,82 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+ <head>
+  <title>Ajax Table Editing</title>
+  <script src="js/jquery.js"></script>	
+  <script src="js/script.js"></script>	
+  <script src="js/jquery-ui-1.8.17.custom.min.js"></script>	
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+ <br>
+   <div style="margin-left: 20%;margin-top: 5%;">
+	  <input type="button" value="Add Record" id="add_new"><p>
+	  <table width="70%" border="0" cellpadding="0" cellspacing="0" class="table-list">
+		<tr>
+			<th width="20%"># de Compra</th>
+			<th width="20%">Fecha</th>
+			<th width="40%">Productor</th>
+			<th width="20%">Valor</th>
+			<th width="20%">Delete</th>
+		</tr>
+		<tr>
+			<td>jquery</td>
+			<td>ajax</td>
+			<td>jquery@ajax.com</td>
+			<td>242525</td>
+			<td><a href="#" id="1" class="del">Delete</a></td>
+		</tr>
+		<tr>
+			<td>php</td>
+			<td>mysql</td>
+			<td>php@mysql.com</td>
+			<td>242525</td>
+			<td><a href="#" id="2" class="del">Delete</a></td>
+		</tr>
+		<tr>
+			<td>html</td>
+			<td>css</td>
+			<td>html@css.com</td>
+			<td>242525</td>
+			<td><a href="#" id="3" class="del">Delete</a></td>
+		</tr>
+		<tr>
+			<td>wordpress</td>
+			<td>plugins</td>
+			<td>wordpress@plugins.com</td>
+			<td>242525</td>
+			<td><a href="#" id="4" class="del">Delete</a></td>
+		</tr>
+	  </table>
+	</div>
+	<div class="entry-form">
+		<form name="userinfo" id="userinfo"> 
+		<table width="100%" border="0" cellpadding="4" cellspacing="0">
+			<tr>
+				<td colspan="2" align="right"><a href="#" id="close">Close</a></td>
+			</tr>
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="fname"></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lname"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td align="right"></td>
+				<td><input type="button" value="Save" id="save"><input type="button" value="cancel" id="cancel"></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+ </body>
+</html>

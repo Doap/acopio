@@ -1,0 +1,46 @@
+.snvdshc .ui-tabs {
+border:none;
+background:transparent;
+}
+.snvdshc .ui-tabs .ui-widget-header {
+border-top:none;
+border-left:none;
+border-right:none;
+}
+.snvdshc .ui-tabs .ui-tabs-panel,
+.snvdshc .ui-accordion .ui-accordion-content {
+border:solid 1px #aaa;
+background:#FCFCFC;
+box-shadow:inset 0 -35px 50px -50px #ccc;
+}
+.snvdshc .ui-accordion .ui-accordion-content {
+border-top-width:0;
+}
+.snvdshc .ui-tabs .ui-tabs-nav {
+background:transparent;
+margin:0 0 -1px 0;
+padding:0;
+border-radius:0;
+}
+.snvdshc .ui-tabs .ui-tabs-nav li.tab-title {
+background:#F8F8F8;
+margin-right:0.5em;
+border-top-left-radius:280% 100%;
+box-shadow:inset 0 -35px 50px -50px #ccc;
+}
+.snvdshc .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+background:#FCFCFC;
+box-shadow:inset 0 35px 50px -50px #ccc;
+}
+.snvdshc .ui-tabs .ui-tabs-nav li.tab-title a {
+font-family:Ubuntu, arial, serif;
+font-size:12pt;
+padding:8px 25px 8px 35px;
+}
+
+.snvdshc .ui-accordion .ui-accordion-header {
+background:#F2F2F2;
+border-top-right-radius:0;
+box-shadow:inset 0 -35px 50px -50px #ccc;
+}
+

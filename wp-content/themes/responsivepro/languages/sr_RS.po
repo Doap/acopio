@@ -1,0 +1,1286 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Responsive Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
+"PO-Revision-Date: 2013-07-06 07:01:59 UTC\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Serbian, Serbia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WebTranslateIt.com\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: archive.php
+#: core/includes/functions.php
+#: search.php
+#: single.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: page.php
+#: landing-page.php
+#: index.php
+#: image.php
+#: home.php
+#: full-width-page.php
+#: content-sidebar-page.php
+#: content-sidebar-half-page.php
+#: blog.php
+msgid "Read more &#8250;"
+msgstr "Прочитајте више ›"
+
+#: sitemap.php
+#: single.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: search.php
+#: page.php
+#: landing-page.php
+#: index.php
+#: image.php
+#: home.php
+#: full-width-page.php
+#: content-sidebar-page.php
+#: content-sidebar-half-page.php
+#: blog.php
+#: blog-excerpt.php
+#: archive.php
+msgid "Pages:"
+msgstr "Стране:"
+
+#: loop-nav.php
+#: blog.php
+#: blog-excerpt.php
+msgid "&#8249; Older posts"
+msgstr "‹ Старији чланци"
+
+#: loop-nav.php
+#: blog.php
+#: blog-excerpt.php
+msgid "Newer posts &#8250;"
+msgstr "Новији чланци ›"
+
+#: comments.php
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Овај чланак је заштићен лозинком. Унесите лозинку да бисте видели коментаре."
+
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgstr "Један коментар на &ldquo;%2$s&rdquo;"
+
+#: comments.php
+#: comments.php
+msgid "&#8249; Older comments"
+msgstr "‹ Старији коментари"
+
+#: comments.php
+#: comments.php
+msgid "Newer comments &#8250;"
+msgstr "Новији коментари ›"
+
+#: comments.php
+msgid "Pings&#47;Trackbacks"
+msgstr "Пингови/повратне везе"
+
+#: comments.php
+msgid "%1$d %2$s for \"%3$s\""
+msgstr "%1$d %2$s за \"%3$s\""
+
+#: comments.php
+msgid "Name"
+msgstr "Име"
+
+#: comments.php
+msgid "E-mail"
+msgstr "Е-пошта"
+
+#: comments.php
+msgid "Website"
+msgstr ""
+
+#: footer.php
+msgid "&copy;"
+msgstr ""
+
+#: footer.php
+msgid "scroll to top"
+msgstr "повратак на врх"
+
+#: footer.php
+msgid "&uarr;"
+msgstr "↑"
+
+#: footer.php
+msgid "Responsive Theme"
+msgstr ""
+
+#: footer.php
+msgid "powered by"
+msgstr "базирано на"
+
+#: footer.php
+msgid "WordPress"
+msgstr "Вордпрес"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Hello, World!"
+msgstr "Здраво, свете!"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Your H2 subheadline here"
+msgstr "Ваш H2 поднаслов овде"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "Ваш наслов, поднаслов и овај садржај могу да се уређују под Могућности теме. Дугме Позив на радњу и циљ везе такође. Слика са ваше десне стране може бити слика или чак видео са Јутјуба ако желите."
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Call to Action"
+msgstr "Позив на акцију"
+
+#: image.php
+msgid "&#8249; Return to"
+msgstr "‹ Повратак на"
+
+#: pro/functions.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-meta-page.php
+#: image.php
+msgid "No Comments &darr;"
+msgstr "Без коментара ↓"
+
+#: pro/functions.php
+#: image.php
+#: post-meta-page.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+msgid "1 Comment &darr;"
+msgstr "1 коментар ↓"
+
+#: pro/functions.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-meta-page.php
+#: image.php
+msgid "% Comments &darr;"
+msgstr "% коментара ↓"
+
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: image.php
+msgid "Tagged with:"
+msgstr "Означено са:"
+
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: image.php
+msgid "Posted in %s"
+msgstr "Објављено у %s"
+
+#: sitemap.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-data.php
+#: image.php
+msgid "Edit"
+msgstr "Уреди"
+
+#: loop-header.php
+msgid "Daily Archives: %s"
+msgstr "Дневни архив: %s"
+
+#: loop-header.php
+msgid "Monthly Archives: %s"
+msgstr "Месечни архив: %s"
+
+#: loop-header.php
+msgid "Yearly Archives: %s"
+msgstr "Годишњи архив: %s"
+
+#: loop-header.php
+msgid "Blog Archives"
+msgstr "Архив блога"
+
+#: loop-no-posts.php
+msgid "Your search for %s did not match any entries."
+msgstr "Ваша претрага за %s се не подудара ни са једним уносом."
+
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "404 — Лепо је срести Вас овде!"
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "Без панике, заједно ћемо решити ово. Да погледамо које су нам опције."
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "Можете се вратити %s или даље тражити жељену страницу."
+
+#: core/includes/functions.php
+#: loop-no-posts.php
+msgid "Home"
+msgstr "Почетак"
+
+#: loop-no-posts.php
+msgid "&larr; Home"
+msgstr "← Почетна"
+
+#: core/includes/functions.php
+#: search.php
+msgid "Search results for: %s"
+msgstr "Резултати претраге: %s"
+
+#: searchform.php
+msgid "search here &hellip;"
+msgstr "претрага ..."
+
+#: searchform.php
+msgid "Go"
+msgstr "Иди"
+
+#: sidebar-gallery.php
+msgid "Image Information"
+msgstr "Подаци о слици"
+
+#: sidebar-gallery.php
+msgid "Full Size:"
+msgstr "Пуна величина:"
+
+#: sidebar-gallery.php
+msgid "Aperture: f&#47;"
+msgstr "Отвор објектива: f/"
+
+#: sidebar-gallery.php
+msgid "Focal Length:"
+msgstr "Дужина фокуса:"
+
+#: sidebar-gallery.php
+msgid "mm"
+msgstr "мм"
+
+#: sidebar-gallery.php
+msgid "ISO:"
+msgstr "ИСО:"
+
+#: sidebar-gallery.php
+msgid "Shutter:"
+msgstr "Бленда:"
+
+#: sidebar-gallery.php
+msgid "Camera:"
+msgstr "Фото апарат:"
+
+#: sidebar.php
+#: sidebar-right.php
+#: sidebar-right-half.php
+#: sidebar-left.php
+#: sidebar-left-half.php
+#: sidebar-half-left.php
+msgid "In Archive"
+msgstr "У архиви"
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 1"
+msgstr "Виџет на почетној страни 1"
+
+#: sidebar-home.php
+msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
+msgstr "Ово је први простор за виџет на почетној страници. За уређивање молимо вас идите на Изглед > Виџети и изаберете шести виџет од врха у простор шест назван Виџет на почетној 1. Наслов је такође могуће променити у самом виџету."
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 2"
+msgstr "Виџет на почетној страни 2"
+
+#: sidebar-home.php
+msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
+msgstr "Ово је други простор за виџет на почетној страници. За уређивање молимо вас идите на Изглед > Виџети и изаберете седми виџет од врха у простор шест назван Виџет на почетној 2. Наслов је такође могуће променити у самом виџету."
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 3"
+msgstr "Виџет на почетној страни 3"
+
+#: sidebar-home.php
+msgid "This is your third home widget box. To edit please go to Appearance > Widgets and choose 8th widget from the top in area 8 called Home Widget 3. Title is also manageable from widgets as well."
+msgstr "Ово је трећи простор за виџет на почетној страници. За уређивање молимо вас идите на Изглед > Виџети и изаберете осми виџет од врха у простор осам назван Виџет на почетној 3. Наслов је такође могуће променити у самом виџету."
+
+#: single.php
+msgid "About"
+msgstr "o"
+
+#: sitemap.php
+msgid "Categories"
+msgstr "Категорије"
+
+#: sitemap.php
+msgid "Latest Posts"
+msgstr "Најновији чланци"
+
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "Стална веза ка %s"
+
+#: sitemap.php
+msgid "Pages"
+msgstr "Стране"
+
+#: core/includes/functions.php
+msgid "Top Menu"
+msgstr "Мени на врху стране"
+
+#: core/includes/functions.php
+msgid "Header Menu"
+msgstr "Мени у заглављу"
+
+#: core/includes/functions.php
+msgid "Sub-Header Menu"
+msgstr "Мени у подзаглављу"
+
+#: core/includes/functions.php
+msgid "Footer Menu"
+msgstr "Мени на дну стране"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Page %s"
+msgstr "Страна %s"
+
+#: core/includes/functions.php
+msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
+msgstr "<span class=\"%1$s\">Објављено </span>%2$s<span class=\"%3$s\"> од </span>%4$s"
+
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "View all posts by %s"
+msgstr "Погледајте све чланке од %s"
+
+#: core/includes/functions.php
+msgid "Archive for %s"
+msgstr "Архива за %s"
+
+#: core/includes/functions.php
+msgid "Posts tagged %s"
+msgstr "Чланци означени %s"
+
+#: core/includes/functions.php
+msgid "Error 404"
+msgstr "Грешка 404"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr ""
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr "Помоћ"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr "Преведи"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr "Излог"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "More Themes"
+msgstr "Још тема"
+
+#: core/includes/functions.php
+msgid "Main Sidebar"
+msgstr "Главнa бочни мени"
+
+#: core/includes/functions.php
+msgid "Area 1 - sidebar.php"
+msgstr "Простор један - sidebar.php"
+
+#: core/includes/functions.php
+msgid "Right Sidebar"
+msgstr "Десни бочни мени"
+
+#: core/includes/functions.php
+msgid "Area 2 - sidebar-right.php"
+msgstr "Простор два - sidebar-right.php"
+
+#: core/includes/functions.php
+msgid "Left Sidebar"
+msgstr "Леви бочни мени"
+
+#: core/includes/functions.php
+msgid "Area 3 - sidebar-left.php"
+msgstr "Простор три - sidebar-left.php"
+
+#: core/includes/functions.php
+msgid "Left Sidebar Half Page"
+msgstr "Леви бочни мени половина странице"
+
+#: core/includes/functions.php
+msgid "Area 4 - sidebar-left-half.php"
+msgstr "Простор четири - sidebar-left-half.php"
+
+#: core/includes/functions.php
+msgid "Right Sidebar Half Page"
+msgstr "Десни бочни мени половина странице"
+
+#: core/includes/functions.php
+msgid "Area 5 - sidebar-right-half.php"
+msgstr "Простор пет - sidebar-right-half.php"
+
+#: core/includes/functions.php
+msgid "Area 6 - sidebar-home.php"
+msgstr "Простор шест - sidebar-home.php"
+
+#: core/includes/functions.php
+msgid "Area 7 - sidebar-home.php"
+msgstr "Простор седам - sidebar-home.php"
+
+#: core/includes/functions.php
+msgid "Area 8 - sidebar-home.php"
+msgstr "Простор осам - sidebar-home.php"
+
+#: core/includes/functions.php
+msgid "Gallery Sidebar"
+msgstr "Бочни мени за галерију"
+
+#: core/includes/functions.php
+msgid "Area 9 - sidebar-gallery.php"
+msgstr "Простор девет - sidebar-home.php"
+
+#: core/includes/functions.php
+msgid "Colophon Widget"
+msgstr "Виџет у колофону"
+
+#: core/includes/functions.php
+msgid "Area 10 - sidebar-colophon.php"
+msgstr "Простор десет - sidebar-colophon.php"
+
+#: core/includes/functions.php
+msgid "Top Widget"
+msgstr "Виџет на врху странице"
+
+#: core/includes/functions.php
+msgid "Area 11 - sidebar-top.php"
+msgstr "Простор једанаест - sidebar-top.php"
+
+#: blog.php
+msgid "Blog (full posts)"
+msgstr ""
+
+#: blog-excerpt.php
+msgid "Blog Excerpt (summary)"
+msgstr ""
+
+#: content-sidebar-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Content/Sidebar"
+msgstr "Садржај/бочна трака"
+
+#: sidebar-content-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Sidebar/Content"
+msgstr "Бочна трака/садржај"
+
+#: content-sidebar-half-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Content/Sidebar Half Page"
+msgstr "Садржај/бочна трака половина странице"
+
+#: sidebar-content-half-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Sidebar/Content Half Page"
+msgstr "Бочна трака/садржај половина странице"
+
+#: full-width-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Full Width Page (no sidebar)"
+msgstr "Пуна ширина странице (без бочне траке)"
+
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr "Распоред"
+
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr "подразумевано"
+
+#: landing-page.php
+msgid "Landing Page (no menu)"
+msgstr ""
+
+#: sitemap.php
+msgid "Sitemap"
+msgstr ""
+
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Theme Options"
+msgstr "Опције теме"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Options Saved"
+msgstr "Опције су сачуване"
+
+#: core/includes/theme-options.php
+msgid "Theme Elements"
+msgstr "Елементи теме"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Disable Breadcrumb Lists?"
+msgstr "Искључити Breadcrumb листу?"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Check to disable"
+msgstr "Обележите да искључите"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Disable Call to Action Button?"
+msgstr "Искључити дугме Позив на акцију?"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Save Options"
+msgstr "Сачувати подешене опције"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Restore Defaults"
+msgstr "Повратак на основе"
+
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Logo Upload"
+msgstr "Унос логотипа"
+
+#: core/includes/theme-options.php
+msgid "Custom Header"
+msgstr "Прилагођено заглавље"
+
+#: core/includes/theme-options.php
+msgid "Need to replace or remove default logo?"
+msgstr "Желите да замените или склоните логотип?"
+
+#: core/includes/theme-options.php
+msgid "<a href=\"%s\">Click here</a>."
+msgstr "<a href=\"%s\">Кликните овде</a>."
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Home Page"
+msgstr "Почетна страница"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Headline"
+msgstr "Наслов"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your headline"
+msgstr "Унесите наслов"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Subheadline"
+msgstr "Поднаслов"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your subheadline"
+msgstr "Унесите поднаслов"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Content Area"
+msgstr "Простор за садржај"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your content"
+msgstr "Унесите садржај"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Call to Action (URL)"
+msgstr "Позив на акцију (URL)"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Enter your call to action URL"
+msgstr "Унесите свој URL за позив на акцију"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Call to Action (Text)"
+msgstr "Позив на акцију (текст)"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Enter your call to action text"
+msgstr "Унесите текст позива на акцију"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Featured Content"
+msgstr "Предложени садржај"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "See Docs"
+msgstr "Погледајте документацију"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Paste your shortcode, video or image source"
+msgstr "Унесите свој кратки код, видео записа или слике"
+
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Layouts"
+msgstr "Основни прелом"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Static Page Layout"
+msgstr "Основни прелом статичне странице"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Single Blog Post Layout"
+msgstr "Основни прелом појединачног чланка на блогу"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Blog Posts Index Layout"
+msgstr "Основни прелом индекса чланака на блогу"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Webmaster Tools"
+msgstr "Вебмастер алати"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google Site Verification"
+msgstr "Гугл верификација сајта"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Google ID number only"
+msgstr "Унесите једино свој Гугл ID број"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Bing Site Verification"
+msgstr "Бинг верификација сајта"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Bing ID number only"
+msgstr "Унесите само свој Бинг ID број"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Yahoo Site Verification"
+msgstr "Јаху Верификација сајта"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Yahoo ID number only"
+msgstr "Унесите само свој Јаху ID број"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Site Statistics Tracker"
+msgstr "Статистика вебсајта"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Leave blank if plugin handles your webmaster tools"
+msgstr "Оставите празно ако додатак рукује вашим алаткама за вебмастере"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google Analytics, StatCounter, any other or all of them."
+msgstr "Google Analytics, StatCounter, неки други или сви наведени."
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Social Icons"
+msgstr "Друштвене иконице"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Twitter"
+msgstr "Твитер"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Twitter URL"
+msgstr "Унесите свој Твитер URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Facebook"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Facebook URL"
+msgstr "Унесите свој Фејсбук URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "LinkedIn"
+msgstr "Линкдин"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your LinkedIn URL"
+msgstr "Унесите свој Линкедин URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "YouTube"
+msgstr "Јутјуб"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your YouTube URL"
+msgstr "Унесите свој Јутјуб URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "StumbleUpon"
+msgstr "Стамблапон"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your StumbleUpon URL"
+msgstr "Унесите свој Стамблапон URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "RSS Feed"
+msgstr "RSS фид"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your RSS Feed URL"
+msgstr "Унесите URL свог RSS фида"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google+"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Google+ URL"
+msgstr "Унесите свој Гугл+ URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Instagram"
+msgstr "Инстаграм"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Instagram URL"
+msgstr "Унесите свој Инстаграм URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Pinterest"
+msgstr "Пинтерест"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Pinterest URL"
+msgstr "Унесите свој Пинтерест URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Yelp!"
+msgstr "Јелп!"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Yelp! URL"
+msgstr "Унесите свој Јелп! URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Vimeo"
+msgstr "Вимео"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Vimeo URL"
+msgstr "Унесите свој Вимео URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "foursquare"
+msgstr "Форсквер"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your foursquare URL"
+msgstr "Унесите свој Форсквер URL"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Custom CSS Styles"
+msgstr "Сопствени CSS стилови"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "https://developer.mozilla.org/en/CSS"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "CSS Tutorial"
+msgstr "CSS упутство"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom CSS styles."
+msgstr "Унесите сопствене CSS стилове."
+
+#: core/includes/theme-options.php
+msgid "Custom Scripts"
+msgstr "Прилагођене скрипте"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Custom Scripts for Header and Footer"
+msgstr "Прилагођене скрипте за заглавље и дно странице"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Quick Tutorial"
+msgstr "Кратко упутство"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Embeds to header.php &darr;"
+msgstr "Уградња у заглавље.php &darr;"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom header script."
+msgstr "Унесите сопствену скрипту за заглавље."
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Embeds to footer.php &darr;"
+msgstr "Уградња у footer.php &darr;"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom footer script."
+msgstr "Унесите сопствену скрипту за заглавље."
+
+#: pro/functions.php
+msgid "Posted on "
+msgstr ""
+
+#: pro/functions.php
+msgid " by "
+msgstr "од"
+
+#: pro/functions.php
+msgid "Posted in"
+msgstr ""
+
+#: pro/functions.php
+msgid "Tags:"
+msgstr "Ознаке:"
+
+#: pro/functions.php
+msgid "Permalink to %s"
+msgstr ""
+
+#: pro/functions.php
+msgid "Responsive Pro Options"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Customize"
+msgstr "Prilagodi"
+
+#: pro/options/options-customizer.php
+msgid "Skins"
+msgstr "Маске"
+
+#: pro/options/options-customizer.php
+msgid "Skin Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Typography"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Heading Font"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Google Heading Font"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Text Font"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Google Text Font"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Font Size"
+msgstr "Величина фонта"
+
+#: pro/options/options-customizer.php
+msgid "Headings Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Text Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Link Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Link Hover Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Enable custom front page"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Content"
+msgstr "садржај"
+
+#: pro/options/options.php
+msgid "Personalize"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Favicon"
+msgstr ""
+
+#: pro/options/options.php
+msgid "maximum width and height 32px"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Upload"
+msgstr "Отпреми"
+
+#: pro/options/options.php
+msgid "Apple Touch Icon"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Custom mobile menu title"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Enter a custom mobile menu title"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Design"
+msgstr "Dizajn"
+
+#: pro/options/options.php
+msgid "Change fonts, colors and much more using the theme %1s"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Customizer"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Templates"
+msgstr "Шаблони"
+
+#: pro/options/options.php
+msgid "Excerpt Text"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Read More..."
+msgstr ""
+
+#: pro/options/options.php
+msgid "Excerpt Length"
+msgstr ""
+
+#: pro/options/options.php
+msgid "50"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Page"
+msgstr "Денс"
+
+#: pro/options/options.php
+msgid "Blog Post Page"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Excerpts"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Featured Images"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Author"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Categories"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Date"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Comments"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Tags"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Single post page"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Archive page"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Search page"
+msgstr ""
+
+#: pro/options/options.php
+msgid "404 page"
+msgstr ""
+
+#: pro/options/options.php
+msgid "404 Title"
+msgstr ""
+
+#: pro/options/options.php
+msgid "404 error"
+msgstr ""
+
+#: pro/options/options.php
+msgid "404 Content"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Sorry, the content is not found...!!!"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Scripts"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Plugins"
+msgstr "Додаци"
+
+#: pro/options/options.php
+msgid "Events Plugin Options"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Please activate The Events Calendar plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Install Events Calendar Plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "WooCommerce Settings"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Please activate WooCommerce plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Install WooCommerce Plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "BBPress Settings"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Please activate BBPress plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Install BBPress Plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Digital Downloads Settings"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Please activate Easy Digital Downloads plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Install Easy Digital Downloads Plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "%1$s upload failed, make sure you are entering a URL"
+msgstr ""
+
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Enter the Google Font name"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Welcome to %1$s! Upgrade to %2$s today."
+msgstr ""
+

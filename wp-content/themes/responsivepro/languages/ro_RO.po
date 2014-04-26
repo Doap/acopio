@@ -1,0 +1,1286 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Responsive Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
+"PO-Revision-Date: 2013-07-06 07:01:57 UTC\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Romanian, Romania\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WebTranslateIt.com\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 == 0) && (n != 0))) ? 2: 1));\n"
+
+#: archive.php
+#: core/includes/functions.php
+#: search.php
+#: single.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: page.php
+#: landing-page.php
+#: index.php
+#: image.php
+#: home.php
+#: full-width-page.php
+#: content-sidebar-page.php
+#: content-sidebar-half-page.php
+#: blog.php
+msgid "Read more &#8250;"
+msgstr "Citește mai mult"
+
+#: sitemap.php
+#: single.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: search.php
+#: page.php
+#: landing-page.php
+#: index.php
+#: image.php
+#: home.php
+#: full-width-page.php
+#: content-sidebar-page.php
+#: content-sidebar-half-page.php
+#: blog.php
+#: blog-excerpt.php
+#: archive.php
+msgid "Pages:"
+msgstr "Pagini:"
+
+#: loop-nav.php
+#: blog.php
+#: blog-excerpt.php
+msgid "&#8249; Older posts"
+msgstr "Postări vechi"
+
+#: loop-nav.php
+#: blog.php
+#: blog-excerpt.php
+msgid "Newer posts &#8250;"
+msgstr "Postări noi"
+
+#: comments.php
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Această postare este protejată cu parolă. Introdu parola pentru a vizualiza comentariile."
+
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php
+#: comments.php
+msgid "&#8249; Older comments"
+msgstr "Comentarii vechi"
+
+#: comments.php
+#: comments.php
+msgid "Newer comments &#8250;"
+msgstr "Comentarii noi"
+
+#: comments.php
+msgid "Pings&#47;Trackbacks"
+msgstr "Ping / Urmăritori"
+
+#: comments.php
+msgid "%1$d %2$s for \"%3$s\""
+msgstr "%1$d %2$s pentru \"%3$s\""
+
+#: comments.php
+msgid "Name"
+msgstr "Nume"
+
+#: comments.php
+msgid "E-mail"
+msgstr "Email"
+
+#: comments.php
+msgid "Website"
+msgstr ""
+
+#: footer.php
+msgid "&copy;"
+msgstr "©"
+
+#: footer.php
+msgid "scroll to top"
+msgstr "defilați în susul paginii"
+
+#: footer.php
+msgid "&uarr;"
+msgstr "&uarr;"
+
+#: footer.php
+msgid "Responsive Theme"
+msgstr "Tema receptiv"
+
+#: footer.php
+msgid "powered by"
+msgstr "de"
+
+#: footer.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Hello, World!"
+msgstr "Salut, lume!"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Your H2 subheadline here"
+msgstr "Subtitlul tău H2 aici"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: front-page.php
+msgid "Call to Action"
+msgstr "Acționează"
+
+#: image.php
+msgid "&#8249; Return to"
+msgstr "Întoarce-te la"
+
+#: pro/functions.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-meta-page.php
+#: image.php
+msgid "No Comments &darr;"
+msgstr "Nici un comentariu"
+
+#: pro/functions.php
+#: image.php
+#: post-meta-page.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+msgid "1 Comment &darr;"
+msgstr "Un comentariu"
+
+#: pro/functions.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-meta-page.php
+#: image.php
+msgid "% Comments &darr;"
+msgstr "% comentarii"
+
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: image.php
+msgid "Tagged with:"
+msgstr "Etichetat cu:"
+
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: image.php
+msgid "Posted in %s"
+msgstr "Postat în %s"
+
+#: sitemap.php
+#: sidebar-content-page.php
+#: sidebar-content-half-page.php
+#: post-data.php
+#: image.php
+msgid "Edit"
+msgstr "Editări"
+
+#: loop-header.php
+msgid "Daily Archives: %s"
+msgstr "Arhive zilnice: %s"
+
+#: loop-header.php
+msgid "Monthly Archives: %s"
+msgstr "Arhive lunare: %s"
+
+#: loop-header.php
+msgid "Yearly Archives: %s"
+msgstr "Arhive anuale: %s"
+
+#: loop-header.php
+msgid "Blog Archives"
+msgstr "Arhivele Blog-ului"
+
+#: loop-no-posts.php
+msgid "Your search for %s did not match any entries."
+msgstr ""
+
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "404 &#8212; Ciudat să te întâlnesc aici!"
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "Nu te panica, Vom trece peste împreună. Hai să luăm în calcul toate opțiunile."
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "Poți reveni %s sau răsfoiește pentru pagina pe care o cauți"
+
+#: core/includes/functions.php
+#: loop-no-posts.php
+msgid "Home"
+msgstr "Acasă"
+
+#: loop-no-posts.php
+msgid "&larr; Home"
+msgstr "&larr; Acasă"
+
+#: core/includes/functions.php
+#: search.php
+msgid "Search results for: %s"
+msgstr ""
+
+#: searchform.php
+msgid "search here &hellip;"
+msgstr "caută aici"
+
+#: searchform.php
+msgid "Go"
+msgstr "Du-te"
+
+#: sidebar-gallery.php
+msgid "Image Information"
+msgstr "Informații despre imagine"
+
+#: sidebar-gallery.php
+msgid "Full Size:"
+msgstr "Mărime completă:"
+
+#: sidebar-gallery.php
+msgid "Aperture: f&#47;"
+msgstr "Deschidere:"
+
+#: sidebar-gallery.php
+msgid "Focal Length:"
+msgstr "Lungimea focală"
+
+#: sidebar-gallery.php
+msgid "mm"
+msgstr ""
+
+#: sidebar-gallery.php
+msgid "ISO:"
+msgstr ""
+
+#: sidebar-gallery.php
+msgid "Shutter:"
+msgstr "Închizător:"
+
+#: sidebar-gallery.php
+msgid "Camera:"
+msgstr "Cameră:"
+
+#: sidebar.php
+#: sidebar-right.php
+#: sidebar-right-half.php
+#: sidebar-left.php
+#: sidebar-left-half.php
+#: sidebar-half-left.php
+msgid "In Archive"
+msgstr "În arhivă"
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 1"
+msgstr ""
+
+#: sidebar-home.php
+msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
+msgstr ""
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 2"
+msgstr ""
+
+#: sidebar-home.php
+msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
+msgstr ""
+
+#: core/includes/functions.php
+#: sidebar-home.php
+msgid "Home Widget 3"
+msgstr ""
+
+#: sidebar-home.php
+msgid "This is your third home widget box. To edit please go to Appearance > Widgets and choose 8th widget from the top in area 8 called Home Widget 3. Title is also manageable from widgets as well."
+msgstr ""
+
+#: single.php
+msgid "About"
+msgstr "Despre"
+
+#: sitemap.php
+msgid "Categories"
+msgstr "Categorii"
+
+#: sitemap.php
+msgid "Latest Posts"
+msgstr "Ultimele articole"
+
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "Legătură permanentă către %s"
+
+#: sitemap.php
+msgid "Pages"
+msgstr "Pagini"
+
+#: core/includes/functions.php
+msgid "Top Menu"
+msgstr "Meniul de sus"
+
+#: core/includes/functions.php
+msgid "Header Menu"
+msgstr "Meniu antet"
+
+#: core/includes/functions.php
+msgid "Sub-Header Menu"
+msgstr "Meniu sub-antet"
+
+#: core/includes/functions.php
+msgid "Footer Menu"
+msgstr "Meniu subsol"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Page %s"
+msgstr "Filme %s"
+
+#: core/includes/functions.php
+msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
+msgstr "<span class=\"%1$s\">Postat în </span>%2$s<span class=\"%3$s\"> de </span>%4$s"
+
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "View all posts by %s"
+msgstr "Vezi toate postările lui %s"
+
+#: core/includes/functions.php
+msgid "Archive for %s"
+msgstr "Arhivă pentru %s"
+
+#: core/includes/functions.php
+msgid "Posts tagged %s"
+msgstr "Postări etichetate %s"
+
+#: core/includes/functions.php
+msgid "Error 404"
+msgstr "Eroare 404 "
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr "Instrucţiuni"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr "Ajutor"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr "Traducere"
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr ""
+
+#: pro/functions.php
+#: pro/functions.php
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "More Themes"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Main Sidebar"
+msgstr "Bara laterală"
+
+#: core/includes/functions.php
+msgid "Area 1 - sidebar.php"
+msgstr "Aria 1 - sidebar.php"
+
+#: core/includes/functions.php
+msgid "Right Sidebar"
+msgstr "Bară laterală dreapta"
+
+#: core/includes/functions.php
+msgid "Area 2 - sidebar-right.php"
+msgstr "Aria 2 - sidebar-right.php"
+
+#: core/includes/functions.php
+msgid "Left Sidebar"
+msgstr "Bară laterală stânga"
+
+#: core/includes/functions.php
+msgid "Area 3 - sidebar-left.php"
+msgstr "Aria 3 - sidebar-left.php"
+
+#: core/includes/functions.php
+msgid "Left Sidebar Half Page"
+msgstr "Bară laterală - stânga - pe mijlocul paginii"
+
+#: core/includes/functions.php
+msgid "Area 4 - sidebar-left-half.php"
+msgstr "Aria 4 - sidebar-left-half.php"
+
+#: core/includes/functions.php
+msgid "Right Sidebar Half Page"
+msgstr "Bară laterală - dreapta - pe mijlocul paginii"
+
+#: core/includes/functions.php
+msgid "Area 5 - sidebar-right-half.php"
+msgstr "Aria 5 - sidebar-right-half.php"
+
+#: core/includes/functions.php
+msgid "Area 6 - sidebar-home.php"
+msgstr "Aria 6 - sidebar-home.php"
+
+#: core/includes/functions.php
+msgid "Area 7 - sidebar-home.php"
+msgstr "Aria 7 - sidebar-home.php"
+
+#: core/includes/functions.php
+msgid "Area 8 - sidebar-home.php"
+msgstr "Aria 8 - sidebar-home.php"
+
+#: core/includes/functions.php
+msgid "Gallery Sidebar"
+msgstr "Bară laterală - galerie"
+
+#: core/includes/functions.php
+msgid "Area 9 - sidebar-gallery.php"
+msgstr "Aria 9 - sidebar-gallery.php"
+
+#: core/includes/functions.php
+msgid "Colophon Widget"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 10 - sidebar-colophon.php"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Top Widget"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Area 11 - sidebar-top.php"
+msgstr ""
+
+#: blog.php
+msgid "Blog (full posts)"
+msgstr ""
+
+#: blog-excerpt.php
+msgid "Blog Excerpt (summary)"
+msgstr ""
+
+#: content-sidebar-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Content/Sidebar"
+msgstr ""
+
+#: sidebar-content-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Sidebar/Content"
+msgstr ""
+
+#: content-sidebar-half-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Content/Sidebar Half Page"
+msgstr ""
+
+#: sidebar-content-half-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Sidebar/Content Half Page"
+msgstr ""
+
+#: full-width-page.php
+#: core/includes/post-custom-meta.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Full Width Page (no sidebar)"
+msgstr ""
+
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr "Aspect"
+
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr "Implicit"
+
+#: landing-page.php
+msgid "Landing Page (no menu)"
+msgstr ""
+
+#: sitemap.php
+msgid "Sitemap"
+msgstr ""
+
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Theme Options"
+msgstr "Opțiuni șablon"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Options Saved"
+msgstr "Opțiunile au fost salvate."
+
+#: core/includes/theme-options.php
+msgid "Theme Elements"
+msgstr "Elementele șablonului"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Disable Breadcrumb Lists?"
+msgstr "Dezactivați liste Breadcrumb?"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Check to disable"
+msgstr "Bifează pentru dezactivare"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Disable Call to Action Button?"
+msgstr "Dezactivează butonul Acționeaza?"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Save Options"
+msgstr "Salvează opțiunile"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Restore Defaults"
+msgstr "Restaurează la implicit"
+
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Logo Upload"
+msgstr "Încarcă Logo"
+
+#: core/includes/theme-options.php
+msgid "Custom Header"
+msgstr "Antet personalizat"
+
+#: core/includes/theme-options.php
+msgid "Need to replace or remove default logo?"
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "<a href=\"%s\">Click here</a>."
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Home Page"
+msgstr "Prima Pagină"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
+msgstr "Permite personalizat prima pagina"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr "Înlocuieşte opţiune de pagina de WordPress % 1sfront % 2s"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Headline"
+msgstr "Titlu"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your headline"
+msgstr "Introdu titlul"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Subheadline"
+msgstr "Subtitlu"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your subheadline"
+msgstr "Introdu subtitlul"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Content Area"
+msgstr "Arie de conținut"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your content"
+msgstr "Introdu conținutul"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Call to Action (URL)"
+msgstr "Acționează (URL)"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Enter your call to action URL"
+msgstr "Introdu URL-ul pentru acționare"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Call to Action (Text)"
+msgstr "Acționare (Text)"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Enter your call to action text"
+msgstr "Introdu textul pentru acționare"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Featured Content"
+msgstr "Conținut promovat"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "See Docs"
+msgstr "Vezi Docs"
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Paste your shortcode, video or image source"
+msgstr ""
+
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Layouts"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Static Page Layout"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Single Blog Post Layout"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options-customizer.php
+#: core/includes/theme-options.php
+msgid "Default Blog Posts Index Layout"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Webmaster Tools"
+msgstr "Uneltele Webmaster-ului"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google Site Verification"
+msgstr "Verificarea de către Google"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Google ID number only"
+msgstr "Introdu numărul de ID Google"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Bing Site Verification"
+msgstr "Verificarea de către Bing"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Bing ID number only"
+msgstr "Introdu numărul de ID Bing"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Yahoo Site Verification"
+msgstr "Verificarea de către Yahoo"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Yahoo ID number only"
+msgstr "Introdu numărul de ID Yahoo"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Site Statistics Tracker"
+msgstr "Statisticile site-ului"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Leave blank if plugin handles your webmaster tools"
+msgstr "Lasă necompletat dacă modulul controlează instrumentele webmaster-ului"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google Analytics, StatCounter, any other or all of them."
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Social Icons"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Twitter"
+msgstr "Stare de nervozitate"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Twitter URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Facebook"
+msgstr "Facebook"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Facebook URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your LinkedIn URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "YouTube"
+msgstr "YouTube"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your YouTube URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "StumbleUpon"
+msgstr "StumbleUpon"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your StumbleUpon URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "RSS Feed"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your RSS Feed URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Google+"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Google+ URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Instagram"
+msgstr "Instagram"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Instagram URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Pinterest URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Yelp!"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Yelp! URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your Vimeo URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "foursquare"
+msgstr "patru colţuri"
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your foursquare URL"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Custom CSS Styles"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "https://developer.mozilla.org/en/CSS"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "CSS Tutorial"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom CSS styles."
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "Custom Scripts"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Custom Scripts for Header and Footer"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Quick Tutorial"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Embeds to header.php &darr;"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom header script."
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Embeds to footer.php &darr;"
+msgstr ""
+
+#: pro/options/options.php
+#: core/includes/theme-options.php
+msgid "Enter your custom footer script."
+msgstr ""
+
+#: pro/functions.php
+msgid "Posted on "
+msgstr "Postat pe "
+
+#: pro/functions.php
+msgid " by "
+msgstr "De"
+
+#: pro/functions.php
+msgid "Posted in"
+msgstr ""
+
+#: pro/functions.php
+msgid "Tags:"
+msgstr "Etichete"
+
+#: pro/functions.php
+msgid "Permalink to %s"
+msgstr ""
+
+#: pro/functions.php
+msgid "Responsive Pro Options"
+msgstr "Receptiv opţiuni Pro"
+
+#: pro/options/options-customizer.php
+msgid "Customize"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Skins"
+msgstr "Skinuri"
+
+#: pro/options/options-customizer.php
+msgid "Skin Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Typography"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Heading Font"
+msgstr "Font titlu"
+
+#: pro/options/options-customizer.php
+msgid "Google Heading Font"
+msgstr "Font de rubrica Google"
+
+#: pro/options/options-customizer.php
+msgid "Text Font"
+msgstr "Text Font"
+
+#: pro/options/options-customizer.php
+msgid "Google Text Font"
+msgstr "Font Google Text"
+
+#: pro/options/options-customizer.php
+msgid "Font Size"
+msgstr "Mărime font"
+
+#: pro/options/options-customizer.php
+msgid "Headings Color"
+msgstr "Titlurile de culoare"
+
+#: pro/options/options-customizer.php
+msgid "Text Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Link Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Link Hover Color"
+msgstr ""
+
+#: pro/options/options-customizer.php
+msgid "Enable custom front page"
+msgstr "Permite personalizat prima pagina"
+
+#: pro/options/options-customizer.php
+msgid "Content"
+msgstr "conţinut"
+
+#: pro/options/options.php
+msgid "Personalize"
+msgstr "Personaliza"
+
+#: pro/options/options.php
+msgid "Favicon"
+msgstr "Favicon"
+
+#: pro/options/options.php
+msgid "maximum width and height 32px"
+msgstr "32px lăţimea şi înălţimea maximă"
+
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Upload"
+msgstr "Încarcă"
+
+#: pro/options/options.php
+msgid "Apple Touch Icon"
+msgstr "Pictograma de Touch Apple"
+
+#: pro/options/options.php
+msgid "Custom mobile menu title"
+msgstr "Titlu de meniu particularizate mobilă"
+
+#: pro/options/options.php
+msgid "Enter a custom mobile menu title"
+msgstr "Introduceţi un titlu de meniu particularizate mobilă"
+
+#: pro/options/options.php
+msgid "Design"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Change fonts, colors and much more using the theme %1s"
+msgstr "Schimba fonturi, culori şi mult mai mult folosind tema % 1s"
+
+#: pro/options/options.php
+msgid "Customizer"
+msgstr "Instalare Customizer"
+
+#: pro/options/options.php
+msgid "Templates"
+msgstr "Șabloane"
+
+#: pro/options/options.php
+msgid "Excerpt Text"
+msgstr "Fragment de Text"
+
+#: pro/options/options.php
+msgid "Read More..."
+msgstr "Citeste mai mult..."
+
+#: pro/options/options.php
+msgid "Excerpt Length"
+msgstr ""
+
+#: pro/options/options.php
+msgid "50"
+msgstr "50"
+
+#: pro/options/options.php
+msgid "Page"
+msgstr "Pagină"
+
+#: pro/options/options.php
+msgid "Blog Post Page"
+msgstr "Blog Post pagina"
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Excerpts"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Featured Images"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Author"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Categories"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Date"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Comments"
+msgstr ""
+
+#: pro/options/options.php
+#: pro/options/options.php
+#: pro/options/options.php
+msgid "Post Byline Tags"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Single post page"
+msgstr "Singur post de pagini"
+
+#: pro/options/options.php
+msgid "Archive page"
+msgstr "Pagina de Arhiva"
+
+#: pro/options/options.php
+msgid "Search page"
+msgstr ""
+
+#: pro/options/options.php
+msgid "404 page"
+msgstr "404 de pagini"
+
+#: pro/options/options.php
+msgid "404 Title"
+msgstr "404 Titlu"
+
+#: pro/options/options.php
+msgid "404 error"
+msgstr "eroare 404"
+
+#: pro/options/options.php
+msgid "404 Content"
+msgstr "404 De conţinut"
+
+#: pro/options/options.php
+msgid "Sorry, the content is not found...!!!"
+msgstr "Ne pare rau, conţinutul nu este găsit...!"
+
+#: pro/options/options.php
+msgid "Scripts"
+msgstr "Script-uri"
+
+#: pro/options/options.php
+msgid "Plugins"
+msgstr "Module"
+
+#: pro/options/options.php
+msgid "Events Plugin Options"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Please activate The Events Calendar plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "Install Events Calendar Plugin"
+msgstr ""
+
+#: pro/options/options.php
+msgid "WooCommerce Settings"
+msgstr "Setări WooCommerce"
+
+#: pro/options/options.php
+msgid "Please activate WooCommerce plugin"
+msgstr "Vă rugăm să activaţi plugin-ul WooCommerce"
+
+#: pro/options/options.php
+msgid "Install WooCommerce Plugin"
+msgstr "Instalaţi WooCommerce plug-in"
+
+#: pro/options/options.php
+msgid "BBPress Settings"
+msgstr "BBPress setările"
+
+#: pro/options/options.php
+msgid "Please activate BBPress plugin"
+msgstr "Vă rugăm să activaţi BBPress plugin"
+
+#: pro/options/options.php
+msgid "Install BBPress Plugin"
+msgstr "Instalaţi BBPress Plugin"
+
+#: pro/options/options.php
+msgid "Digital Downloads Settings"
+msgstr "Setările de download-uri digitale"
+
+#: pro/options/options.php
+msgid "Please activate Easy Digital Downloads plugin"
+msgstr "Vă rugăm să activaţi uşor Digital download plugin"
+
+#: pro/options/options.php
+msgid "Install Easy Digital Downloads Plugin"
+msgstr "Instalaţi plug-in de simplu download-uri digitale"
+
+#: pro/options/options.php
+msgid "%1$s upload failed, make sure you are entering a URL"
+msgstr "%1$ s încărcare eşuată, asiguraţi-vă că introduceţi un URL"
+
+#: pro/options/options-customizer.php
+#: pro/options/options-customizer.php
+msgid "Enter the Google Font name"
+msgstr ""
+
+#: core/includes/functions.php
+msgid "Welcome to %1$s! Upgrade to %2$s today."
+msgstr ""
+

@@ -1,0 +1,135 @@
+# Russian translation of TheCartPress and TheCartPress plugins.
+# This file is distributed under the same license as the TheCartPress package.
+# Vladimir Vasilenko <vladimir@shumbely.com>, 2013
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TheCartPress Front End\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-17 22:53+0300\n"
+"PO-Revision-Date: 2013-08-17 22:55+0300\n"
+"Last-Translator: jeltoesolnce <vladimir@shumbely.com>\n"
+"Language-Team: russian <ru@li.org>\n"
+"Language: russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../FrontEnd.class.php:117
+msgid "My Addresses"
+msgstr "Мои Адреса"
+#: ../FrontEnd.class.php:131 ../admin/AddressesList.class.php:58
+#: ../admin/AddressesList.class.php:68
+msgid "Address"
+msgstr "Адрес"
+#: ../FrontEnd.class.php:145
+msgid "My Downloads"
+msgstr "Мои загрузки"
+#: ../FrontEnd.class.php:159
+msgid "My Orders"
+msgstr "Мои заказы"
+#: ../FrontEnd.class.php:171
+msgid "<strong>My Account page</strong> has been deleted."
+msgstr "<strong>Моя страница</strong> была удалена."
+#: ../FrontEnd.class.php:174
+msgid "<strong>Addresses list page</strong> has been deleted."
+msgstr "<strong>Страница с адресами</strong> была удалена."
+#: ../FrontEnd.class.php:177
+msgid "<strong>Address Edit page</strong> has been deleted."
+msgstr "<strong>Страница редактирования Адресов</strong> была удалена."
+#: ../FrontEnd.class.php:183
+msgid "<strong>Downloadables list page</strong> has been deleted."
+msgstr "<strong>Страница загрузок</strong> была удалена."
+#: ../FrontEnd.class.php:187
+msgid "<strong>Orders list page</strong> has been deleted."
+msgstr "<strong>Страница со списком заказов</strong> была удалена."
+#: ../FrontEnd.class.php:200
+msgid "The Addresses list page has been created"
+msgstr "Страница списка адресов создана"
+#: ../FrontEnd.class.php:207
+msgid "The Address edit page has been created"
+msgstr "Страница редактирования адресов создана"
+#: ../FrontEnd.class.php:217
+msgid "The Downloadables list page has been created"
+msgstr "Страница списка загрузок создана"
+#: ../FrontEnd.class.php:224
+msgid "The orders list page has been created"
+msgstr "Страница списка заказов создана"
+#: ../FrontEnd.class.php:238
+msgid "See all addresses"
+msgstr "Видеть все адреса"
+#: ../FrontEnd.class.php:242
+msgid "See all orders"
+msgstr "Видеть все заказы"
+#: ../FrontEnd.class.php:301
+#, php-format
+msgid "To access to your download items, please visit <a href=\"%s\">the download area</a>."
+msgstr "Для доступа к Вашим загрузкам посетите, пожалуйста, <a href=\"%s\">зону загрузок</a>."
+#: ../admin/AddressesList.class.php:27
+msgid "You need to login to see your address."
+msgstr "Вам необходимо авторизоваться чтобы увидеть Ваш адрес."
+#: ../admin/AddressesList.class.php:38
+msgid "Address deleted"
+msgstr "Адрес удалён"
+
+#: ../admin/AddressesList.class.php:47
+msgid "List of addresses"
+msgstr "Список адресов"
+
+#: ../admin/AddressesList.class.php:50
+msgid "Create new address"
+msgstr "Создать новый адрес"
+#: ../admin/AddressesList.class.php:59 ../admin/AddressesList.class.php:69
+msgid "Name"
+msgstr "Название"
+#: ../admin/AddressesList.class.php:60 ../admin/AddressesList.class.php:70
+msgid "Street"
+msgstr "Улица"
+#: ../admin/AddressesList.class.php:61 ../admin/AddressesList.class.php:71
+msgid "Default"
+msgstr "По умолчанию"
+#: ../admin/AddressesList.class.php:78
+msgid "The list of addresses is empty"
+msgstr "Список адресов пуст"
+
+#: ../admin/AddressesList.class.php:85
+msgid "Shipping"
+msgstr "Доставка"
+#: ../admin/AddressesList.class.php:87
+msgid "Billing"
+msgstr "Платеж"
+#: ../admin/AddressesList.class.php:90
+msgid "delete"
+msgstr "удалить"
+#: ../admin/AddressesList.class.php:90
+msgid "edit"
+msgstr "правка"
+#: ../admin/AddressesList.class.php:95
+msgid "Do you really want to delete this address?"
+msgstr "Действительно хотите удалить этот адрес?"
+#: ../admin/AddressesList.class.php:96
+msgid "Yes"
+msgstr "Да"
+#: ../admin/AddressesList.class.php:97
+msgid "No, I don't"
+msgstr "Нет, отказ"
+#: ../admin/OrdersList.class.php:28
+msgid "You need to login to see your orders."
+msgstr "Вам необходимо авторизоваться для просмотра заказов."
+
+#: ../admin/OrdersList.class.php:35
+msgid "Return to the list of Orders"
+msgstr "Возврат к списку Заказов"
+#: ../admin/OrdersList.class.php:53
+msgid "ID"
+msgstr "ID"
+#: ../admin/OrdersList.class.php:54
+msgid "Date"
+msgstr "Дата"
+#: ../admin/OrdersList.class.php:55
+msgid "status"
+msgstr "статус"
+#: ../admin/OrdersList.class.php:56
+msgid "Total"
+msgstr "Всего"
