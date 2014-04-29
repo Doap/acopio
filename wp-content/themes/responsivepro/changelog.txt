@@ -8,6 +8,47 @@ Changelog Legend:
 [x] = Deleted
 [!] = Bugs
 
+1.0.0.8 (02/26/2014)
+[+] Added admin notice for when Responsive 2.0 releases
+[+] Added missing text domains
+[+] Added skip link
+[*] Changed widget menu class to WordPress standards
+[*] Tweeked "Posted on" time info
+[*] Updated screenshot
+[*] Updated translations
+[!] Fixed issue with home settings
+
+1.0.0.7 (02/21/2014)
+[+] Added support for minified css version
+[*] Restructured CSS files - moved styles to core/css/
+[*] Dispaly plugin install notification only on theme.php
+[*] Customized theme activation notice
+[*] Allow for gallery image size to be defined
+[^] Moved sidebar functions in functions-sidebar.php
+[+] Updated to new social icon function
+
+1.0.0.6 (01/20/2014)
+[+] Added option to select front page layout
+[+] Added `featured-content` id to front-page.
+[+] Made search form accessible
+[+] Added improved support gallery images
+[+] Allow switching minified scripts with SCRIPT_DEBUG
+[+] Added support for Breadcrumb NavXT, Breadcrum Trail and Yoast SEO breadcrumbs.
+[*] Improved Responsive Breadcrumbs
+[*] Made Theme Options responsive
+[*] Update coyright to 2014
+[*] Improved responsive_widget_menu_class as suggested by markoheijnen
+[*] Allow Stylesheet version update automatically.
+[*] Updated screenshot to 880x660px
+[*] Moved breadcrumb check from template to functions.php
+[*] Updated responsive.pot
+[*] Updated links from themeid.com to cyberchimps.com
+[*] Improved translations.
+[!] Fixed the footer widget with adding fit class to third widget.
+[x] Removed duplicated theme options titles.
+[x] Removed old mobile menu css.
+[x] Removed code for Backward Compatibility of WP 3.4
+[x] Removed old code in header.php
 
 1.0.0.5 (12/02/2013)
 [+] Added menu customisations options.

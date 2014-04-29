@@ -1036,7 +1036,6 @@ function tcp_get_the_author_name( $post_id = 0 ) {
  * @since 1.2.5.2
  */
 function tcp_get_order_status() {
-	require_once( TCP_DAOS_FOLDER . 'Orders.class.php' );
 	$status_list = array(
 		Orders::$ORDER_COMPLETED => array(
 			'name'	=> Orders::$ORDER_COMPLETED,
@@ -1190,11 +1189,13 @@ function tcp_get_current_term() {
  */
 function tcp_selected_multiple( $values, $value, $echo = true ) {
 	if ( ! is_array( $values ) ) $values = array( $values );
-	if ( in_array( $value, $values ) )
-		if ( $echo )
+	if ( in_array( $value, $values ) ) {
+		if ( $echo ) {
 			echo ' selected="true"';
-		else
+		} else {
 			return ' selected="true"';
+		}
+	}
 }
 
 /**
@@ -1202,8 +1203,11 @@ function tcp_selected_multiple( $values, $value, $echo = true ) {
  */
 function tcp_checked_multiple( $values, $value, $echo = true ) {
 	if ( is_array( $values ) && count( $values ) > 0 && in_array( $value, $values ) ) {
-		if ( $echo ) echo ' checked="true"';
-		else return ' checked="true"';
+		if ( $echo ) {
+			echo ' checked="true"';
+		} else {
+			return ' checked="true"';
+		}
 	}
 }
 

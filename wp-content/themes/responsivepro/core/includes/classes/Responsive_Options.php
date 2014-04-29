@@ -112,14 +112,14 @@ Class Responsive_Options {
 	 */
 	protected function section( $options ) {
 
-		echo ( isset( $options['heading'] ) ) ? $options['heading'] : '';
-
 		// If the width is not set to full then create normal grid size, otherwise create full width
-		echo ( !isset( $options['width'] ) || $options['width'] != 'full' ) ? '<div class="grid col-620 fit">' : '<div class="grid col-940">';
+		$html = ( !isset( $options['width'] ) || $options['width'] != 'full' ) ? '<div class="grid col-620 fit">' : '<div class="grid col-940">';
 
-		echo self::$options['type']( $options );
+		$html .= $this->$options['type']( $options );
 
-		echo '</div>';
+		$html .= '</div>';
+
+		echo $html;
 
 	}
 
@@ -239,7 +239,7 @@ Class Responsive_Options {
                 <p class="submit">
 				' . get_submit_button( __( 'Save Options', 'responsive' ), 'primary', 'responsive_theme_options[submit]', false ) .
 			get_submit_button( __( 'Restore Defaults', 'responsive' ), 'secondary', 'responsive_theme_options[reset]', false, $this->attributes ) . '
-                <a href="http://cyberchimps.com/store/responsivepro/" class="button">' . __( 'Upgrade', 'responsive' ) . '</a>
+                <a href="http://cyberchimps.com/store/responsivepro/" class="button upgrade">' . __( 'Upgrade', 'responsive' ) . '</a>
                 </p>
                 </div>';
 
@@ -310,11 +310,13 @@ Class Responsive_Options {
 			'editor_class'  => esc_attr( $classes )
 		);
 
-		echo '<div class="grid col-620 fit tinymce-editor">';
-		echo '<p>' . esc_html( $heading ) . '</p>';
-
-		wp_editor( $value, 'responsive_theme_options[' . $id . ']', $editor_settings );
-		echo '<label class="description" for="' . esc_attr( 'responsive_theme_options[' . $id . ']' ) . '">' . esc_html( $description ) . '</label>';
-		echo '</div>';
+		$html = '<div class="tinymce-editor">';
+		ob_start();
+		$html .= wp_editor( $value, 'responsive_theme_options[' . $id . ']', $editor_settings );
+		$html .= ob_get_contents();
+		$html .= '<label class="description" for="' . esc_attr( 'responsive_theme_options[' . $id . ']' ) . '">' . esc_html( $description ) . '</label>';
+		$html .= '</div>';
+		ob_clean();
+		return $html;
 	}
 }

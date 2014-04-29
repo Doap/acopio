@@ -27,9 +27,7 @@ class umFormWidget extends WP_Widget {
     public function widget( $args, $instance ) {
         global $userMeta;            
         extract( $args );
-        
-        //$userMeta->dump($args);
-        
+
         $title = is_user_logged_in() ? @$instance[ 'user_title' ] : @$instance[ 'guest_title' ];        
         $title = apply_filters( 'widget_title', $title );
                 
@@ -102,7 +100,7 @@ class umFormWidget extends WP_Widget {
             'label'     => __( 'Guest Title:', $userMeta->name ),
             'id'        => $this->get_field_id( 'guest_title' ),
             'class'     => 'widefat',
-            'after'     => '<i>' . __( 'Only guest user can see this title', $userMeta->name ) . '</i>',
+            'after'     => '<i>' . __( 'Only guest users can see this title', $userMeta->name ) . '</i>',
             'enclose'   => 'p'
         ) );
         
@@ -111,7 +109,7 @@ class umFormWidget extends WP_Widget {
             'label'     => __( 'Logged-In User Title:', $userMeta->name ),
             'id'        => $this->get_field_id( 'user_title' ),
             'class'     => 'widefat',
-            'after'     => '<i>' . __( 'Only logged-in user can see this title', $userMeta->name ) . '</i>',
+            'after'     => '<i>' . __( 'Only logged-in users can see this title', $userMeta->name ) . '</i>',
             'enclose'   => 'p'
         ) ); 
         
@@ -136,7 +134,7 @@ class umFormWidget extends WP_Widget {
             'label'     => __( 'Diff (optional):', $userMeta->name ),
             'id'        => $this->get_field_id( 'diff' ),
             'class'     => 'widefat',
-            'after'     => '<i>' . __( 'For showing role based user profile', $userMeta->name ) . '</i>',
+            'after'     => '<i>' . __( 'For showing role based on user profile', $userMeta->name ) . '</i>',
             'enclose'   => 'p'
         ) ); 
                            

@@ -4,7 +4,7 @@
 Plugin Name: Diagnostic Tool
 Plugin URI: http://wordpress.org/plugins/diagnostic-tool/
 Description: Provides visibility of Email setup & hooks used by other plugins, Outgoing connections exposing possible firewall problems, DNS setup and test facility, Cron overview & File System Diagnostics Tool to find changed files. This plugin does not affect the normal running of your site.
-Version: 1.0.5
+Version: 1.0.6
 Author: Richard Bevan, Marcin Cembrzynski
 Author URI: http://mywwwsupport.com
 License: GPL2
@@ -32,7 +32,6 @@ require_once('lib/DTSettings.class.php');
 require_once('lib/DTFileCheckSum.class.php');
 require_once('lib/DTOutboundConnection.class.php');
 require_once('lib/DTResolver.class.php');
-require_once('views/menu.php');
 
 /*
  * Debug hooks
@@ -110,9 +109,7 @@ function DTCreateMenu() {
 function DTOverviewPage() {
 	global $wp_filter, $gDTSettingsVals;
 
-    echo '<div class="mwswrap">';
-	DTSubMenu();
-    echo '<div class="mwsmainpage">';
+	echo '<div class="wrap">';
 	echo '<h2>Overview</h2>';
 	echo '<h3>Welcome to the Diagnostic Tool</h3>';
 	echo '<p>This plugin has been developed to help deal with common Wordpress issues. First you will get a description of the check or report that will be run, you can then choose to proceed if relevent. Please choose from the menu to the left of this text. Under <a href="'.DTADMINPAGE.'/views/dtsettings.php">settings</a> you can turn off parts of the plugin that you do not need.</p>';
@@ -170,7 +167,7 @@ function DTOverviewPage() {
 	}
 
 	echo '</div>';
-	echo '</div>';
+
 }
 
 /*

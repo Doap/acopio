@@ -17,9 +17,7 @@ class DTEmailView {
 
 		?>
 
-		<div class="mwswrap">
-		<?php dtSubMenu(); ?>
-		<div class="mwsmainpage">
+		<div class="wrap">
 		<h2>Email Testing</h2>
 
 		<h3>Mail test</h3>
@@ -96,7 +94,7 @@ class DTEmailView {
 
 		<?php 
 
-			$plugins = $this->filesystem->findFunctions(array(' mail(', ' mail (', ' wp_mail(', ' wp_mail ('));
+			$plugins = $this->filesystem->findFunctions(array('mail(', 'wp_mail('));
 
 			foreach ($plugins as $plugin)
 			{
@@ -113,11 +111,7 @@ class DTEmailView {
 		?>
 		</tbody>
 		</table>
-
 		</div>
-		</div>
-
-		<div style="clear:both"></div>
 
 		<?php
 	}

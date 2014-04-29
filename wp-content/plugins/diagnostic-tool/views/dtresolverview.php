@@ -16,9 +16,7 @@ class DTResolverView {
 
 		?>
 
-		<div class="mwswrap">
-		<?php dtSubMenu(); ?>
-		<div class="mwsmainpage">
+		<div class="wrap">
 		<h2>DNS Resolver test</h2>
 
 		<h3>About</h3>
@@ -42,10 +40,6 @@ class DTResolverView {
 				<a href="#" id="mwsdnstestsubmit" class="like-a-button">Run</a>
 			</div>
 		</form>
-
-
-		<div style="clear:both"></div>
-		</div>
 		</div>
 
 		<?php

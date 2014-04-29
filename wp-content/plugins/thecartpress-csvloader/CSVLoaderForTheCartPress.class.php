@@ -3,7 +3,7 @@
 Plugin Name: TheCartPress CSV Loader
 Plugin URI: http://extend.thecartpress.com/ecommerce-plugins/csv-loader/
 Description: CSV loader for TheCartPress
-Version: 1.4.2
+Version: 1.4.3
 Author: TheCartPress team
 Author URI: http://thecartpress.com
 License: GPL
@@ -27,6 +27,11 @@ parent: thecartpress
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+if ( ! class_exists( 'CSVLoaderForTheCartPress' ) ) :
+
 class CSVLoaderForTheCartPress {
 	function __construct() {
 		add_action( 'init', array( $this, 'init' ) );
@@ -36,16 +41,17 @@ class CSVLoaderForTheCartPress {
 	}
 
 	function init() {
-		if ( function_exists( 'load_plugin_textdomain' ) )
+		if ( function_exists( 'load_plugin_textdomain' ) ) {
 			load_plugin_textdomain( 'tcp_csvl', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		}
 	}
 
 	function admin_menu() {
 		$base = dirname( dirname( __FILE__ ) ) . '/thecartpress/admin/ShortCodeGenerator.php';
 		add_submenu_page( $base, __( 'CSV Loader', 'tcp_csvl' ), __( 'CSV Loader', 'tcp_csvl' ), 'tcp_edit_product', dirname( __FILE__ ) . '/admin/CSVLoader.php' );
-		//add_submenu_page( $base, __( 'Dyn CSV Loader', 'tcp_csvl' ), __( 'Dyn CSV Loader', 'tcp_csvl' ), 'tcp_edit_products', dirname( __FILE__ ) . '/admin/DynCSVLoader.php' );
 	}
 }
 
 new CSVLoaderForTheCartPress();
-?>
+
+endif; // class_exists check

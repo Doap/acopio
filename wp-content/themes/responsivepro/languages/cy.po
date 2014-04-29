@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive Pro\n"
+"Project-Id-Version: Responsive Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
-"PO-Revision-Date: 2013-07-06 07:02:02 UTC\n"
+"POT-Creation-Date: 2012-04-25 13:42:58 UTC\n"
+"PO-Revision-Date: 2013-07-22 22:03:32 UTC\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Welsh\n"
 "MIME-Version: 1.0\n"
@@ -12,62 +12,56 @@ msgstr ""
 "X-Generator: WebTranslateIt.com\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
 
-#: archive.php
-#: core/includes/functions.php
-#: search.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: page.php
 #: landing-page.php
 #: index.php
 #: image.php
-#: home.php
-#: full-width-page.php
-#: content-sidebar-page.php
-#: content-sidebar-half-page.php
-#: blog.php
-msgid "Read more &#8250;"
-msgstr "Darllen mwy &#8250;"
-
-#: sitemap.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: search.php
-#: page.php
-#: landing-page.php
-#: index.php
-#: image.php
-#: home.php
 #: full-width-page.php
 #: content-sidebar-page.php
 #: content-sidebar-half-page.php
 #: blog.php
 #: blog-excerpt.php
 #: archive.php
+#: home.php
+#: search.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: sitemap.php
 msgid "Pages:"
 msgstr "Tudalennau:"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "&#8249; Older posts"
 msgstr "&#8249; Postiadau hŷn"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "Newer posts &#8250;"
 msgstr "Postiadau mwy diweddar &#8250;"
+
+#: blog.php
+#: content-sidebar-half-page.php
+#: content-sidebar-page.php
+#: full-width-page.php
+#: home.php
+#: image.php
+#: index.php
+#: landing-page.php
+#: page.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: core/includes/functions.php
+msgid "Read more &#8250;"
+msgstr "Darllen mwy &#8250;"
 
 #: comments.php
 msgid "This post is password protected. Enter the password to view any comments."
 msgstr "Mae cyfrinair ar y post hwn. Mewnbynnwch y cyfrinair er mwyn gweld unrhyw sylwadau."
-
-#: comments.php
-msgid "One comment on &ldquo;%2$s&rdquo;"
-msgstr "Un sylw ar &ldquo;%2$s&rdquo;"
 
 #: comments.php
 #: comments.php
@@ -89,7 +83,7 @@ msgstr "%1$d %2$s ar gyfer \"%3$s\""
 
 #: comments.php
 msgid "Name"
-msgstr ""
+msgstr "Enw"
 
 #: comments.php
 msgid "E-mail"
@@ -97,11 +91,11 @@ msgstr "E-bost"
 
 #: comments.php
 msgid "Website"
-msgstr ""
+msgstr "Gwefan"
 
 #: footer.php
 msgid "&copy;"
-msgstr ""
+msgstr "&copy;"
 
 #: footer.php
 msgid "scroll to top"
@@ -109,94 +103,104 @@ msgstr "sgrolio i'r brig"
 
 #: footer.php
 msgid "&uarr;"
-msgstr ""
+msgstr "&uarr;"
+
+#: footer.php
+msgid "http://themeid.com/responsive-theme/"
+msgstr "http://themeid.com/responsive-theme/"
 
 #: footer.php
 msgid "Responsive Theme"
-msgstr ""
+msgstr "Responsive Theme"
 
 #: footer.php
 msgid "powered by"
 msgstr "pwerir gan"
 
 #: footer.php
+msgid "http://wordpress.org/"
+msgstr "http://cy.wordpress.org/"
+
+#: footer.php
 msgid "WordPress"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Hello, World!"
-msgstr "Helo, Fyd!"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your H2 subheadline here"
-msgstr "Eich is-bennawd H2 yma"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
-msgstr "Gallwch olygu eich teitl, is-deitl a'r cynnwys hwn o ddewisiadau'r Thema, a hefyd y botwm Galw Ynghyd a'r lleoliad pen ei daith. Gall y ddelwedd ar y dde fod yn ddelwedd wahanol neu hyd yn oed fideo YouTube."
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Call to Action"
-msgstr "Galw Ynghyd"
+msgstr "WordPress"
 
 #: image.php
 msgid "&#8249; Return to"
 msgstr "&#8249; Dychwelyd at"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-meta-page.php
 #: image.php
+#: post-meta-page.php
+#: post-meta.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "No Comments &darr;"
 msgstr "Dim Sylwadau &darr;"
 
-#: pro/functions.php
-#: image.php
 #: post-meta-page.php
-#: sidebar-content-page.php
+#: post-meta.php
+#: image.php
 #: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "1 Comment &darr;"
 msgstr "1 Sylw &darr;"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-meta-page.php
+#: post-meta.php
 #: image.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "% Comments &darr;"
 msgstr "% Sylw &darr;"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un sylw ar &ldquo;%2$s&rdquo;"
+msgstr[1] "Dau sylw ar &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s sylw ar &ldquo;%2$s&rdquo;"
+msgstr[3] "%1$s sylw ar &ldquo;%2$s&rdquo;"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Tagged with:"
 msgstr "Tagiwyd:"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Posted in %s"
 msgstr "Postiwyd yn %s"
 
-#: sitemap.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-data.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: sitemap.php
 msgid "Edit"
 msgstr "Golygu"
+
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "404 &#8212; Wel, helo!"
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "Paid becso, nawn ni ffeindio ein ffordd rhywsut. Gad i ni edrych ar ein dewisiadau fan hyn."
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "Gallwch ddychwelyd %s neu edrych am y dudalen roeddech chi eisiau"
+
+msgid "Home"
+msgstr "Hafan"
+
+#: loop-no-posts.php
+msgid "&larr; Home"
+msgstr "&larr; Adref"
 
 #: loop-header.php
 msgid "Daily Archives: %s"
@@ -218,31 +222,12 @@ msgstr "Archifau Blog"
 msgid "Your search for %s did not match any entries."
 msgstr "Eich chwiliad ar gyfer %s na wnaeth cydfynd ag unrhyw gofnod"
 
-#: loop-no-posts.php
-msgid "404 &#8212; Fancy meeting you here!"
-msgstr "404 &#8212; Wel, helo!"
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "Dolen Barhaol i %s"
 
-#: loop-no-posts.php
-msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
-msgstr "Paid becso, nawn ni ffeindio ein ffordd rhywsut. Gad i ni edrych ar ein dewisiadau fan hyn."
-
-#: loop-no-posts.php
-msgid "You can return %s or search for the page you were looking for."
-msgstr "Gallwch ddychwelyd %s neu edrych am y dudalen roeddech chi eisiau"
-
-#: core/includes/functions.php
-#: loop-no-posts.php
-msgid "Home"
-msgstr "Adref"
-
-#: loop-no-posts.php
-msgid "&larr; Home"
-msgstr "&larr; Adref"
-
-#: core/includes/functions.php
-#: search.php
 msgid "Search results for: %s"
-msgstr "Canlyniadau Chwilio ar gyfer: %s"
+msgstr "Canlyniadau chwilio ar gyfer: %s"
 
 #: searchform.php
 msgid "search here &hellip;"
@@ -250,7 +235,7 @@ msgstr "chwilio yma &hellip;"
 
 #: searchform.php
 msgid "Go"
-msgstr "Mynd"
+msgstr "Ewch"
 
 #: sidebar-gallery.php
 msgid "Image Information"
@@ -270,11 +255,11 @@ msgstr "Hyd Ffocal:"
 
 #: sidebar-gallery.php
 msgid "mm"
-msgstr ""
+msgstr "mm"
 
 #: sidebar-gallery.php
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: sidebar-gallery.php
 msgid "Shutter:"
@@ -282,7 +267,7 @@ msgstr "Mwgwd:"
 
 #: sidebar-gallery.php
 msgid "Camera:"
-msgstr ""
+msgstr "Camera:"
 
 #: sidebar.php
 #: sidebar-right.php
@@ -293,8 +278,8 @@ msgstr ""
 msgid "In Archive"
 msgstr "Yn yr Archif"
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 1"
 msgstr "Teclyn Cartref 1"
 
@@ -302,8 +287,8 @@ msgstr "Teclyn Cartref 1"
 msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
 msgstr "Dyma blwch teclyn gyntaf eich hafan. I'w olygu, ewch i Appearance > Widgets a dewiswch y 6ed teclyn o'r brig yn ardal chwech a enwir yn Teclyn Hafan 1. Gellir hefyd newid y teitl o'r fan honno."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 2"
 msgstr "Teclyn Cartref 2"
 
@@ -311,8 +296,8 @@ msgstr "Teclyn Cartref 2"
 msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
 msgstr "Dyma ail flwch teclyn eich hafan. I'w olygu, ewch i Appearance > Widgets a dewiswch y 7fed teclyn o'r brig yn ardal chwech a enwir yn Teclyn Hafan 2. Gellir hefyd newid y teitl o'r fan honno."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 3"
 msgstr "Teclyn Cartref 3"
 
@@ -322,7 +307,7 @@ msgstr "Dyma trydydd blwch teclyn eich hafan. I'w olygu, ewch i Appearance > Wid
 
 #: single.php
 msgid "About"
-msgstr "Ynglŷn â"
+msgstr "Amdan"
 
 #: sitemap.php
 msgid "Categories"
@@ -331,10 +316,6 @@ msgstr "Categorïau"
 #: sitemap.php
 msgid "Latest Posts"
 msgstr "Postiau Diweddar"
-
-#: sitemap.php
-msgid "Permanent Link to %s"
-msgstr "Dolen Barhaol i %s"
 
 #: sitemap.php
 msgid "Pages"
@@ -356,16 +337,13 @@ msgstr "Dewislen yr Is-Bennawd"
 msgid "Footer Menu"
 msgstr "Dewislen y Troedyn"
 
-#: core/includes/functions.php
-#: core/includes/functions.php
 msgid "Page %s"
-msgstr ""
+msgstr "Tudalen %s"
 
 #: core/includes/functions.php
 msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
 msgstr "<span class=\"%1$s\">Postiwyd ar </span>%2$s<span class=\"%3$s\"> gan </span>%4$s"
 
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "View all posts by %s"
@@ -383,40 +361,15 @@ msgstr "Postiau a dagiwyd %s"
 msgid "Error 404"
 msgstr "Gwall 404"
 
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Instructions"
-msgstr ""
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Help"
-msgstr ""
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Translate"
-msgstr ""
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Showcase"
-msgstr "Arddangosfa"
-
-#: pro/functions.php
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "More Themes"
 msgstr "Mwy o Themâu"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr "Arddangosfa"
 
 #: core/includes/functions.php
 msgid "Main Sidebar"
@@ -504,68 +457,67 @@ msgstr ""
 
 #: content-sidebar-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar"
 msgstr ""
 
 #: sidebar-content-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content"
 msgstr ""
 
 #: content-sidebar-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar Half Page"
 msgstr ""
 
 #: sidebar-content-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content Half Page"
 msgstr ""
 
 #: full-width-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Full Width Page (no sidebar)"
 msgstr ""
-
-#: core/includes/post-custom-meta.php
-msgid "Layout"
-msgstr ""
-
-#: core/includes/post-custom-meta.php
-msgid "Default"
-msgstr "Arferol"
 
 #: landing-page.php
 msgid "Landing Page (no menu)"
 msgstr ""
 
-#: sitemap.php
 msgid "Sitemap"
-msgstr ""
+msgstr "Map o'r safle"
+
+msgid "Layout"
+msgstr "Cynllun"
+
+msgid "Default"
+msgstr "Diofyn"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Hello, World!"
+msgstr "Helo, Fyd!"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your H2 subheadline here"
+msgstr "Eich is-bennawd H2 yma"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "Gallwch olygu eich teitl, is-deitl a'r cynnwys hwn o ddewisiadau'r Thema, a hefyd y botwm Galw Ynghyd a'r lleoliad pen ei daith. Gall y ddelwedd ar y dde fod yn ddelwedd wahanol neu hyd yn oed fideo YouTube."
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Call to Action"
+msgstr "Galw Ynghyd"
 
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
-#: pro/options/options.php
-#: pro/options/options.php
 msgid "Theme Options"
 msgstr "Dewisiadau'r Thema"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Options Saved"
 msgstr "Arbedwyd eich Dewisiadau"
@@ -574,45 +526,22 @@ msgstr "Arbedwyd eich Dewisiadau"
 msgid "Theme Elements"
 msgstr "Elfennau'r Thema"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Breadcrumb Lists?"
 msgstr "Analluogi Rhestrau Briwsion"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Check to disable"
 msgstr "Ticio i analluogi"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Call to Action Button?"
 msgstr "Analluogi'r Botwm Galw Ynghyd?"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: core/includes/theme-options.php
-#: core/includes/theme-options.php
-#: core/includes/theme-options.php
-#: core/includes/theme-options.php
-#: core/includes/theme-options.php
-#: core/includes/theme-options.php
-#: core/includes/theme-options.php
 msgid "Save Options"
-msgstr "Arbed Dewisiadau"
+msgstr "Cadw Dewisiadau"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -623,8 +552,6 @@ msgstr "Arbed Dewisiadau"
 msgid "Restore Defaults"
 msgstr ""
 
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Logo Upload"
 msgstr "Uwchlwytho Logo"
@@ -641,313 +568,233 @@ msgstr "A oes angen newid neu dynnu'r logo rhagosodedig?"
 msgid "<a href=\"%s\">Click here</a>."
 msgstr "<a href=\"%s\">Cliciwch yma</a>."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Home Page"
 msgstr "Tudalen Gartref"
 
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Enable Custom Front Page"
-msgstr ""
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Overrides the WordPress %1sfront page option%2s"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Headline"
 msgstr "Pennawd"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your headline"
 msgstr "Mewnbynnwch eich pennawd"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Subheadline"
 msgstr "Is-bennawd"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your subheadline"
 msgstr "Mewnbynnwch eich is-bennawd"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Content Area"
 msgstr "Ardal Gynnwys"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your content"
 msgstr "Mewnbynnwch eich cynnwys"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (URL)"
 msgstr "Galw Ynghyd (URL)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action URL"
 msgstr "Mewnbynnwch eich URL galw ynghyd"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (Text)"
 msgstr "Galw Ynghyd (Testun)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action text"
 msgstr "Mewnbynnwch eich testun galw ynghyd"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Featured Content"
 msgstr "Cynnwys Blaenllaw"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "See Docs"
 msgstr "Gweld Dogfennau"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Paste your shortcode, video or image source"
 msgstr "Gludwch eich côd byr, fideo neu ffynhonnell eich delwedd"
 
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Layouts"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Static Page Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Single Blog Post Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Blog Posts Index Layout"
 msgstr ""
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Webmaster Tools"
 msgstr "Offer y Gwefeistr"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Site Verification"
 msgstr "Dilysu Safle Google"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google ID number only"
 msgstr "Mewnbynnwch eich rhif adnabod Google yn unig"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Bing Site Verification"
 msgstr "Dilysu Safle Bing"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Bing ID number only"
 msgstr "Mewnbynnwch eich rhif adnabod Bing yn unig"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yahoo Site Verification"
 msgstr "Dilysu Safle Yahoo"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yahoo ID number only"
 msgstr "Mewnbynnwch eich rhif adnabod Yahoo yn unig"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Site Statistics Tracker"
 msgstr "Traciwr Ystadegau'r Safle"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Leave blank if plugin handles your webmaster tools"
 msgstr "Gadewch yn wag os yw ategyn yn delio ag offer gwefeistroli"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Analytics, StatCounter, any other or all of them."
 msgstr "Google Analytics, StatCounter, unrhywbeth arall neu bob un ohonynt."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Social Icons"
 msgstr "Eiconau Cymdeithasol"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Twitter URL"
 msgstr "Mewnbynnwch eich URL Twitter"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Facebook URL"
 msgstr "Mewnbynnwch eich URL Facebook"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "LinkedIn"
-msgstr ""
+msgstr "LinkedIn"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your LinkedIn URL"
 msgstr "Mewnbynnwch eich URL LinkedIn"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your YouTube URL"
 msgstr "Mewnbynnwch eich URL YouTube"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "StumbleUpon"
-msgstr ""
+msgstr "StumbleUpon"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your StumbleUpon URL"
 msgstr "Mewnbynnwch eich URL StumbleUpon"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "RSS Feed"
 msgstr "Ffrwd RSS"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your RSS Feed URL"
 msgstr "Mewnbynnwch URL eich Ffrwd RSS"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google+"
-msgstr ""
+msgstr "Google+"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google+ URL"
 msgstr "Mewnbynnwch eich URL Google+"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Instagram URL"
 msgstr "Mewnbynnwch eich URL Instagram"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Pinterest"
-msgstr ""
+msgstr "Pinterest"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Pinterest URL"
 msgstr "Mewnbynnwch eich URL Pinterest"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yelp!"
-msgstr ""
+msgstr "Yelp!"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yelp! URL"
 msgstr "Mewnbynnwch eich URL Yelp!"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Vimeo URL"
 msgstr "Mewnbynnwch eich URL Vimeo"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "foursquare"
-msgstr ""
+msgstr "foursquare"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your foursquare URL"
 msgstr "Mewnbynnwch eich URL foursquare"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Custom CSS Styles"
 msgstr "Arddulliau CSS Dewisol"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "https://developer.mozilla.org/en/CSS"
-msgstr ""
+msgstr "https://developer.mozilla.org/en/CSS"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "CSS Tutorial"
 msgstr "Tiwtorial CSS"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom CSS styles."
 msgstr "Mewnbynnwch eich arddulliau CSS dewisol."
@@ -956,331 +803,52 @@ msgstr "Mewnbynnwch eich arddulliau CSS dewisol."
 msgid "Custom Scripts"
 msgstr "Sgriptiau Dewisol"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Custom Scripts for Header and Footer"
 msgstr "Sgriptiau Dewsiol ar gyfer y Pennyn a'r Troedyn"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Quick Tutorial"
 msgstr "Tiwtorial Cyflym"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to header.php &darr;"
 msgstr "Gosodwyd yn header.php &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom header script."
 msgstr "Mewnbynnwch eich sgript pennyn dewisedig."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to footer.php &darr;"
 msgstr "Gosodwyd yn footer.php &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom footer script."
 msgstr "Mewnbynnwch eich sgript troedyn dewisedig."
 
-#: pro/functions.php
-msgid "Posted on "
-msgstr ""
-
-#: pro/functions.php
-msgid " by "
-msgstr "gan"
-
-#: pro/functions.php
-msgid "Posted in"
-msgstr ""
-
-#: pro/functions.php
-msgid "Tags:"
-msgstr ""
-
-#: pro/functions.php
-msgid "Permalink to %s"
-msgstr ""
-
-#: pro/functions.php
-msgid "Responsive Pro Options"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Customize"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Skins"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Skin Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Typography"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Heading Font"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Google Heading Font"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Text Font"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Google Text Font"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Font Size"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Headings Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Text Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Link Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Link Hover Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Enable custom front page"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Content"
-msgstr "cynnwys"
-
-#: pro/options/options.php
-msgid "Personalize"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Favicon"
-msgstr ""
-
-#: pro/options/options.php
-msgid "maximum width and height 32px"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Upload"
-msgstr "Fynylwytho"
-
-#: pro/options/options.php
-msgid "Apple Touch Icon"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Custom mobile menu title"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Enter a custom mobile menu title"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Design"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Change fonts, colors and much more using the theme %1s"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Customizer"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Templates"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Excerpt Text"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Read More..."
-msgstr ""
-
-#: pro/options/options.php
-msgid "Excerpt Length"
-msgstr ""
-
-#: pro/options/options.php
-msgid "50"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Page"
-msgstr "Tudalen"
-
-#: pro/options/options.php
-msgid "Blog Post Page"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Excerpts"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Featured Images"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Author"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Categories"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Date"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Comments"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Tags"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Single post page"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Archive page"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Search page"
-msgstr ""
-
-#: pro/options/options.php
-msgid "404 page"
-msgstr ""
-
-#: pro/options/options.php
-msgid "404 Title"
-msgstr ""
-
-#: pro/options/options.php
-msgid "404 error"
-msgstr ""
-
-#: pro/options/options.php
-msgid "404 Content"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Sorry, the content is not found...!!!"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Scripts"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Plugins"
-msgstr "Ategynnau"
-
-#: pro/options/options.php
-msgid "Events Plugin Options"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Please activate The Events Calendar plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Install Events Calendar Plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "WooCommerce Settings"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Please activate WooCommerce plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Install WooCommerce Plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "BBPress Settings"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Please activate BBPress plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Install BBPress Plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Digital Downloads Settings"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Please activate Easy Digital Downloads plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Install Easy Digital Downloads Plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "%1$s upload failed, make sure you are entering a URL"
-msgstr ""
-
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-msgid "Enter the Google Font name"
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
 msgstr ""
 
 #: core/includes/functions.php
-msgid "Welcome to %1$s! Upgrade to %2$s today."
+#: core/includes/functions.php
+msgid "Help"
 msgstr ""
 
+msgid "Instructions"
+msgstr "Cyfarwyddiadau"
+
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr ""
+
+msgid "Translate"
+msgstr "Cyfieithu"
+
+#: core/includes/functions.php
+#. Welcome to Responsive! Upgrade to Responsive Pro today.
+# INSTRUCTION: Welcome to Responsive! Upgrade to Responsive Pro today.
+msgid "Welcome to %1$s! Upgrade to %2$s today."
+msgstr ""

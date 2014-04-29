@@ -28,6 +28,22 @@ new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 311, basename( g
 
 /**
  *
+ * Load translations for Responsive Pro
+ *
+ */
+function responsivepro_load_textdomain() {
+	$domain = 'responsive';
+
+	load_theme_textdomain( $domain, WP_LANG_DIR . '/responsivepro/' );
+	load_theme_textdomain( $domain, get_stylesheet_directory() . '/pro/languages/' );
+	load_theme_textdomain( $domain, get_template_directory() . '/pro/languages/' );
+
+}
+
+add_action( 'after_setup_theme', 'responsivepro_load_textdomain' );
+
+/**
+ *
  * Remove core options styling and add pro options styling
  *
  * @return null
@@ -255,18 +271,14 @@ if( !function_exists( 'responsive_pro_posted_on' ) ) {
 			$show_date = responsive_pro_get_option( 'blog_byline_date' );
 		}
 
-		// Get all data related to date.
-		$date_url   = esc_url( get_permalink() );
-		$date_title = esc_attr( get_the_time() );
-		$date_time  = esc_attr( get_the_time() );
-		$date_time  = esc_attr( get_the_date( 'c' ) );
-		$date       = esc_html( get_the_date() );
-
-		// Set the HTML for date link.
-		$posted_on = __( 'Posted on ', 'responsive' ) .
-			'<a href="' . $date_url . '" title="' . $date_title . '" rel="bookmark">
-				<time class="entry-date" datetime="' . $date_time . '">' . $date . '</time>
-			</a>';
+		$posted_on = sprintf( __( '<span class="%1$s">Posted on </span>%2$s', 'responsive' ),
+				'meta-prep meta-prep-author posted',
+				sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="timestamp updated">%3$s</span></a>',
+						 esc_url( get_permalink() ),
+						 esc_attr( get_the_time() ),
+						 esc_html( get_the_date() )
+				)
+		);
 
 		// If post byline date toggle is on then print HTML for date link.
 		if( $show_date ) {
@@ -297,15 +309,7 @@ if( !function_exists( 'responsive_pro_posted_by' ) ) {
 		$auther_link_title = esc_attr( sprintf( __( 'View all posts by %s', 'responsive' ), get_the_author() ) );
 
 		// Set the HTML for author link.
-		$posted_by = '
-			<span class="byline">
-				' . __( ' by ', 'responsive' ) . '
-				<span class="author vcard">
-					<a class="url fn n" href="' . $auther_posts_url . '" title="' . $auther_link_title . '" rel="author">
-						' . esc_html( get_the_author() ) . '
-					</a>
-				</span>
-			</span>';
+		$posted_by = '<span class="byline">' . __( ' by ', 'responsive' ) . '<span class="author vcard"><a class="url fn n" href="' . $auther_posts_url . '" title="' . $auther_link_title . '" rel="author">' . esc_html( get_the_author() ) . '</a></span></span>';
 
 		// If post byline author toggle is on then print HTML for author link.
 		if( $show_author ) {
@@ -427,6 +431,7 @@ if( !function_exists( 'responsive_pro_featured_image' ) ) {
 
 // Set defaults of responsive pro theme options.
 function responsive_pro_option_defaults( $defaults ) {
+	$defaults['featured_area_layout']      = '';
 	$defaults['blog_post_excerpts']        = 1;
 	$defaults['blog_featured_images']      = 1;
 	$defaults['blog_byline_author']        = 1;
@@ -695,20 +700,17 @@ add_action( 'wp_head', 'responsive_customize_styles', 100 );
 /**
  * Create stylesheet for skins
  *
- * @print stylesheet
  */
 function responsive_pro_skin() {
 	// Get skin option
 	$skin = get_theme_mod( 'responsive_skin', 'default' );
 
 	if( $skin && $skin != 'default' ) {
-		?>
-		<link rel="stylesheet" id="responsive_skin" type="text/css" href="<?php echo get_template_directory_uri(); ?>/pro/lib/css/skins/<?php echo urlencode( $skin ); ?>.css">
-	<?php
+		wp_enqueue_style( 'responsive-pro-skin', get_template_directory_uri() . '/pro/lib/css/skins/' . urlencode( $skin ) . '.css', false, '1.0' );
 	}
 }
 
-add_action( 'wp_head', 'responsive_pro_skin', 50 );
+add_action( 'wp_enqueue_scripts', 'responsive_pro_skin' );
 
 /**
  * Add custom mobile menu title to header

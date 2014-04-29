@@ -401,6 +401,10 @@ ul.error-list {
 	min-height: 300px;
 }
 
+.rwd-container .submit .upgrade {
+	display: none;
+}
+
 /* =RTL CSS
 -------------------------------------------------------------- */
 .rtl .grid {

@@ -3,7 +3,7 @@
 Plugin Name: Form Maker
 Plugin URI: http://web-dorado.com/products/form-maker-wordpress.html
 Description: This plugin is a modern and advanced tool for easy and fast creating of a WordPress Form. The backend interface is intuitive and user friendly which allows users far from scripting and programming to create WordPress Forms.
-Version: 1.6.7
+Version: 1.6.8
 Author: http://web-dorado.com/
 License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -562,11 +562,14 @@ function html_spider_form_country_edit($id) {
 }
 
 function add_button_style1() {
-  echo '<style type="text/css">
-.wp_themeSkin span.mce_Form_Maker_mce {background:url(' . plugins_url('images/formmakerLogo.png', __FILE__) . ') no-repeat !important;}
-.wp_themeSkin .mceButtonEnabled:hover span.mce_Form_Maker_mce,.wp_themeSkin .mceButtonActive span.mce_Form_Maker_mce
-{background:url(' . plugins_url('images/formmakerLogoHover.png', __FILE__) . ') no-repeat !important;}
-</style>';
+  // echo '<style type="text/css">
+// .wp_themeSkin span.mce_Form_Maker_mce {background:url(' . plugins_url('images/formmakerLogo.png', __FILE__) . ') no-repeat !important;}
+// .wp_themeSkin .mceButtonEnabled:hover span.mce_Form_Maker_mce,.wp_themeSkin .mceButtonActive span.mce_Form_Maker_mce
+// {background:url(' . plugins_url('images/formmakerLogoHover.png', __FILE__) . ') no-repeat !important;}
+// </style>';
+echo '<script>
+    var plugin_url = "' . plugins_url('', __FILE__) . '";
+  </script>';
 }
 
 add_action('admin_head', 'add_button_style1');

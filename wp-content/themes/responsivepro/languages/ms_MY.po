@@ -1,73 +1,67 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive Pro\n"
+"Project-Id-Version: Responsive Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
-"PO-Revision-Date: 2013-07-06 07:01:56 UTC\n"
+"POT-Creation-Date: 2012-04-25 13:42:58 UTC\n"
+"PO-Revision-Date: 2013-07-22 22:03:35 UTC\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
-"Language-Team: Malay, Malaysia\n"
+"Language-Team: Malay, Malaysia (Latin)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: WebTranslateIt.com\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: archive.php
-#: core/includes/functions.php
-#: search.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: page.php
 #: landing-page.php
 #: index.php
 #: image.php
-#: home.php
-#: full-width-page.php
-#: content-sidebar-page.php
-#: content-sidebar-half-page.php
-#: blog.php
-msgid "Read more &#8250;"
-msgstr "Sambung lagi ›"
-
-#: sitemap.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: search.php
-#: page.php
-#: landing-page.php
-#: index.php
-#: image.php
-#: home.php
 #: full-width-page.php
 #: content-sidebar-page.php
 #: content-sidebar-half-page.php
 #: blog.php
 #: blog-excerpt.php
 #: archive.php
+#: home.php
+#: search.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: sitemap.php
 msgid "Pages:"
 msgstr "Laman:"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "&#8249; Older posts"
 msgstr "‹ Artikel terdahulu"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "Newer posts &#8250;"
 msgstr "Artikel terkini ›"
+
+#: blog.php
+#: content-sidebar-half-page.php
+#: content-sidebar-page.php
+#: full-width-page.php
+#: home.php
+#: image.php
+#: index.php
+#: landing-page.php
+#: page.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: core/includes/functions.php
+msgid "Read more &#8250;"
+msgstr "Sambung lagi ›"
 
 #: comments.php
 msgid "This post is password protected. Enter the password to view any comments."
 msgstr "Artikel ini memerlukan kata laluan. Masukkan kata laluan untuk melihat komen."
-
-#: comments.php
-msgid "One comment on &ldquo;%2$s&rdquo;"
-msgstr ""
 
 #: comments.php
 #: comments.php
@@ -81,7 +75,7 @@ msgstr "Komen terkini ›"
 
 #: comments.php
 msgid "Pings&#47;Trackbacks"
-msgstr "Ping / jejak balik"
+msgstr "Pings/Trackbacks"
 
 #: comments.php
 msgid "%1$d %2$s for \"%3$s\""
@@ -97,11 +91,11 @@ msgstr "Emel"
 
 #: comments.php
 msgid "Website"
-msgstr ""
+msgstr "Laman Web"
 
 #: footer.php
 msgid "&copy;"
-msgstr "©"
+msgstr "&copy;"
 
 #: footer.php
 msgid "scroll to top"
@@ -112,91 +106,100 @@ msgid "&uarr;"
 msgstr "&uarr;"
 
 #: footer.php
+msgid "http://themeid.com/responsive-theme/"
+msgstr "http://themeid.com/responsive-theme/"
+
+#: footer.php
 msgid "Responsive Theme"
-msgstr "Tema yang responsif"
+msgstr "Responsive Theme"
 
 #: footer.php
 msgid "powered by"
 msgstr "menggunakan"
 
 #: footer.php
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php
 msgid "WordPress"
 msgstr "WordPress"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Hello, World!"
-msgstr "Selamat pagi semua!"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your H2 subheadline here"
-msgstr "Sila tulis sub-tajuk H2 di sini"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
-msgstr "Tajuk, sub-tajuk dan kandungan ini boleh diubah dalam Pilihan Tema. Butang Menyeru Bertindak dan desitinasinya juga boleh diubah. Gambar di sebelah kanan ini boleh diganti dengan gambar tersendiri ataupun video YouTube."
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Call to Action"
-msgstr "Menyeru Bertindak"
 
 #: image.php
 msgid "&#8249; Return to"
 msgstr "‹ Pulang ke"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-meta-page.php
 #: image.php
+#: post-meta-page.php
+#: post-meta.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "No Comments &darr;"
 msgstr "Tiada Komen ↓"
 
-#: pro/functions.php
-#: image.php
 #: post-meta-page.php
-#: sidebar-content-page.php
+#: post-meta.php
+#: image.php
 #: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "1 Comment &darr;"
 msgstr "1 Komen ↓"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-meta-page.php
+#: post-meta.php
 #: image.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "% Comments &darr;"
 msgstr "% Komen ↓"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s komen pada “%2$s”"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Tagged with:"
 msgstr "Tag:"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Posted in %s"
 msgstr "Diterbitkan dalam %s"
 
-#: sitemap.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-data.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: sitemap.php
 msgid "Edit"
-msgstr "Ubah"
+msgstr "Ubahsuai"
+
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "404 — Laman yang anda kehendaki tidak dijumpai"
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "Jangan risau. Mari kita buat pilihan lain."
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "Anda boleh pulang ke %s atau cari laman yang dikehendaki"
+
+#: loop-no-posts.php
+#: core/includes/functions.php
+msgid "Home"
+msgstr "Laman Utama"
+
+#: loop-no-posts.php
+msgid "&larr; Home"
+msgstr "← Laman Utama"
 
 #: loop-header.php
 msgid "Daily Archives: %s"
@@ -218,29 +221,12 @@ msgstr "Arkib Blog"
 msgid "Your search for %s did not match any entries."
 msgstr "Carian anda untuk %s tidak padan dengan mana-mana artikel"
 
-#: loop-no-posts.php
-msgid "404 &#8212; Fancy meeting you here!"
-msgstr "404 — Laman yang anda kehendaki tidak dijumpai"
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "Pautan Kekal ke %s"
 
-#: loop-no-posts.php
-msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
-msgstr "Jangan risau. Mari kita buat pilihan lain."
-
-#: loop-no-posts.php
-msgid "You can return %s or search for the page you were looking for."
-msgstr "Anda boleh pulang ke %s atau cari laman yang dikehendaki"
-
-#: core/includes/functions.php
-#: loop-no-posts.php
-msgid "Home"
-msgstr "Rumah"
-
-#: loop-no-posts.php
-msgid "&larr; Home"
-msgstr "← Laman Utama"
-
-#: core/includes/functions.php
 #: search.php
+#: core/includes/functions.php
 msgid "Search results for: %s"
 msgstr "Keputusan Carian untuk: %s"
 
@@ -270,15 +256,15 @@ msgstr "Jarak Fokal:"
 
 #: sidebar-gallery.php
 msgid "mm"
-msgstr ""
+msgstr "mm"
 
 #: sidebar-gallery.php
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: sidebar-gallery.php
 msgid "Shutter:"
-msgstr ""
+msgstr "Shutter:"
 
 #: sidebar-gallery.php
 msgid "Camera:"
@@ -293,8 +279,8 @@ msgstr "Kamera:"
 msgid "In Archive"
 msgstr "Dalam Arkib"
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 1"
 msgstr "Widget Laman Utama 1"
 
@@ -302,8 +288,8 @@ msgstr "Widget Laman Utama 1"
 msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
 msgstr "Ini adalah kotak widget pertama anda. Bagi membuat perubahan, sila pergi ke Appearance > Widgets dan pilih widget ke-6 dari atas di kawasan ke-enam yang bertajuk Widget Laman Utama 1. Tajuk kotak ini juga boleh diubah."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 2"
 msgstr "Widget Laman Utama 2"
 
@@ -311,8 +297,8 @@ msgstr "Widget Laman Utama 2"
 msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
 msgstr "Ini adalah kotak widget kedua anda. Bagi membuat perubahan, sila pergi ke Appearance > Widgets dan pilih widget ke-7 dari atas di kawasan ke-tujuh yang bertajuk Widget Laman Utama 2. Tajuk kotak ini juga boleh diubah."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 3"
 msgstr "Widget Laman Utama 3"
 
@@ -333,16 +319,12 @@ msgid "Latest Posts"
 msgstr "Artikel Terkini"
 
 #: sitemap.php
-msgid "Permanent Link to %s"
-msgstr "Pautan Kekal ke %s"
-
-#: sitemap.php
 msgid "Pages"
-msgstr "Muka Surat"
+msgstr "Laman"
 
 #: core/includes/functions.php
 msgid "Top Menu"
-msgstr "Menu atas"
+msgstr "Menu Atas"
 
 #: core/includes/functions.php
 msgid "Header Menu"
@@ -359,17 +341,16 @@ msgstr "Menu Bahagian Bawah"
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "Page %s"
-msgstr "Laman %s"
+msgstr ""
 
 #: core/includes/functions.php
 msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
 msgstr "<span class=\"%1$s\">Diterbitkan pada </span>%2$s<span class=\"%3$s\"> oleh </span>%4$s"
 
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "View all posts by %s"
-msgstr "Lihat semua kiriman oleh %s"
+msgstr "Lihat semua artikel yang ditulis oleh %s"
 
 #: core/includes/functions.php
 msgid "Archive for %s"
@@ -383,40 +364,15 @@ msgstr "Artikel ditag dengan %s"
 msgid "Error 404"
 msgstr "Ralat 404 "
 
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Instructions"
-msgstr ""
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Help"
-msgstr "Bantuan"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Translate"
-msgstr "Terjemah"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Showcase"
-msgstr "Pameran"
-
-#: pro/functions.php
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "More Themes"
 msgstr "Tema-tema Lain"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr "Pameran"
 
 #: core/includes/functions.php
 msgid "Main Sidebar"
@@ -428,7 +384,7 @@ msgstr "Kawasan Satu - sidebar.php"
 
 #: core/includes/functions.php
 msgid "Right Sidebar"
-msgstr "Bar Kanan"
+msgstr "Sidebar Kanan"
 
 #: core/includes/functions.php
 msgid "Area 2 - sidebar-right.php"
@@ -436,7 +392,7 @@ msgstr "Kawasan Dua - sidebar-right.php"
 
 #: core/includes/functions.php
 msgid "Left Sidebar"
-msgstr "Bar Kiri"
+msgstr "Sidebar Kiri"
 
 #: core/includes/functions.php
 msgid "Area 3 - sidebar-left.php"
@@ -504,51 +460,28 @@ msgstr ""
 
 #: content-sidebar-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar"
 msgstr ""
 
 #: sidebar-content-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content"
 msgstr ""
 
 #: content-sidebar-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar Half Page"
 msgstr ""
 
 #: sidebar-content-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content Half Page"
 msgstr ""
 
 #: full-width-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Full Width Page (no sidebar)"
 msgstr ""
-
-#: core/includes/post-custom-meta.php
-msgid "Layout"
-msgstr "Susunatur"
-
-#: core/includes/post-custom-meta.php
-msgid "Default"
-msgstr "lalai"
 
 #: landing-page.php
 msgid "Landing Page (no menu)"
@@ -558,14 +491,39 @@ msgstr ""
 msgid "Sitemap"
 msgstr ""
 
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr ""
+
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr ""
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Hello, World!"
+msgstr "Selamat pagi semua!"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your H2 subheadline here"
+msgstr "Sila tulis sub-tajuk H2 di sini"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "Tajuk, sub-tajuk dan kandungan ini boleh diubah dalam Pilihan Tema. Butang Menyeru Bertindak dan desitinasinya juga boleh diubah. Gambar di sebelah kanan ini boleh diganti dengan gambar tersendiri ataupun tayangan YouTube."
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Call to Action"
+msgstr "Menyeru Bertindak"
+
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
-#: pro/options/options.php
-#: pro/options/options.php
 msgid "Theme Options"
 msgstr "Pilihan Tema"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Options Saved"
 msgstr "Pilihan telah disimpan"
@@ -574,29 +532,19 @@ msgstr "Pilihan telah disimpan"
 msgid "Theme Elements"
 msgstr "Unsur-unsur Tema"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Breadcrumb Lists?"
 msgstr "Batalkan \"Breadcrumb Lists\"?"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Check to disable"
 msgstr "Pilih untuk batalkan"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Call to Action Button?"
 msgstr "Batalkan butang Menyeru Bertindak?"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -607,12 +555,6 @@ msgstr "Batalkan butang Menyeru Bertindak?"
 msgid "Save Options"
 msgstr "Simpan Pilihan"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -621,17 +563,15 @@ msgstr "Simpan Pilihan"
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Restore Defaults"
-msgstr "Pulih ke lalai"
+msgstr ""
 
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Logo Upload"
 msgstr "Muatnaik Logo"
 
 #: core/includes/theme-options.php
 msgid "Custom Header"
-msgstr "Pengatas Tempahan"
+msgstr "Header tersendiri"
 
 #: core/includes/theme-options.php
 msgid "Need to replace or remove default logo?"
@@ -641,313 +581,233 @@ msgstr "Perlu gantikan atau buang logo asal?"
 msgid "<a href=\"%s\">Click here</a>."
 msgstr "<a href=\"%s\">Tekan di sini</a>."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Home Page"
 msgstr "Laman Mula"
 
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Enable Custom Front Page"
-msgstr "Membolehkan adat muka depan"
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Overrides the WordPress %1sfront page option%2s"
-msgstr "Menindih pilihan Laman WordPress % 1sfront % 2s"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Headline"
 msgstr "Tajuk"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your headline"
 msgstr "Sila tulis tajuk"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Subheadline"
 msgstr "Sub-tajuk"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your subheadline"
 msgstr "Sila tulis sub-tajuk anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Content Area"
 msgstr "Kawasan isi kandungan"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your content"
 msgstr "Tulis isi kandungan anda di sini"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (URL)"
 msgstr "Menyeru Bertindak (destinasi URL)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action URL"
 msgstr "Masukkan destinasi URL butang menyeru bertindak"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (Text)"
 msgstr "Menyeru Bertindak (Teks)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action text"
 msgstr "Masukkan teks butang menyeru bertindak"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Featured Content"
 msgstr "Kandungan Istimewa"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "See Docs"
 msgstr "Lihat Dokumen"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Paste your shortcode, video or image source"
 msgstr "Masukkan shortcode, tayangan atau gambar anda"
 
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Layouts"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Static Page Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Single Blog Post Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Blog Posts Index Layout"
 msgstr ""
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Webmaster Tools"
 msgstr "Alat-alat pengurus laman web"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Site Verification"
 msgstr "Pengesahan laman web Google"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google ID number only"
 msgstr "Masukkan nombor ID Google sahaja"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Bing Site Verification"
 msgstr "Pengesahan laman web Bing"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Bing ID number only"
 msgstr "Masukkan nombor ID Bing sahaja"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yahoo Site Verification"
 msgstr "Pengesahan laman web Yahoo!"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yahoo ID number only"
 msgstr "Masukkan nombor ID yahoo sahaja"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Site Statistics Tracker"
 msgstr "Penjejak statistik laman web"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Leave blank if plugin handles your webmaster tools"
 msgstr "Biarkan kosong jika alat-alat pengurus laman web anda dikawal oleh \"plugin\""
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Analytics, StatCounter, any other or all of them."
 msgstr "Google Analytics, StatCounter, dan lain-lain."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Social Icons"
 msgstr "Ikon Media Sosial"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Twitter"
 msgstr "Twitter"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Twitter URL"
 msgstr "Sila masukkan URL Twitter anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Facebook"
 msgstr "Facebook"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Facebook URL"
 msgstr "Sila masukkan URL Facebook anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your LinkedIn URL"
 msgstr "Sila masukkan URL LinkedIn anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "YouTube"
 msgstr "YouTube"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your YouTube URL"
 msgstr "Sila masukkan URL YouTube anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "StumbleUpon"
 msgstr "StumbleUpon"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your StumbleUpon URL"
 msgstr "Sila masukkan URL StumbleUpon anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "RSS Feed"
 msgstr "Capaian RSS"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your RSS Feed URL"
 msgstr "Sila masukkan URL bagi capaian RSS anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google+"
-msgstr ""
+msgstr "Google+"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google+ URL"
 msgstr "Sila masukkan URL Google+ anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Instagram"
 msgstr "Instagram"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Instagram URL"
 msgstr "Sila masukkan URL Instagram anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Pinterest URL"
 msgstr "Sila masukkan URL Pinterest anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yelp!"
-msgstr ""
+msgstr "Yelp!"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yelp! URL"
 msgstr "Masukkan URL Yelp! anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Vimeo URL"
 msgstr "Masukkan URL Vimeo anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "foursquare"
-msgstr "Foursquare"
+msgstr "foursquare"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your foursquare URL"
 msgstr "Masukkan URL foursquare anda"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Custom CSS Styles"
 msgstr "Kod CSS tersendiri"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "https://developer.mozilla.org/en/CSS"
-msgstr ""
+msgstr "https://developer.mozilla.org/en/CSS"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "CSS Tutorial"
 msgstr "Tutorial CSS"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom CSS styles."
 msgstr "Masukkan kod CSS tersendiri"
@@ -956,331 +816,57 @@ msgstr "Masukkan kod CSS tersendiri"
 msgid "Custom Scripts"
 msgstr "Skrip tersendiri"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Custom Scripts for Header and Footer"
 msgstr "Skrip tersendiri Bahagian Atas dan Bahagian Bawah"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Quick Tutorial"
 msgstr "Bengkel pantas"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to header.php &darr;"
 msgstr "Dimasukkan pada header.php &darr"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom header script."
 msgstr "Masukkan skrip Bahagian Atas tersendiri."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to footer.php &darr;"
 msgstr "Dimasukkan pada footer.php &darr"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom footer script."
 msgstr "Masukkan skrip Bahagian Bawah tersendiri."
 
-#: pro/functions.php
-msgid "Posted on "
-msgstr "Posted on jawatan kosong "
-
-#: pro/functions.php
-msgid " by "
-msgstr "oleh"
-
-#: pro/functions.php
-msgid "Posted in"
-msgstr ""
-
-#: pro/functions.php
-msgid "Tags:"
-msgstr "Label:"
-
-#: pro/functions.php
-msgid "Permalink to %s"
-msgstr "Pautan kekal ke %s"
-
-#: pro/functions.php
-msgid "Responsive Pro Options"
-msgstr "Pilihan Pro yang responsif"
-
-#: pro/options/options-customizer.php
-msgid "Customize"
-msgstr "Personalisasi"
-
-#: pro/options/options-customizer.php
-msgid "Skins"
-msgstr "Kulit"
-
-#: pro/options/options-customizer.php
-msgid "Skin Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Typography"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Heading Font"
-msgstr "Font tajuk"
-
-#: pro/options/options-customizer.php
-msgid "Google Heading Font"
-msgstr "Font tajuk Google"
-
-#: pro/options/options-customizer.php
-msgid "Text Font"
-msgstr "Fon teks"
-
-#: pro/options/options-customizer.php
-msgid "Google Text Font"
-msgstr "Fon teks Google"
-
-#: pro/options/options-customizer.php
-msgid "Font Size"
-msgstr "Saiz Fon"
-
-#: pro/options/options-customizer.php
-msgid "Headings Color"
-msgstr "Tajuk warna"
-
-#: pro/options/options-customizer.php
-msgid "Text Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Link Color"
-msgstr "Warna Pautan"
-
-#: pro/options/options-customizer.php
-msgid "Link Hover Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Enable custom front page"
-msgstr "Membolehkan adat muka depan"
-
-#: pro/options/options-customizer.php
-msgid "Content"
-msgstr "Kandungan"
-
-#: pro/options/options.php
-msgid "Personalize"
-msgstr "Memperibadikan"
-
-#: pro/options/options.php
-msgid "Favicon"
-msgstr "Favicon"
-
-#: pro/options/options.php
-msgid "maximum width and height 32px"
-msgstr "32px lebar dan ketinggian maksimum"
-
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Upload"
-msgstr "Muat naik"
-
-#: pro/options/options.php
-msgid "Apple Touch Icon"
-msgstr "Apple sentuh ikon"
-
-#: pro/options/options.php
-msgid "Custom mobile menu title"
-msgstr "Tajuk menu mudah alih adat"
-
-#: pro/options/options.php
-msgid "Enter a custom mobile menu title"
-msgstr "Masukkan tajuk menu mudah alih adat"
-
-#: pro/options/options.php
-msgid "Design"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Change fonts, colors and much more using the theme %1s"
-msgstr "Menukar fon, warna dan banyak lebih menggunakan tema % 1s"
-
-#: pro/options/options.php
-msgid "Customizer"
-msgstr "Customizer"
-
-#: pro/options/options.php
-msgid "Templates"
-msgstr "Templat"
-
-#: pro/options/options.php
-msgid "Excerpt Text"
-msgstr "Petikan teks"
-
-#: pro/options/options.php
-msgid "Read More..."
-msgstr "Baca lagi..."
-
-#: pro/options/options.php
-msgid "Excerpt Length"
-msgstr ""
-
-#: pro/options/options.php
-msgid "50"
-msgstr "50"
-
-#: pro/options/options.php
-msgid "Page"
-msgstr "Halaman"
-
-#: pro/options/options.php
-msgid "Blog Post Page"
-msgstr "Laman blog Post"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Excerpts"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Featured Images"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Author"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Categories"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Date"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Comments"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Tags"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Single post page"
-msgstr "Laman posting"
-
-#: pro/options/options.php
-msgid "Archive page"
-msgstr "Arkib Laman"
-
-#: pro/options/options.php
-msgid "Search page"
-msgstr ""
-
-#: pro/options/options.php
-msgid "404 page"
-msgstr "Laman 404"
-
-#: pro/options/options.php
-msgid "404 Title"
-msgstr "Tajuk 404"
-
-#: pro/options/options.php
-msgid "404 error"
-msgstr "404 kesilapan"
-
-#: pro/options/options.php
-msgid "404 Content"
-msgstr "Kandungan 404"
-
-#: pro/options/options.php
-msgid "Sorry, the content is not found...!!!"
-msgstr "Maaf, kandungan tidak dijumpai...!!!"
-
-#: pro/options/options.php
-msgid "Scripts"
-msgstr "Skrip"
-
-#: pro/options/options.php
-msgid "Plugins"
-msgstr "Plugin"
-
-#: pro/options/options.php
-msgid "Events Plugin Options"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Please activate The Events Calendar plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Install Events Calendar Plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "WooCommerce Settings"
-msgstr "Seting WooCommerce"
-
-#: pro/options/options.php
-msgid "Please activate WooCommerce plugin"
-msgstr "Sila aktifkan WooCommerce plugin"
-
-#: pro/options/options.php
-msgid "Install WooCommerce Plugin"
-msgstr "Memasang WooCommerce Plugin"
-
-#: pro/options/options.php
-msgid "BBPress Settings"
-msgstr "Seting BBPress"
-
-#: pro/options/options.php
-msgid "Please activate BBPress plugin"
-msgstr "Sila aktifkan BBPress plugin"
-
-#: pro/options/options.php
-msgid "Install BBPress Plugin"
-msgstr "Memasang BBPress Plugin"
-
-#: pro/options/options.php
-msgid "Digital Downloads Settings"
-msgstr "Seting muat turun digital"
-
-#: pro/options/options.php
-msgid "Please activate Easy Digital Downloads plugin"
-msgstr "Sila aktifkan plugin muat turun Digital mudah"
-
-#: pro/options/options.php
-msgid "Install Easy Digital Downloads Plugin"
-msgstr "Memasang Plugin muat turun Digital yang mudah"
-
-#: pro/options/options.php
-msgid "%1$s upload failed, make sure you are entering a URL"
-msgstr "gambar s $ %1 gagal, pastikan anda memasuki URL"
-
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-msgid "Enter the Google Font name"
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
 msgstr ""
 
 #: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr ""
+
+#: core/includes/functions.php
+#. Welcome to Responsive! Upgrade to Responsive Pro today.
+# INSTRUCTION: Welcome to Responsive! Upgrade to Responsive Pro today.
 msgid "Welcome to %1$s! Upgrade to %2$s today."
 msgstr ""
 

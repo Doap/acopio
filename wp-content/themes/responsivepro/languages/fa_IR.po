@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive Pro\n"
+"Project-Id-Version: Responsive Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
-"PO-Revision-Date: 2013-07-06 07:02:03 UTC\n"
+"POT-Creation-Date: 2012-04-25 13:42:58 UTC\n"
+"PO-Revision-Date: 2013-07-22 22:03:35 UTC\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Persian, Iran\n"
 "MIME-Version: 1.0\n"
@@ -12,62 +12,56 @@ msgstr ""
 "X-Generator: WebTranslateIt.com\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: archive.php
-#: core/includes/functions.php
-#: search.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: page.php
 #: landing-page.php
 #: index.php
 #: image.php
-#: home.php
-#: full-width-page.php
-#: content-sidebar-page.php
-#: content-sidebar-half-page.php
-#: blog.php
-msgid "Read more &#8250;"
-msgstr "بیشتر بخوانید &#8250;"
-
-#: sitemap.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: search.php
-#: page.php
-#: landing-page.php
-#: index.php
-#: image.php
-#: home.php
 #: full-width-page.php
 #: content-sidebar-page.php
 #: content-sidebar-half-page.php
 #: blog.php
 #: blog-excerpt.php
 #: archive.php
+#: home.php
+#: search.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: sitemap.php
 msgid "Pages:"
 msgstr "برگه‌ها :"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "&#8249; Older posts"
 msgstr "&#8249; نوشته‌های قدیمی‌تر"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "Newer posts &#8250;"
 msgstr "نوشته‌های جدیدتر &#8250;"
+
+#: blog.php
+#: content-sidebar-half-page.php
+#: content-sidebar-page.php
+#: full-width-page.php
+#: home.php
+#: image.php
+#: index.php
+#: landing-page.php
+#: page.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: core/includes/functions.php
+msgid "Read more &#8250;"
+msgstr "بیشتر بخوانید &#8250;"
 
 #: comments.php
 msgid "This post is password protected. Enter the password to view any comments."
 msgstr "این نوشته با رمز محافظت شده است. رمز را وارد کنید تا بتوانید دیدگاه‌ها را ببنید."
-
-#: comments.php
-msgid "One comment on &ldquo;%2$s&rdquo;"
-msgstr "یک دیدگاه برای &ldquo;%2$s&rdquo;"
 
 #: comments.php
 #: comments.php
@@ -81,7 +75,7 @@ msgstr "دیدگاه‌های جدیدتر &#8250;"
 
 #: comments.php
 msgid "Pings&#47;Trackbacks"
-msgstr "درخواستهای / بازتاب ها"
+msgstr "پینگ&#47;بازتاب"
 
 #: comments.php
 msgid "%1$d %2$s for \"%3$s\""
@@ -93,15 +87,15 @@ msgstr "نام"
 
 #: comments.php
 msgid "E-mail"
-msgstr "پست الکترونیکی"
+msgstr "ایمیل"
 
 #: comments.php
 msgid "Website"
-msgstr ""
+msgstr "وب سایت"
 
 #: footer.php
 msgid "&copy;"
-msgstr "©"
+msgstr "&copy; کپی‌رایت"
 
 #: footer.php
 msgid "scroll to top"
@@ -112,91 +106,100 @@ msgid "&uarr;"
 msgstr "&uarr;"
 
 #: footer.php
+msgid "http://themeid.com/responsive-theme/"
+msgstr "http://themeid.com/responsive-theme/"
+
+#: footer.php
 msgid "Responsive Theme"
-msgstr "موضوع پاسخگو"
+msgstr "پوسته‌ی ریسپانسیو"
 
 #: footer.php
 msgid "powered by"
 msgstr "با نیروی"
 
 #: footer.php
+msgid "http://wordpress.org/"
+msgstr "http://wp-persian.com/"
+
+#: footer.php
 msgid "WordPress"
-msgstr "وردپرس"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Hello, World!"
-msgstr "سلام جهان!"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your H2 subheadline here"
-msgstr "جای زیر عنوان۲ شما"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
-msgstr "عنوان، زیرعنوان و این متن را می‌توانید در قسمت تنظیمات پوسته تغییر دهید. دکمه «فراخوانی برای اقدام» و لینک‌اش را هم می‌توانید در همان بخش تغییر دهید. تصویر سمت چپ نیز می‌تواند یک تصویر و یا حتی ویدویی در یوتیوب باشد."
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Call to Action"
-msgstr "فراخوانی برای اقدام"
+msgstr "وردپرس فارسی"
 
 #: image.php
 msgid "&#8249; Return to"
 msgstr "&#8249; بازگشت به"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-meta-page.php
 #: image.php
+#: post-meta-page.php
+#: post-meta.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "No Comments &darr;"
 msgstr "بدون دیدگاه &darr;"
 
-#: pro/functions.php
-#: image.php
 #: post-meta-page.php
-#: sidebar-content-page.php
+#: post-meta.php
+#: image.php
 #: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "1 Comment &darr;"
 msgstr "۱ دیدگاه &darr;"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-meta-page.php
+#: post-meta.php
 #: image.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "% Comments &darr;"
 msgstr "% دیدگاه &darr;"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s دیدگاه در &ldquo;%2$s&rdquo;"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Tagged with:"
 msgstr "با برچسب:"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Posted in %s"
 msgstr "پست شده در %s"
 
-#: sitemap.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-data.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: sitemap.php
 msgid "Edit"
 msgstr "ویرایش"
+
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "۴۰۴ &#8212; متأسفیم شما را اینجا می‌بینیم!"
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "نترسید! با هم درستش می‌کنیم. بیاین با هم گزینه‌هایی رو که در پیش‌رو دارید بررسی کنیم."
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "شما می‌توانید به %s و یا صفحه‌ی مورد نظرتان را جستجو کنید."
+
+#: loop-no-posts.php
+#: core/includes/functions.php
+msgid "Home"
+msgstr "برگهٔ نخست"
+
+#: loop-no-posts.php
+msgid "&larr; Home"
+msgstr "&rarr; برگهٔ نخست برگردید"
 
 #: loop-header.php
 msgid "Daily Archives: %s"
@@ -218,29 +221,12 @@ msgstr "بایگانی وبلاگ"
 msgid "Your search for %s did not match any entries."
 msgstr "جستجوی شما برای %s نتیجه‌ای در بر نداشت"
 
-#: loop-no-posts.php
-msgid "404 &#8212; Fancy meeting you here!"
-msgstr "۴۰۴ &#8212; متأسفیم شما را اینجا می‌بینیم!"
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "پیوند یکتا به %s"
 
-#: loop-no-posts.php
-msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
-msgstr "نترسید! با هم درستش می‌کنیم. بیاین با هم گزینه‌هایی رو که در پیش‌رو دارید بررسی کنیم."
-
-#: loop-no-posts.php
-msgid "You can return %s or search for the page you were looking for."
-msgstr "شما می‌توانید به %s و یا صفحه‌ی مورد نظرتان را جستجو کنید."
-
-#: core/includes/functions.php
-#: loop-no-posts.php
-msgid "Home"
-msgstr "خانه"
-
-#: loop-no-posts.php
-msgid "&larr; Home"
-msgstr "&rarr; برگهٔ نخست برگردید"
-
-#: core/includes/functions.php
 #: search.php
+#: core/includes/functions.php
 msgid "Search results for: %s"
 msgstr "نتیجهٔ جستجو برای: %s"
 
@@ -293,8 +279,8 @@ msgstr "دوربین:"
 msgid "In Archive"
 msgstr "در بایگانی"
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 1"
 msgstr "ابزارک برگهٔ نخست ۱"
 
@@ -302,8 +288,8 @@ msgstr "ابزارک برگهٔ نخست ۱"
 msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
 msgstr "این جعبه اولین ابزارک برگهٔ نخست شما است. لطفاً برای تغییر این ابزارک به مسیر نمایش&larr;ابزارک‌ها بروید و ششمین ابزارک از بالا به اسم ابزارک برگه‌ نخست ۱ را انتخاب کنید. عنوان ابزارک نیز از همان جا قابل تغییر است."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 2"
 msgstr "ابزارک برگهٔ نخست ۲"
 
@@ -311,8 +297,8 @@ msgstr "ابزارک برگهٔ نخست ۲"
 msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
 msgstr "این جعبه دومین ابزارک برگهٔ نخست شما است. لطفاً برای تغییر این ابزارک به مسیر نمایش&rarrابزارک‌ها بروید و ششمین ابزارک از بالا به اسم ابزارک برگه‌ نخست ۲ را انتخاب کنید. عنوان ابزارک نیز از همان جا قابل تغییر است."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 3"
 msgstr "ابزارک برگهٔ نخست ۳"
 
@@ -333,16 +319,12 @@ msgid "Latest Posts"
 msgstr "نوشته‌های تازه"
 
 #: sitemap.php
-msgid "Permanent Link to %s"
-msgstr "پیوند یکتا به %s"
-
-#: sitemap.php
 msgid "Pages"
-msgstr "صفحات"
+msgstr "برگه‌ها"
 
 #: core/includes/functions.php
 msgid "Top Menu"
-msgstr "منوی بالا"
+msgstr "منوی فوقانی"
 
 #: core/includes/functions.php
 msgid "Header Menu"
@@ -359,13 +341,12 @@ msgstr "منوی پانوشت"
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "Page %s"
-msgstr "صفحه %s"
+msgstr ""
 
 #: core/includes/functions.php
 msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
-msgstr "<span class=\"%1$s\">ارسال شده توسط </span>%2$s<span class=\"%3$s\"> در </span>%4$s‎"
+msgstr "<span class=\"%1$s\">ارسال شده در </span>%2$s<span class=\"%3$s\"> توسط </span>%4$s‎"
 
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "View all posts by %s"
@@ -383,40 +364,15 @@ msgstr "نوشته‌های با برچسب %s"
 msgid "Error 404"
 msgstr "خطای ۴۰۴ "
 
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Instructions"
-msgstr ""
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Help"
-msgstr "راهنما"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Translate"
-msgstr "ترجمه"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Showcase"
-msgstr "ویترین"
-
-#: pro/functions.php
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "More Themes"
 msgstr "پوسته‌های بیشتر"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr "ویترین"
 
 #: core/includes/functions.php
 msgid "Main Sidebar"
@@ -504,51 +460,28 @@ msgstr ""
 
 #: content-sidebar-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar"
 msgstr ""
 
 #: sidebar-content-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content"
 msgstr ""
 
 #: content-sidebar-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar Half Page"
 msgstr ""
 
 #: sidebar-content-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content Half Page"
 msgstr ""
 
 #: full-width-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Full Width Page (no sidebar)"
 msgstr ""
-
-#: core/includes/post-custom-meta.php
-msgid "Layout"
-msgstr "صفحه‌بندی"
-
-#: core/includes/post-custom-meta.php
-msgid "Default"
-msgstr "پیش‌فرض"
 
 #: landing-page.php
 msgid "Landing Page (no menu)"
@@ -558,14 +491,39 @@ msgstr ""
 msgid "Sitemap"
 msgstr ""
 
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr ""
+
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr ""
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Hello, World!"
+msgstr "سلام جهان!"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your H2 subheadline here"
+msgstr "جای زیر عنوان۲ شما"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "عنوان، زیرعنوان و این متن را می‌توانید در قسمت تنظیمات پوسته تغییر دهید. دکمه «فراخوانی برای اقدام» و لینک‌اش را هم می‌توانید در همان بخش تغییر دهید. تصویر سمت چپ نیز می‌تواند یک تصویر و یا حتی ویدویی در یوتیوب باشد."
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Call to Action"
+msgstr "فراخوانی برای اقدام"
+
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
-#: pro/options/options.php
-#: pro/options/options.php
 msgid "Theme Options"
 msgstr "تنظیمات پوسته"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Options Saved"
 msgstr "تنظیمات ذخیره شد"
@@ -574,29 +532,19 @@ msgstr "تنظیمات ذخیره شد"
 msgid "Theme Elements"
 msgstr "عناصر پوسته"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Breadcrumb Lists?"
 msgstr "غیر فعال کردن لیست خرده نان؟"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Check to disable"
 msgstr "برای غیر فعال کردن اینجا را تیک بزنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Call to Action Button?"
 msgstr "دکمه‌ی «فراخوانی برای اقدام» غیر فعال شود؟"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -607,12 +555,6 @@ msgstr "دکمه‌ی «فراخوانی برای اقدام» غیر فعال �
 msgid "Save Options"
 msgstr "ذخیره تنظیمات"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -621,10 +563,8 @@ msgstr "ذخیره تنظیمات"
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Restore Defaults"
-msgstr "بازگرداندن مقادیر پیش‌فرض"
+msgstr ""
 
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Logo Upload"
 msgstr "بارگذاری لوگو"
@@ -641,313 +581,233 @@ msgstr "می‌خواهید لوگوی پیش‌فرض را جانشین و یا
 msgid "<a href=\"%s\">Click here</a>."
 msgstr "<a href=\"%s\">اینجا کلیک کنید</a>."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Home Page"
-msgstr "صفحه اصلی"
+msgstr "برگهٔ نخست"
 
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Enable Custom Front Page"
-msgstr "فعال کردن صفحه جلو سفارشی"
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Overrides the WordPress %1sfront page option%2s"
-msgstr "نمودید، وردپرس % 1sfront صفحه گزینه % 2s"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Headline"
 msgstr "عنوان سربرگ"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your headline"
 msgstr "عنوان سربرگ خود را وارد کنید"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Subheadline"
 msgstr "زیر عنوان"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your subheadline"
 msgstr "زیر عنوان خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Content Area"
 msgstr "ناحیه محتوا"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your content"
 msgstr "محتوای خود را وارد کنید"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (URL)"
 msgstr "«فراخوانی برای اقدام» (آدرس)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action URL"
 msgstr "آدرس «فراخوانی برای اقدام» خود را وارد کنید"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (Text)"
 msgstr "«فراخوانی برای اقدام» (متن)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action text"
 msgstr "متن «فراخوانی برای اقدام» خود را وارد کنید"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Featured Content"
 msgstr "محتوای برجسته"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "See Docs"
 msgstr "مستندات را ببنید"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Paste your shortcode, video or image source"
 msgstr "کد کوتاه، آدرس ویدیو و یا تصویر خود را بچسبانید"
 
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Layouts"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Static Page Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Single Blog Post Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Blog Posts Index Layout"
 msgstr ""
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Webmaster Tools"
 msgstr "ابزارهای مدیریت وب"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Site Verification"
 msgstr "تائید هویت سایت گوگل"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google ID number only"
 msgstr "فقط شماره ID گوگل خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Bing Site Verification"
 msgstr "تائید هویت سایت بینگ"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Bing ID number only"
 msgstr "فقط شماره ID بینگ خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yahoo Site Verification"
 msgstr "تائید هویت سایت یاهو"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yahoo ID number only"
 msgstr "فقط شماره ID یاهو‌یتان را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Site Statistics Tracker"
 msgstr "ردیاب آمار سایت"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Leave blank if plugin handles your webmaster tools"
 msgstr "اگر افزونه‌ای ابزارهای مدیریت وب شما را اداره می‌کند، اینجا را خالی بگذارید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Analytics, StatCounter, any other or all of them."
 msgstr "آنالیزگر گوگل، StatCounter، یا هر کدام دیگر و یا همه آن‌ها"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Social Icons"
 msgstr "آیکون‌های اجتماعی"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Twitter"
 msgstr "توییتر"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Twitter URL"
 msgstr "آدرس توییتر خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Facebook"
-msgstr "فیس بوک"
+msgstr "فیس‌بوک"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Facebook URL"
 msgstr "آدرس فیس‌بوک خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "LinkedIn"
-msgstr "LinkedIn"
+msgstr "لینکداین"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your LinkedIn URL"
 msgstr "آدرس لینکداین خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "YouTube"
 msgstr "یوتیوب"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your YouTube URL"
 msgstr "آدرس یوتیوب خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "StumbleUpon"
 msgstr "StumbleUpon"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your StumbleUpon URL"
 msgstr "آدرس StumbleUpon خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "RSS Feed"
-msgstr "فید RSS"
+msgstr "خوراک RSS"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your RSS Feed URL"
 msgstr "آدرس خوراک RSS خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google+"
-msgstr ""
+msgstr "گوگل+"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google+ URL"
 msgstr "آدرس گوگل+ خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Instagram"
-msgstr "نمایش مشخصات عمومی"
+msgstr "اینستاگرام"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Instagram URL"
 msgstr "آدرس اینستاگرام خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Pinterest URL"
 msgstr "آدرس Pinterest خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yelp!"
-msgstr ""
+msgstr "Yelp!"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yelp! URL"
 msgstr "آدرس Yelp! خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Vimeo URL"
 msgstr "آدرس Vimeo خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "foursquare"
-msgstr "چهار ضلعی"
+msgstr "foursquare"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your foursquare URL"
 msgstr "آدرس foursquare خود را وارد کنید"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Custom CSS Styles"
 msgstr "شیوه‌نامه CSS دلخواه"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "https://developer.mozilla.org/en/CSS"
-msgstr ""
+msgstr "https://developer.mozilla.org/en/CSS"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "CSS Tutorial"
 msgstr "خودآموز CSS"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom CSS styles."
 msgstr "شیوه‌نامهٔ دلخواه خود را وارد کنید."
@@ -956,331 +816,57 @@ msgstr "شیوه‌نامهٔ دلخواه خود را وارد کنید."
 msgid "Custom Scripts"
 msgstr "اسکریپت‌های سفارشی"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Custom Scripts for Header and Footer"
 msgstr "اسکریپت‌های سفارشی برای سربرگ و پانوشت"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Quick Tutorial"
 msgstr "خودآموز سریع"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to header.php &darr;"
 msgstr "در header.php جاسازی کن &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom header script."
 msgstr "اسکریپت سربرگ سفارشی خود را وارد کنید."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to footer.php &darr;"
 msgstr "در footer.php جاسازی کن &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom footer script."
 msgstr "اسکریپت پانوشت سفارشی خود را وارد کنید."
 
-#: pro/functions.php
-msgid "Posted on "
-msgstr "نوشته شده در تاریخ "
-
-#: pro/functions.php
-msgid " by "
-msgstr "با"
-
-#: pro/functions.php
-msgid "Posted in"
-msgstr ""
-
-#: pro/functions.php
-msgid "Tags:"
-msgstr "برچسب‌ها:"
-
-#: pro/functions.php
-msgid "Permalink to %s"
-msgstr ""
-
-#: pro/functions.php
-msgid "Responsive Pro Options"
-msgstr "گزینه های نرم افزار پاسخگو"
-
-#: pro/options/options-customizer.php
-msgid "Customize"
-msgstr "سفارشی‌سازی"
-
-#: pro/options/options-customizer.php
-msgid "Skins"
-msgstr "پوسته ها"
-
-#: pro/options/options-customizer.php
-msgid "Skin Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Typography"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Heading Font"
-msgstr "فونت عنوان"
-
-#: pro/options/options-customizer.php
-msgid "Google Heading Font"
-msgstr "گوگل عنوان فونت"
-
-#: pro/options/options-customizer.php
-msgid "Text Font"
-msgstr "فونت متن"
-
-#: pro/options/options-customizer.php
-msgid "Google Text Font"
-msgstr "فونت گوگل متن"
-
-#: pro/options/options-customizer.php
-msgid "Font Size"
-msgstr "اندازهٔ قلم"
-
-#: pro/options/options-customizer.php
-msgid "Headings Color"
-msgstr "سرفصلهای رنگ"
-
-#: pro/options/options-customizer.php
-msgid "Text Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Link Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Link Hover Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Enable custom front page"
-msgstr "فعال کردن صفحه جلو سفارشی"
-
-#: pro/options/options-customizer.php
-msgid "Content"
-msgstr "محتوا"
-
-#: pro/options/options.php
-msgid "Personalize"
-msgstr "شخصی سازی"
-
-#: pro/options/options.php
-msgid "Favicon"
-msgstr "Favicon"
-
-#: pro/options/options.php
-msgid "maximum width and height 32px"
-msgstr "حداکثر عرض و ارتفاع 32px"
-
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Upload"
-msgstr "آپلود"
-
-#: pro/options/options.php
-msgid "Apple Touch Icon"
-msgstr "اپل لمسی آیکون"
-
-#: pro/options/options.php
-msgid "Custom mobile menu title"
-msgstr "عنوان منوی سفارشی موبایل"
-
-#: pro/options/options.php
-msgid "Enter a custom mobile menu title"
-msgstr "عنوان منو سفارشی موبایل را وارد کنید"
-
-#: pro/options/options.php
-msgid "Design"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Change fonts, colors and much more using the theme %1s"
-msgstr "تغییر فونت، رنگ و خیلی بیشتر با استفاده از تم % 1s"
-
-#: pro/options/options.php
-msgid "Customizer"
-msgstr "Customizer"
-
-#: pro/options/options.php
-msgid "Templates"
-msgstr "قالب‌ها"
-
-#: pro/options/options.php
-msgid "Excerpt Text"
-msgstr "خلاصه متن"
-
-#: pro/options/options.php
-msgid "Read More..."
-msgstr "بیشتر بخوانید..."
-
-#: pro/options/options.php
-msgid "Excerpt Length"
-msgstr ""
-
-#: pro/options/options.php
-msgid "50"
-msgstr "50"
-
-#: pro/options/options.php
-msgid "Page"
-msgstr "رقص"
-
-#: pro/options/options.php
-msgid "Blog Post Page"
-msgstr "صفحه پست بلاگ"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Excerpts"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Featured Images"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Author"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Categories"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Date"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Comments"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Tags"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Single post page"
-msgstr "صفحه ارسال پست"
-
-#: pro/options/options.php
-msgid "Archive page"
-msgstr "صفحه آرشیو"
-
-#: pro/options/options.php
-msgid "Search page"
-msgstr ""
-
-#: pro/options/options.php
-msgid "404 page"
-msgstr "صفحه 404"
-
-#: pro/options/options.php
-msgid "404 Title"
-msgstr "عنوان 404"
-
-#: pro/options/options.php
-msgid "404 error"
-msgstr "404 خطا"
-
-#: pro/options/options.php
-msgid "404 Content"
-msgstr "محتوای 404"
-
-#: pro/options/options.php
-msgid "Sorry, the content is not found...!!!"
-msgstr "با عرض پوزش، محتوای یافت نمی شود...!!!"
-
-#: pro/options/options.php
-msgid "Scripts"
-msgstr "اسکریپت ها"
-
-#: pro/options/options.php
-msgid "Plugins"
-msgstr "افزونه‌ها"
-
-#: pro/options/options.php
-msgid "Events Plugin Options"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Please activate The Events Calendar plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Install Events Calendar Plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "WooCommerce Settings"
-msgstr "تنظیمات WooCommerce"
-
-#: pro/options/options.php
-msgid "Please activate WooCommerce plugin"
-msgstr "لطفا فعال کردن افزونه WooCommerce"
-
-#: pro/options/options.php
-msgid "Install WooCommerce Plugin"
-msgstr "نصب افزونه WooCommerce"
-
-#: pro/options/options.php
-msgid "BBPress Settings"
-msgstr "تنظیمات BBPress"
-
-#: pro/options/options.php
-msgid "Please activate BBPress plugin"
-msgstr "لطفا فعال کردن افزونه BBPress"
-
-#: pro/options/options.php
-msgid "Install BBPress Plugin"
-msgstr "نصب BBPress افزونه"
-
-#: pro/options/options.php
-msgid "Digital Downloads Settings"
-msgstr "تنظیمات دیجیتال در این هفته"
-
-#: pro/options/options.php
-msgid "Please activate Easy Digital Downloads plugin"
-msgstr "لطفا آسان دیجیتال دریافت پلاگین را فعال کنید"
-
-#: pro/options/options.php
-msgid "Install Easy Digital Downloads Plugin"
-msgstr "نصب پلاگین آسان دیجیتال در این هفته"
-
-#: pro/options/options.php
-msgid "%1$s upload failed, make sure you are entering a URL"
-msgstr "%1$ s آپلود نشد، مطمئن شوید که شما در حال ورود به یک URL"
-
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-msgid "Enter the Google Font name"
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
 msgstr ""
 
 #: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr ""
+
+#: core/includes/functions.php
+#. Welcome to Responsive! Upgrade to Responsive Pro today.
+# INSTRUCTION: Welcome to Responsive! Upgrade to Responsive Pro today.
 msgid "Welcome to %1$s! Upgrade to %2$s today."
 msgstr ""
 

@@ -3,7 +3,7 @@ Contributors: thecartpress
 Tags: csv, CartPress, ecommerce, e-commerce, store, shop, shopping, shopping cart, cart, custom post type, taxonomy, taxonomies, ecomerce, products, TheCartPress
 Requires at least: 3.1
 Tested up to: 3.6
-Stable Tag: 1.4.2
+Stable Tag: 1.4.3
 
 TheCartPress CSV Loader is a plugin for TheCartPress. It allows to load products into TheCartPress from a csv file.
 
@@ -49,6 +49,12 @@ This plugin is released under a GPL license.
 1. CSV Loader page
 
 == Changelog ==
+= 1.4.3 =
+* Support for units
+* Support for stock
+* Suport for number format of the site
+
+
 = 1.4.2 =
 * Fixed error with empty terms
 

@@ -25,9 +25,7 @@ class DTSettingsView {
 
 		?>
 
-		<div class="mwswrap">
-		<?php dtSubMenu(); ?>
-		<div class="mwsmainpage">
+		<div class="wrap">
 		<h2>Settings</h2>
 
 		<p>Please note the cron should always be setup when this plugin is installed. You can choose to disable certain parts of this plugin below.</p>
@@ -77,7 +75,6 @@ class DTSettingsView {
 
 		</form>
 
-		</div>
 		</div>
 
 		<?php

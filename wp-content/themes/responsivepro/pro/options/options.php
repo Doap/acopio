@@ -125,6 +125,15 @@ function responsive_pro_options( $options ) {
 				'placeholder' => ''
 			),
 			array(
+				'title'       => __( 'Enable minified css?', 'responsive' ),
+				'subtitle'    => '',
+				'heading'     => '',
+				'type'        => 'checkbox',
+				'id'          => 'minified_css',
+				'description' => __( 'check to enable', 'responsive' ),
+				'placeholder' => ''
+			),
+			array(
 				'title'       => __( 'Disable Call to Action Button?', 'responsive' ),
 				'subtitle'    => '',
 				'heading'     => '',

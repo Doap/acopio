@@ -542,7 +542,7 @@ function tcp_items_in_the_cart_<?php echo $post_id; ?>() {
 			tcp_added_product_title.replaceWith( response );
 			tcp_added_product_title.show();
 			<?php if ( tcp_is_downloadable( $post_id ) ) : ?>
-			jQuery( '#tcp_add_to_shopping_cart_<?php echo $post_id; ?>' ).show();
+			jQuery( '#tcp_add_to_shopping_cart_<?php echo $post_id; ?>' ).hide();
 			<?php endif; ?>
 		} ).fail( function( error ) {
 			//alert( error.responseText );

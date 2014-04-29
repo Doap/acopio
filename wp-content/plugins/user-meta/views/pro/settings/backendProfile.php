@@ -14,7 +14,7 @@ $wpBackendFields = array(
     array(
         'heading_0'         => __( 'Personal Options Heading', $userMeta->name ),
         'rich_editing'      => __( 'Visual Editor', $userMeta->name ),
-        'admin_color_classic' => __( 'Admin Color Scheme', $userMeta->name ),
+        'color-picker'      => __( 'Admin Color Scheme', $userMeta->name ), // For older version: admin_color_classic
         'comment_shortcuts' => __( 'Keyboard Shortcuts', $userMeta->name ),
         'admin_bar_front'   => __( 'Toolbar', $userMeta->name ),
     ),

@@ -1,49 +1,24 @@
 <?php
 
-if( !class_exists( 'umBackendProfileController' ) ) :
+if ( ! class_exists( 'umBackendProfileController' ) ) :
 class umBackendProfileController {
     
-    function __construct(){
+    function __construct() {
         add_action( 'show_user_profile',        array( $this, 'profileField') );
         add_action( 'edit_user_profile',        array( $this, 'profileField') );
         add_action( 'personal_options_update',  array( $this, 'profileUpdate') );
         add_action( 'edit_user_profile_update', array( $this, 'profileUpdate') ); 
-                                          
-        //add_action( 'admin_enqueue_scripts', array( $this, 'loadScripts2' ) ); 
-        
-        $this->loadScripts( 'profile.php' );  
-        $this->loadScripts( 'user-edit.php' );          
+          
+        //Commented since 1.1.5rc3
+        //$this->loadScripts( 'profile.php' );  
+        //$this->loadScripts( 'user-edit.php' );          
     }
     
-    function loadScripts2( $hook ){
-        global $userMeta;  
-        
-        if( !($hook == 'profile.php' || $hook == 'user-edit.php') )
-            return;
-             
-        $userMeta->enqueueScripts( array( 
-            'jquery',
-            'jquery-ui-core',
-            'jquery-ui-widget',
-            'jquery-ui-mouse',
-            'jquery-ui-slider',
-            'jquery-ui-datepicker',
-            //'timepicker',            
-            'jquery-ui-all',
-            
-            'plugin-framework', 
-            'user-meta',           
-            'fileuploader',
-            'wysiwyg',
-            'validationEngine',
-            'password_strength',
-        ) );                      
-        $userMeta->runLocalization();
-    }
     
-    function loadScripts( $page ){
+    // Not in use since 1.1.5rc3
+    function loadScripts( $page ) {
         global $userMeta;
-        
+          
         $userMeta->addScript( 'jquery',             'admin', $page );
         $userMeta->addScript( 'jquery-ui-core',     'admin', $page );                      
         $userMeta->addScript( 'jquery-ui-widget',   'admin', $page );
@@ -72,20 +47,23 @@ class umBackendProfileController {
         $userMeta->addScript( 'plugin-framework.js',    'admin', $page );
         $userMeta->addScript( 'plugin-framework.css',   'admin', $page );                        
         $userMeta->addScript( 'user-meta.js',           'admin', $page );
-        $userMeta->addScript( 'user-meta.css',          'admin', $page );             
-    }                     
+        $userMeta->addScript( 'user-meta.css',          'admin', $page );     
+    }
+    
              
     function profileField( $user ) {
         global $userMeta, $pagenow;
         
+        $userMeta->loadAllScripts();
+        
         $this->_hideBackendFields();
         
-        if( $pagenow == 'profile.php' )
+        if ( $pagenow == 'profile.php' )
             $userID = $userMeta->userID();
-        elseif( $pagenow == 'user-edit.php' )
-            $userID = esc_attr( @$_REQUEST[ 'user_id' ] );
+        elseif ( $pagenow == 'user-edit.php' )
+            $userID = esc_attr( @$_REQUEST['user_id'] );
         
-        if( empty($userID) ) return;
+        if ( empty($userID) ) return;
                             
         $user = new WP_User( $userID );
 
@@ -93,42 +71,46 @@ class umBackendProfileController {
         $fields         = $userMeta->getData( 'fields' );                      
         $backendFields  = @$settings['backend_profile']['fields'];
                     
-        if( !is_array( $backendFields ) ) return;
+        if ( ! is_array( $backendFields ) ) return;
         
         $formKey = 'um_backend_profile';
         
         $i = 0;
-        foreach( $backendFields as $fieldID ){
-            if( empty($fields[$fieldID]) )
+        foreach ( $backendFields as $fieldID ) {
+            if ( empty( $fields[ $fieldID ] ) )
                 continue;
+            
+            if ( ! empty( $fields[ $fieldID ]['admin_only'] ) ) {
+                if ( ! $userMeta->isAdmin() ) continue;
+            }
                 
             $i++;
             
             // if first rows is not section heading then initiate html table
-            if( ( $i == 1 ) || ( @$fields[ $fieldID ]['field_type'] <> 'section_heading' ) ){
+            if ( ( $i == 1 ) || ( @$fields[ $fieldID ]['field_type'] <> 'section_heading' ) ) {
                 echo "<table class=\"form-table\"><tbody>"; 
                 $inTable = true;
             }
                                               
-            if( $fields[ $fieldID ]['field_type'] == 'section_heading' ){
-                if( @$inTable ){
+            if ( $fields[ $fieldID ]['field_type'] == 'section_heading' ) {
+                if ( @$inTable ) {
                     echo "</tbody></table>";
                     $inTable = false;
                 }                                           
-                echo "<h3>" . $fields[$fieldID]['field_title'] . "</h3> <table class='form-table'><tbody>";
+                echo "<h3>" . $fields[ $fieldID ]['field_title'] . "</h3> <table class='form-table'><tbody>";
                 $inTable = true;
                 continue;
             }
             
                                 
-            $fieldName = @$fields[$fieldID]['meta_key'];    
-            if( !$fieldName )
-                $fieldName = $fields[$fieldID]['field_type'];
+            $fieldName = @$fields[ $fieldID ]['meta_key'];    
+            if ( ! $fieldName )
+                $fieldName = $fields[ $fieldID ]['field_type'];
             
-            $fields[$fieldID]['field_id']    = $fieldID;
-            $fields[$fieldID]['field_name']  = $fieldName;
-            $fields[$fieldID]['field_value'] = @$user->$fieldName;
-            $fields[$fieldID]['title_position'] = 'hidden';      
+            $fields[ $fieldID ]['field_id']    = $fieldID;
+            $fields[ $fieldID ]['field_name']  = $fieldName;
+            $fields[ $fieldID ]['field_value'] = @$user->$fieldName;
+            $fields[ $fieldID ]['title_position'] = 'hidden';      
             
             $field = $fields[ $fieldID ];
             
@@ -149,15 +131,15 @@ class umBackendProfileController {
      
             $html = apply_filters( 'user_meta_field_display', $fieldDisplay, $fieldID, $formKey, $field );
             
-            if( $fields[ $fieldID ]['field_type'] == 'hidden' )
+            if ( $fields[ $fieldID ]['field_type'] == 'hidden' )
                 echo $html;
             else
-                echo "<tr><th><label for=\"um_field_$fieldID\">{$fields[$fieldID]['field_title']}</label></th><td>$html</td></tr>";
+                echo "<tr><th><label for=\"um_field_$fieldID\">{$fields[ $fieldID ]['field_title']}</label></th><td>$html</td></tr>";
             //echo "<td>$html <span class=\"description\"></span></td></tr>";                                                              
         }
         
         
-        if( @$inTable )
+        if ( @$inTable )
             echo "</tbody></table>";
         
          ?>          
@@ -175,6 +157,7 @@ class umBackendProfileController {
         </script>
         <?php                        
     }
+    
 
     function profileUpdate( $user_id ) {
         global $userMeta;
@@ -185,22 +168,26 @@ class umBackendProfileController {
         $backendProfile = $userMeta->getSettings( 'backend_profile' );                  
         $backendFields  = @$backendProfile[ 'fields' ];
         
-        if( !is_array( $backendFields ) ) return;
+        if ( ! is_array( $backendFields ) ) return;
         
         $userData = array();
-        foreach( $backendFields as $fieldID ){
-            if( empty( $fields[ $fieldID ] ) ) continue;
+        foreach ( $backendFields as $fieldID ) {
+            if ( empty( $fields[ $fieldID ] ) ) continue;
                           
             $fieldData = $fields[ $fieldID ];
             
-            if( !empty( $fieldData[ 'meta_key' ] ) )
+            if ( ! empty( $fieldData['admin_only'] ) ) {
+                if ( ! $userMeta->isAdmin() ) continue;
+            }
+            
+            if ( ! empty( $fieldData[ 'meta_key' ] ) )
                 $fieldName  = $fieldData[ 'meta_key' ];
-            else{
-                if( in_array( @$fieldData[ 'field_type' ], array('user_registered','user_avatar') ) )
+            else {
+                if ( in_array( @$fieldData[ 'field_type' ], array( 'user_registered', 'user_avatar' ) ) )
                     $fieldName = $fieldData[ 'field_type' ];
             }
             
-            if( empty( $fieldName ) ) continue;
+            if ( empty( $fieldName ) ) continue;
             
             $userData[ $fieldName ] = @$_POST[ $fieldName ];
             
@@ -220,20 +207,22 @@ class umBackendProfileController {
                 }
             }*/           
             
-            /// Handle non-ajax file upload
-            if( in_array( $fieldData[ 'field_type' ], array( 'user_avatar', 'file' ) ) ){
-                if( isset( $_FILES[ $fieldName ] ) ){
-                    $extensions = @$fieldData[ 'allowed_extension' ] ? $fieldData[ 'allowed_extension' ] : "jpg, png, gif";
-                    $maxSize    = @$fieldData[ 'max_file_size' ] ? $fieldData[ 'max_file_size' ] * 1024 : 1024 * 1024;
+            /// Handle non-ajax file upload and remove filepath from file cache for ajax
+            if ( in_array( $fieldData['field_type'], array( 'user_avatar', 'file' ) ) ) {
+                if ( isset( $_FILES[ $fieldName ] ) ) {
+                    $extensions = @$fieldData['allowed_extension'] ? $fieldData['allowed_extension'] : "jpg, png, gif";
+                    $maxSize    = @$fieldData['max_file_size'] ? $fieldData['max_file_size'] * 1024 : 1024 * 1024;
                     $file = $userMeta->fileUpload( $fieldName, $extensions, $maxSize );
-                    if( is_wp_error( $file ) ){
+                    if ( is_wp_error( $file ) ) {
                         if( $file->get_error_code() <> 'no_file' )                       
                             $errors->add( $file->get_error_code(), $file->get_error_message() );
-                    }else{
-                        if( is_string( $file ) )
+                    } else {
+                        if ( is_string( $file ) )
                             $userData[ $fieldName ] = $file;
-                    }                       
+                    }                     
                 }
+                
+                $userMeta->removeFromFileCache( $userData[ $fieldName ] );
             }       
           
         }   
@@ -253,23 +242,20 @@ class umBackendProfileController {
             foreach( $userData as $key => $val )
                 update_user_meta( $user_id, $key, $val );
         }*/
-    }        
+    }
+    
 
-    function _hideBackendFields(){
+    function _hideBackendFields() {
         global $userMeta;
         $backend_profile    = $userMeta->getSettings( 'backend_profile' );
         $hide_fields        = @$backend_profile[ 'hide_fields' ];
         
-        if( !is_array( $hide_fields ) )
+        if ( ! is_array( $hide_fields ) )
             return;
             
-        foreach( $hide_fields as $id => $field )
+        foreach ( $hide_fields as $id => $field )
             $userMeta->disableAdminRow( $id );
-    }   
-
-  
+    }
+    
 }
-
 endif;
-
-?>

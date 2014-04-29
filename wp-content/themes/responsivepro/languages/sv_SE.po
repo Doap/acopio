@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive Pro\n"
+"Project-Id-Version: Responsive Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
-"PO-Revision-Date: 2013-07-06 07:01:59 UTC\n"
+"POT-Creation-Date: 2012-04-25 13:42:58 UTC\n"
+"PO-Revision-Date: 2013-07-22 22:03:36 UTC\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Swedish, Sweden\n"
 "MIME-Version: 1.0\n"
@@ -12,62 +12,56 @@ msgstr ""
 "X-Generator: WebTranslateIt.com\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: archive.php
-#: core/includes/functions.php
-#: search.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: page.php
 #: landing-page.php
 #: index.php
 #: image.php
-#: home.php
 #: full-width-page.php
 #: content-sidebar-page.php
 #: content-sidebar-half-page.php
 #: blog.php
-msgid "Read more &#8250;"
-msgstr "Läs mer &#8250;"
-
+#: blog-excerpt.php
+#: archive.php
+#: home.php
+#: search.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
 #: sitemap.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: search.php
-#: page.php
-#: landing-page.php
-#: index.php
-#: image.php
-#: home.php
-#: full-width-page.php
-#: content-sidebar-page.php
-#: content-sidebar-half-page.php
-#: blog.php
-#: blog-excerpt.php
-#: archive.php
 msgid "Pages:"
-msgstr "Sidor"
+msgstr "Sidor:"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "&#8249; Older posts"
 msgstr "&#8249; Äldre inlägg"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "Newer posts &#8250;"
 msgstr "Nyare inlägg &#8250;"
+
+#: blog.php
+#: content-sidebar-half-page.php
+#: content-sidebar-page.php
+#: full-width-page.php
+#: home.php
+#: image.php
+#: index.php
+#: landing-page.php
+#: page.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: core/includes/functions.php
+msgid "Read more &#8250;"
+msgstr "Läs mer &#8250;"
 
 #: comments.php
 msgid "This post is password protected. Enter the password to view any comments."
 msgstr "Detta inlägg är lösenordsskyddad. Ange lösenordet för att se kommentarer."
-
-#: comments.php
-msgid "One comment on &ldquo;%2$s&rdquo;"
-msgstr "En kommentar på &ldquo;%2$s&rdquo;"
 
 #: comments.php
 #: comments.php
@@ -81,7 +75,7 @@ msgstr "Nyare kommentarer &#8250;"
 
 #: comments.php
 msgid "Pings&#47;Trackbacks"
-msgstr "Ping / Trackbacks"
+msgstr "Pings&#47;Trashbacks"
 
 #: comments.php
 msgid "%1$d %2$s for \"%3$s\""
@@ -97,11 +91,11 @@ msgstr "E-post"
 
 #: comments.php
 msgid "Website"
-msgstr "Webbplats"
+msgstr "Webbsida"
 
 #: footer.php
 msgid "&copy;"
-msgstr "©"
+msgstr "&copy;"
 
 #: footer.php
 msgid "scroll to top"
@@ -112,111 +106,80 @@ msgid "&uarr;"
 msgstr "&uarr;"
 
 #: footer.php
+msgid "http://themeid.com/responsive-theme/"
+msgstr "http://themeid.com/responsive-theme/"
+
+#: footer.php
 msgid "Responsive Theme"
-msgstr "Lyhörd tema"
+msgstr "Responsive Theme"
 
 #: footer.php
 msgid "powered by"
-msgstr "Drivs av"
+msgstr "drivs av"
+
+#: footer.php
+msgid "http://wordpress.org/"
+msgstr "http://sv.wordpress.org/"
 
 #: footer.php
 msgid "WordPress"
 msgstr "WordPress"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Hello, World!"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your H2 subheadline here"
-msgstr "Din H2-underrubrik här"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
-msgstr "Din rubrik, underrubrik och detta innehåll kan du redigera från Temainställningar. Call to Action-knappen och dess adress likaså. Bild till höger kan vara en bild eller till och med en YouTube-video om du så önskar."
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Call to Action"
-msgstr ""
-
 #: image.php
 msgid "&#8249; Return to"
 msgstr "&#8249; Gå tillbaka till"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-meta-page.php
 #: image.php
+#: post-meta-page.php
+#: post-meta.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "No Comments &darr;"
 msgstr "Inga Kommentarer &darr;"
 
-#: pro/functions.php
-#: image.php
 #: post-meta-page.php
-#: sidebar-content-page.php
+#: post-meta.php
+#: image.php
 #: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "1 Comment &darr;"
 msgstr "1 Kommentar &darr;"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-meta-page.php
+#: post-meta.php
 #: image.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "% Comments &darr;"
 msgstr "% Kommentarer &darr;"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "En kommentar på “%2$s”"
+msgstr[1] "%1$s kommentarer på “%2$s”"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Tagged with:"
 msgstr "Taggar:"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: image.php
-msgid "Posted in %s"
-msgstr "Postat i %s"
-
-#: sitemap.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+msgid "Posted in %s"
+msgstr "Publicerad i %s"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: sitemap.php
 msgid "Edit"
-msgstr "ändra"
-
-#: loop-header.php
-msgid "Daily Archives: %s"
-msgstr "Dagsarkiv: %s"
-
-#: loop-header.php
-msgid "Monthly Archives: %s"
-msgstr "månadsarkiv: %s"
-
-#: loop-header.php
-msgid "Yearly Archives: %s"
-msgstr "Årsarkiv: %s"
-
-#: loop-header.php
-msgid "Blog Archives"
-msgstr "Bloggarkiv"
-
-#: loop-no-posts.php
-msgid "Your search for %s did not match any entries."
-msgstr "Din sökning av %s matchade inte några poster"
+msgstr "Redigera"
 
 #: loop-no-posts.php
 msgid "404 &#8212; Fancy meeting you here!"
@@ -230,8 +193,8 @@ msgstr "Få inte panik, vi tar oss igenom detta tillsammans. Låt oss utforska v
 msgid "You can return %s or search for the page you were looking for."
 msgstr "Du kan gå tillbaka %s eller söka efter den sidan du letade efter"
 
-#: core/includes/functions.php
 #: loop-no-posts.php
+#: core/includes/functions.php
 msgid "Home"
 msgstr "Hem"
 
@@ -239,8 +202,32 @@ msgstr "Hem"
 msgid "&larr; Home"
 msgstr "&larr; Hem"
 
-#: core/includes/functions.php
+#: loop-header.php
+msgid "Daily Archives: %s"
+msgstr "Dagliga Arkiv: %s"
+
+#: loop-header.php
+msgid "Monthly Archives: %s"
+msgstr "Månadsarkiv: %s"
+
+#: loop-header.php
+msgid "Yearly Archives: %s"
+msgstr "Årliga Arkiv: %s"
+
+#: loop-header.php
+msgid "Blog Archives"
+msgstr "Bloggarkiv"
+
+#: loop-no-posts.php
+msgid "Your search for %s did not match any entries."
+msgstr "Din sökning av %s matchade inte några poster"
+
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "Permanent Länk till %s"
+
 #: search.php
+#: core/includes/functions.php
 msgid "Search results for: %s"
 msgstr "Sökresultat för: %s"
 
@@ -250,7 +237,7 @@ msgstr "sök här &hellip;"
 
 #: searchform.php
 msgid "Go"
-msgstr "Gå"
+msgstr "Sök"
 
 #: sidebar-gallery.php
 msgid "Image Information"
@@ -270,11 +257,11 @@ msgstr "Brännvidd:"
 
 #: sidebar-gallery.php
 msgid "mm"
-msgstr ""
+msgstr "mm"
 
 #: sidebar-gallery.php
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: sidebar-gallery.php
 msgid "Shutter:"
@@ -282,7 +269,7 @@ msgstr "Slutare:"
 
 #: sidebar-gallery.php
 msgid "Camera:"
-msgstr "Kamera"
+msgstr "Kamera:"
 
 #: sidebar.php
 #: sidebar-right.php
@@ -293,8 +280,8 @@ msgstr "Kamera"
 msgid "In Archive"
 msgstr "I Arkiv"
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 1"
 msgstr "Hem Widget 1"
 
@@ -302,8 +289,8 @@ msgstr "Hem Widget 1"
 msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
 msgstr "Detta är din första hem-widget-box. För att redigera, gå till Utseende > Widgets och välj sjätte widgeten från toppen i område sex vid namn Hem Widget 1. Rubriken är också hanterbar från Widgets."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 2"
 msgstr "Hem Widget 2"
 
@@ -311,8 +298,8 @@ msgstr "Hem Widget 2"
 msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
 msgstr "Detta är din andra hem-widget-box. För att redigera, gå till Utseende > Widgets och välj sjunde widgeten från toppen i område sju vid namn Hem Widget 2. Rubriken är också hanterbar från Widgets."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 3"
 msgstr "Hem Widget 3"
 
@@ -333,16 +320,12 @@ msgid "Latest Posts"
 msgstr "Senaste Inlägg"
 
 #: sitemap.php
-msgid "Permanent Link to %s"
-msgstr "Permanent Länk till %s"
-
-#: sitemap.php
 msgid "Pages"
 msgstr "Sidor"
 
 #: core/includes/functions.php
 msgid "Top Menu"
-msgstr "Översta menyn"
+msgstr "Topp Meny"
 
 #: core/includes/functions.php
 msgid "Header Menu"
@@ -359,17 +342,16 @@ msgstr "Sidfot Meny"
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "Page %s"
-msgstr "Sidan %s"
+msgstr ""
 
 #: core/includes/functions.php
 msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
 msgstr "<span class=\"%1$s\">Publicerad den </span>%2$s<span class=\"%3$s\"> av </span>%4$s"
 
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "View all posts by %s"
-msgstr "Se alla inlägg av %s"
+msgstr "Visa alla inlägg av %s"
 
 #: core/includes/functions.php
 msgid "Archive for %s"
@@ -383,40 +365,15 @@ msgstr "Inlägg taggade %s"
 msgid "Error 404"
 msgstr "Fel 404 "
 
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Instructions"
-msgstr "Instruktioner"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Help"
-msgstr "Hjälp"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Translate"
-msgstr "Översätta"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Showcase"
-msgstr ""
-
-#: pro/functions.php
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "More Themes"
 msgstr "Fler teman"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr ""
 
 #: core/includes/functions.php
 msgid "Main Sidebar"
@@ -504,51 +461,28 @@ msgstr ""
 
 #: content-sidebar-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar"
 msgstr ""
 
 #: sidebar-content-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content"
 msgstr ""
 
 #: content-sidebar-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar Half Page"
 msgstr ""
 
 #: sidebar-content-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content Half Page"
 msgstr ""
 
 #: full-width-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Full Width Page (no sidebar)"
 msgstr ""
-
-#: core/includes/post-custom-meta.php
-msgid "Layout"
-msgstr ""
-
-#: core/includes/post-custom-meta.php
-msgid "Default"
-msgstr "Förval"
 
 #: landing-page.php
 msgid "Landing Page (no menu)"
@@ -558,14 +492,39 @@ msgstr ""
 msgid "Sitemap"
 msgstr ""
 
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr ""
+
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr ""
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Hello, World!"
+msgstr "Hello, World!"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your H2 subheadline here"
+msgstr "Din H2-underrubrik här"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "Din rubrik, underrubrik och detta innehåll kan du redigera från Temainställningar. Call to Action-knappen och dess adress likaså. Bild till höger kan vara en bild eller till och med en YouTube-video om du så önskar."
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Call to Action"
+msgstr "Call to Action"
+
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
-#: pro/options/options.php
-#: pro/options/options.php
 msgid "Theme Options"
 msgstr "Temainställningar"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Options Saved"
 msgstr "Inställningar Sparade"
@@ -574,29 +533,19 @@ msgstr "Inställningar Sparade"
 msgid "Theme Elements"
 msgstr "Temainslag"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Breadcrumb Lists?"
 msgstr "Inaktivera Brödsmulor?"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Check to disable"
 msgstr "Klicka i för att inaktivera"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Call to Action Button?"
 msgstr "Inaktivera Call to Action-knappen?"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -607,12 +556,6 @@ msgstr "Inaktivera Call to Action-knappen?"
 msgid "Save Options"
 msgstr "Spara Inställningar"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -621,10 +564,8 @@ msgstr "Spara Inställningar"
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Restore Defaults"
-msgstr "Återställ förval"
+msgstr ""
 
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Logo Upload"
 msgstr "Ladda Upp Logotyp"
@@ -641,313 +582,233 @@ msgstr "I behov av att byta ut eller ta bort standardlogotypen?"
 msgid "<a href=\"%s\">Click here</a>."
 msgstr "<a href=\"%s\">Klicka här</a>."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Home Page"
-msgstr "Hemsida"
+msgstr "Startsida"
 
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Enable Custom Front Page"
-msgstr "Aktivera anpassad startsida"
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Overrides the WordPress %1sfront page option%2s"
-msgstr "Åsidosätter WordPress % 1sfront alternativet % 2s"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Headline"
 msgstr "Rubrik"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your headline"
 msgstr "Ange din rubrik"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Subheadline"
 msgstr "Underrubrik"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your subheadline"
 msgstr "Ange din underrubrik"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Content Area"
 msgstr "Innehållsområdet"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your content"
 msgstr "Ange ditt innehåll"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (URL)"
-msgstr ""
+msgstr "Call to Action (URL)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action URL"
 msgstr "Ange din call to action-URL"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (Text)"
-msgstr ""
+msgstr "Call to Action (Text)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action text"
 msgstr "Ange din call to action-text"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Featured Content"
 msgstr "Presenterat Innehåll"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "See Docs"
 msgstr "Se Dokumentation"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Paste your shortcode, video or image source"
 msgstr "Klistra in din kortkod, video eller bildkälla"
 
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Layouts"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Static Page Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Single Blog Post Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Blog Posts Index Layout"
 msgstr ""
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Webmaster Tools"
 msgstr "Webbadministratörsverktyg"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Site Verification"
 msgstr "Google: Verifiering av webbplatsen"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google ID number only"
 msgstr "Ange endast ditt Google ID-nummer"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Bing Site Verification"
 msgstr "Bing: Verifiering av webbplatsen"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Bing ID number only"
 msgstr "Ange endast ditt Bing ID-nummer"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yahoo Site Verification"
 msgstr "Yahoo: Verifiering av webbplatsen"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yahoo ID number only"
 msgstr "Ange endast ditt Yahoo ID-nummer"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Site Statistics Tracker"
-msgstr ""
+msgstr "Site Statistics Tracker"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Leave blank if plugin handles your webmaster tools"
 msgstr "Lämna blankt om plugin hanterar dina webbadministratörsverktyg"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Analytics, StatCounter, any other or all of them."
 msgstr "Google Analytics, StatCounter, någon annan eller alla av dem."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Social Icons"
 msgstr "Sociala Ikoner"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Twitter"
 msgstr "Twitter"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Twitter URL"
 msgstr "Ange din Twitter-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Facebook"
 msgstr "Facebook"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Facebook URL"
 msgstr "Ange din Facebook-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your LinkedIn URL"
 msgstr "Ange din LinkedIn-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "YouTube"
 msgstr "YouTube"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your YouTube URL"
 msgstr "Ange din YouTube-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "StumbleUpon"
 msgstr "StumbleUpon"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your StumbleUpon URL"
 msgstr "Ange din StumbleUpon-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "RSS Feed"
-msgstr "RSS-ström"
+msgstr "RSS-flöde"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your RSS Feed URL"
 msgstr "Ange ditt RSS-flödes URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google+"
-msgstr ""
+msgstr "Google+"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google+ URL"
 msgstr "Ange din Google+-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Instagram"
 msgstr "Instagram"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Instagram URL"
 msgstr "Ange din Instagram-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Pinterest URL"
 msgstr "Ange din Pinterest-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yelp!"
-msgstr ""
+msgstr "Yelp!"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yelp! URL"
 msgstr "Ange din Yelp!-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Vimeo URL"
 msgstr "Ange din Vimeo-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "foursquare"
-msgstr "fyrkant"
+msgstr "foursquare"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your foursquare URL"
 msgstr "Ange din foursquare-URL"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Custom CSS Styles"
 msgstr "Anpassade CSS-stilar"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "https://developer.mozilla.org/en/CSS"
 msgstr "http://www.webdesignskolan.com/css/css.php"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "CSS Tutorial"
 msgstr "CSS-handledning"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom CSS styles."
 msgstr "Ange din anpassade CSS."
@@ -956,331 +817,57 @@ msgstr "Ange din anpassade CSS."
 msgid "Custom Scripts"
 msgstr "Egna Skripts"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Custom Scripts for Header and Footer"
 msgstr "Egna Skripts för Sidhuvud och Sidfot"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Quick Tutorial"
 msgstr "Snabb Handledning"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to header.php &darr;"
 msgstr "Inbäddas i header.php &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom header script."
 msgstr "Ange ditt egna skript för sidhuvud."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to footer.php &darr;"
 msgstr "Inbäddas i footer.php &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom footer script."
 msgstr "Ange ditt egna skript för sidfot."
 
-#: pro/functions.php
-msgid "Posted on "
-msgstr "Postat på "
-
-#: pro/functions.php
-msgid " by "
-msgstr "av"
-
-#: pro/functions.php
-msgid "Posted in"
-msgstr ""
-
-#: pro/functions.php
-msgid "Tags:"
-msgstr "Taggar"
-
-#: pro/functions.php
-msgid "Permalink to %s"
-msgstr "Permanent länk till %s"
-
-#: pro/functions.php
-msgid "Responsive Pro Options"
-msgstr "Lyhörd Pro alternativ"
-
-#: pro/options/options-customizer.php
-msgid "Customize"
-msgstr "Anpassa"
-
-#: pro/options/options-customizer.php
-msgid "Skins"
-msgstr "Skal"
-
-#: pro/options/options-customizer.php
-msgid "Skin Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Typography"
-msgstr "Typografi"
-
-#: pro/options/options-customizer.php
-msgid "Heading Font"
-msgstr "Rubrikteckensnitt"
-
-#: pro/options/options-customizer.php
-msgid "Google Heading Font"
-msgstr "Google Rubrikteckensnitt"
-
-#: pro/options/options-customizer.php
-msgid "Text Font"
-msgstr "Teckensnitt"
-
-#: pro/options/options-customizer.php
-msgid "Google Text Font"
-msgstr "Google teckensnitt"
-
-#: pro/options/options-customizer.php
-msgid "Font Size"
-msgstr "Textstorlek"
-
-#: pro/options/options-customizer.php
-msgid "Headings Color"
-msgstr "Rubrikerna färg"
-
-#: pro/options/options-customizer.php
-msgid "Text Color"
-msgstr "Textfärg"
-
-#: pro/options/options-customizer.php
-msgid "Link Color"
-msgstr "Länkfärg"
-
-#: pro/options/options-customizer.php
-msgid "Link Hover Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Enable custom front page"
-msgstr "Aktivera anpassad startsida"
-
-#: pro/options/options-customizer.php
-msgid "Content"
-msgstr "innehåll"
-
-#: pro/options/options.php
-msgid "Personalize"
-msgstr "Anpassa"
-
-#: pro/options/options.php
-msgid "Favicon"
-msgstr "Favicon"
-
-#: pro/options/options.php
-msgid "maximum width and height 32px"
-msgstr "maximal bredd och höjd 32px"
-
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Upload"
-msgstr "överför"
-
-#: pro/options/options.php
-msgid "Apple Touch Icon"
-msgstr "Apple Touch-ikonen"
-
-#: pro/options/options.php
-msgid "Custom mobile menu title"
-msgstr "Anpassade mobila menyn titel"
-
-#: pro/options/options.php
-msgid "Enter a custom mobile menu title"
-msgstr "Ange en anpassad mobil menyn titel"
-
-#: pro/options/options.php
-msgid "Design"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Change fonts, colors and much more using the theme %1s"
-msgstr "Ändra teckensnitt, färger och mycket mer med temat % 1s"
-
-#: pro/options/options.php
-msgid "Customizer"
-msgstr "Customizer"
-
-#: pro/options/options.php
-msgid "Templates"
-msgstr "Mallar"
-
-#: pro/options/options.php
-msgid "Excerpt Text"
-msgstr "Utdrag Text"
-
-#: pro/options/options.php
-msgid "Read More..."
-msgstr "Läs mer..."
-
-#: pro/options/options.php
-msgid "Excerpt Length"
-msgstr ""
-
-#: pro/options/options.php
-msgid "50"
-msgstr "50"
-
-#: pro/options/options.php
-msgid "Page"
-msgstr "Sida"
-
-#: pro/options/options.php
-msgid "Blog Post Page"
-msgstr "Post bloggsida"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Excerpts"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Featured Images"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Author"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Categories"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Date"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Comments"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Tags"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Single post page"
-msgstr "Enda post sida"
-
-#: pro/options/options.php
-msgid "Archive page"
-msgstr "Arkiv-sidan"
-
-#: pro/options/options.php
-msgid "Search page"
-msgstr "Söksida"
-
-#: pro/options/options.php
-msgid "404 page"
-msgstr "404 sida"
-
-#: pro/options/options.php
-msgid "404 Title"
-msgstr "404 Titel"
-
-#: pro/options/options.php
-msgid "404 error"
-msgstr "404-fel"
-
-#: pro/options/options.php
-msgid "404 Content"
-msgstr "404 Innehåll"
-
-#: pro/options/options.php
-msgid "Sorry, the content is not found...!!!"
-msgstr "Tyvärr, finns innehållet inte...!!!"
-
-#: pro/options/options.php
-msgid "Scripts"
-msgstr "Skript"
-
-#: pro/options/options.php
-msgid "Plugins"
-msgstr "Tillägg"
-
-#: pro/options/options.php
-msgid "Events Plugin Options"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Please activate The Events Calendar plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Install Events Calendar Plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "WooCommerce Settings"
-msgstr "Inställningar för WooCommerce"
-
-#: pro/options/options.php
-msgid "Please activate WooCommerce plugin"
-msgstr "Vänligen aktivera WooCommerce plugin"
-
-#: pro/options/options.php
-msgid "Install WooCommerce Plugin"
-msgstr "Installera WooCommerce Plugin"
-
-#: pro/options/options.php
-msgid "BBPress Settings"
-msgstr "BBPress inställningar"
-
-#: pro/options/options.php
-msgid "Please activate BBPress plugin"
-msgstr "Vänligen aktivera BBPress plugin"
-
-#: pro/options/options.php
-msgid "Install BBPress Plugin"
-msgstr "Installera BBPress Plugin"
-
-#: pro/options/options.php
-msgid "Digital Downloads Settings"
-msgstr "Inställningar för digitala nedladdningar"
-
-#: pro/options/options.php
-msgid "Please activate Easy Digital Downloads plugin"
-msgstr "Vänligen aktivera lätt digitala nedladdningar plugin"
-
-#: pro/options/options.php
-msgid "Install Easy Digital Downloads Plugin"
-msgstr "Installera lätt digitala nedladdningar Plugin"
-
-#: pro/options/options.php
-msgid "%1$s upload failed, make sure you are entering a URL"
-msgstr "%1$ s Uppladdningen misslyckades, kontrollera att du anger en URL"
-
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-msgid "Enter the Google Font name"
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
 msgstr ""
 
 #: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr ""
+
+#: core/includes/functions.php
+#. Welcome to Responsive! Upgrade to Responsive Pro today.
+# INSTRUCTION: Welcome to Responsive! Upgrade to Responsive Pro today.
 msgid "Welcome to %1$s! Upgrade to %2$s today."
 msgstr ""
 

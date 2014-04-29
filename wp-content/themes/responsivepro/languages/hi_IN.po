@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive Pro\n"
+"Project-Id-Version: Responsive Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
-"PO-Revision-Date: 2013-07-06 07:01:53 UTC\n"
+"POT-Creation-Date: 2012-04-25 13:42:58 UTC\n"
+"PO-Revision-Date: 2013-07-22 22:03:32 UTC\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Hindi, India\n"
 "MIME-Version: 1.0\n"
@@ -12,62 +12,56 @@ msgstr ""
 "X-Generator: WebTranslateIt.com\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
-#: archive.php
-#: core/includes/functions.php
-#: search.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: page.php
 #: landing-page.php
 #: index.php
 #: image.php
-#: home.php
 #: full-width-page.php
 #: content-sidebar-page.php
 #: content-sidebar-half-page.php
 #: blog.php
-msgid "Read more &#8250;"
-msgstr "अधिक पढ़िए &#8250;"
-
+#: blog-excerpt.php
+#: archive.php
+#: home.php
+#: search.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
 #: sitemap.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: search.php
-#: page.php
-#: landing-page.php
-#: index.php
-#: image.php
-#: home.php
-#: full-width-page.php
-#: content-sidebar-page.php
-#: content-sidebar-half-page.php
-#: blog.php
-#: blog-excerpt.php
-#: archive.php
 msgid "Pages:"
-msgstr "पृष्ठ"
+msgstr "पृष्ठ:"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "&#8249; Older posts"
 msgstr "&#8249;पुराने चिट्ठे या पोस्ट"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "Newer posts &#8250;"
 msgstr "नए 8250चिट्ठे या पोस्ट &#8250;"
+
+#: blog.php
+#: content-sidebar-half-page.php
+#: content-sidebar-page.php
+#: full-width-page.php
+#: home.php
+#: image.php
+#: index.php
+#: landing-page.php
+#: page.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: core/includes/functions.php
+msgid "Read more &#8250;"
+msgstr "अधिक पढ़िए &#8250;"
 
 #: comments.php
 msgid "This post is password protected. Enter the password to view any comments."
 msgstr "यह चिट्ठा कूट शब्द या पासवर्ड से सुरक्षित है ।चिट्ठे को देखने को देखने के लिए कूट शब्द या पासवर्ड का प्रयोग करे।"
-
-#: comments.php
-msgid "One comment on &ldquo;%2$s&rdquo;"
-msgstr ""
 
 #: comments.php
 #: comments.php
@@ -81,7 +75,7 @@ msgstr "नए टिप्पणी &#8250;"
 
 #: comments.php
 msgid "Pings&#47;Trackbacks"
-msgstr "पिंग्स / Trackbacks"
+msgstr "संदेश-संप्रेषण के लिये जाँच्"
 
 #: comments.php
 msgid "%1$d %2$s for \"%3$s\""
@@ -97,11 +91,11 @@ msgstr "ईमेल"
 
 #: comments.php
 msgid "Website"
-msgstr ""
+msgstr "वेबसाईट"
 
 #: footer.php
 msgid "&copy;"
-msgstr "©"
+msgstr "&copy;"
 
 #: footer.php
 msgid "scroll to top"
@@ -112,91 +106,101 @@ msgid "&uarr;"
 msgstr "&uarr;"
 
 #: footer.php
+msgid "http://themeid.com/responsive-theme/"
+msgstr "http://themeid.com/responsive-theme/"
+
+#: footer.php
 msgid "Responsive Theme"
-msgstr "संवेदनशील विषय"
+msgstr "Responsive Theme"
 
 #: footer.php
 msgid "powered by"
 msgstr "वर्डप्रेस शक्तिचालित"
 
 #: footer.php
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php
 msgid "WordPress"
 msgstr "WordPress"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Hello, World!"
-msgstr "सबको नमस्कार"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your H2 subheadline here"
-msgstr "आपका H2 उपशीर्षक यहाँ है"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
-msgstr "आपका शीर्षक, उपशीर्षक,क्रिया बटन, URL और यह सामग्री थीम विकल्प से परिवर्तन योग्य है। दायी छवि के स्थान को आप किसी भी छवि या You Tube Video से बदल सकते है ।"
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Call to Action"
-msgstr "क्रिया बटन"
 
 #: image.php
 msgid "&#8249; Return to"
 msgstr "&#8249;यहाँ लौटे"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-meta-page.php
 #: image.php
+#: post-meta-page.php
+#: post-meta.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "No Comments &darr;"
 msgstr "कोई टिप्पणी नहीं &darr;"
 
-#: pro/functions.php
-#: image.php
 #: post-meta-page.php
-#: sidebar-content-page.php
+#: post-meta.php
+#: image.php
 #: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "1 Comment &darr;"
 msgstr "1 टिप्पणी &darr;"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-meta-page.php
+#: post-meta.php
 #: image.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "% Comments &darr;"
 msgstr "% टिप्पणी &darr;"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "पर एक टिप्पणी &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s पर टिप्पणी %2$s&rdquo;"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Tagged with:"
 msgstr "चिन्हित है:"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Posted in %s"
 msgstr "प्रेषित किया गया %s"
 
-#: sitemap.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-data.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: sitemap.php
 msgid "Edit"
-msgstr "संपादन"
+msgstr "परिवर्तन करे"
+
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "आश्चर्य आपसे मिलन यहाँ इस जगह पर!"
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "कृपया घबड़ाना नही, हम लोग इसे साथ में समझेंगे, चलिए हम अपने विकल्प की खोज करते है|"
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "या खोज करते है उस पेज की जिसे आप देख रहे थे %s आप यहां लौट सकते है"
+
+#: loop-no-posts.php
+#: core/includes/functions.php
+msgid "Home"
+msgstr "गृह या होम"
+
+#: loop-no-posts.php
+msgid "&larr; Home"
+msgstr "&larr;गृह या होम"
 
 #: loop-header.php
 msgid "Daily Archives: %s"
@@ -218,31 +222,14 @@ msgstr "चिट्ठा या ब्लॉग संग्रह"
 msgid "Your search for %s did not match any entries."
 msgstr "आपकी खोज %s किसी भी प्रविष्टियों से मेल नहीं खाता"
 
-#: loop-no-posts.php
-msgid "404 &#8212; Fancy meeting you here!"
-msgstr "आश्चर्य आपसे मिलन यहाँ इस जगह पर!"
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "स्थायी सम्बन्ध %s"
 
-#: loop-no-posts.php
-msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
-msgstr "कृपया घबड़ाना नही, हम लोग इसे साथ में समझेंगे, चलिए हम अपने विकल्प की खोज करते है|"
-
-#: loop-no-posts.php
-msgid "You can return %s or search for the page you were looking for."
-msgstr "या खोज करते है उस पेज की जिसे आप देख रहे थे %s आप यहां लौट सकते है"
-
-#: core/includes/functions.php
-#: loop-no-posts.php
-msgid "Home"
-msgstr "घर"
-
-#: loop-no-posts.php
-msgid "&larr; Home"
-msgstr "&larr;गृह या होम"
-
-#: core/includes/functions.php
 #: search.php
+#: core/includes/functions.php
 msgid "Search results for: %s"
-msgstr "खोज परिणाम के लिए: %s"
+msgstr "परिणाम खोजने के लिए लिखे %s"
 
 #: searchform.php
 msgid "search here &hellip;"
@@ -270,11 +257,11 @@ msgstr "फोकल लंबाई"
 
 #: sidebar-gallery.php
 msgid "mm"
-msgstr ""
+msgstr "mm"
 
 #: sidebar-gallery.php
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: sidebar-gallery.php
 msgid "Shutter:"
@@ -293,8 +280,8 @@ msgstr "कैमरा"
 msgid "In Archive"
 msgstr "संग्रह में"
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 1"
 msgstr "गृह विजेट 1"
 
@@ -302,8 +289,8 @@ msgstr "गृह विजेट 1"
 msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
 msgstr "यह आपका पहला home widget box है | परिवर्तन करने के लिए कृप्या जाये Appearance > Widgets पर और चुने ऊपर से 6th widget, इसे home widget 1 कहते है । यह widget से भी प्रबंधनीय है ।"
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 2"
 msgstr "गृह विजेट 2"
 
@@ -311,8 +298,8 @@ msgstr "गृह विजेट 2"
 msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
 msgstr "यह आपका दूसरा home widget box है | परिवर्तन करने के लिए कृप्या जाये Appearance > Widgets पर और चुने ऊपर से 7th widget, इसे home widget 2 कहते है । यह widget से भी प्रबंधनीय है ।"
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 3"
 msgstr "गृह विजेट 3"
 
@@ -333,16 +320,12 @@ msgid "Latest Posts"
 msgstr "नवीनतम चिट्ठे"
 
 #: sitemap.php
-msgid "Permanent Link to %s"
-msgstr "स्थायी सम्बन्ध %s"
-
-#: sitemap.php
 msgid "Pages"
-msgstr "पृष्ठों"
+msgstr "पृष्ठ"
 
 #: core/includes/functions.php
 msgid "Top Menu"
-msgstr "शीर्ष मेनू"
+msgstr "टॉप मेनू"
 
 #: core/includes/functions.php
 msgid "Header Menu"
@@ -359,13 +342,12 @@ msgstr "फूटर मेनू"
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "Page %s"
-msgstr "पृष्ठ %s"
+msgstr ""
 
 #: core/includes/functions.php
 msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
 msgstr "<span class=\"%1$s\">post किया गया </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
 
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "View all posts by %s"
@@ -381,42 +363,17 @@ msgstr "चिट्ठा चिन्हित है %s"
 
 #: core/includes/functions.php
 msgid "Error 404"
-msgstr "त्रुटि 404"
+msgstr "त्रुटि 404 "
 
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Instructions"
-msgstr "निर्देश"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Help"
-msgstr "मदद"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Translate"
-msgstr "अनुवाद करना"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Showcase"
-msgstr "प्रदर्शन"
-
-#: pro/functions.php
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "More Themes"
 msgstr "और Theme"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr "प्रदर्शन"
 
 #: core/includes/functions.php
 msgid "Main Sidebar"
@@ -504,51 +461,28 @@ msgstr ""
 
 #: content-sidebar-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar"
 msgstr ""
 
 #: sidebar-content-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content"
 msgstr ""
 
 #: content-sidebar-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar Half Page"
 msgstr ""
 
 #: sidebar-content-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content Half Page"
 msgstr ""
 
 #: full-width-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Full Width Page (no sidebar)"
 msgstr ""
-
-#: core/includes/post-custom-meta.php
-msgid "Layout"
-msgstr "ख़ाका,साज-सज्जा"
-
-#: core/includes/post-custom-meta.php
-msgid "Default"
-msgstr "मूलभूत"
 
 #: landing-page.php
 msgid "Landing Page (no menu)"
@@ -558,14 +492,39 @@ msgstr ""
 msgid "Sitemap"
 msgstr ""
 
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr ""
+
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr ""
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Hello, World!"
+msgstr "सबको नमस्कार"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your H2 subheadline here"
+msgstr "आपका H2 उपशीर्षक यहाँ है"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "आपका शीर्षक, उपशीर्षक,क्रिया बटन, URL और यह सामग्री थीम विकल्प से परिवर्तन योग्य है। दायी छवि के स्थान को आप किसी भी छवि या You Tube Video से बदल सकते है ।"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Call to Action"
+msgstr "क्रिया बटन"
+
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
-#: pro/options/options.php
-#: pro/options/options.php
 msgid "Theme Options"
 msgstr "थीम विकल्प"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Options Saved"
 msgstr "विकल्पों को बचाया"
@@ -574,29 +533,19 @@ msgstr "विकल्पों को बचाया"
 msgid "Theme Elements"
 msgstr "थीम तत्व"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Breadcrumb Lists?"
 msgstr "ब्रेडक्रम्ब लिस्ट निष्क्रिय करना है?"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Check to disable"
 msgstr "निष्क्रिय करने के लिए क्लिक करे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Call to Action Button?"
 msgstr "क्रिया बटन को निष्क्रिय करे"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -607,12 +556,6 @@ msgstr "क्रिया बटन को निष्क्रिय कर�
 msgid "Save Options"
 msgstr "सहेजें विकल्प"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -621,10 +564,8 @@ msgstr "सहेजें विकल्प"
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Restore Defaults"
-msgstr "डिफ़ॉल्ट पुनर्स्थापित करें"
+msgstr ""
 
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Logo Upload"
 msgstr "लोगो अपलोड करे"
@@ -641,646 +582,292 @@ msgstr "क्या default logo बदलने की आवश्यकत�
 msgid "<a href=\"%s\">Click here</a>."
 msgstr "<a href=\"%s\">Click करे</a>"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Home Page"
 msgstr "गृह या होम पृष्ठ"
 
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Enable Custom Front Page"
-msgstr "कस्टम फ्रंट पेज को सक्षम करें"
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Overrides the WordPress %1sfront page option%2s"
-msgstr "WordPress % 1sfront पृष्ठ विकल्प % 2s को ओवरराइड करता है"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Headline"
 msgstr "शीर्षक"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your headline"
 msgstr "यहाँ अपना शीर्षक लिखिए"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Subheadline"
 msgstr "उप-शीर्षक"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your subheadline"
 msgstr "यहाँ अपना उप-शीर्षक लिखिए"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Content Area"
 msgstr "विषय-वस्तु एरिया"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your content"
 msgstr "विषय-वस्तु यहाँ लिखिए"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (URL)"
 msgstr "क्रिया-बटन (URL)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action URL"
 msgstr "यहाँ क्रिया-बटन (URL) दीजिये"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (Text)"
 msgstr "क्रिया-बटन (मूलशब्द)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action text"
 msgstr "यहाँ क्रिया-बटन (मूलशब्द) लिखिए"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Featured Content"
 msgstr "प्रधान सामग्री"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "See Docs"
 msgstr "लेख्य पत्र देखे"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Paste your shortcode, video or image source"
 msgstr "कृप्या अपना shortcode, video या छवि यहाँ लिखे"
 
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Layouts"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Static Page Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Single Blog Post Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Blog Posts Index Layout"
 msgstr ""
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Webmaster Tools"
 msgstr "वेबमास्टर टूल्स"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Site Verification"
 msgstr "Google साइट वेरिफिकेशन"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google ID number only"
 msgstr "अपना Google ID लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Bing Site Verification"
 msgstr "Bing साइट वेरिफिकेशन"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Bing ID number only"
 msgstr "अपना Bing ID लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yahoo Site Verification"
 msgstr "Yahoo साइट वेरिफिकेशन"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yahoo ID number only"
 msgstr "अपना Yahoo ID लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Site Statistics Tracker"
 msgstr "साइट आँकड़े की गणना"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Leave blank if plugin handles your webmaster tools"
 msgstr "इसको छोड़ सकते है अगर आप किसी प्लगइन से वेबमास्टर टूल्स का काम करते है"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Analytics, StatCounter, any other or all of them."
 msgstr "Google Analytics, StatCounter, कुछ और या सभी|"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Social Icons"
-msgstr "सामाजिक प्रतीक"
+msgstr "सोशल नेटवर्क के लोगो"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Twitter"
-msgstr "चहचहाना"
+msgstr "Twitter"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Twitter URL"
 msgstr "अपना Twitter URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Facebook"
-msgstr "फेसबुक"
+msgstr "Facebook"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Facebook URL"
 msgstr "अपना Facebook URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your LinkedIn URL"
 msgstr "अपना LinkedIn URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "YouTube"
-msgstr "यूट्यूब"
+msgstr "YouTube"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your YouTube URL"
 msgstr "अपना YouTube URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "StumbleUpon"
 msgstr "StumbleUpon"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your StumbleUpon URL"
 msgstr "अपना StumbleUpon URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "RSS Feed"
-msgstr ""
+msgstr "RSS Feed"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your RSS Feed URL"
 msgstr "अपना RSS Feed URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google+"
-msgstr "गूगल +"
+msgstr "Google+"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google+ URL"
 msgstr "अपना Google+ URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Instagram"
 msgstr "Instagram"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Instagram URL"
 msgstr "अपना Instagram URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Pinterest URL"
 msgstr "अपना Pinterest URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yelp!"
-msgstr ""
+msgstr "Yelp!"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yelp! URL"
 msgstr "अपना Yelp! URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Vimeo URL"
 msgstr "अपना Vimeo URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "foursquare"
-msgstr "सचाई"
+msgstr "foursquare"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your foursquare URL"
 msgstr "अपना foursquare URL लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Custom CSS Styles"
 msgstr "अपनी रूचि के अनुसार CSS Styles"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "https://developer.mozilla.org/en/CSS"
-msgstr ""
+msgstr "https://developer.mozilla.org/en/CSS"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "CSS Tutorial"
 msgstr "CSS प्रशिक्षण"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom CSS styles."
 msgstr "अपनी रूचि के अनुसार CSS Styles यहाँ लिखिए"
 
 #: core/includes/theme-options.php
 msgid "Custom Scripts"
-msgstr ""
+msgstr "Custom Scripts"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Custom Scripts for Header and Footer"
 msgstr "Custom Scripts Header और Footer के लिए"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Quick Tutorial"
 msgstr "त्वरित शिक्षण"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to header.php &darr;"
-msgstr ""
+msgstr "Embeds to header.php &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom header script."
 msgstr "अपने custom header का code लिखे"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to footer.php &darr;"
-msgstr ""
+msgstr "Embeds to footer.php &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom footer script."
 msgstr "अपने custom footer का code लिखे"
 
-#: pro/functions.php
-msgid "Posted on "
-msgstr "पर पोस्ट किया गया "
-
-#: pro/functions.php
-msgid " by "
-msgstr ""
-
-#: pro/functions.php
-msgid "Posted in"
-msgstr "में पोस्ट किया गया"
-
-#: pro/functions.php
-msgid "Tags:"
-msgstr "टैग"
-
-#: pro/functions.php
-msgid "Permalink to %s"
-msgstr "Permalink %s"
-
-#: pro/functions.php
-msgid "Responsive Pro Options"
-msgstr "उत्तरदायी प्रो विकल्प"
-
-#: pro/options/options-customizer.php
-msgid "Customize"
-msgstr "फ़रमाइशें"
-
-#: pro/options/options-customizer.php
-msgid "Skins"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Skin Color"
-msgstr "त्वचा का रंग"
-
-#: pro/options/options-customizer.php
-msgid "Typography"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Heading Font"
-msgstr "शीर्ष फ़ॉन्ट"
-
-#: pro/options/options-customizer.php
-msgid "Google Heading Font"
-msgstr "गूगल शीर्ष फ़ॉन्ट"
-
-#: pro/options/options-customizer.php
-msgid "Text Font"
-msgstr "पाठ फ़ॉन्ट"
-
-#: pro/options/options-customizer.php
-msgid "Google Text Font"
-msgstr "Google पाठ फ़ॉन्ट"
-
-#: pro/options/options-customizer.php
-msgid "Font Size"
-msgstr "िवडीयो"
-
-#: pro/options/options-customizer.php
-msgid "Headings Color"
-msgstr "शीर्ष रंग"
-
-#: pro/options/options-customizer.php
-msgid "Text Color"
-msgstr "पाठ का रंग"
-
-#: pro/options/options-customizer.php
-msgid "Link Color"
-msgstr "लिंक रंग"
-
-#: pro/options/options-customizer.php
-msgid "Link Hover Color"
-msgstr "कड़ी हॉवर रंग"
-
-#: pro/options/options-customizer.php
-msgid "Enable custom front page"
-msgstr "कस्टम फ्रंट पेज को सक्षम करें"
-
-#: pro/options/options-customizer.php
-msgid "Content"
-msgstr "विषय"
-
-#: pro/options/options.php
-msgid "Personalize"
-msgstr "वैयक्तिकृत करें"
-
-#: pro/options/options.php
-msgid "Favicon"
-msgstr "Favicon"
-
-#: pro/options/options.php
-msgid "maximum width and height 32px"
-msgstr "अधिकतम चौड़ाई और ऊँचाई 32px"
-
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Upload"
-msgstr "अपलोड"
-
-#: pro/options/options.php
-msgid "Apple Touch Icon"
-msgstr "एप्पल टच चिह्न"
-
-#: pro/options/options.php
-msgid "Custom mobile menu title"
-msgstr "कस्टम मोबाइल मेनू शीर्षक"
-
-#: pro/options/options.php
-msgid "Enter a custom mobile menu title"
-msgstr "एक कस्टम मोबाइल मेनू शीर्षक दर्ज करें"
-
-#: pro/options/options.php
-msgid "Design"
-msgstr "डिजाइन"
-
-#: pro/options/options.php
-msgid "Change fonts, colors and much more using the theme %1s"
-msgstr "फ़ॉन्ट्स, रंगों और बहुत अधिक विषय % 1s का उपयोग कर परिवर्तित करें"
-
-#: pro/options/options.php
-msgid "Customizer"
-msgstr "Customizer"
-
-#: pro/options/options.php
-msgid "Templates"
-msgstr "टेम्पलेट"
-
-#: pro/options/options.php
-msgid "Excerpt Text"
-msgstr "उद्धरण पाठ"
-
-#: pro/options/options.php
-msgid "Read More..."
-msgstr "और अधिक पढ़ें..."
-
-#: pro/options/options.php
-msgid "Excerpt Length"
-msgstr "अंश लंबाई"
-
-#: pro/options/options.php
-msgid "50"
-msgstr "50"
-
-#: pro/options/options.php
-msgid "Page"
-msgstr "पृष्ठ"
-
-#: pro/options/options.php
-msgid "Blog Post Page"
-msgstr "ब्लॉग पोस्ट पेज"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Excerpts"
-msgstr "पोस्ट कुछ अंशः"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Featured Images"
-msgstr "विशेष रुप से प्रदर्शित चित्र"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Author"
-msgstr "पोस्ट Byline लेखक"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Categories"
-msgstr "पोस्ट Byline श्रेणियाँ"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Date"
-msgstr "पोस्ट Byline दिनांक"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Comments"
-msgstr "Byline टिप्पणी पोस्ट"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Tags"
-msgstr "Byline टैग पोस्ट"
-
-#: pro/options/options.php
-msgid "Single post page"
-msgstr "ही पोस्ट पेज"
-
-#: pro/options/options.php
-msgid "Archive page"
-msgstr "पुरालेख पृष्ठ"
-
-#: pro/options/options.php
-msgid "Search page"
-msgstr ""
-
-#: pro/options/options.php
-msgid "404 page"
-msgstr "404 पृष्ठ"
-
-#: pro/options/options.php
-msgid "404 Title"
-msgstr "404 शीर्षक"
-
-#: pro/options/options.php
-msgid "404 error"
-msgstr "404 त्रुटि"
-
-#: pro/options/options.php
-msgid "404 Content"
-msgstr "404 सामग्री"
-
-#: pro/options/options.php
-msgid "Sorry, the content is not found...!!!"
-msgstr "क्षमा करें, सामग्री नहीं मिली...!!"
-
-#: pro/options/options.php
-msgid "Scripts"
-msgstr "लिपियों"
-
-#: pro/options/options.php
-msgid "Plugins"
-msgstr "प्लगइन"
-
-#: pro/options/options.php
-msgid "Events Plugin Options"
-msgstr "घटनाक्रम प्लगइन विकल्प"
-
-#: pro/options/options.php
-msgid "Please activate The Events Calendar plugin"
-msgstr "कृपया घटनाओं कैलेंडर प्लगइन को सक्रिय करें"
-
-#: pro/options/options.php
-msgid "Install Events Calendar Plugin"
-msgstr "घटनाओं कैलेंडर प्लगइन स्थापित करें"
-
-#: pro/options/options.php
-msgid "WooCommerce Settings"
-msgstr "WooCommerce सेटिंग"
-
-#: pro/options/options.php
-msgid "Please activate WooCommerce plugin"
-msgstr "कृपया WooCommerce प्लगइन को सक्रिय करें"
-
-#: pro/options/options.php
-msgid "Install WooCommerce Plugin"
-msgstr "WooCommerce प्लगइन स्थापित करें"
-
-#: pro/options/options.php
-msgid "BBPress Settings"
-msgstr "BBPress सेटिंग्स"
-
-#: pro/options/options.php
-msgid "Please activate BBPress plugin"
-msgstr "कृपया BBPress प्लगइन को सक्रिय करें"
-
-#: pro/options/options.php
-msgid "Install BBPress Plugin"
-msgstr "BBPress प्लगइन स्थापित करें"
-
-#: pro/options/options.php
-msgid "Digital Downloads Settings"
-msgstr "डिजिटल डाउनलोड सेटिंग्स"
-
-#: pro/options/options.php
-msgid "Please activate Easy Digital Downloads plugin"
-msgstr "कृपया आसान डिजिटल डाउनलोड प्लगइन को सक्रिय करें"
-
-#: pro/options/options.php
-msgid "Install Easy Digital Downloads Plugin"
-msgstr "आसान डिजिटल डाउनलोड प्लगइन स्थापित करें"
-
-#: pro/options/options.php
-msgid "%1$s upload failed, make sure you are entering a URL"
-msgstr "%1$ s अपलोड विफल रहा है, सुनिश्चित करें कि आप एक यूआरएल में प्रवेश कर रहे हैं"
-
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-msgid "Enter the Google Font name"
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
 msgstr ""
 
 #: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr ""
+
+#: core/includes/functions.php
+#. Welcome to Responsive! Upgrade to Responsive Pro today.
+# INSTRUCTION: Welcome to Responsive! Upgrade to Responsive Pro today.
 msgid "Welcome to %1$s! Upgrade to %2$s today."
 msgstr ""
 

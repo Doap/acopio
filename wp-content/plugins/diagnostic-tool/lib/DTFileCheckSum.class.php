@@ -10,7 +10,7 @@ class DTFileCheckSum {
     function __construct() {
         $this->counter = 0;
         $this->sum = '';
-		$this->_pluginsDir=ABSPATH.'wp-content/plugins/'; // TODO plugins dir is dynamic?
+		$this->_pluginsDir=DTPLUGINBASE;
     }
 
     function listFolderFiles($dir) {
@@ -146,6 +146,7 @@ class DTFileCheckSum {
 					foreach ($files as $filename => $md5) {
 						if (strpos($filename, 'php') === false)
 							continue;
+
 						$contents = file_get_contents($filename);
 						if (strpos($contents, $searchFor) !== false) {
 							$pluginFile=$filename;
@@ -154,12 +155,13 @@ class DTFileCheckSum {
 					}
 					reset($files);
 
-					$pluginData=get_plugin_data($pluginFile);
+					$pluginName=$this->getPluginName($pluginFile);
+
 					$return[] = (object)array(
 												'hook' => $searchHook,
 												'class' => $hookIsClass,
 												'function' => $searchFor,
-												'plugin' => $pluginData['Name'],
+												'plugin' => $pluginName,
 												'file' => $pluginFile
 											);
 				}
@@ -175,33 +177,36 @@ class DTFileCheckSum {
 		$this->listFolderFiles($this->_pluginsDir);
 		$files=$this->getFiles();
 		$return=array();
-		$pluginNames=array();
 		$pluginOutput=array();
 
 		foreach ($files as $filename => $md5) {
+
 			if (strpos($filename, 'php') === false)
 				continue;
+
 			try
 			{
 				$contents = file_get_contents($filename);
 			} catch (Exception $e) { 
-				echo 'Failed to open file. '.$e->getMessage();	
+				error_log('Failed to open file. '.$e->getMessage());	
 				next;
 			}
 
+			if ($contents===false) {
+				error_log('file_get_contents() returns false. '.$e->getMessage());	
+				next;
+			}
+
+			$contents=str_replace(' ', '', $contents);
+	
 			$matches=array();
 			$relFileName = str_replace($this->_pluginsDir, '', $filename);
 			preg_match('/\/([a-zA-Z0-9\-_]*)/', $relFileName, $matches);
 			$pluginParentDir = $matches[1];
 
-			if (strpos($contents, 'Plugin Name')) {
-				$pluginData=get_plugin_data($filename);
-				$pluginNames[$pluginParentDir]=$pluginData['Name']; 
-			}
-
 			foreach ($givenFunctions as $searchFunction)
 			{
-				if (strpos($contents, $searchFunction) !== false && strpos($filename, 'diagnostic-tool') === false)
+				if (strpos($contents, $searchFunction) !== false) // && strpos($filename, 'diagnostic-tool') === false)
 				{
 					$pluginLoc=str_replace($this->_pluginsDir, '', $filename);
 					$pluginOutput[] = array($searchFunction.')', $pluginLoc, $pluginParentDir);
@@ -211,23 +216,43 @@ class DTFileCheckSum {
 
 		foreach ($pluginOutput as $key => $values)
 		{
-			$pluginData=get_plugin_data($values[1]);
+			$pluginName=$this->getPluginName($values[1]);
 
-			// TODO: not clean
-			if ($pluginData['Name'] == '')
-			{
-				$pluginData['Name'] = $pluginNames[$values[2]];				
-			}
-	
 			$return[] = (object) array(
 									'function' => $values[0],
 									'file' => $values[1],
-									'plugin' => $pluginData['Name']
+									'plugin' => $pluginName
 							);
 		}
 
 		return $return;
+	}
 
+	function getPluginName($file)
+	{
+
+		$e=explode('/', $file);
+		$checkFile=implode('/', array($this->_pluginsDir, $e[1], $e[1].'.php'));
+
+		if (!file_exists($checkFile)) {
+			$checkFile=implode('/', array($this->_pluginsDir, $e[1], str_replace('-', '_', $e[1]).'.php'));
+			if (!file_exists($checkFile)) {
+				return 'Unknown';
+			}
+		}
+
+		$thePluginName='Unknown';
+		try {
+			$pluginData=get_plugin_data($checkFile);
+			$thePluginName=$pluginData['Name'];
+		} catch (Exception $e) {
+			$thePluginName='Unknown';
+		}
+		if ($thePluginName=='') {
+			$thePluginName='Unknown';
+		}
+
+		return $thePluginName;
 	}
 
 }

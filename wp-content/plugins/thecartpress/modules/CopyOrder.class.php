@@ -62,7 +62,7 @@ class TCPCopyOrder {
 
 	static function tcp_admin_order_submit_area( $order_id ) { ?>
 		<input type="hidden" name="tcp_copy_order_order_id" value="<?php echo $order_id; ?>" />
-		<input name="tcp_copy_order_to_shopping_cart" value="<?php _e( 'Copy to Shopping Cart', 'tcp' ); ?>" type="submit" class="btn btn-success" />
+		<button name="tcp_copy_order_to_shopping_cart" type="submit" class="btn btn-success"><?php _e( 'Copy to Shopping Cart', 'tcp' ); ?></button>
 	<?php }
 
 	static function tcp_front_end_orders_columns( $cols ) {
@@ -70,11 +70,12 @@ class TCPCopyOrder {
 		return $cols;
 	}
 
-	static function tcp_front_end_orders_cells( $order_id) { ?>
+	static function tcp_front_end_orders_cells( $order_id ) { ?>
 		<td class="tcp_copy_order">
 		<form method="post" action="<?php tcp_the_shopping_cart_url(); ?>">
 		<?php TCPCopyOrder::tcp_admin_order_submit_area( $order_id ); ?>
 		</form>
+		<?php do_action( 'tcp_copy_from_front_end_orders_cells', $order_id ); ?>
 		</td>
 	<?php }
 }

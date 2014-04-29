@@ -1,15 +1,15 @@
 === Send From ===
-Contributors: Ben Buddle
+Contributors: Benjamin Buddle
 Tags: mail, mailer, phpmailer, change, from, send, email
 Requires at least: 3.2.1
-Tested up to: 3.2.1
-Stable tag: 1.3
+Tested up to: 3.8.1
+Stable tag: 2.0
 
-Changes the From line on any email sent from the server.
+Plugin for modifying the from line on all emails coming from WordPress.
 
 == Description ==
 
-I have issues with my hosting service not allowing me to easily set the 'From line' for my server email. When ever a new user signs up they see username@<hostingservice> even though they should see user@site.com. Before Send From you would be required to modify your installation of WordPress just about every time you do an update. No longer. With Send From, you simply go into your admin panel and set what the end user sees in their From line.
+I have issues with my hosting service not allowing me to easily set the 'From line' for my server email. Whenever a new user signs up they see username@hostingservice.com even though they should see user@site.com. Before Send From you would be required to modify your installation of Wordpress just about every time you do an update. No longer! With Send From, you simply go into your admin panel and set what the end user will see on their emails from line.
 
 == Installation ==
 
@@ -19,7 +19,7 @@ I have issues with my hosting service not allowing me to easily set the 'From li
 
 = Set Defaults =
 
-1. Under the 'Plugins' click the link for 'Send Email'
+1. Under the 'Plugins' area, click the link for 'Send From'
 2. Change the From Name and From Email
 3. Click Update Options
 
@@ -27,7 +27,7 @@ I have issues with my hosting service not allowing me to easily set the 'From li
 
 = Why create this? =
 
-I host through hostmonster which does not allow you to easily set the address that server communications use, and I was not willing to outright hack Wordpress (even though it does work). So, here's a plugin that preformes the same operation as the hack I would have needed.
+My host is Host Monster, who does not allow me to easily set the email address my server communicates with. I was not willing to outright hack Wordpress; so, I created a plugin that has worked solidly for me since Wordpress version 3.
 
 = What is the minimum version that is useable with this plugin? =
 
@@ -35,18 +35,18 @@ I'm told that WordPress 2.7 changed several settings, including the way things a
 
 = This pluging doesn't work with x, y, z. Will you add support? =
 
-Chances are if it's not working with another plugin then I have not encountered the issue and am not likly to fix it. So, no, I'm sorry but I will not be adding support for x, y, z.
+Chances are if it's not working with another plugin then I have not encountered the issue and am not likly to fix it. So no, I'm sorry but I will not be adding support for x, y, z.
 
 == Screenshots ==
 
 1. Screenshot of the Plugins > Send From panel.
-2. Screenshot of the Link in the Plugins menu.
 
 == Support Questions ==
 
-At this time I am not offering open support for this plugin. It should remain stable through the various WordPress updates, but if it ever becomes unstable then I will update it.
+If there are any issues that crop up, I will be happy to take a look at solving them. However, due to many factors, I can't offer active support for the plugin. 
 
 == Changelog ==
+ 2.0 - Updated the code to fix naming conventions, reduce size, and fix and issue with the options page
  1.3 - Fixed typo
  1.2 - Fixed issue with update message not displaying properly
  1.1 - Fixed Error where default address was not properly used

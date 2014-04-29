@@ -72,20 +72,20 @@ class umSupportProModel {
     /**
      * Handle resetPassword request, key validation, password reset
      */
-    function lostPasswordForm( $config=array() ){
+    function lostPasswordForm( $config=array() ) {
         global $userMeta;
         
         $methodName = "Lostpassword";
         
         //if( is_user_logged_in() ) return;        
         
-        if( empty( $config ) )
+        if ( empty( $config ) )
             $config = $userMeta->getExecutionPageConfig( 'lostpassword' );
         
         $login = $userMeta->getSettings( 'login' );
         
-        if( !empty( $login['disable_lostpassword'] ) )
-            return $userMeta->showError( __( 'Retrieve password is currently not allowed.', $userMeta->name ) );
+        if ( ! empty( $login['disable_lostpassword'] ) )
+            return $userMeta->showError( __( 'Password reset is currently not allowed.', $userMeta->name ) );
         
         //$html = null;
         //if( !@$_REQUEST['is_ajax'] && @$_REQUEST['method_name'] == 'lostpassword' )
@@ -122,19 +122,19 @@ class umSupportProModel {
     }
     
     
-    function resetPassword( $config=array() ){
+    function resetPassword( $config=array() ) {
         global $userMeta;
         
-        if( empty( $config ) )
+        if ( empty( $config ) )
             $config = $userMeta->getExecutionPageConfig( 'resetpass' );
         
         $html = null;
         $user = $userMeta->check_password_reset_key( rawurldecode( @$_GET['key'] ) , rawurldecode( @$_GET['login'] )  );                    
-    	if ( !is_wp_error($user) ){
-            if( isset( $_POST['pass1'] ) && isset( $_POST['pass2'] ) ){
+    	if ( ! is_wp_error( $user ) ){
+            if ( isset( $_POST['pass1'] ) && isset( $_POST['pass2'] ) ) {
                 if ( isset($_POST['pass1']) && $_POST['pass1'] != $_POST['pass2'] ) 
                     $errors = new WP_Error('password_reset_mismatch', $userMeta->getMsg( 'password_reset_mismatch' ) );
-                elseif ( isset($_POST['pass1']) && !empty($_POST['pass1']) ){
+                elseif ( isset($_POST['pass1']) && !empty($_POST['pass1']) ) {
                     $userMeta->reset_password($user, $_POST['pass1']);
                     do_action( 'user_meta_after_reset_password', $user );
                     $html .= $userMeta->showMessage( $userMeta->getMsg( 'password_reseted' ) );
@@ -153,38 +153,39 @@ class umSupportProModel {
         ), 'login' );
     }
     
-    function emailVerification( $config=array() ){
+    
+    function emailVerification( $config=array() ) {
         global $userMeta;
 
-        if( empty( $config ) )
+        if ( empty( $config ) )
             $config = $userMeta->getExecutionPageConfig( 'email_verification' );
         
         $email  = isset( $_REQUEST['email'] ) ? rawurldecode( $_REQUEST['email'] ) : '';
         $key    = isset( $_REQUEST['key'] ) ? rawurldecode( $_REQUEST['key'] ) : '';
         
-        if( !$email || !$key )
+        if ( ! $email || ! $key )
             return $userMeta->showError(  $userMeta->getMsg( 'invalid_parameter' )  );
         
         $user = get_user_by( 'email', $email );  
-        if( !$user )
+        if ( ! $user )
             return $userMeta->showError(  $userMeta->getMsg( 'email_not_found' )  );
             
         $status = get_user_meta( $user->ID, $userMeta->prefixLong . 'user_status', true );
         
-        if( $status == 'active' )
+        if ( $status == 'active' )
             return $userMeta->showMessage( $userMeta->getMsg( 'user_already_activated' ) );
         
         $preSavedKey = get_user_meta( $user->ID, $userMeta->prefixLong . 'email_verification_code', true );
         
-        if( empty( $preSavedKey ) && $status == 'pending' )
+        if ( empty( $preSavedKey ) && $status == 'pending' )
             return $userMeta->showMessage( $userMeta->getMsg( 'email_verified_pending_admin' ), 'info' );
         
         $html = null;
-        if( $preSavedKey == $key){
+        if ( $preSavedKey == $key) {
             $registration       = $userMeta->getSettings( 'registration' );
             $user_activation    = $registration[ 'user_activation' ];
             
-            if( $user_activation == 'email_verification' )
+            if ( $user_activation == 'email_verification' )
                 $status = 'active';
             
             update_user_meta( $user->ID, $userMeta->prefixLong . 'user_status', $status );
@@ -192,7 +193,7 @@ class umSupportProModel {
             do_action( 'user_meta_email_verified', $user->ID );
             
             $html .= $userMeta->showMessage( $userMeta->getMsg(  $status == 'active' ? 'email_verified' : 'email_verified_pending_admin', esc_url(wp_login_url()) ) );
-            if( !empty( $config['redirect'] ) )
+            if ( !empty( $config['redirect'] ) )
                 $html .= $userMeta->jsRedirect( $config['redirect'], 5 );
             return $html;
         }else
@@ -320,8 +321,8 @@ class umSupportProModel {
         return false;
     }
     
-    function disableAdminRow( $id ){
-        if( in_array( $id, array( 'heading_0', 'heading_1', 'heading_2', 'heading_3' ) ) ){
+    function disableAdminRow( $id ) {
+        if ( in_array( $id, array( 'heading_0', 'heading_1', 'heading_2', 'heading_3' ) ) ) {
             ?>
             <script type="text/javascript">
                 jQuery(document).ready(function(){
@@ -329,8 +330,18 @@ class umSupportProModel {
                     jQuery( "h3:eq(" + id + ")" ).hide();
                 });
             </script>               
-            <?php             
-        }else{
+            <?php 
+            
+        } elseif ( in_array( $id, array( 'color-picker', 'pass1' ) ) ) {
+            ?>
+            <script type="text/javascript">
+                jQuery(document).ready(function(){
+                    jQuery( "#<?php echo $id; ?>" ).parents( "table" ).hide();
+                });
+            </script>  
+            <?php 
+            
+        } else {
             ?>
             <script type="text/javascript">
                 jQuery(document).ready(function(){
@@ -403,9 +414,10 @@ class umSupportProModel {
             $msg    = $userMeta->getMsg( 'wait_for_admin_approval' );
         elseif( $activation == 'both_email_admin' )
             $msg    = $userMeta->getMsg( 'sent_link_wait_for_admin' );
-            
-        if( $fileCache )
-            $userMeta->removeCache( 'image_cache', $fileCache, false );
+           
+        // Commented since 1.1.5rc3
+        //if( $fileCache )
+            //$userMeta->removeCache( 'image_cache', $fileCache, false );
         
         if( $activation == 'auto_active' ){
             if( !empty( $registrationSettings['auto_login'] ) )
@@ -529,14 +541,14 @@ class umSupportProModel {
      * @return $redirect_to: url
      */
     function getRedirectionUrl( $redirect_to, $action, $role=null ){
-        global $userMeta, $user_ID;
+        global $userMeta;
         
-        if( !$role )
-            $role = $userMeta->getUserRole( $user_ID );
+        if( ! $role )
+            $role = $userMeta->getUserRole( get_current_user_id() );
         
-        $redirection       = $userMeta->getSettings( 'redirection' );
+        $redirection = $userMeta->getSettings( 'redirection' );
         
-        if( @$redirection[ 'disable' ] )
+        if( !empty( $redirection[ 'disable' ] ) )
             return $redirect_to;
         
         $redirectionType = @$redirection[ $action ][ $role ];
@@ -598,7 +610,16 @@ class umSupportProModel {
     function emailVerificationUrl( $user ){
         global $userMeta;
         
-        $pageID = $userMeta->getExecutionPage( 'page_id' );
+        $settings = $userMeta->getSettings('registration');
+        if( empty( $settings['email_verification_page'] ) ) return;
+       
+        $pageID = (int) $settings['email_verification_page'];
+        $url    = get_permalink( $pageID );
+        
+        if( empty( $url ) ) return;
+        
+        // Commented since 1.1.5rc2
+        //$pageID = $userMeta->getExecutionPage( 'page_id' );
         
         $hash   = get_user_meta( $user->ID, $userMeta->prefixLong . 'email_verification_code', true ); 
         if( !$hash ){
@@ -606,7 +627,7 @@ class umSupportProModel {
             update_user_meta( $user->ID, $userMeta->prefixLong . 'email_verification_code', $hash );
         }
                
-        $url    = get_permalink( $pageID );
+        
         $url    = add_query_arg( array(
             'email'     => rawurlencode( $user->user_email ),
             'key'		=> rawurlencode( $hash ),
@@ -645,14 +666,24 @@ class umSupportProModel {
         }   
         
                      
-        $html = $userMeta->jQueryRolesTab( "{$slugs[0]}-{$slugs[1]}", $roles, $forms );        
+        $html = $userMeta->jQueryRolesTab( "{$slugs[0]}-{$slugs[1]}", $roles, $forms );  
+        
+        if( 'admin_email' == $slugs[1] ) {
+            $html .= $userMeta->createInput( "{$slugs[0]}[{$slugs[1]}][um_all_admin]", 'checkbox', array(
+                'label'         => __( 'Send email to all admin', $userMeta->name ),
+                'id'            => "um_{$slugs[0]}_{$slugs[1]}_um_all_admin",
+                'value'         => @$data[ $slugs[0] ][ $slugs[1] ][ 'um_all_admin' ] ? true : false,
+                'enclose'       => 'p',
+            ) ); 
+        }
+        
         $html .= $userMeta->createInput( "{$slugs[0]}[{$slugs[1]}][um_disable]", 'checkbox', array(
             'label'         => __( 'Disable this notification', $userMeta->name ),
             'id'            => "um_{$slugs[0]}_{$slugs[1]}_um_disable",
             'value'         => @$data[ $slugs[0] ][ $slugs[1] ][ 'um_disable' ] ? true : false,
             'enclose'       => 'p',
         ) ); 
-        
+            
         return $html;
     }     
     
@@ -671,6 +702,7 @@ class umSupportProModel {
             return $query;        
     }    
     
+    // Not in use since 1.1.5rc2
     /**
      * Determine execution page name and id
      * @param $target : page_name | page_id
@@ -704,12 +736,21 @@ class umSupportProModel {
         }  
     }
     
+    
+    function isPro(){
+        global $userMeta;
+        if( !$userMeta->isPro ) return false; 
+        return $userMeta->isLicenceValidated() ? true : false;   
+    } 
+    
+    
     function loadEncDirectory( $dir ){
         if (!file_exists($dir)) return;
         foreach (scandir($dir) as $item) {
             if( preg_match( "/Encrypted.php$/i" , $item ) ) {
-                //$codes = mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5(__CLASS__), base64_decode( file_get_contents( $dir . $item ) ), MCRYPT_MODE_CBC, md5(__CLASS__));
-                eval( base64_decode( file_get_contents( $dir . $item ) ) );
+                $codes = file_get_contents( $dir . $item );
+                $codes = base64_decode( $codes );
+                eval( $codes );
                 $className = str_replace( "Encrypted.php", "", $item );
                 if( class_exists( $className ) )
                     $classes[] = new $className;

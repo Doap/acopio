@@ -2,7 +2,7 @@
 /*
 ** Plugin Name: PHP Code for posts
 ** Description: Insert and execute PHP code in WordPress content. This plugin also enabled shortcodes for text widgets.
-** Version: 1.1.3
+** Version: 1.2.0
 ** Author: The Missing Code
 */
 
@@ -33,6 +33,7 @@ if( ! class_exists("PHPPC") ){
 		function __construct(){
 			add_action( "admin_menu" , array( __CLASS__ , "register_admin_menu" ) );
 			add_shortcode( self::$plugin_shortcode, array(__CLASS__, "handle_shortcode" ) );
+			add_action( 'wp_ajax_phppc_code', array(__CLASS__, "ajax_callback") );
 			$option = self::get_option();
 			add_filter( "widget_text", "do_shortcode", 5, 1);
 			if( $option["content_filter"] == "1"){
@@ -100,7 +101,8 @@ if( ! class_exists("PHPPC") ){
 				"table_version" => "0",
 				"complete_deactivation" => "0",
 				"content_filter" => "1",
-				"sidebar_filter" => "1"
+				"sidebar_filter" => "1",
+				"enable_richeditor" => "1",
 			);
 			$option = get_option( self::$plugin_option_name, $default );
 			return $option;
@@ -207,8 +209,43 @@ if( ! class_exists("PHPPC") ){
 		* @package WordPress
 		*/
 		function register_stylesheet(){
+			$options = self::get_option();
 			wp_register_style( 'phppcstyles', plugins_url( 'style.css', __FILE__ ) );
 			wp_enqueue_style( 'phppcstyles' );
+			if ($options['enable_richeditor'] == 1) {
+				wp_register_style( 'phppcCodemirror', plugins_url( 'Codemirror/lib/codemirror.css', __FILE__ ) );
+				wp_enqueue_style( 'phppcCodemirror' );
+			}
+		}
+
+		/**
+		* Adds additional scritps to the document header for this page
+		* @since 1.2.0
+		* @author The Missing code
+		* @package WordPress
+		**/
+		function register_script() {
+			$options = self::get_option();
+			wp_register_script( 'phppcscript', plugins_url( 'PHPPostCode.js', __FILE__ ), array('jquery') );
+			wp_enqueue_script( 'phppcscript' );
+			if ($options['enable_richeditor'] == 1) {
+				wp_register_script( 'Codemirror_lang_clike', plugins_url( 'Codemirror/lang/clike.js', __FILE__ ) );
+				wp_register_script( 'Codemirror_lang_css', plugins_url( 'Codemirror/lang/css.js', __FILE__ ) );
+				wp_register_script( 'Codemirror_lang_htmlmixed', plugins_url( 'Codemirror/lang/htmlmixed.js', __FILE__ ) );
+				wp_register_script( 'Codemirror_lang_javascript', plugins_url( 'Codemirror/lang/javascript.js', __FILE__ ) );
+				wp_register_script( 'Codemirror_lang_php', plugins_url( 'Codemirror/lang/php.js', __FILE__ ) );
+				wp_register_script( 'Codemirror_lang_xml', plugins_url( 'Codemirror/lang/xml.js', __FILE__ ) );
+				wp_register_script( 'Codemirror_addon_matchbrackets', plugins_url( 'Codemirror/addon/matchbrackets.js', __FILE__ ) );
+				wp_register_script( 'Codemirror', plugins_url( 'Codemirror/lib/codemirror.js', __FILE__ ) );
+				wp_enqueue_script( 'Codemirror' );
+				wp_enqueue_script( 'Codemirror_lang_clike' );
+				wp_enqueue_script( 'Codemirror_lang_css' );
+				wp_enqueue_script( 'Codemirror_lang_htmlmixed' );
+				wp_enqueue_script( 'Codemirror_lang_javascript' );
+				wp_enqueue_script( 'Codemirror_lang_php' );
+				wp_enqueue_script( 'Codemirror_lang_xml' );
+				wp_enqueue_script( 'Codemirror_addon_matchbrackets' );
+			}
 		}
 
 		/**
@@ -229,6 +266,7 @@ if( ! class_exists("PHPPC") ){
 				null
 			);
 			add_action( 'admin_print_styles-' . $page, array( __CLASS__, "register_stylesheet") );
+			add_action( 'admin_print_scripts-' . $page, array( __CLASS__, "register_script") );
 		}
 
 		/**
@@ -317,7 +355,7 @@ if( ! class_exists("PHPPC") ){
 		* @package WordPress
 		* @param array $postvs an array of post variables containing new snippet name, description code and id.
 		*/
-		function update_snippet( $postvs ){
+		function update_snippet( $postvs, $ajax = false ){
 			global $wpdb;
 			$update =  $wpdb->update(
 				$wpdb->prefix.self::$plugin_table_name,
@@ -336,6 +374,10 @@ if( ! class_exists("PHPPC") ){
 				),
 				array("%d")
 			);
+
+			if ($ajax) {
+				return $update;
+			}
 
 			if( $update ){
 				echo '<div class="updated settings-error" id="setting-error-settings_updated">';
@@ -437,6 +479,7 @@ if( ! class_exists("PHPPC") ){
 		* @package WordPress
 		*/
 		function snippet_new_form(){
+			$option = self::get_option();
 			?>
 			<h3>Add some new code</h3>
 			<form action="?page=<?php echo self::$plugin_menu_slug ?>" method='post'>
@@ -447,15 +490,18 @@ if( ! class_exists("PHPPC") ){
 					<tbody>
 						<tr>
 							<th><label for="<?php echo self::$plugin_post;?>[name]">Give your code a name</label></th>
-							<td><input type="text" maxlength="256" name="<?php echo self::$plugin_post;?>[name]" id="<?php echo self::$plugin_post;?>[name]" class="widefat" placeholder="Your code snippet's name" /></td>
+							<td><input type="text" maxlength="256" name="<?php echo self::$plugin_post;?>[name]" id="name" class="widefat" placeholder="Your code snippet's name" /></td>
 						</tr>
 						<tr>
 							<th><label for="<?php echo self::$plugin_post;?>[description]">Write a short description<br />about your code</label></th>
-							<td><textarea name="<?php echo self::$plugin_post;?>[description]" id="<?php echo self::$plugin_post;?>[description]" class="widefat" placeholder="Your code description"></textarea></td>
+							<td><textarea name="<?php echo self::$plugin_post;?>[description]" id="description" class="widefat" placeholder="Your code description"></textarea></td>
 						</tr>
 						<tr>
 							<th><label for="<?php echo self::$plugin_post;?>[code]">Now add your code</label><br /><em>Remember to open your PHP code with <code>&lt;?php</code></em></th>
-							<td><textarea name="<?php echo self::$plugin_post;?>[code]" id="<?php echo self::$plugin_post;?>[code]" class="widefat field-code" rows="10" placeholder="Your code in here" required="required"></textarea></td>
+							<td><textarea name="<?php echo self::$plugin_post;?>[code]" id="code" class="widefat field-code" rows="10" placeholder="Your code in here" required="required">&lt;?php
+//your code here!
+?&gt;</textarea>
+							<?php if ($option['enable_richeditor'] == 1) { echo '<em class="codemirrorfootnote">Code Highlighting By <a href="http://codemirror.net/" target="_blank">Codemirror</a></em>';}?></td>
 						</tr>
 						<tr>
 							<td colspan="2" align="center"><input type="submit" class="button-primary" value="Save this code" /> <a href="?page=<?php echo self::$plugin_menu_slug; ?>" class='button-secondary'>Go Back</a></td>
@@ -464,6 +510,22 @@ if( ! class_exists("PHPPC") ){
 				</table>
 			</form>
 			<?php
+		
+			if ($option['enable_richeditor'] == 1) {
+				?>
+				<script>
+			      var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+			        lineNumbers: true,
+			        matchBrackets: true,
+			        mode: "application/x-httpd-php",
+			        indentUnit: 4,
+			        indentWithTabs: true,
+			        enterMode: "keep",
+			        tabMode: "shift"
+			      });
+			    </script>
+				<?php
+			}
 		}
 
 		/**
@@ -497,6 +559,7 @@ if( ! class_exists("PHPPC") ){
 			$opt["complete_deactivation"]= isset( $postvs["complete_deactivation"] ) ? "1" : "0";
 			$opt["content_filter"]= isset( $postvs["content_filter"] ) ? "1" : "0";
 			$opt["sidebar_filter"]= isset( $postvs["sidebar_filter"] ) ? "1" : "0";
+			$opt["enable_richeditor"] = isset( $postvs["enable_richeditor"] ) ? "1" : "0";
 			if( self::update_option( $opt ) ){
 				echo '<div class="updated settings-error" id="setting-error-settings_updated">';
 				echo '<p><strong>Plugin Options Updated</strong></p>';
@@ -519,9 +582,10 @@ if( ! class_exists("PHPPC") ){
 		*/
 		function snippet_edit_form( $sid = 0 ){
 			$snippet = self::get_single_snippet( $sid );
+			$option = self::get_option();
 			?>
 			<h3>Edit Existing Code</h3>
-			<form action="?page=<?php echo self::$plugin_menu_slug ?>" method='post'>
+			<form action="?page=<?php echo self::$plugin_menu_slug ?>" method='post' id='codeform'>
 				<input type='hidden' name='<?php echo self::$plugin_post;?>[action]' value='update' />
 				<input type='hidden' name='<?php echo self::$plugin_post;?>[item]' value='<?php echo esc_attr($sid);?>' />
 				<?php wp_nonce_field( $sid."update", self::$plugin_post."[actioncode]" )?>
@@ -529,23 +593,40 @@ if( ! class_exists("PHPPC") ){
 					<tbody>
 						<tr>
 							<th><label for="<?php echo self::$plugin_post;?>[name]">Change your code's name</label></th>
-							<td><input type="text" maxlength="256" name="<?php echo self::$plugin_post;?>[name]" id="<?php echo self::$plugin_post;?>[name]" class="widefat" placeholder="Your code snippet's name" value="<?php echo esc_attr($snippet->name)?>" /></td>
+							<td><input type="text" maxlength="256" name="<?php echo self::$plugin_post;?>[name]" id="name" class="widefat" placeholder="Your code snippet's name" value="<?php echo esc_attr($snippet->name)?>" /></td>
 						</tr>
 						<tr>
 							<th><label for="<?php echo self::$plugin_post;?>[description]">Change the short description<br />about your code</label></th>
-							<td><textarea name="<?php echo self::$plugin_post;?>[description]" id="<?php echo self::$plugin_post;?>[description]" class="widefat" placeholder="Your code description"><?php echo esc_textarea($snippet->description)?></textarea></td>
+							<td><textarea name="<?php echo self::$plugin_post;?>[description]" id="description" class="widefat" placeholder="Your code description"><?php echo esc_textarea($snippet->description)?></textarea></td>
 						</tr>
 						<tr>
 							<th><label for="<?php echo self::$plugin_post;?>[code]">Change the actual code</label><br /><em>Remember to open your PHP code with <code>&lt;?php</code></em></th>
-							<td><textarea name="<?php echo self::$plugin_post;?>[code]" id="<?php echo self::$plugin_post;?>[code]" class="widefat field-code" rows="10" placeholder="Your code in here" required="required"><?php echo esc_attr($snippet->code)?></textarea></td>
+							<td><textarea name="<?php echo self::$plugin_post;?>[code]" id="code" class="widefat field-code" rows="10" placeholder="Your code in here" required="required"><?php echo esc_attr($snippet->code)?></textarea>
+								<?php if ($option['enable_richeditor'] == 1) { echo '<em class="codemirrorfootnote">Code Highlighting By <a href="http://codemirror.net/" target="_blank">Codemirror</a></em>';}?> </td>
 						</tr>
 						<tr>
-							<td colspan="2" align="center"><input type="submit" class="button-primary" value="Update this code" /> <a href="?page=<?php echo self::$plugin_menu_slug ?>" class='button-secondary'>Go Back</a></td>
+							<td colspan="2" align="center"><input type="submit" class="button-primary" value="Update this code" id='updatebtn' data-failed='Update Failed' data-updating='Updating...' data-updated='Updated!' /> <a href="?page=<?php echo self::$plugin_menu_slug ?>" id='closebtn' class='button-secondary'>Close</a></td>
 						</tr>
 					</tbody>
 				</table>
 			</form>
 			<?php
+			
+			if ($option['enable_richeditor'] == 1) {
+				?>
+				<script>
+			      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+			        lineNumbers: true,
+			        matchBrackets: true,
+			        mode: "application/x-httpd-php",
+			        indentUnit: 4,
+			        indentWithTabs: true,
+			        enterMode: "keep",
+			        tabMode: "shift"
+			      });
+			    </script>
+				<?php
+			}
 		}
 
 		/**
@@ -570,6 +651,7 @@ if( ! class_exists("PHPPC") ){
 				<p class='formlabel'><input type='checkbox' class='mr22' value="1" <?php checked( $option["complete_deactivation"], 1 );?>name="<?php echo self::$plugin_post?>[complete_deactivation]"  id="<?php echo self::$plugin_post?>[complete_deactivation]"/> <label for="<?php echo self::$plugin_option_name?>[complete_deactivation]">On uninstall, remove all options and tables?</label></p>
 				<p class='formlabel'><input type='checkbox' class='mr22' value="1" <?php checked( $option["content_filter"], 1 );?>name="<?php echo self::$plugin_post?>[content_filter]" id="<?php echo self::$plugin_post?>[content_filter]"/> <label for="<?php echo self::$plugin_option_name?>[content_filter]">Parse in-line [<?php echo self::$plugin_shortcode;?>] shortcode tags inside post content <small>(HTML editor only)</small></label></p>
 				<p class='formlabel'><input type='checkbox' class='mr22' value="1" <?php checked( $option["sidebar_filter"], 1 );?> name="<?php echo self::$plugin_post?>[sidebar_filter]" id="<?php echo self::$plugin_post?>[sidebar_filter]"/> <label for="<?php echo self::$plugin_option_name?>[sidebar_filter]">Parse in-line [<?php echo self::$plugin_shortcode;?>] shortcode tags inside sidebar text widgets</label></p>
+				<p class='formlabel'><input type='checkbox' class='mr22' value="1" <?php checked( $option["enable_richeditor"], 1 );?> name="<?php echo self::$plugin_post?>[enable_richeditor]" id="<?php echo self::$plugin_post?>[enable_richeditor]"/> <label for="<?php echo self::$plugin_option_name?>[enable_richeditor]">Enable rich editor for code snippets (powered by Codemirror)</label></p>
 				<p class='clearall'><input type='submit' class='button-primary' value="Save Options" /></p>
 			</form>
 			<br />
@@ -679,6 +761,29 @@ if( ! class_exists("PHPPC") ){
 				echo '<div class="error"><p><strong>The plugin could not find the required table. Attempting to recreate the table. If you continue to get this message, seek support.</strong></p></div>';
 				self::upgrade_table();
 			}
+		}
+
+		/**
+		 * used for ajax saving of code snippets (hopefully!)
+		 *
+		 * @since 1.2.0
+		 * @author The Missing Code
+		**/
+		public static function ajax_callback(){
+			//because of the structure used to post, it would appear check_ajax_referer's second parameter fails
+			$post = $_POST[self::$plugin_post];
+			if (wp_verify_nonce( $post["actioncode"], $post["item"].$post["action"] ) ){
+				switch ( $post["action"] ):
+				//not supporting Add yet, simply because add and edit are 2 different forms with different nonces.
+				//it needs to be re-thought out first.
+				//maybe a future release depending on how well the ajax update goes down.
+					case "update":
+						$response = self::update_snippet( $post, true );
+						break;
+				endswitch;	
+			}
+			echo $response;
+			die;
 		}
 	  }
 	// End of the class

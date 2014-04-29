@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive Pro\n"
+"Project-Id-Version: Responsive Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
-"PO-Revision-Date: 2013-07-06 07:01:55 UTC\n"
+"POT-Creation-Date: 2012-04-25 13:42:58 UTC\n"
+"PO-Revision-Date: 2013-07-22 22:03:31 UTC\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Korean, South Korea\n"
 "MIME-Version: 1.0\n"
@@ -12,62 +12,56 @@ msgstr ""
 "X-Generator: WebTranslateIt.com\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: archive.php
-#: core/includes/functions.php
-#: search.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: page.php
 #: landing-page.php
 #: index.php
 #: image.php
-#: home.php
 #: full-width-page.php
 #: content-sidebar-page.php
 #: content-sidebar-half-page.php
 #: blog.php
-msgid "Read more &#8250;"
-msgstr "더 읽기 &#8250;"
-
+#: blog-excerpt.php
+#: archive.php
+#: home.php
+#: search.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
 #: sitemap.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: search.php
-#: page.php
-#: landing-page.php
-#: index.php
-#: image.php
-#: home.php
-#: full-width-page.php
-#: content-sidebar-page.php
-#: content-sidebar-half-page.php
-#: blog.php
-#: blog-excerpt.php
-#: archive.php
 msgid "Pages:"
-msgstr "페이지:"
+msgstr "페이지들："
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "&#8249; Older posts"
 msgstr "&#8249; 오래된 포스트"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "Newer posts &#8250;"
 msgstr "새로운 포스트 &#8250;"
 
-#: comments.php
-msgid "This post is password protected. Enter the password to view any comments."
-msgstr "이 글은 비밀글입니다. 글을 보려면 아래에 암호를 입력하세요:"
+#: blog.php
+#: content-sidebar-half-page.php
+#: content-sidebar-page.php
+#: full-width-page.php
+#: home.php
+#: image.php
+#: index.php
+#: landing-page.php
+#: page.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: core/includes/functions.php
+msgid "Read more &#8250;"
+msgstr "더 읽기 &#8250;"
 
 #: comments.php
-msgid "One comment on &ldquo;%2$s&rdquo;"
-msgstr ""
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "이 글은 비밀 글입니다. 댓글들을 보려면 비밀 번호를 입력하세요."
 
 #: comments.php
 #: comments.php
@@ -81,19 +75,19 @@ msgstr "새로운 댓글들 &#8250;"
 
 #: comments.php
 msgid "Pings&#47;Trackbacks"
-msgstr "Ping / 트랙백"
+msgstr "Pings&#47;Trackbacks"
 
 #: comments.php
 msgid "%1$d %2$s for \"%3$s\""
-msgstr ""
+msgstr "%1$d %2$s for \"%3$s\""
 
 #: comments.php
 msgid "Name"
-msgstr "이름"
+msgstr "성명"
 
 #: comments.php
 msgid "E-mail"
-msgstr "전자우편"
+msgstr "이메일"
 
 #: comments.php
 msgid "Website"
@@ -101,7 +95,7 @@ msgstr "웹사이트"
 
 #: footer.php
 msgid "&copy;"
-msgstr "©"
+msgstr "&copy;"
 
 #: footer.php
 msgid "scroll to top"
@@ -112,91 +106,100 @@ msgid "&uarr;"
 msgstr "&uarr;"
 
 #: footer.php
+msgid "http://themeid.com/responsive-theme/"
+msgstr "http://themeid.com/responsive-theme/"
+
+#: footer.php
 msgid "Responsive Theme"
-msgstr "응답 테마"
+msgstr "Responsive Theme"
 
 #: footer.php
 msgid "powered by"
-msgstr "정보 제공"
+msgstr "powered by"
+
+#: footer.php
+msgid "http://wordpress.org/"
+msgstr "http://kr.wordpress.org/"
 
 #: footer.php
 msgid "WordPress"
-msgstr "워드 프레스"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Hello, World!"
-msgstr "안녕! 세계여!"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your H2 subheadline here"
-msgstr "H2 부 제목을 입력하세요"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
-msgstr "제목, 부제목, 그리고 콘텐츠를 테마 옵션에서 편집할 수 있습니다. 작전 개시 버튼과 이에 해당하는 링크도 편집 가능합니다. 오른쪽 이미지는 다른 이미지로 교체하거나 유튜브 비디오를 삽입할 수 있습니다."
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Call to Action"
-msgstr "작전 개시"
+msgstr "WordPress"
 
 #: image.php
 msgid "&#8249; Return to"
 msgstr "&#8249; 돌아가기"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-meta-page.php
 #: image.php
+#: post-meta-page.php
+#: post-meta.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "No Comments &darr;"
 msgstr "댓글 없음 &darr;"
 
-#: pro/functions.php
-#: image.php
 #: post-meta-page.php
-#: sidebar-content-page.php
+#: post-meta.php
+#: image.php
 #: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "1 Comment &darr;"
 msgstr "1 댓글 &darr;"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-meta-page.php
+#: post-meta.php
 #: image.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "% Comments &darr;"
 msgstr "% 댓글 &darr;"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s 에 한 댓글이 있습니다. &ldquo;%2$s&rdquo; 上"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Tagged with:"
 msgstr "태그됨："
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: image.php
-msgid "Posted in %s"
-msgstr "글"
-
-#: sitemap.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+msgid "Posted in %s"
+msgstr "%s 에 올린 글"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: sitemap.php
 msgid "Edit"
-msgstr "수정"
+msgstr "편집"
+
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "404 &#8212; 여기서 만나 뵙게 되어 반갑습니다."
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "겁내지 마세요. 옵션을 한번 탐색해 봅시다."
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "되돌아가거나 %s 원하시는 페이지를 검색해 보세요."
+
+#: loop-no-posts.php
+#: core/includes/functions.php
+msgid "Home"
+msgstr "홈입니다."
+
+#: loop-no-posts.php
+msgid "&larr; Home"
+msgstr "&larr; 홈"
 
 #: loop-header.php
 msgid "Daily Archives: %s"
@@ -218,29 +221,12 @@ msgstr "블로그 보관소"
 msgid "Your search for %s did not match any entries."
 msgstr "원하시는 검색어를 %s 찾을 수 없습니다."
 
-#: loop-no-posts.php
-msgid "404 &#8212; Fancy meeting you here!"
-msgstr "404 &#8212; 여기서 만나 뵙게 되어 반갑습니다."
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "%s 로 가는 영구적인 링크"
 
-#: loop-no-posts.php
-msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
-msgstr "겁내지 마세요. 옵션을 한번 탐색해 봅시다."
-
-#: loop-no-posts.php
-msgid "You can return %s or search for the page you were looking for."
-msgstr "되돌아가거나 %s 원하시는 페이지를 검색해 보세요."
-
-#: core/includes/functions.php
-#: loop-no-posts.php
-msgid "Home"
-msgstr "집"
-
-#: loop-no-posts.php
-msgid "&larr; Home"
-msgstr "&larr; 홈"
-
-#: core/includes/functions.php
 #: search.php
+#: core/includes/functions.php
 msgid "Search results for: %s"
 msgstr "검색결과： %s"
 
@@ -274,7 +260,7 @@ msgstr "밀리미터"
 
 #: sidebar-gallery.php
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: sidebar-gallery.php
 msgid "Shutter:"
@@ -282,7 +268,7 @@ msgstr "셔터："
 
 #: sidebar-gallery.php
 msgid "Camera:"
-msgstr "카메라"
+msgstr "사진기:"
 
 #: sidebar.php
 #: sidebar-right.php
@@ -293,8 +279,8 @@ msgstr "카메라"
 msgid "In Archive"
 msgstr "보관소에 있음"
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 1"
 msgstr "홈 위젯 1"
 
@@ -302,8 +288,8 @@ msgstr "홈 위젯 1"
 msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
 msgstr "이것이 첫 홈 위젯 상자입니다. 수정하시려면 외모 > 위젯으로 가셔서 위에서 6째 위젯 곧 홈 위젯 1 번을 선택하세요. 제목은 위젯에서 수정할 수 있습니다."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 2"
 msgstr "홈 위젯 2"
 
@@ -311,8 +297,8 @@ msgstr "홈 위젯 2"
 msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
 msgstr "이것이 두 번째 홈 위젯 상자입니다. 수정하시려면 외모 > 위젯으로 가셔서 위에서 7째 위젯 곧 홈 위젯 2 번을 선택하세요. 제목은 위젯에서 수정할 수 있습니다."
 
-#: core/includes/functions.php
 #: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 3"
 msgstr "홈 위젯 3"
 
@@ -322,19 +308,15 @@ msgstr "이것이 세 번째 홈 위젯 상자입니다. 수정하시려면 외�
 
 #: single.php
 msgid "About"
-msgstr "소개"
+msgstr "우리 소개"
 
 #: sitemap.php
 msgid "Categories"
-msgstr "분류"
+msgstr "분류별"
 
 #: sitemap.php
 msgid "Latest Posts"
 msgstr "최근 글"
-
-#: sitemap.php
-msgid "Permanent Link to %s"
-msgstr "%s 로 가는 영구적인 링크"
 
 #: sitemap.php
 msgid "Pages"
@@ -359,17 +341,16 @@ msgstr "아래 메뉴"
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "Page %s"
-msgstr "페이지 %s"
+msgstr ""
 
 #: core/includes/functions.php
 msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
 msgstr "<span class=\"%1$s\">글 올린 시간 </span>%2$s<span class=\"%3$s\"> 글 쓴이 </span>%4$s"
 
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "View all posts by %s"
-msgstr "%s의 글 모두 보기"
+msgstr "%s 의 글 모두 보기"
 
 #: core/includes/functions.php
 msgid "Archive for %s"
@@ -383,40 +364,15 @@ msgstr "태그된 포스트 %s"
 msgid "Error 404"
 msgstr "404 오류 "
 
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Instructions"
-msgstr "설명"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Help"
-msgstr "도움"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Translate"
-msgstr "변환"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Showcase"
-msgstr "진열장"
-
-#: pro/functions.php
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "More Themes"
 msgstr "테마 더 보기"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr "진열장"
 
 #: core/includes/functions.php
 msgid "Main Sidebar"
@@ -428,7 +384,7 @@ msgstr "1부분 사이드바 - sidebar.php"
 
 #: core/includes/functions.php
 msgid "Right Sidebar"
-msgstr "사이드바"
+msgstr "우측 사이드바"
 
 #: core/includes/functions.php
 msgid "Area 2 - sidebar-right.php"
@@ -436,7 +392,7 @@ msgstr "2부분 사이드바 - sidebar-right.php"
 
 #: core/includes/functions.php
 msgid "Left Sidebar"
-msgstr "사이드바"
+msgstr "좌측 사이드바"
 
 #: core/includes/functions.php
 msgid "Area 3 - sidebar-left.php"
@@ -504,51 +460,28 @@ msgstr ""
 
 #: content-sidebar-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar"
 msgstr ""
 
 #: sidebar-content-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content"
 msgstr ""
 
 #: content-sidebar-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar Half Page"
 msgstr ""
 
 #: sidebar-content-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content Half Page"
 msgstr ""
 
 #: full-width-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Full Width Page (no sidebar)"
 msgstr ""
-
-#: core/includes/post-custom-meta.php
-msgid "Layout"
-msgstr "배치"
-
-#: core/includes/post-custom-meta.php
-msgid "Default"
-msgstr "기본"
 
 #: landing-page.php
 msgid "Landing Page (no menu)"
@@ -558,14 +491,39 @@ msgstr ""
 msgid "Sitemap"
 msgstr ""
 
-#: core/includes/theme-options.php
-#: core/includes/theme-options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Theme Options"
-msgstr "테마 함수"
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr ""
 
-#: pro/options/options.php
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr ""
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Hello, World!"
+msgstr "안녕! 세계여!"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your H2 subheadline here"
+msgstr "H2 부 제목을 입력하세요"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "제목, 부제목, 그리고 콘텐츠를 테마 옵션에서 편집할 수 있습니다. 작전 개시 버튼과 이에 해당하는 링크도 편집 가능합니다. 오른쪽 이미지는 다른 이미지로 교체하거나 유튜브 비디오를 삽입할 수 있습니다."
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Call to Action"
+msgstr "작전 개시"
+
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Theme Options"
+msgstr "테마 옵션"
+
 #: core/includes/theme-options.php
 msgid "Options Saved"
 msgstr "옵션 저장"
@@ -574,29 +532,19 @@ msgstr "옵션 저장"
 msgid "Theme Elements"
 msgstr "테마 구성 요소"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Breadcrumb Lists?"
 msgstr "Breadcrumb Lists 해제?"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Check to disable"
 msgstr "해제하려면 클릭"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Call to Action Button?"
 msgstr "작전 개시 버튼 해제?"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -607,12 +555,6 @@ msgstr "작전 개시 버튼 해제?"
 msgid "Save Options"
 msgstr "옵션 저장"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -621,10 +563,8 @@ msgstr "옵션 저장"
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Restore Defaults"
-msgstr "기본값 복원"
+msgstr ""
 
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Logo Upload"
 msgstr "로고 올리기"
@@ -641,313 +581,233 @@ msgstr "기본 로고 바꾸거나 삭제하기"
 msgid "<a href=\"%s\">Click here</a>."
 msgstr "<a href=\"%s\">클릭하세요</a>."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Home Page"
-msgstr "홈페이지"
+msgstr "홈 페이지"
 
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Enable Custom Front Page"
-msgstr "사용자 지정 프런트 페이지 사용"
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-msgid "Overrides the WordPress %1sfront page option%2s"
-msgstr "WordPress %1sfront 페이지 옵션 %2s를 재정의"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Headline"
 msgstr "헤드라인"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your headline"
 msgstr "헤드라인 입력"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Subheadline"
 msgstr "부제목 헤드라인)"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your subheadline"
 msgstr "부제목 헤드라인 입력"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Content Area"
 msgstr "내용 부분"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your content"
 msgstr "내용을 입력하세요"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (URL)"
 msgstr "작전 개시 (URL)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action URL"
 msgstr "링크를 입력하세요."
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (Text)"
 msgstr "링크 텍스트 (Text)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action text"
 msgstr "텍스트를 입력하세요."
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Featured Content"
 msgstr "특색 기사"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "See Docs"
-msgstr ""
+msgstr "See Docs"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Paste your shortcode, video or image source"
 msgstr "코드, 비디오 혹은 사진 소스를 붙여넣으세요."
 
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Layouts"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Static Page Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Single Blog Post Layout"
 msgstr ""
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Blog Posts Index Layout"
 msgstr ""
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Webmaster Tools"
 msgstr "웹 마스터 도구"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Site Verification"
-msgstr ""
+msgstr "Google Site Verification"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google ID number only"
 msgstr "구글 ID 숫자만 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Bing Site Verification"
-msgstr ""
+msgstr "Bing Site Verification"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Bing ID number only"
 msgstr "Bing ID 숫자만 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yahoo Site Verification"
-msgstr ""
+msgstr "Yahoo Site Verification"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yahoo ID number only"
 msgstr "Yahoo ID 숫자만 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Site Statistics Tracker"
 msgstr "사이트 통계 추적(Tracker)"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Leave blank if plugin handles your webmaster tools"
 msgstr "플러그인이 웹 마스터 도구를 대신한다면 공백으로 놔두세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Analytics, StatCounter, any other or all of them."
 msgstr "Google Analytics, StatCounter, 그외 다른 사이트 통계 추적기"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Social Icons"
 msgstr "소셜 아이콘"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Twitter"
-msgstr "지 저 귀 다"
+msgstr "Twitter"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Twitter URL"
 msgstr "트위터 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Facebook"
-msgstr "페이 스 북"
+msgstr "Facebook"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Facebook URL"
 msgstr "페이스북 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "LinkedIn"
-msgstr "링크 드 인"
+msgstr "LinkedIn"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your LinkedIn URL"
 msgstr "LinkedIn 주소를 입력하세요"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "YouTube"
 msgstr "YouTube"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your YouTube URL"
 msgstr "유튜브 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "StumbleUpon"
 msgstr "StumbleUpon"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your StumbleUpon URL"
 msgstr "StumbleUpon 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "RSS Feed"
-msgstr ""
+msgstr "RSS Feed"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your RSS Feed URL"
 msgstr "RSS Feed 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google+"
-msgstr ""
+msgstr "Google +"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google+ URL"
 msgstr "구글 플러스 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Instagram"
-msgstr "인 스타 그램"
+msgstr "Instagram"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Instagram URL"
 msgstr "Instagram 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Pinterest URL"
 msgstr "Pinterest 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yelp!"
-msgstr ""
+msgstr "Yelp!"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yelp! URL"
 msgstr "Yelp! 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Vimeo URL"
 msgstr "Vimeo 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "foursquare"
-msgstr "정사각형"
+msgstr "foursquare"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your foursquare URL"
 msgstr "foursquare 주소를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Custom CSS Styles"
 msgstr "맞춤 제작한 CSS 스타일"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "https://developer.mozilla.org/en/CSS"
-msgstr ""
+msgstr "https://developer.mozilla.org/en/CSS"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "CSS Tutorial"
 msgstr "CSS 지도서"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom CSS styles."
 msgstr "맞춤 제작한 CSS 스타일을 입력하세요."
@@ -956,331 +816,57 @@ msgstr "맞춤 제작한 CSS 스타일을 입력하세요."
 msgid "Custom Scripts"
 msgstr "맞춤형 웹 스크립트"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Custom Scripts for Header and Footer"
 msgstr "헤더나 웹 페이지 푸터  맞춤형 웹 스크립트"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Quick Tutorial"
 msgstr "간단 설명서"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to header.php &darr;"
 msgstr "헤더 부분에 박아 넣기 &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom header script."
 msgstr "웹 페이지 헤더 부분을 위한 맞춤형 스크립트를 입력하세요."
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to footer.php &darr;"
 msgstr "웹 페이지 하단 부분에 박아 넣기 &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom footer script."
 msgstr "웹 페이지 하단 부분을 위한 맞춤형 스크립트를 입력하세요."
 
-#: pro/functions.php
-msgid "Posted on "
-msgstr "에 게시 됨 "
-
-#: pro/functions.php
-msgid " by "
-msgstr "-"
-
-#: pro/functions.php
-msgid "Posted in"
-msgstr ""
-
-#: pro/functions.php
-msgid "Tags:"
-msgstr "태그:"
-
-#: pro/functions.php
-msgid "Permalink to %s"
-msgstr "고유주소"
-
-#: pro/functions.php
-msgid "Responsive Pro Options"
-msgstr "응답 프로 옵션"
-
-#: pro/options/options-customizer.php
-msgid "Customize"
-msgstr "사용자화"
-
-#: pro/options/options-customizer.php
-msgid "Skins"
-msgstr "스킨"
-
-#: pro/options/options-customizer.php
-msgid "Skin Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Typography"
-msgstr "타이포그래피"
-
-#: pro/options/options-customizer.php
-msgid "Heading Font"
-msgstr "머리글 글꼴"
-
-#: pro/options/options-customizer.php
-msgid "Google Heading Font"
-msgstr "구글 머리글 글꼴"
-
-#: pro/options/options-customizer.php
-msgid "Text Font"
-msgstr "텍스트 글꼴"
-
-#: pro/options/options-customizer.php
-msgid "Google Text Font"
-msgstr "구글 텍스트 글꼴"
-
-#: pro/options/options-customizer.php
-msgid "Font Size"
-msgstr "글꼴 크기"
-
-#: pro/options/options-customizer.php
-msgid "Headings Color"
-msgstr "머리글 색"
-
-#: pro/options/options-customizer.php
-msgid "Text Color"
-msgstr "텍스트 색상"
-
-#: pro/options/options-customizer.php
-msgid "Link Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Link Hover Color"
-msgstr ""
-
-#: pro/options/options-customizer.php
-msgid "Enable custom front page"
-msgstr "사용자 지정 프런트 페이지 사용"
-
-#: pro/options/options-customizer.php
-msgid "Content"
-msgstr "내용"
-
-#: pro/options/options.php
-msgid "Personalize"
-msgstr "개인 설정"
-
-#: pro/options/options.php
-msgid "Favicon"
-msgstr "파비콘"
-
-#: pro/options/options.php
-msgid "maximum width and height 32px"
-msgstr "최대 너비와 높이 32px"
-
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Upload"
-msgstr "올리기"
-
-#: pro/options/options.php
-msgid "Apple Touch Icon"
-msgstr "애플 터치 아이콘"
-
-#: pro/options/options.php
-msgid "Custom mobile menu title"
-msgstr "사용자 지정 모바일 메뉴 타이틀"
-
-#: pro/options/options.php
-msgid "Enter a custom mobile menu title"
-msgstr "사용자 지정 모바일 메뉴 제목 입력"
-
-#: pro/options/options.php
-msgid "Design"
-msgstr "설계"
-
-#: pro/options/options.php
-msgid "Change fonts, colors and much more using the theme %1s"
-msgstr "글꼴, 색상 및 테마 %1s를 사용 하 여 더 많은 변경"
-
-#: pro/options/options.php
-msgid "Customizer"
-msgstr "사용자 지정자"
-
-#: pro/options/options.php
-msgid "Templates"
-msgstr "템플릿"
-
-#: pro/options/options.php
-msgid "Excerpt Text"
-msgstr "텍스트를 발췌"
-
-#: pro/options/options.php
-msgid "Read More..."
-msgstr "읽기 더 많은..."
-
-#: pro/options/options.php
-msgid "Excerpt Length"
-msgstr ""
-
-#: pro/options/options.php
-msgid "50"
-msgstr "50"
-
-#: pro/options/options.php
-msgid "Page"
-msgstr "페이지"
-
-#: pro/options/options.php
-msgid "Blog Post Page"
-msgstr "블로그 포스트 페이지"
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Excerpts"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Featured Images"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Author"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Categories"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Date"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Comments"
-msgstr ""
-
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Post Byline Tags"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Single post page"
-msgstr "단일 포스트 페이지"
-
-#: pro/options/options.php
-msgid "Archive page"
-msgstr "아카이브 페이지"
-
-#: pro/options/options.php
-msgid "Search page"
-msgstr "페이지 검색"
-
-#: pro/options/options.php
-msgid "404 page"
-msgstr "404 페이지"
-
-#: pro/options/options.php
-msgid "404 Title"
-msgstr "404 제목"
-
-#: pro/options/options.php
-msgid "404 error"
-msgstr "404 오류"
-
-#: pro/options/options.php
-msgid "404 Content"
-msgstr "404 콘텐츠"
-
-#: pro/options/options.php
-msgid "Sorry, the content is not found...!!!"
-msgstr "죄송 합니다, 콘텐츠는 찾을 수 없습니다...!"
-
-#: pro/options/options.php
-msgid "Scripts"
-msgstr "스크립트"
-
-#: pro/options/options.php
-msgid "Plugins"
-msgstr "플러그인"
-
-#: pro/options/options.php
-msgid "Events Plugin Options"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Please activate The Events Calendar plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "Install Events Calendar Plugin"
-msgstr ""
-
-#: pro/options/options.php
-msgid "WooCommerce Settings"
-msgstr "WooCommerce 설정"
-
-#: pro/options/options.php
-msgid "Please activate WooCommerce plugin"
-msgstr "WooCommerce 플러그인 활성화"
-
-#: pro/options/options.php
-msgid "Install WooCommerce Plugin"
-msgstr "WooCommerce 플러그인을 설치"
-
-#: pro/options/options.php
-msgid "BBPress Settings"
-msgstr "BBPress 설정"
-
-#: pro/options/options.php
-msgid "Please activate BBPress plugin"
-msgstr "BBPress 플러그인 활성화"
-
-#: pro/options/options.php
-msgid "Install BBPress Plugin"
-msgstr "BBPress 플러그인 설치"
-
-#: pro/options/options.php
-msgid "Digital Downloads Settings"
-msgstr "디지털 다운로드 설정"
-
-#: pro/options/options.php
-msgid "Please activate Easy Digital Downloads plugin"
-msgstr "쉬운 디지털 다운로드 플러그인 활성화"
-
-#: pro/options/options.php
-msgid "Install Easy Digital Downloads Plugin"
-msgstr "쉬운 디지털 다운로드 플러그인 설치"
-
-#: pro/options/options.php
-msgid "%1$s upload failed, make sure you are entering a URL"
-msgstr "%1 $의 업로드 실패, URL을 입력 하는 것을 확인합니다"
-
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-msgid "Enter the Google Font name"
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
 msgstr ""
 
 #: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr ""
+
+#: core/includes/theme-options.php
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr ""
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr ""
+
+#: core/includes/functions.php
+#. Welcome to Responsive! Upgrade to Responsive Pro today.
+# INSTRUCTION: Welcome to Responsive! Upgrade to Responsive Pro today.
 msgid "Welcome to %1$s! Upgrade to %2$s today."
 msgstr ""
 

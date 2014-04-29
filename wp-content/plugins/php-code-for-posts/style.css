@@ -36,3 +36,9 @@ form.donate{
 form.donate h3{
 	text-align:center;margin:0;
 	}
+.CodeMirror {
+	border: 1px solid #DDDDDD; 
+}
+.codemirrorfootnote{
+	font-size:0.8em;float:right;
+}

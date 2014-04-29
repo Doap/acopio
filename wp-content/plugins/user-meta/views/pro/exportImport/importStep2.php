@@ -1,7 +1,6 @@
 <?php
 global $userMeta;
-//Expented: $key, $fullpath, $csvHeader, $csvSample, $fieldList, $roles
-
+//Expented: $key, $fullpath, $csvHeader, $csvSample, $fieldList, $roles, $lastImport
 
 $html = null;
 $html .= '<form id="um_user_import_form" method="post" onsubmit="umUserImportDialog(this);return false;" >';   
@@ -14,7 +13,7 @@ $html .= "<input type=\"hidden\" name=\"filesize\" id=\"filesize\" value=\"$file
 $html .= $userMeta->createInput( "import_by", "radio",
     array(
         "label"         => __( 'Identify Uniquely', $userMeta->name ),
-        "value"         => "both",
+        "value"         => !empty( $lastImport['import_by'] ) ? $lastImport['import_by'] : "both",
         "id"            => "um_import_by",
         "by_key"        => true,
         "enclose"       => 'p',                
@@ -36,15 +35,17 @@ $html .= "<div class='clear'></div>";
 
 foreach($csvHeader as $key => $header){
     $assignedField = $userMeta->createInput( 'selected_field[]', 'select', array(
+        'value'     => isset( $lastImport['selected_field'][$header] ) ? $lastImport['selected_field'][$header] : '',
         'by_key'    => true,
         'onchange'  => 'umToggleCustomField(this)',
     ), $fieldList );
     
+    $display = 'custom_field' <> @$lastImport['selected_field'][$header] ? 'style="display:none;"' : '';
     $assignedField .= $userMeta->createInput( 'custom_field[]', 'text', array(
-        'value'         => str_replace( ' ', '_', strtolower($header) ),
+        'value'         => isset( $lastImport['custom_field'][$header] ) ? $lastImport['custom_field'][$header] : str_replace( ' ', '_', strtolower($header) ),
         'after'         => '<br />(' . __( 'Field Name', $userMeta->name ) . ')',
         'label_class'   => 'pf_label',
-        'enclose'       => 'div class="um_custom_field" style="display:none;"',
+        'enclose'       => 'div class="um_custom_field" ' . $display,
     ));
     //$checkbox = $userMeta->createInput( "custom_field", "checkbox");
     $sampleData = @$csvSample[$key];
@@ -55,11 +56,13 @@ foreach($csvHeader as $key => $header){
     $html .= "<div class='pf_left pf_width_20'>$assignedField</div>";
     //$html .= "<div class='um_left um_width_20'>$checkbox</div>";
     $html .= "<div class='pf_left'>$sampleData</div>";
+    $html .= "<input type='hidden' name='csv_header[]' value='$header' />";
     $html .= "<div class='clear'></div>";            
 }
 
 $html .= $userMeta->createInput( "user_role", "select",
     array(
+        "value"         => !empty( $lastImport['user_role'] ) ? $lastImport['user_role'] : "",
         "label"         => __( 'User Role :', $userMeta->name ),
         "by_key"        => true,
         "label_class"   => "pf_label",     
@@ -70,6 +73,7 @@ $html .= $userMeta->createInput( "user_role", "select",
 
 $html .= $userMeta->createInput( "overwrite", "checkbox",
     array(
+        "value"         => !empty( $lastImport['overwrite'] ) ? true : false,
         "label"     => __( 'Overwrite existing users.', $userMeta->name ),
         "id"        => "um_user_import_overwrite",
         "by_key"    => true,
@@ -79,6 +83,7 @@ $html .= $userMeta->createInput( "overwrite", "checkbox",
 
 $html .= $userMeta->createInput( "send_email", "checkbox",
     array(
+        "value"         => !empty( $lastImport['send_email'] ) ? true : false,
         "label"     => __( 'Send email to new user.', $userMeta->name ),
         "id"        => "um_user_import_send_email",
         "by_key"    => true,
@@ -89,6 +94,7 @@ $html .= $userMeta->createInput( "send_email", "checkbox",
 $fieldUrl = $userMeta->adminPageUrl( 'fields_editor' );
 $html .= $userMeta->createInput( "add_fields", "checkbox",
     array(
+        "value"         => !empty( $lastImport['add_fields'] ) ? true : false,
         "label"     => sprintf( __( ' Add custom field to %s (if not already added)', $userMeta->name ), $fieldUrl ),
         "id"        => "um_user_import_add_fields",
         "by_key"    => true,
@@ -105,8 +111,8 @@ $html .= $userMeta->createInput( "save_field", "submit", array(
           
 $html .= "</form>";
 
-$html .= "<li>". __( 'Username will accept only alphanumeric characters plus these: _, space, ., -, *, and @. All other characters will replace with null.', $userMeta->name ) ."</li>";
-$html .= "<li>". __( 'In case of new user, If password field not set then user will get the password by email.', $userMeta->name ) ."</li>";
+$html .= "<li>". __( 'Username will accept only alphanumeric characters plus these: _, space, ., -, *, and @. All other characters will be replaced by null.', $userMeta->name ) ."</li>";
+$html .= "<li>". __( 'In case of new user, if password field is not set, then user will get the password by email.', $userMeta->name ) ."</li>";
 
 echo $userMeta->metaBox( __('User Import', $userMeta->name ), $html );
 ?>

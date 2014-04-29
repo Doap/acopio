@@ -103,7 +103,7 @@ $load_bootstrap_js							= $thecartpress->get_setting( 'load_bootstrap_js', true
 $products_per_page							= $thecartpress->get_setting( 'products_per_page' . $suffix, '10' );
 $image_size_grouped_by_button				= $thecartpress->get_setting( 'image_size_grouped_by_button' . $suffix, 'thumbnail' );
 //image
-$image_size_content							= $thecartpress->get_setting( 'image_size_content' . $suffix, 'thumbnail' );
+$image_size_content							= $thecartpress->get_setting( 'image_size_content' . $suffix, 'medium' );
 //$image_align_content						= $thecartpress->get_setting( 'image_align_content' . $suffix );
 //$image_link_content							= $thecartpress->get_setting( 'image_link_content' . $suffix );
 
@@ -251,7 +251,7 @@ $image_size_content							= $thecartpress->get_setting( 'image_size_content' . $
 
 <tr valign="top">
 	<th scope="row">
-	<label for="image_size_content"><?php _e( 'Image size in content', 'tcp' ); ?></label>
+	<label for="image_size_content"><?php _e( 'Product image size', 'tcp' ); ?></label>
 	</th>
 	<td>
 		<select id="image_size_content" name="image_size_content">
@@ -308,13 +308,18 @@ $image_size_content							= $thecartpress->get_setting( 'image_size_content' . $
 		if ( empty( $_POST ) ) return;
 		check_admin_referer( 'tcp_theme_compatibility_settings' );
 		if ( isset( $_POST['load_post_type_settings'] ) ) return;
-		if ( isset( $_POST['current_post_type'] )  && strlen( $_POST['current_post_type'] ) > 0 ) $suffix = '-' . $_POST['current_post_type'];
-		else $suffix = '';
+		if ( isset( $_POST['current_post_type'] )  && strlen( $_POST['current_post_type'] ) > 0 ) {
+			$suffix = '-' . $_POST['current_post_type'];
+		} else {
+			$suffix = '';
+		}
 		if ( isset( $_POST['delete_post_type_settings'] ) ) {
-			if ( strlen( $suffix ) == 0 ) return;
+			if ( empty( $suffix ) ) return;
 			$settings = get_option( 'tcp_settings' );
 			unset( $settings['products_per_page' . $suffix] );
 			unset( $settings['image_size_grouped_by_button' . $suffix] );
+			unset( $settings['see_image_in_content' . $suffix] );
+			unset( $settings['image_size_content' . $suffix] );
 			$settings = apply_filters( 'tcp_theme_compatibility_unset_settings_action', $settings, $suffix );
 			update_option( 'tcp_settings', $settings );
 			$this->updated = true;

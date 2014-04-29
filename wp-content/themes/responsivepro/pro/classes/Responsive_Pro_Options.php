@@ -18,28 +18,6 @@
 Class Responsive_Pro_Options extends Responsive_Options {
 
 	/**
-	 * Creates option section with inputs
-	 *
-	 * Calls option type
-	 *
-	 * @param $options array
-	 *
-	 * @return string
-	 */
-	protected function section( $options ) {
-
-		$html = ( isset( $options['heading'] ) ) ? $options['heading'] : '';
-
-		$html .= '<div class="grid col-620 fit">';
-
-		$html .= self::$options['type']( $options );
-
-		$html .= '</div>';
-
-		return $html;
-	}
-
-	/**
 	 * Creates upload option
 	 *
 	 * @param $args array

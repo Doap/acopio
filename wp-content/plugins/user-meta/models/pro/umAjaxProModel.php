@@ -6,9 +6,16 @@ class umAjaxProModel {
     function postLostpassword(){
         global $userMeta;
         
-        $pageID = $userMeta->getExecutionPage( 'page_id' );
+        $settings = $userMeta->getSettings('login');
+        if( !empty( $settings['resetpass_page'] ) ){
+            $pageID     = (int) $settings['resetpass_page'];
+            $permalink  = get_permalink( $pageID );
+        }
+        
+        // Commented from 1.1.5rc2
+        //$pageID = $userMeta->getExecutionPage( 'page_id' );
 
-        $resetPassLink = !empty( $pageID ) ? get_permalink( $pageID ) : null;                
+        $resetPassLink = !empty( $permalink ) ? $permalink : null;                
         $response = $userMeta->retrieve_password( $resetPassLink );
         
         $output = null;
@@ -30,7 +37,7 @@ class umAjaxProModel {
     function postLogin(){
         global $userMeta;        
         $userMeta->verifyNonce(); 
-        
+
         $output = null;
          
         $captchaValidation = $userMeta->isInvalidateCaptcha();
@@ -53,11 +60,18 @@ class umAjaxProModel {
                 }
                 
                 $redirect   = "redirect_to=\"$user->redirect_to\"";
-                $html       = $userMeta->showMessage( $userMeta->getMsg( 'login_success' ), 'success', false );
-                $html      .= $userMeta->loginResponse( $user );               
-                $output     = "<div status=\"success\" $redirect >$html</div>";                 
-            }else
-                $output     = $userMeta->showError( $user->get_error_message(), false );
+                
+                /**
+                 * Commented from 1.1.5rc2, not showing anything while redirecting
+                 */
+                //$html       = $userMeta->showMessage( $userMeta->getMsg( 'login_success' ), 'success', false );
+                //$html      .= $userMeta->loginResponse( $user );               
+                //$output     = "<div status=\"success\" $redirect >$html</div>"; 
+                          
+                $output     = "<div status=\"success\" $redirect ></div>"; 
+            }else{
+                $output    = $userMeta->showError( $user->get_error_message() . $userMeta->reloadCaptcha(), false );
+            }
         }   
         
         return $userMeta->printAjaxOutput( $output );
@@ -67,14 +81,13 @@ class umAjaxProModel {
     function ajaxSaveEmailTemplate(){
         global $userMeta;
         if( ! isset( $_REQUEST ) )
-            $userMeta->showError( __( 'There is some problem while updating', $userMeta->name ) );
+            $userMeta->showError( __( 'Error occurred while updating', $userMeta->name ) );
         
         $data = $userMeta->arrayRemoveEmptyValue( $_REQUEST );  
         $data = $userMeta->removeNonArray( $data );
-        //$userMeta->dump($data);
               
         $userMeta->updateData( 'emails', stripslashes_deep( $data ) );
-        echo $userMeta->showMessage( __( 'Successfully Saved.', $userMeta->name ) );
+        echo $userMeta->showMessage( __( 'Successfully saved.', $userMeta->name ) );
     }
     
     /**
@@ -116,10 +129,16 @@ class umAjaxProModel {
          * Reading uploaded file and asssign file content to $data 
          */
         if( empty( $_REQUEST['filepath'] ) )
-            return $userMeta->showError( __( 'Something went wrong. File not uploaded', $userMeta->name ) );
+            return $userMeta->showError( __( 'Something went wrong. File has not been uploaded', $userMeta->name ) );
         
-        $uploads = wp_upload_dir();
-        $fullpath = $uploads[ 'basedir' ] . @$_REQUEST[ 'filepath' ];
+        $uploads = $userMeta->determinFileDir( $_REQUEST['filepath'], true );
+        if ( empty( $uploads ) )
+            return $userMeta->showError( __( 'Something went wrong. File has not been uploaded', $userMeta->name ) );
+        
+        $fullpath = $uploads['path'];  
+        
+        //$uploads = wp_upload_dir();
+        //$fullpath = $uploads[ 'basedir' ] . @$_REQUEST[ 'filepath' ];
         
         $data = file_get_contents( $fullpath );
         $data = unserialize( base64_decode( $data ) );
@@ -149,7 +168,7 @@ class umAjaxProModel {
             }
 
             if( !empty( $imported ) )
-                echo $userMeta->showMessage( __( 'Imported completed.', $userMeta->name ) );
+                echo $userMeta->showMessage( __( 'Import completed.', $userMeta->name ) );
             else
                 echo $userMeta->showError( __( 'Nothing to import!', $userMeta->name ) );
             
@@ -254,7 +273,9 @@ class umAjaxProModel {
     function ajaxUserExportForm( $populateAll=false ){
         global $userMeta;
                 
-        $fieldsDefault  = $userMeta->defaultUserFieldsArray();        
+        $fieldsDefault  = $userMeta->defaultUserFieldsArray();
+        $fieldsDefault['user_avatar'] = __( 'Avatar', $userMeta->name );
+        
         $fieldsMeta     = array();       
         $extraFields    = $userMeta->getData('fields');
         if( is_array( $extraFields ) ){
@@ -326,6 +347,53 @@ class umAjaxProModel {
             unset( $export[ 'user' ][ $_REQUEST['form_id'] ] );
             $userMeta->updateData( 'export', $export );
         }
+    }
+    
+    function ajaxGeneratePage(){
+        global $userMeta;
+        
+        check_admin_referer( 'generate_page' );
+        
+        $pages = array(
+            'resetpass' => 'Lost password',
+            'verify-email'  => 'Email verification' 
+        );
+                
+        if ( ! empty( $_REQUEST['page'] ) ) {
+            $page = $_REQUEST['page'];
+            if( isset( $pages[ $page ] ) ){
+                $pageID = wp_insert_post( array(
+                    'post_title'    => $pages[ $page ],
+                    'post_content'  => '',
+                    'post_status'   => 'publish',
+                    'post_name'     => $page,
+                    'post_type'     => 'page',
+                ) );
+            }
+        }
+        
+        if ( ! empty( $pageID ) ) {
+            $settings = $userMeta->getData( 'settings' );
+            switch ( $page ) {
+                case 'resetpass' :
+                    $settings['login'][ 'resetpass_page' ] = $pageID;
+                    $userMeta->updateData( 'settings', $settings );
+                    wp_redirect( $userMeta->adminPageUrl( 'settings', false ) . '#um_settings_login' );
+                    exit();
+                break;
+            
+                case 'verify-email' :
+                    $settings['registration'][ 'email_verification_page' ] = $pageID;
+                    $userMeta->updateData( 'settings', $settings );
+                    wp_redirect( $userMeta->adminPageUrl( 'settings', false ) . '#um_settings_registration' );
+                    exit();
+                break;
+            }
+        }
+        
+        wp_redirect( $userMeta->adminPageUrl( 'settings', false ) );
+        exit();
+
     }
     
 }

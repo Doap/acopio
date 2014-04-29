@@ -26,7 +26,7 @@ $html .= "<div id=\"redirection_tabs\">";
     $noMsg          = __( 'No Redirection',   $userMeta->name ); 
     $defaultMsg     = __( 'Default (<em>Use default redirection</em>)',   $userMeta->name );        
     $sameUrlMsg     = __( 'Same URL (<em>Same url, that was submitted</em>)',   $userMeta->name );   
-    $refererMsg     = __( 'Referer (<em>Send the user back to the page where they comes from</em>)',   $userMeta->name );
+    $refererMsg     = __( 'Referer (<em>Send the user back to the page where they come from</em>)',   $userMeta->name );
     $homeMsg        = __( 'Home', $userMeta->name ) . sprintf(" (<em>%s</em>)", site_url() );
     $profileMsg     = __( 'Profile', $userMeta->name ) . sprintf(" (<em>%s</em>)", $userMeta->getProfileLink() );
     $dashboardMsg   = __( 'Dashboard', $userMeta->name ) . sprintf(" (<em>%s</em>)", admin_url() );

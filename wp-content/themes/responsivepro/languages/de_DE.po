@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive Pro\n"
+"Project-Id-Version: Responsive Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-13 12:03:13 UTC\n"
-"PO-Revision-Date: 2013-07-06 07:02:02 UTC\n"
+"POT-Creation-Date: 2012-04-25 13:42:58 UTC\n"
+"PO-Revision-Date: 2013-07-22 22:03:32 UTC\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: German, Germany\n"
 "MIME-Version: 1.0\n"
@@ -12,62 +12,56 @@ msgstr ""
 "X-Generator: WebTranslateIt.com\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: archive.php
-#: core/includes/functions.php
-#: search.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: page.php
 #: landing-page.php
 #: index.php
 #: image.php
-#: home.php
 #: full-width-page.php
 #: content-sidebar-page.php
 #: content-sidebar-half-page.php
 #: blog.php
-msgid "Read more &#8250;"
-msgstr "Weiterlesen ›"
-
+#: blog-excerpt.php
+#: archive.php
+#: home.php
+#: search.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
 #: sitemap.php
-#: single.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: search.php
-#: page.php
-#: landing-page.php
-#: index.php
-#: image.php
-#: home.php
-#: full-width-page.php
-#: content-sidebar-page.php
-#: content-sidebar-half-page.php
-#: blog.php
-#: blog-excerpt.php
-#: archive.php
 msgid "Pages:"
-msgstr "Seiten"
+msgstr "Seiten:"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "&#8249; Older posts"
 msgstr "&#8249; Ältere Beiträge"
 
-#: loop-nav.php
-#: blog.php
 #: blog-excerpt.php
+#: blog.php
+#: loop-nav.php
 msgid "Newer posts &#8250;"
 msgstr "Neuere Beiträge &#8250;"
 
-#: comments.php
-msgid "This post is password protected. Enter the password to view any comments."
-msgstr "Dieser Beitrag ist passwortgeschützt. Um Kommentare anschauen zu können musst du das Passwort angeben."
+#: blog.php
+#: content-sidebar-half-page.php
+#: content-sidebar-page.php
+#: full-width-page.php
+#: home.php
+#: image.php
+#: index.php
+#: landing-page.php
+#: page.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: single.php
+#: core/includes/functions.php
+msgid "Read more &#8250;"
+msgstr "Weiterlesen ›"
 
 #: comments.php
-msgid "One comment on &ldquo;%2$s&rdquo;"
-msgstr "Ein Kommentar auf &ldquo;%2$s&rdquo;"
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Dieser Beitrag ist Passwortgeschützt. Bitte gib dein Passwort ein, um alle Kommentare zu sehen."
 
 #: comments.php
 #: comments.php
@@ -81,18 +75,21 @@ msgstr "Neuere Kommentare &#8250;"
 
 #: comments.php
 msgid "Pings&#47;Trackbacks"
-msgstr "Pings / Trackbacks"
+msgstr "Pings/Trackbacks"
 
 #: comments.php
 msgid "%1$d %2$s for \"%3$s\""
 msgstr "%1$d %2$s für \"%3$s\""
 
+#: comments.php
 msgid "Name"
 msgstr "Name"
 
+#: comments.php
 msgid "E-mail"
 msgstr "E-Mail"
 
+#: comments.php
 msgid "Website"
 msgstr "Webseite"
 
@@ -106,82 +103,107 @@ msgstr "hochscrollen"
 
 #: footer.php
 msgid "&uarr;"
-msgstr "&uarr;"
+msgstr "↑"
 
+#: footer.php
+msgid "http://themeid.com/responsive-theme/"
+msgstr "http://themeid.com/responsive-theme/"
+
+#: footer.php
 msgid "Responsive Theme"
 msgstr "Responsive Theme"
 
+#: footer.php
 msgid "powered by"
-msgstr ""
+msgstr "powered by"
+
+#: footer.php
+msgid "http://wordpress.org/"
+msgstr "http://de.wordpress.org/"
 
 #: footer.php
 msgid "WordPress"
 msgstr "WordPress"
 
-msgid "Hello, World!"
-msgstr "Hallo, Welt!"
-
-msgid "Your H2 subheadline here"
-msgstr "Deine Unterschlagzeile hier"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
-msgstr "Dein Titel, Untertitel und auch dieser Inhalt ist von den Theme-Options aus änderbar. Der Call-to-Action Knopf und sein Ziel-link auch. Das Element auf der rechten Seite kann auch ein Bild oder YouTube-Video sein falls du möchtest."
-
-#: pro/options/options.php
-#: core/includes/theme-options.php
-#: front-page.php
-msgid "Call to Action"
-msgstr "Call-to-Action"
-
+#: image.php
 msgid "&#8249; Return to"
 msgstr "&#8249; Zurück zu"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
-#: post-meta-page.php
 #: image.php
+#: post-meta-page.php
+#: post-meta.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "No Comments &darr;"
 msgstr "Keine Kommentare ↓"
 
-#: pro/functions.php
-#: image.php
 #: post-meta-page.php
-#: sidebar-content-page.php
+#: post-meta.php
+#: image.php
 #: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "1 Comment &darr;"
 msgstr "1 Kommentar ↓"
 
-#: pro/functions.php
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: post-meta-page.php
+#: post-meta.php
 #: image.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "% Comments &darr;"
 msgstr "% Kommentare ↓"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
+#: comments.php
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Kommentar auf &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Kommentare auf &ldquo;%2$s&rdquo;"
+
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Tagged with:"
 msgstr "Getagged mit:"
 
-#: sidebar-content-page.php
-#: sidebar-content-half-page.php
 #: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
 msgid "Posted in %s"
 msgstr "Veröffentlicht unter %s"
 
+#: image.php
+#: post-data.php
+#: sidebar-content-half-page.php
+#: sidebar-content-page.php
+#: sitemap.php
 msgid "Edit"
 msgstr "Bearbeiten"
 
+#: loop-no-posts.php
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "404 &#8212; Wow, nicht gedacht dich hier zu sehen."
+
+#: loop-no-posts.php
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "Keine Panik, wir schaffen das. Sehen wir uns an, was du tun kannst."
+
+#: loop-no-posts.php
+msgid "You can return %s or search for the page you were looking for."
+msgstr "Du kannst zurückkehren %s oder suchst du die Seite die du gesucht hast"
+
+#: loop-no-posts.php
+#: core/includes/functions.php
+msgid "Home"
+msgstr "Startseite"
+
+msgid "&larr; Home"
+msgstr "&larr; Startseite"
+
 #: loop-header.php
 msgid "Daily Archives: %s"
-msgstr "Tag Archive: %s"
+msgstr "Tagesarchive: %s"
 
 #: loop-header.php
 msgid "Monthly Archives: %s"
@@ -191,6 +213,7 @@ msgstr "Monatsarchive: %s"
 msgid "Yearly Archives: %s"
 msgstr "Jahresarchive: %s"
 
+#: loop-header.php
 msgid "Blog Archives"
 msgstr "Blog-Archive"
 
@@ -198,32 +221,18 @@ msgstr "Blog-Archive"
 msgid "Your search for %s did not match any entries."
 msgstr "Deine Suche für %s gab kein Ergebnis."
 
-#: loop-no-posts.php
-msgid "404 &#8212; Fancy meeting you here!"
-msgstr "404 &#8212; Wow, nicht gedacht Sie hier zu sehen."
+#: sitemap.php
+msgid "Permanent Link to %s"
+msgstr "Permanenter Link zu %s"
 
-#: loop-no-posts.php
-msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
-msgstr "Keine Panik, wir schaffen das. Sehen wir uns an, was du tun kannst."
-
-#: loop-no-posts.php
-msgid "You can return %s or search for the page you were looking for."
-msgstr "Sie können zurückkehren %s oder suchen Sie die Seite die Sie gesucht haben."
-
-msgid "Home"
-msgstr "Startseite"
-
-#: loop-no-posts.php
-msgid "&larr; Home"
-msgstr "&larr; Sartseite"
-
-#: core/includes/functions.php
 #: search.php
+#: core/includes/functions.php
 msgid "Search results for: %s"
 msgstr "Suchergebnisse für: %s"
 
+#: searchform.php
 msgid "search here &hellip;"
-msgstr "Hier suchen &hellip;"
+msgstr "Hier suchen..."
 
 #: searchform.php
 msgid "Go"
@@ -233,8 +242,9 @@ msgstr "Los"
 msgid "Image Information"
 msgstr "Bildinformationen"
 
+#: sidebar-gallery.php
 msgid "Full Size:"
-msgstr "Vollständige Größe:"
+msgstr "In voller Größe:"
 
 #: sidebar-gallery.php
 msgid "Aperture: f&#47;"
@@ -244,9 +254,11 @@ msgstr "Blende: f&#47;"
 msgid "Focal Length:"
 msgstr "Brennweite:"
 
+#: sidebar-gallery.php
 msgid "mm"
 msgstr "mm"
 
+#: sidebar-gallery.php
 msgid "ISO:"
 msgstr "ISO:"
 
@@ -254,6 +266,7 @@ msgstr "ISO:"
 msgid "Shutter:"
 msgstr "Verschlusszeit:"
 
+#: sidebar-gallery.php
 msgid "Camera:"
 msgstr "Kamera:"
 
@@ -266,26 +279,34 @@ msgstr "Kamera:"
 msgid "In Archive"
 msgstr "Im Archiv"
 
+#: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 1"
 msgstr "Startseite Widget 1"
 
+#: sidebar-home.php
 msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
-msgstr "Dies ist Ihr erstes Startseite Widget Kästchen. Um diesen Text zu bearbeiten, gehe zu Designs > Widgets > Startseite Widget 1. Benutze ein Text-Widget. Titel ist auch Einstellbar."
+msgstr "Dies ist dein erstes Startseite Widget-Kästchen. Um diesen Text zu bearbeiten, gehe zu Designs > Widgets > Startseite Widget 1. Benutze ein Text-Widget. Titel ist auch Einstellbar."
 
+#: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 2"
 msgstr "Startseite Widget 2"
 
 #: sidebar-home.php
 msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
-msgstr "Dies ist Ihr zweites Homewidget-Kästchen. Um diesen Text zu bearbeiten, gehe zu Designs > Widgets > Home Widget 2. Benutze ein Text-Widget. Titel ist auch Einstellbar."
+msgstr "Dies ist dein zweites Startseite Widget-Kästchen. Um diesen Text zu bearbeiten, gehe zu Designs > Widgets > Startseite Widget 2. Benutze ein Text-Widget. Titel ist auch Einstellbar."
 
+#: sidebar-home.php
+#: core/includes/functions.php
 msgid "Home Widget 3"
 msgstr "Startseite Widget 3"
 
 #: sidebar-home.php
 msgid "This is your third home widget box. To edit please go to Appearance > Widgets and choose 8th widget from the top in area 8 called Home Widget 3. Title is also manageable from widgets as well."
-msgstr "Dies ist Ihr drittes Homewidget-Kästchen. Um diesen Text zu bearbeiten, gehe zu Designs > Widgets > Home Widget 3. Benutze ein Text-Widget. Titel ist auch Einstellbar."
+msgstr "Dies ist dein drittes Startseite Widget-Kästchen. Um diesen Text zu bearbeiten, gehe zu Designs > Widgets > Startseite Widget 3. Benutze ein Text-Widget. Titel ist auch Einstellbar."
 
+#: single.php
 msgid "About"
 msgstr "Über"
 
@@ -296,10 +317,6 @@ msgstr "Kategorien"
 #: sitemap.php
 msgid "Latest Posts"
 msgstr "Neueste Beiträge"
-
-#: sitemap.php
-msgid "Permanent Link to %s"
-msgstr "Permanenter Link zu %s"
 
 #: sitemap.php
 msgid "Pages"
@@ -330,7 +347,6 @@ msgstr "Seite %s"
 msgid "<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>%4$s"
 msgstr "<span class=\"%1$s\">Veröffentlicht am </span>%2$s<span class=\"%3$s\"> von </span>%4$s"
 
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "View all posts by %s"
@@ -346,42 +362,17 @@ msgstr "Beiträge getagged %s"
 
 #: core/includes/functions.php
 msgid "Error 404"
-msgstr "Fehler 404"
+msgstr "Fehler 404 "
 
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Instructions"
-msgstr "Anleitung"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Help"
-msgstr "Hilfe"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Translate"
-msgstr "Übersetzen"
-
-#: pro/functions.php
-#: pro/functions.php
-#: core/includes/functions.php
-#: core/includes/functions.php
-msgid "Showcase"
-msgstr "Vorzeigeprojekte"
-
-#: pro/functions.php
-#: pro/functions.php
 #: core/includes/functions.php
 #: core/includes/functions.php
 msgid "More Themes"
 msgstr "Weitere Themes"
+
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Showcase"
+msgstr "Vorzeigeprojekte"
 
 #: core/includes/functions.php
 msgid "Main Sidebar"
@@ -425,7 +416,7 @@ msgstr "Fläche 5 - sidebar-right-half.php"
 
 #: core/includes/functions.php
 msgid "Area 6 - sidebar-home.php"
-msgstr "Fläche 6 - sidebar-home.php"
+msgstr "Fläche 8 - sidebar-home.php"
 
 #: core/includes/functions.php
 msgid "Area 7 - sidebar-home.php"
@@ -451,79 +442,88 @@ msgstr "Kolophon Widget"
 msgid "Area 10 - sidebar-colophon.php"
 msgstr "Fläche 10 - sidebar-colophon.php"
 
+#: core/includes/functions.php
 msgid "Top Widget"
 msgstr "Top Widget"
 
 #: core/includes/functions.php
 msgid "Area 11 - sidebar-top.php"
-msgstr "Fläche 12 - sidebar-top.php"
+msgstr "Fläche 11 - sidebar-top.php"
 
+#: blog.php
 msgid "Blog (full posts)"
 msgstr "Blog (ganze Beiträge)"
 
+#: blog-excerpt.php
 msgid "Blog Excerpt (summary)"
 msgstr "Blog Auszug (Zusammenfassung)"
 
 #: content-sidebar-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar"
 msgstr "Inhalt/Sidebar"
 
 #: sidebar-content-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content"
 msgstr "Sidebar/Inhalt"
 
 #: content-sidebar-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Content/Sidebar Half Page"
 msgstr "Inhalt/Sidebar Halbe Siete"
 
 #: sidebar-content-half-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Sidebar/Content Half Page"
 msgstr "Sidebar/Inhalt Halbe Seite"
 
 #: full-width-page.php
 #: core/includes/post-custom-meta.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 msgid "Full Width Page (no sidebar)"
 msgstr "Volle Breite Seite (kein Sidebar)"
 
-msgid "Layout"
-msgstr "Layout"
-
-msgid "Default"
-msgstr "Standard"
-
+#: landing-page.php
 msgid "Landing Page (no menu)"
 msgstr "Landeseite (kein Menü)"
 
+#: sitemap.php
 msgid "Sitemap"
 msgstr "Sitemap"
 
-#: core/includes/theme-options.php
-#: core/includes/theme-options.php
-#: pro/options/options.php
-#: pro/options/options.php
-msgid "Theme Options"
-msgstr "Theme-Optionen"
+#: core/includes/post-custom-meta.php
+msgid "Layout"
+msgstr "Layout"
 
-#: pro/options/options.php
+#: core/includes/post-custom-meta.php
+msgid "Default"
+msgstr "Standard"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Hello, World!"
+msgstr "Hallo Welt!"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your H2 subheadline here"
+msgstr "Deine Unterschlagzeile hier"
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "Dein Titel, Untertitel und auch dieser Inhalt ist von den Theme-Options aus änderbar. Der Call-to-Action Knopf und sein Ziel-link auch. Das Element auf der rechten Seite kann auch ein Bild oder YouTube-Video sein falls du möchtest."
+
+#: front-page.php
+#: core/includes/theme-options.php
+msgid "Call to Action"
+msgstr "Call-to-Action"
+
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+msgid "Theme Options"
+msgstr "Theme-Einstellungen"
+
 #: core/includes/theme-options.php
 msgid "Options Saved"
 msgstr "Einstellungen gespeichert"
@@ -532,29 +532,19 @@ msgstr "Einstellungen gespeichert"
 msgid "Theme Elements"
 msgstr "Elemente des Theme"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Breadcrumb Lists?"
 msgstr "Navigationsleisten deaktivieren?"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Check to disable"
 msgstr "Zum Deaktivieren klicken"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Disable Call to Action Button?"
 msgstr "Call-to-Action Knopf deaktivieren?"
 
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
@@ -563,13 +553,18 @@ msgstr "Call-to-Action Knopf deaktivieren?"
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Save Options"
-msgstr "Speicheroptionen"
+msgstr "Einstellungen speichern"
 
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
 msgid "Restore Defaults"
-msgstr "Standards wiederherstellen"
+msgstr "Standardeinstellungen wiederherstellen"
 
-#: pro/options/options-customizer.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Logo Upload"
 msgstr "Logo hochladen"
@@ -586,542 +581,290 @@ msgstr "Standardlogo ersetzen oder entfernen?"
 msgid "<a href=\"%s\">Click here</a>."
 msgstr "<a href=\"%s\">Hier klicken</a>."
 
+#: core/includes/theme-options.php
 msgid "Home Page"
 msgstr "Startseite"
 
-msgid "Enable Custom Front Page"
-msgstr "Benutzerdefinierten Startseite aktivieren"
-
-msgid "Overrides the WordPress %1sfront page option%2s"
-msgstr "Überschreibt die WordPress %1Startseite Option%2s"
-
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Headline"
-msgstr "Kopfzeile"
+msgstr "Schlagzeile"
 
+#: core/includes/theme-options.php
 msgid "Enter your headline"
-msgstr ""
+msgstr "Deine Schlagzeile eingeben"
 
+#: core/includes/theme-options.php
 msgid "Subheadline"
-msgstr ""
+msgstr "Unterschlagzeile"
 
+#: core/includes/theme-options.php
 msgid "Enter your subheadline"
-msgstr ""
+msgstr "Deine Unterschlagzeile eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Content Area"
 msgstr "Inhaltsbereich"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your content"
-msgstr "Ihr Inhalt eingeben"
+msgstr "Dein Inhalt eingeben"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (URL)"
 msgstr "Call-to-Action (URL)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action URL"
 msgstr "Deine Call-to-Action URL eingeben"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Call to Action (Text)"
 msgstr "Call-to-Action (Text)"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Enter your call to action text"
 msgstr "Dein Call-to-Action Text eingeben"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Featured Content"
 msgstr "Vorgestellter Inhalt"
 
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
 msgid "See Docs"
-msgstr "Siehe Dokumentation"
+msgstr "Siehe Dokumente"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Paste your shortcode, video or image source"
-msgstr "Ihr Shortcode,Video- oder Bildquelle einfügen"
+msgstr "Dein Shortcode,Video- oder Bildquelle einfügen"
 
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Layouts"
 msgstr "Standard Layouts"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Static Page Layout"
 msgstr "Standard Statische Seitenlayout"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Single Blog Post Layout"
 msgstr "Standard Einzel Blogbeitragslayout"
 
-#: pro/options/options.php
-#: pro/options/options-customizer.php
 #: core/includes/theme-options.php
 msgid "Default Blog Posts Index Layout"
 msgstr "Standard Blogbeiträge Übersichtslayout"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Webmaster Tools"
 msgstr "Webmaster-Tools"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Site Verification"
 msgstr "Google Website Verifikation"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google ID number only"
 msgstr "Nur Google ID-Nummer eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Bing Site Verification"
 msgstr "Bing Website Verifikation"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Bing ID number only"
 msgstr "Nur Bing ID-Nummer eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Yahoo Site Verification"
 msgstr "Yahoo Website Verifikation"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Yahoo ID number only"
 msgstr "Nur Yahoo ID-Nummer eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Site Statistics Tracker"
 msgstr "Website-Statistik Tracker"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Leave blank if plugin handles your webmaster tools"
 msgstr "Leer lassen, wenn ein Plugin deine Webmaster-Tools verwaltet"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google Analytics, StatCounter, any other or all of them."
 msgstr "Google Analytics, StatCounter, etc."
 
+#: core/includes/theme-options.php
 msgid "Social Icons"
 msgstr "Social Icons"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Twitter"
 msgstr "Twitter"
 
+#: core/includes/theme-options.php
 msgid "Enter your Twitter URL"
 msgstr "Twitter URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Facebook"
 msgstr "Facebook"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Facebook URL"
 msgstr "Facebook URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your LinkedIn URL"
 msgstr "LinkedIn URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "YouTube"
 msgstr "YouTube"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your YouTube URL"
 msgstr "YouTube URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "StumbleUpon"
 msgstr "StumbleUpon"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your StumbleUpon URL"
 msgstr "StumbleUpon URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "RSS Feed"
-msgstr "RSS-Feed"
+msgstr "RSS Feed"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your RSS Feed URL"
 msgstr "RSS Feed URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Google+"
 msgstr "Google +"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Google+ URL"
 msgstr "Google+ URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Instagram"
 msgstr "Instagram"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Instagram URL"
 msgstr "Instagram URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your Pinterest URL"
 msgstr "Pinterest URL eingeben"
 
+#: core/includes/theme-options.php
 msgid "Yelp!"
 msgstr "Yelp!"
 
+#: core/includes/theme-options.php
 msgid "Enter your Yelp! URL"
-msgstr "Yelp! URL eingeben"
+msgstr "Deine Yelp! URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Vimeo"
 msgstr "Vimeo"
 
+#: core/includes/theme-options.php
 msgid "Enter your Vimeo URL"
-msgstr "Vimeo URL eingeben"
+msgstr "Deine Vimeo URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "foursquare"
-msgstr "Foursquare"
+msgstr "foursquare"
 
+#: core/includes/theme-options.php
 msgid "Enter your foursquare URL"
-msgstr "foursquare URL eingeben"
+msgstr "Deine foursquare URL eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Custom CSS Styles"
 msgstr "Individuelles Stylesheet"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "https://developer.mozilla.org/en/CSS"
 msgstr "https://developer.mozilla.org/de/CSS"
 
+#: core/includes/theme-options.php
+#: core/includes/theme-options.php
 msgid "CSS Tutorial"
-msgstr "CSS Anleitung"
+msgstr "CSS Tutorial"
 
+#: core/includes/theme-options.php
 msgid "Enter your custom CSS styles."
-msgstr ""
+msgstr "Dein individuelles Stylesheet eingeben"
 
 #: core/includes/theme-options.php
 msgid "Custom Scripts"
 msgstr "Individuelle Skripts"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Custom Scripts for Header and Footer"
 msgstr "Individuelle Skripts für Kopf- und Fußzeilen"
 
-#: pro/options/options.php
-#: pro/options/options.php
 #: core/includes/theme-options.php
 #: core/includes/theme-options.php
 msgid "Quick Tutorial"
 msgstr "Kurze Anleitung"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to header.php &darr;"
 msgstr "In header.php einbetten &darr;"
 
+#: core/includes/theme-options.php
 msgid "Enter your custom header script."
-msgstr "Ihre individuelles Kopfzeilen Skript eingeben"
+msgstr "Dein individuelles Kopfzeilen Skript eingeben"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Embeds to footer.php &darr;"
 msgstr "In footer.php einbetten &darr;"
 
-#: pro/options/options.php
 #: core/includes/theme-options.php
 msgid "Enter your custom footer script."
-msgstr "Ihre individuelles Fußzeilen Skript eingeben"
+msgstr "Dein individuelles Fußzeilen Skript eingeben"
 
-msgid "Posted on "
-msgstr "Veröffentlicht am "
-
-msgid " by "
-msgstr " von "
-
-msgid "Posted in"
-msgstr "Veröffentlicht unter"
-
-msgid "Tags:"
-msgstr "Schlagworte:"
-
-#: pro/functions.php
-msgid "Permalink to %s"
-msgstr "Permalink zu %s"
-
-msgid "Responsive Pro Options"
-msgstr "Responsive Pro Optionen"
-
-#: pro/options/options-customizer.php
-msgid "Customize"
-msgstr "Anpassen"
-
-msgid "Skins"
-msgstr "Schema"
-
-msgid "Skin Color"
-msgstr "Farbeschema"
-
-#: pro/options/options-customizer.php
-msgid "Typography"
-msgstr "Typografie"
-
-msgid "Heading Font"
-msgstr "Überschrift Schriftart"
-
-msgid "Google Heading Font"
-msgstr "Google Überschrift Schriftart"
-
-msgid "Text Font"
-msgstr "Schriftart"
-
-#: pro/options/options-customizer.php
-msgid "Google Text Font"
-msgstr "Google Schriftart"
-
-msgid "Font Size"
-msgstr "Schriftgröße"
-
-msgid "Headings Color"
-msgstr "Überschriften Farbe"
-
-#: pro/options/options-customizer.php
-msgid "Text Color"
-msgstr "Textfarbe"
-
-#: pro/options/options-customizer.php
-msgid "Link Color"
-msgstr "Linkfarbe"
-
-#: pro/options/options-customizer.php
-msgid "Link Hover Color"
-msgstr "Link Hover-Farbe"
-
-msgid "Enable custom front page"
+#: core/includes/theme-options.php
+msgid "Enable Custom Front Page"
 msgstr "Benutzerdefinierten Startseite aktivieren"
 
-#: pro/options/options-customizer.php
-msgid "Content"
-msgstr "Inhalt"
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Help"
+msgstr "Hilfe"
 
-#: pro/options/options.php
-msgid "Personalize"
-msgstr "Personalisieren"
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Instructions"
+msgstr "Anleitung"
 
-#: pro/options/options.php
-msgid "Favicon"
-msgstr "Favicon"
+msgid "Overrides the WordPress %1sfront page option%2s"
+msgstr "Überschreibt die WordPress %1sStartseite Option%2s"
 
-#: pro/options/options.php
-msgid "maximum width and height 32px"
-msgstr "maximale Breite und Höhe 32px"
+#: core/includes/functions.php
+#: core/includes/functions.php
+msgid "Translate"
+msgstr "Übersetzen"
 
-msgid "Upload"
-msgstr "Hochladen"
-
-#: pro/options/options.php
-msgid "Apple Touch Icon"
-msgstr "Apple Touch Icon"
-
-msgid "Custom mobile menu title"
-msgstr "Benutzerdefinierte Mobilemenü Titel"
-
-msgid "Enter a custom mobile menu title"
-msgstr "Benutzerdefinierten Mobilemenü Titel eingeben"
-
-msgid "Design"
-msgstr "Gestaltung"
-
-msgid "Change fonts, colors and much more using the theme %1s"
-msgstr "Schriftarten, Farben und vieles mehr mit dem Theme %1s ändern"
-
-msgid "Customizer"
-msgstr "Customizer"
-
-msgid "Templates"
-msgstr "Vorlagen"
-
-msgid "Excerpt Text"
-msgstr "Kurzfassungstext"
-
-msgid "Read More..."
-msgstr "Weiterlesen..."
-
-msgid "Excerpt Length"
-msgstr "Kurzfassungslänge"
-
-#: pro/options/options.php
-msgid "50"
-msgstr "50"
-
-#: pro/options/options.php
-msgid "Page"
-msgstr "Seite"
-
-msgid "Blog Post Page"
-msgstr "Blogbeitragsseite"
-
-msgid "Post Excerpts"
-msgstr "Beträgskurzfassung"
-
-msgid "Featured Images"
-msgstr "Beitragsbilder"
-
-msgid "Post Byline Author"
-msgstr "Beitrag Quellenangabe Autor"
-
-msgid "Post Byline Categories"
-msgstr "Beitrag Quellenangabe Kategorien"
-
-msgid "Post Byline Date"
-msgstr "Beitrag Quellenangabe Datum"
-
-msgid "Post Byline Comments"
-msgstr "Quellenangabe Kommentare"
-
-msgid "Post Byline Tags"
-msgstr "Beitrag Quellenangabe Tags"
-
-msgid "Single post page"
-msgstr "Einzel Beitragsseite"
-
-msgid "Archive page"
-msgstr "Archiv-Seite"
-
-#: pro/options/options.php
-msgid "Search page"
-msgstr "Suchseite"
-
-#: pro/options/options.php
-msgid "404 page"
-msgstr "404-Seite"
-
-#: pro/options/options.php
-msgid "404 Title"
-msgstr "404 Titel"
-
-msgid "404 error"
-msgstr "404 error"
-
-#: pro/options/options.php
-msgid "404 Content"
-msgstr "404 Inhalt"
-
-msgid "Sorry, the content is not found...!!!"
-msgstr "Leider ist der Inhalt nicht gefunden...!!!"
-
-msgid "Scripts"
-msgstr "Skripte"
-
-msgid "Plugins"
-msgstr "Plugins"
-
-msgid "Events Plugin Options"
-msgstr "Events Plugin Optionen"
-
-msgid "Please activate The Events Calendar plugin"
-msgstr "Events Calendar plugin aktivieren"
-
-msgid "Install Events Calendar Plugin"
-msgstr "Events Calendar plugin installieren"
-
-#: pro/options/options.php
-msgid "WooCommerce Settings"
-msgstr "WooCommerce Einstellungen"
-
-msgid "Please activate WooCommerce plugin"
-msgstr "WooCommerce plugin aktivieren"
-
-msgid "Install WooCommerce Plugin"
-msgstr "WooCommerce plugin installieren"
-
-msgid "BBPress Settings"
-msgstr "BBPress Einstellungen"
-
-msgid "Please activate BBPress plugin"
-msgstr "BBPress plugin aktivieren"
-
-#: pro/options/options.php
-msgid "Install BBPress Plugin"
-msgstr "BBPress Plugin installieren"
-
-msgid "Digital Downloads Settings"
-msgstr "Einstellungen für Digital Downloads"
-
-msgid "Please activate Easy Digital Downloads plugin"
-msgstr "Easy Digital Downloads plugin aktivieren"
-
-msgid "Install Easy Digital Downloads Plugin"
-msgstr "Easy Digital Downloads plugin installieren"
-
-msgid "%1$s upload failed, make sure you are entering a URL"
-msgstr "%1$s Upload fehlgeschlagen, stellen Sie sicher, dass Sie eine URL eingeben"
-
-msgid "Enter the Google Font name"
-msgstr "Den Google Schriftart Namen eingeben"
-
+#: core/includes/functions.php
+#. Welcome to Responsive! Upgrade to Responsive Pro today.
+# INSTRUCTION: Welcome to Responsive! Upgrade to Responsive Pro today.
 msgid "Welcome to %1$s! Upgrade to %2$s today."
 msgstr "Willkommen bei %1$s! Upgrade auf %2$s heute."

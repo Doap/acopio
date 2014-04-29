@@ -13,7 +13,7 @@ Template Name:  Sidebar/Content Half Page
  * @file           sidebar-content-half-page.php
  * @package        Responsive
  * @author         Emil Uzelac
- * @copyright      2003 - 2011 ThemeID
+ * @copyright      2003 - 2014 CyberChimps
  * @license        license.txt
  * @version        Release: 1.0
  * @filesource     wp-content/themes/responsive/sidebar-content-half-page.php
@@ -29,10 +29,7 @@ Template Name:  Sidebar/Content Half Page
 
 		<?php while( have_posts() ) : the_post(); ?>
 
-			<?php $options = get_option( 'responsive_theme_options' ); ?>
-			<?php if( $options['breadcrumb'] == 0 ): ?>
-				<?php echo responsive_breadcrumb_lists(); ?>
-			<?php endif; ?>
+			<?php get_responsive_breadcrumb_lists(); ?>
 
 			<?php responsive_entry_before(); ?>
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

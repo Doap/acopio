@@ -19,6 +19,18 @@ if( get_bloginfo( 'version' ) < 3.6 ) {
 	add_action( 'admin_menu', 'responsive_admin_add_customizer_page' );
 }
 
+function responsive_customizer_enqueue() {
+
+	// Stylesheets
+	wp_enqueue_style( 'responsive-customizer', get_template_directory_uri() . '/pro/options/lib/css/customizer.css', array(), '1.0.0.5' );
+
+	// Javascript
+	wp_enqueue_script( 'responsive-customizer', get_template_directory_uri() . '/pro/options/lib/js/customizer.js', array(), '1.0.0.5', true );
+
+}
+
+add_action( 'customize_controls_enqueue_scripts',  'responsive_customizer_enqueue' );
+
 // Adding theme options to the customizer.
 function responsive_customize_register( $wp_customize ) {
 
@@ -62,7 +74,7 @@ function responsive_customize_register( $wp_customize ) {
 	}
 
 	/**
-	 * Class Cyberchimps_skin_selector
+	 * Class Responsive_Pro_Skin_Selector
 	 *
 	 * Creates and image selector
 	 *
@@ -71,126 +83,6 @@ function responsive_customize_register( $wp_customize ) {
 
 		public function render_content() {
 			?>
-			<style>
-				.images-skin-subcontainer {
-					display: inline;
-				}
-
-				.images-skin-subcontainer img {
-					margin-top: 5px;
-					padding: 2px;
-					border: 5px solid #eee;
-					height: 44px;
-				}
-
-				.images-skin-subcontainer img.of-radio-img-selected {
-					border: 5px solid #5DA7F2;
-				}
-
-				.images-skin-subcontainer img:hover {
-					cursor: pointer;
-					border: 5px solid #5DA7F2;
-				}
-			</style>
-			<script>
-				jQuery(function ($) {
-					$('.of-radio-img-img').click(function () {
-						$(this).parent().parent().parent().find('.of-radio-img-img').removeClass('of-radio-img-selected');
-						$(this).addClass('of-radio-img-selected');
-					});
-				});
-
-				/**
-				 * Typography script piggy backing in the Skin selector class
-				 */
-				// TODO Rewrite the script into it's own class extension of the select opitions
-				jQuery(document).ready(function ($) {
-
-					// Script to hide show the Google Heading Font input depending on value of the Heading select
-					var font = $('#customize-control-font_heading select').val();
-					if (font != 'google') {
-						$('#customize-control-google_font_heading').hide();
-					}
-					else {
-						$('#customize-control-google_font_heading').show();
-					}
-					$('#customize-control-font_heading select').change(function () {
-						var font_change = $(this).val();
-						if (font_change != 'google') {
-							$('#customize-control-google_font_heading').hide();
-						}
-						else {
-							$('#customize-control-google_font_heading').show();
-						}
-					});
-
-					// Script to show hide the Google Text Font input depending on the value of the Text select
-					var text = $('#customize-control-font_text select').val();
-					if (text != 'google') {
-						$('#customize-control-google_font_text').hide();
-					}
-					else {
-						$('#customize-control-google_font_text').show();
-					}
-					$('#customize-control-font_text select').change(function () {
-						var text_change = $(this).val();
-						if (text_change != 'google') {
-							$('#customize-control-google_font_text').hide();
-						}
-						else {
-							$('#customize-control-google_font_text').show();
-						}
-					});
-				});
-
-				/* Hide/show WP frontpage option when custom front page toggle is on/off */
-				jQuery(document).ready( function ( $ ) {
-
-					var front_page_checkbox = $('#customize-control-front_page input');
-					var custom_page = $('#customize-control-home_headline, #customize-control-home_subheadline, #customize-control-home_content_area, #customize-control-cta_url, #customize-control-cta_text, #customize-control-featured_content');
-					var wp_front_page = $('#customize-control-show_on_front, #customize-control-page_on_front, #customize-control-page_for_posts');
-					// On load: Hide the below option is toggle is on.
-					if ( front_page_checkbox.val() == 1 ) {
-						wp_front_page.hide();
-					} else {
-						custom_page.hide();
-					}
-
-					// Hide and show on change.
-					front_page_checkbox.change( function () {
-						if ( front_page_checkbox.is( ':checked' ) ) {
-							wp_front_page.hide();
-							custom_page.show();
-						} else {
-							wp_front_page.show();
-							custom_page.hide();
-						}
-					} );
-				} );
-
-				/* Hide/show menu gradients when menu gradient toggle is on/off */
-				jQuery(document).ready(function ($) {
-
-					var gradient_checkbox = $('#customize-control-menu_gradients_checkbox input');
-					var gradient_colorpickers = $('#customize-control-menu_background_colorpicker_2, #customize-control-menu_item_colorpicker_2, #customize-control-menu_item_hover_colorpicker_2');
-					// On load: Hide the below option is toggle is on.
-					if ( gradient_checkbox.val() == 1 ) {
-						gradient_colorpickers.show();
-					} else {
-						gradient_colorpickers.hide();
-					}
-
-					// Hide and show on change.
-					gradient_checkbox.change( function () {
-						if ( gradient_checkbox.is( ':checked' ) ) {
-							gradient_colorpickers.show();
-						} else {
-							gradient_colorpickers.hide();
-						}
-					} );
-				} );
-			</script>
-
 			<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 			<?php
 			foreach( $this->choices as $value => $label ) :
@@ -201,6 +93,38 @@ function responsive_customize_register( $wp_customize ) {
 				$file      = get_template_directory_uri() . '/pro/lib/css/skins/images/' . $value . '.png';
 				?>
 				<div class="images-skin-subcontainer">
+					<label>
+						<input type="radio" value="<?php echo esc_attr( $value ); ?>" name="<?php echo esc_attr( $name ); ?>" <?php $this->link();
+						checked( $test_skin, $value ); ?> style="display:none;"/>
+						<img src="<?php echo esc_html( $file ); ?>" class="of-radio-img-img <?php echo esc_attr( $selected ); ?>"/>
+					</label>
+				</div>
+			<?php
+			endforeach;
+		}
+	}
+
+	/**
+	 * Class Responsive_Layout_Selector
+	 *
+	 * Creates and image selector
+	 *
+	 */
+	class Responsive_Layout_Selector extends WP_Customize_Control {
+
+		public function render_content() {
+			?>
+
+			<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+			<?php
+			foreach( $this->choices as $value => $label ) :
+
+				$test_skin = $this->value();
+				$name      = '_customize-radio-' . $this->id;
+				$selected  = ( $test_skin == $value ) ? 'of-radio-img-selected' : '';
+				$file      = get_template_directory_uri() . '/pro/options/lib/images/featured-area-' . $value . '.png';
+				?>
+				<div class="images-layout-subcontainer">
 					<label>
 						<input type="radio" value="<?php echo esc_attr( $value ); ?>" name="<?php echo esc_attr( $name ); ?>" <?php $this->link();
 						checked( $test_skin, $value ); ?> style="display:none;"/>
@@ -650,19 +574,56 @@ function responsive_customize_register( $wp_customize ) {
 	/**
 	 * CUSTOM FRONT PAGE
 	 */
-	$wp_customize->add_setting( 'responsive_theme_options[front_page]', array(
-		'default'           => 'true',
-		'type'              => 'option',
-		'sanitize_callback' => 'responsive_pro_checkbox_validate'
-	) );
+	$wp_customize->add_setting(
+		'responsive_theme_options[front_page]',
+		array(
+			'default'           => 'true',
+			'type'              => 'option',
+			'sanitize_callback' => 'responsive_pro_checkbox_validate'
+		)
+	);
 
-	$wp_customize->add_control( 'front_page', array(
-		'label'    => __( 'Enable custom front page', 'responsive' ),
-		'section'  => 'static_front_page',
-		'settings' => 'responsive_theme_options[front_page]',
-		'type'     => 'checkbox',
-		'priority' => 10
-	) );
+	$wp_customize->add_control(
+		'front_page',
+		array(
+			'label'    => __( 'Enable custom front page', 'responsive' ),
+			'section'  => 'static_front_page',
+			'settings' => 'responsive_theme_options[front_page]',
+			'type'     => 'checkbox',
+			'priority' => 10
+		)
+	);
+
+	// Featured area layout
+	$wp_customize->add_setting(
+		'responsive_theme_options[featured_area_layout]',
+		array(
+		'default'           => 'default',
+		'type'              => 'option',
+		'sanitize_callback' => 'responsive_pro_text_sanitize'
+	)
+	);
+
+	// Featured area layout
+	$wp_customize->add_control(
+		new Responsive_Layout_Selector(
+			$wp_customize,
+			'featured_area_layout',
+			array(
+				'label'    => __( 'Featured Area Layouts', 'responsive' ),
+				'section'  => 'static_front_page',
+				'settings' => 'responsive_theme_options[featured_area_layout]',
+				'type'     => 'radio',
+				'choices'  => array(
+					'default'            => __( 'Default', 'responsive' ),
+					'reverse'            => __( 'Reverse', 'responsive' ),
+					'full-width'         => __( 'Full Width', 'responsive' ),
+					'full-width-reverse' => __( 'Full Width Reverse', 'responsive' ),
+				),
+				'priority' => 11
+			)
+		)
+	);
 
 	// Headline
 	$wp_customize->add_setting( 'responsive_theme_options[home_headline]', array(

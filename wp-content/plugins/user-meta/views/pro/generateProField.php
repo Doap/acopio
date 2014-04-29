@@ -58,7 +58,8 @@ if( $field['field_type'] == 'blogname' ){
         $by_key = ($field['country_selection_type'] == 'by_country_code') ? true : false;
     endif;
     $fieldOptions   = $userMeta->countryArray();
-    array_unshift( $fieldOptions, '' );
+    //array_unshift( $fieldOptions, '' );
+    $fieldOptions= array_merge(array(''=>''),$fieldOptions);
 
 
 }elseif( $field['field_type'] == 'number' ){
@@ -201,7 +202,7 @@ if( $field['field_type'] == 'blogname' ){
         if( isset( $general['recaptcha_public_key'] ) )
             $publicKey = $general['recaptcha_public_key'];
         else
-            $html .= "<span style='color:red'>". __( 'Please set public and private key from User Meta >> Settings Page', $userMeta->name ) ."</span>";
+            $html .= "<span style='color:red'>". __( 'Please set public and private keys in User Meta >> Settings Page', $userMeta->name ) ."</span>";
         $html .= "<label id=\"$labelID\" class=\"$label_class\" for=\"$inputID\">$fieldTitle</label>";
         $leftMarginClass = @$field['title_position'] == 'left' ? 'um_left_margin' : '';
         
@@ -223,10 +224,5 @@ if( $field['field_type'] == 'blogname' ){
     endif;
     
     $noMore = true;  
-    return @$html;    
-
+    return @$html;
 }
-
-
-
-?>

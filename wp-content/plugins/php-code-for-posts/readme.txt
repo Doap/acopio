@@ -3,8 +3,8 @@ Contributors: the.missing.code
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFQZ3KDJ4LQBA
 Tags: PHP, allow php, exec php, execute php, php shortcode, php in posts, use php, embed html
 Requires at least: 3.3.1
-Tested up to: 3.6
-Stable tag: 1.1.3
+Tested up to: 3.8.1
+Stable tag: 1.2.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,9 @@ The plugin also contains a variable array which you can add variables to for use
 
 = New for 1.1.1 =
 The plugin's shortcode can also accept parameters using the param attribute, the value should be a string of name=value pairs, separated by &s, for example `[php snippet=2 param="var1=val1&var2=val2"]`.  Within your snippet, the parameters are assigned a $_parameters array, for example `echo $_parameters["var1"]; //outputs "val1"`
+
+= New for 1.2.0 =
+The plugin's snippet editor now has better formatting, and supports AJAX saving for snippet updates (request by eneasgesing)
 
 = Special Thanks =
 My special thanks go out to the following contributors: Vailou Gbr
@@ -47,6 +50,14 @@ and to read a variable from the array use this code:
 	$myvar = $PHPPC->$_vars["myvaridentifer"];`
 Simples!
 
+= AJAX update keeps failing =
+
+One of the main causes of a failed AJAX update is because nothing has actually changed in any of the fields.
+
+= My snippet doesn't work =
+
+One common error is an error in the eval'ed code, this is more down to a syntax / parse error in the php snippet, rather than the plugin it self.
+
 = No other questions yet! =
 
 :)
@@ -67,6 +78,9 @@ Simples!
 = 1.1.3 =
 * Fix for the table not being created in a multi-site installation (thanks to dondela and mediagent)
 * Fix for the parameter variables not splitting correctly because of html entity encoding (thanks to eoh1)
+= 1.2.0 =
+* Ajax saving for updating code snippets (ajax save for initial add still to be implemented) (request by eneasgesing)
+* Richer snippet editor using Codemirror (request by eneasgesing)
 
 == Upgrade Notice ==
 

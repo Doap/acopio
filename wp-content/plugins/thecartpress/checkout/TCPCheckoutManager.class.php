@@ -17,7 +17,7 @@
  */
 
 // Exit if accessed directly
-if ( !defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 if ( ! class_exists( 'TCPCheckoutManager' ) ) :
 
@@ -38,9 +38,9 @@ class TCPCheckoutManager {
 		'TCPBillingBox',
 		'TCPShippingBox',
 		'TCPShippingMethodsBox',
-		'TCPPaymentMethodsBox',
+		'TCPPaymentMethodsBox', //Payment step
 		'TCPCartBox',
-		'TCPNoticeBox',
+		//'TCPNoticeBox',
 	);
 
 	protected $steps = array();
@@ -53,6 +53,15 @@ class TCPCheckoutManager {
 		$this->steps = TCPCheckoutManager::get_steps();
 		if ( ! session_id() ) session_start();
 		if ( ! isset( $_SESSION['tcp_checkout'] ) ) $_SESSION['tcp_checkout'] = array();
+	}
+
+	function getPaymentStep() {
+		foreach( $this->steps as $s => $step ) {
+			if ( $step == 'TCPPaymentMethodsBox' ) {
+				return $s;
+			}
+		}
+		return 0;
 	}
 
 	function show() {
@@ -95,6 +104,12 @@ class TCPCheckoutManager {
 
 	static function restore_default() {
 		$default_steps = TCPCheckoutManager::$default_steps;
+		//Cart Step: Notice area
+		$settings = get_option( 'tcp_TCPCartBox', array() );
+		if ( ! isset( $settings['see_notice'] ) ) {
+			$settings['see_notice'] = true;
+			update_option( 'tcp_TCPCartBox', $settings );
+		}
 		update_option( 'tcp_checkout_steps', apply_filters( 'tcp_checkout_restore_defaults', $default_steps ) );
 	}
 
@@ -324,6 +339,7 @@ class TCPCheckoutManager {
 		$order['billing_company'] = '';
 		$order['billing_tax_id_number'] = '';
 		$order['billing_street'] = '';
+		$order['billing_street_2'] = '';
 		$order['billing_city'] = '';
 		$order['billing_city_id'] = '';
 		$order['billing_region'] = '';
@@ -553,6 +569,7 @@ class TCPCheckoutManager {
 			$ordersDetails['qty_ordered']		= $item->getCount();
 			$ordersDetails['max_downloads']		= get_post_meta( $post->ID, 'tcp_max_downloads', true );
 			$ordersDetails['expires_at']		= $expires_at;
+			$ordersDetails['discount']			= $item->getDiscount();
 			$orders_details_id = OrdersDetails::insert( $ordersDetails );
 			if ( $item->has_attributes() ) tcp_update_order_detail_meta( $orders_details_id, 'tcp_attributes', $item->get_attributes() );
 			do_action( 'tcp_checkout_create_order_insert_detail', $order_id, $orders_details_id, $item->getPostId(), $ordersDetails ); //, $item->getOption1Id(), $item->getOption2Id() );

@@ -38,6 +38,7 @@ $html .= $userMeta->createInput( "login[disable_wp_login_php]", "checkbox", arra
     "label" => sprintf( __( 'Disable default login url (%s)', $userMeta->name ), site_url( 'wp-login.php' ) ),
     "value" => @$login[ 'disable_wp_login_php' ],
     "id"    => "um_login_disable_wp_login_php",
+    "onchange"  => "umAdminLoginResetpassError()",
     "enclose"=> "p",
 ) ); 
 
@@ -69,6 +70,13 @@ $html .= $userMeta->createInput( "login[disable_lostpassword]", "checkbox", arra
     "enclose"   => "p",
 ) ); 
 
+$html .= $userMeta->createInput( "login[default_lostpassword]", "checkbox", array( 
+    "value"     => @$login[ 'default_lostpassword' ],
+    "id"        => "um_login_default_lostpassword",
+    "label"     => __( 'Use default lostpassword url', $userMeta->name ),
+    "enclose"   => "p",
+) ); 
+
 $html .= $userMeta->createInput( "login[disable_ajax]", "checkbox", array( 
     "value"     => @$login[ 'disable_ajax' ],
     "id"        => "um_login_disable_ajax",
@@ -77,7 +85,31 @@ $html .= $userMeta->createInput( "login[disable_ajax]", "checkbox", array(
 ) ); 
 $html .= "<div class='pf_divider'></div>";
 
+/**
+ * Reset Password
+ */
+$html .= "<h4>". __( 'Reset Password Page', $userMeta->name ) . "</h4>";  
+$html .= wp_dropdown_pages(array(
+    'name'      => 'login[resetpass_page]',
+    'id'        => 'um_login_resetpass_page',
+    'selected'  => @$login[ 'resetpass_page' ],
+    'echo'      => 0,
+    'show_option_none'=>'None ',      
+));
 
+$createPageUrl = admin_url( 'admin-ajax.php' );
+$createPageUrl = add_query_arg( array(
+    'page'          => 'resetpass',
+    'method_name'   => 'generatePage',
+    'action'        => 'pf_ajax_request',
+), $createPageUrl );
+$createPageUrl = wp_nonce_url( $createPageUrl, 'generate_page' );
+$html .= "<a href='$createPageUrl' id='um_login_resetpass_page_create' class='button-secondary'>Create Page</a>";
+
+$html .= " <span class='required_resetpass_page_page' style='color:red'><em><strong>(" . __( 'Please select any page for resetting password as your default login url is disabled!', $userMeta->name ) . ")</strong></em></span>";
+$html .= '<p><em>' . __( 'This is the page a user will be redirected to when they want to retrieve/reset their password.', $userMeta->name ) .'</em></p>';
+
+$html .= "<div class='pf_divider'></div>";
 
 /**
  * LoggedIn Profile

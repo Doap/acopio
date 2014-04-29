@@ -3,8 +3,8 @@ Contributors: webdorado
 Donate link: http://web-dorado.com/products/wordpress-form.html
 Tags:  form, forms, form builder, form maker, form manager, form plugin, form with recaptcha,  forms plugin, multiple forms, paypal form, survey form, feedback form, feedback forms, contact form,contact form plugin, contact form builder, form creator, email form, secure form, web form, form to email, contact forms, custom forms, form widget, captcha form, wordpress contact form ,recaptcha contact form, form creation, contact form with auto reply, widget contact form, builder, feedback, contacts form plugin , custom contact form, contact us form,  Formular, formulario
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.6.7
+Tested up to: 3.9
+Stable tag: 1.6.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +33,11 @@ This form builder has a Captcha field to protect from receiving spam with the fo
 
 CSV/XML export possibility allows using the submitted data for data analysis and data presentation creating charts, diagrams and other visual forms.
 
-Possibility of sending submitted form to various emails, providing them in Email to Field and separating by comma
+To make larger forms fit and look great on your pages and posts, you can use pagination option, cutting the form into multiple pages.
+
+Possibility of sending submitted form to various emails, providing them in Email to Field and separating by comma.
+
+Survey tools are also very convenient for adding rating systems for the articles, e.g. for contests. 
 
 ###IMPORTANT: If you think you found a bug in Form Maker or have any problem/ question concerning the plugin, please check out [Support Forum](http://web-dorado.com/forum/26-form-maker.html) in our website. If you do not find a solution here, do not hesitate to contact us at [info@web-dorado.com](mailto:info@web-dorado.com).
 
@@ -64,10 +68,9 @@ Possibility of sending submitted form to various emails, providing them in Email
 	*   Page break for form pagination  
 	*   Section break for creating multi-section forms 
 	*   Map for inserting Google Map into the form 
-	*   PayPal form field with currency change possibility(commercial version)
 	*   Submit, Reset and Custom Button  
-*   Up to seven field forms for free version and unlimited number of form fields for the commercial version of the Form Maker
 *   41 editable themes for different form designs
+*   Up to seven field forms for free version
 *   Possibility to include required field option to receive specific information from the form submitter  
 *   Possibility to edit the form CSS or add custom Javascript into the form  
 *   Includes additional attributes for each form field for adding properties with Java Script (for more advanced form users)  
@@ -77,11 +80,7 @@ Possibility of sending submitted form to various emails, providing them in Email
 *   Form Maker Shortcode button in WordPress standard editor to make the form inserting process easier, whereas it is also possible to change the form in the page/post just changing the ID of the form in the shortcode   
 *   Data validation for all form fields while submitting the form
 *   Possibility to preview the form, as well as form themes
-*   Possibility to choose the desired file extension types for the file upload form field(commercial version of the Form Maker
-*   Fully integrated with PayPal: two checkout modes (Test Mode and Production) and five form field types (Amount, Select, Checkbox, Radio, and Shipping)(commercial version of the Form Maker), possibility to use the form as a payment/donation form
-*   Google Maps API Integration (commercial version of the Form Maker), possibility to use the maps in two different form fields of the Form Maker
-*   Detailed Form Maker User Manual describing form installation process, detailed form field descriptions, the process of inserting created form into your site and other details for the Form Users
-*   Filled information is kept in database   
+*   Detailed Form Maker User Manual describing form installation process, detailed form field descriptions, the process of inserting created form into your site and other details for the Form Users     
 *   Required  and hidden form fields 
 *   Possibility to customize button styles used in the form
 *   Form Pagination possibility
@@ -95,12 +94,22 @@ Possibility of sending submitted form to various emails, providing them in Email
 *   Detailed submissions field providing the ID of the submitter, the submission date, form submitter’s IP address and all of the form fields
 *   Searchable Submissions field to find relevant submitted forms in the database
 *   One form based submissions allowing to get separate data for each form    
-*   Submissions section includes simple statistical data for the choice-based entries.    
+*   Submissions section includes simple statistical data for the choice-based entries    
 *   Possibility to use Export CSV/XML feature to download the submitted forms and to analyze the data with advanced tools    
 *   Possibility to edit form submissions, deleting the columns of irrelevant form submissions or for sorting the data   
 *   Possibility to hide and unhide specific form fields from demonstrating in the Submissions    
+*   There is a possibility to add custom text which will be displayed when the field is empty to give the users samples or instruction when filling the specific field.    
 
-
+Upgrade to [WordPress Form Maker Pro](http://web-dorado.com/products/wordpress-form.html) to add features: 
+   
+*   unlimited number of form fields       
+*   PayPal form field with currency change possibility   
+*   Upload file field    
+*   Possibility to choose the desired file extension types for the file upload form field     
+*   Fully integrated with PayPal: two checkout modes (Test Mode and Production) and five form field types (Amount, Select, Checkbox, Radio, and Shipping)(commercial version of the Form Maker), possibility to use the form as a payment/donation form     
+*   Google Maps API Integration, possibility to use the maps in two different form fields of the Form Maker     
+	
+	
 ### Supported languages Of Form Maker  
 
  *If you need language of Form Maker which is not included in this list, please contact us and we will do the translation of Form Maker within 3 days. If you find some mistakes in the translation of Form Maker, please contact  us and we will correct it within 3 days.*  

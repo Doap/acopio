@@ -79,7 +79,7 @@ elseif( $field_type == 'captcha' ):
     $html .= "$fieldDescription";
     $general    = $userMeta->getSettings( 'general' );
     if( ( !@$general['recaptcha_public_key'] ) || ( !@$general['recaptcha_private_key'] ) ){
-        $html .= "<div class='pf_warning'>" . sprintf( __( 'Please provide reCaptcha public and private key from User Meta %s page', $userMeta->name ), $userMeta->adminPageUrl('settings') ) . "</div>";
+        $html .= "<div class='pf_warning'>" . sprintf( __( 'Please provide reCaptcha public and private keys in User Meta %s page', $userMeta->name ), $userMeta->adminPageUrl('settings') ) . "</div>";
     }        
     $html .= "$fieldCaptchaTheme";
     $html .= "<div class='um_segment'>$fieldNonAdminOnly $fieldRegistrationOnly</div>"; 

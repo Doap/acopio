@@ -11,9 +11,7 @@ class DTCronView {
 
 		?>
 
-		<div class="mwswrap">
-		<?php dtSubMenu(); ?>
-		<div class="mwsmainpage">
+		<div class="wrap">
 		<h2>Cron Overview</h2>
 
 		<h3>About</h3>
@@ -85,9 +83,6 @@ class DTCronView {
 
 			</tbody>
 		</table>
-
-		<div style="clear:both"></div>
-		</div>
 		</div>
 
 		<?php

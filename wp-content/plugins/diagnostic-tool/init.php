@@ -16,6 +16,13 @@ if (defined('DTCRONHOOK') === false) {
 	define('DTCRONHOOK', 'diagnostic_tool_cron_hook');
 }
 
+if (defined('DTPLUGINBASE') === false) {
+	$base=str_replace('diagnostic-tool', '', plugin_dir_path( __FILE__ ));
+	$base=str_replace('//', '/', $base);
+	$base=str_replace('\\\\', '\\', $base);
+	define('DTPLUGINBASE', $base);
+}
+
 /*
  * Behavior
  */

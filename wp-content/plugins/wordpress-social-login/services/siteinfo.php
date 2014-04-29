@@ -1,6 +1,6 @@
 <?php
 /*!
-* Doap Social Login
+* WordPress Social Login
 *
 * http://hybridauth.sourceforge.net/wsl/index.html | http://github.com/hybridauth/WordPress-Social-Login
 *    (c) 2011-2013 Mohamed Mrassi and contributors | http://wordpress.org/extend/plugins/wordpress-social-login/
@@ -60,7 +60,7 @@ html {
 </p>
 <ul style="padding-left:15px;">
 <li>Please include this information when posting support requests. It will help me immensely to better understand any issues.</li>
-<li>These information should be communicated to the plugin developer privately via email : Miled &lt;<a href="mailto:support@doap.com">hybridauth@gmail.com</a>&gt;</li>
+<li>These information should be communicated to the plugin developer privately via email : Miled &lt;<a href="mailto:hybridauth@gmail.com">hybridauth@gmail.com</a>&gt;</li>
 </ul>
 
 <textarea readonly="readonly" style="height: 500px;overflow: auto;white-space: pre;width: 790px;">

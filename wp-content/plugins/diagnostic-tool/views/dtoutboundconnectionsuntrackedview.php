@@ -17,9 +17,7 @@ class DTOutboundUntrackedView {
 
 		?>
 
-		<div class="mwswrap">
-		<?php dtSubMenu(); ?>
-		<div class="mwsmainpage">
+		<div class="wrap">
 		<h2>Untracked Transports</h2>
 
 		<p>A list of plugins that are not using the provided WordPress Class to make outbound http/https calls.</p>
@@ -35,7 +33,7 @@ class DTOutboundUntrackedView {
 
 		<?php 
 
-			$plugins = $this->filesystem->findFunctions(array(' curl_init(', ' curl_init( '));
+			$plugins = $this->filesystem->findFunctions(array('curl_init('));
 
 			foreach ($plugins as $plugin)
 			{
@@ -52,11 +50,7 @@ class DTOutboundUntrackedView {
 		?>
 		</tbody>
 		</table>
-
 		</div>
-		</div>
-
-		<div style="clear:both"></div>
 
 		<?php
 	}

@@ -78,21 +78,7 @@ function tcp_the_add_to_cart_items_in_the_cart( $post_id, $echo = true ) {
 	ob_start(); ?>
 <div class="tcp_added_product_title tcp_added_product_title_<?php echo $post_id; ?> alert alert-info"
 <?php if ( !$item ) : ?>style="display:none;"<?php endif; ?>>
-	<?php
- if ( $item )
-{
- printf ( __( '<span class="tcp_units">%s</span> <a href="%s" class="alert-link">in your cart</a>', 'tcp' ), $item->getCount(), tcp_get_the_shopping_cart_url() );
-$cart_weight = $item->getCount();
-$cart_weight = $cart_weight/10;
-echo '<br> Peso en KG : ' . $cart_weight;   
-//echo var_dump($_GET);
-//echo var_dump($_SESSION);
-//echo var_dump($_SESSION['tcp_count']);
-//echo var_dump($_SESSION['tcp_session']);
-
-}
- ?>
-
+	<?php if ( $item ) printf ( __( '<span class="tcp_units">%s</span> <a href="%s" class="alert-link">in your cart</a>', 'tcp' ), $item->getCount(), tcp_get_the_shopping_cart_url() ); ?>
 </div>
 	<?php
 	$out = apply_filters( 'tcp_the_add_to_cart_items_in_the_cart', ob_get_clean(), $post_id );

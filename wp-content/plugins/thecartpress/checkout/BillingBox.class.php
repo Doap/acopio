@@ -131,7 +131,7 @@ class TCPBillingBox extends TCPCheckoutBox {
 					'billing_city'				=> isset( $_REQUEST['billing_city'] ) ? $_REQUEST['billing_city'] : '',
 					'billing_city_id'			=> isset( $_REQUEST['billing_city_id'] ) ? $_REQUEST['billing_city_id'] : 0,
 					'billing_street'			=> isset( $_REQUEST['billing_street'] ) ? $_REQUEST['billing_street'] : '',
-					'billing_street_2'			=> isset( $_REQUEST['billing_street'] ) ? $_REQUEST['billing_street'] : '',
+					'billing_street_2'			=> isset( $_REQUEST['billing_street_2'] ) ? $_REQUEST['billing_street_2'] : '',
 					'billing_postcode'			=> isset( $_REQUEST['billing_postcode'] ) ? str_replace( ' ' , '', $_REQUEST['billing_postcode'] ) : '',
 					'billing_telephone_1'		=> isset( $_REQUEST['billing_telephone_1'] ) ? $_REQUEST['billing_telephone_1'] : '',
 					'billing_telephone_2'		=> isset( $_REQUEST['billing_telephone_2'] ) ? $_REQUEST['billing_telephone_2'] : '',
@@ -162,9 +162,9 @@ class TCPBillingBox extends TCPCheckoutBox {
 		if ( $current_user->ID > 0 ) {
 			$addresses = Addresses::getCustomerAddresses( $current_user->ID );
 		} else {
-			$addresses = false;
+			$addresses = array();
 		}
-		if ( is_array( $addresses ) && count( $addresses ) > 0 ) :
+		if ( is_array( $addresses ) && count( $addresses ) > 0 ) {
 			if ( $selected_billing_address === false ) $selected_billing_address = 'Y';
 			if ( isset( $_REQUEST['selected_billing_id'] ) ) {
 				$default_address_id = $_REQUEST['selected_billing_id'];
@@ -179,7 +179,7 @@ class TCPBillingBox extends TCPCheckoutBox {
 				<br />
 				<select id="selected_billing_id" name="selected_billing_id">
 				<?php foreach( $addresses as $address ) : ?>
-					<option value="<?php echo $address->address_id;?>" <?php selected( $address->address_id, $default_address_id ); ?>><?php echo stripslashes( $address->street . ', ' . $address->city ); ?></option>
+					<option value="<?php echo $address->address_id;?>" <?php selected( $address->address_id, $default_address_id ); ?>><?php echo stripslashes( $address->street . ' ' . $address->street_2 . ', ' . $address->city ); ?></option>
 				<?php endforeach;?>
 				</select>
 				<?php if ( $selected_billing_address == 'Y' ) $this->showErrorMsg( 'billing_country_id' ); ?>
@@ -189,7 +189,7 @@ class TCPBillingBox extends TCPCheckoutBox {
 				<?php _e( 'Billing to the address selected', 'tcp' ); ?>
 			</label>
 			<br />
-		<?php endif;?>
+		<?php } ?>
 			<label for="new_billing_address">
 				<input type="radio" id="new_billing_address" name="selected_billing_address" value="new" <?php if ( $selected_billing_address == 'new' || count( $addresses ) == 0 ) : ?> checked="true"<?php endif;?> onChange="jQuery('#new_billing_area').show();jQuery('#selected_billing_area').hide();" />
 				<?php _e( 'New billing address', 'tcp' ); ?>
@@ -253,6 +253,7 @@ class TCPBillingBox extends TCPCheckoutBox {
 				$street = $this->default_address ? stripslashes( $this->default_address->street ) : '';
 			}
 			$fields['billing_street']['value'] = $street;
+
 			if ( isset( $_REQUEST['billing_street_2'] ) ) {
 				$street_2 = $_REQUEST['billing_street_2'];
 			} elseif ( isset( $_SESSION['tcp_checkout']['billing']['billing_street_2'] ) ) {
@@ -261,6 +262,7 @@ class TCPBillingBox extends TCPCheckoutBox {
 				$street_2 = $this->default_address ? stripslashes( $this->default_address->street_2 ) : '';
 			}
 			$fields['billing_street_2']['value'] = $street_2;
+
 			if ( isset( $_REQUEST['billing_city_id'] ) ) {
 				$city_id = $_REQUEST['billing_city_id'];
 			} elseif ( isset( $_SESSION['tcp_checkout']['billing']['billing_city_id'] ) ) {

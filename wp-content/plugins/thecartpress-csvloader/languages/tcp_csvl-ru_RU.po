@@ -1,0 +1,202 @@
+# Russian translation of TheCartPress and TheCartPress plugins.
+# This file is distributed under the same license as the TheCartPress package.
+# Vladimir Vasilenko <vladimir@shumbely.com>, 2013
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TheCartPress CSV Loader\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-17 18:01+0300\n"
+"PO-Revision-Date: 2013-08-17 18:14+0300\n"
+"Last-Translator: jeltoesolnce <vladimir@shumbely.com>\n"
+"Language-Team: russian <ru@li.org>\n"
+"Language: russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../CSVLoaderForTheCartPress.class.php:45 ../admin/CSVLoader.php:312
+msgid "CSV Loader"
+msgstr "CSV загрузчик"
+#: ../admin/CSVLoader.php:256
+#, php-format
+msgid "Error copying %s to %s (attachment)"
+msgstr "Ошибка копирования %s в %s (вложение)"
+#: ../admin/CSVLoader.php:284
+#, php-format
+msgid "Error copying %s to %s (thumbnail)"
+msgstr "Ошибка копирования %s в %s (миниатюра)"
+#: ../admin/CSVLoader.php:293
+#, php-format
+msgid "%s products have been uploaded"
+msgstr "%s позиций загружены"
+#: ../admin/CSVLoader.php:302
+msgid "No product has been uploaded"
+msgstr "Торары не загружены"
+
+#: ../admin/CSVLoader.php:307
+msgid "File cannot be empty"
+msgstr "Файл не может быть пустым"
+
+#: ../admin/CSVLoader.php:323
+msgid "Post type"
+msgstr "Запись"
+#: ../admin/CSVLoader.php:331
+msgid "Load taxonomies"
+msgstr "Загрузка таксономий"
+#: ../admin/CSVLoader.php:332
+msgid "Select what type of saleable post type do you want to use, usually, Products"
+msgstr "Выберите, какой из типов записей Вы хотите задействовать."
+
+#: ../admin/CSVLoader.php:337
+msgid "Which products to load?"
+msgstr "Какие товары загружать?"
+
+#: ../admin/CSVLoader.php:340
+msgid "All products"
+msgstr "Все товары"
+
+#: ../admin/CSVLoader.php:341
+msgid "Only New products"
+msgstr "Только новые товары"
+
+#: ../admin/CSVLoader.php:342
+msgid "Only Updated products"
+msgstr "Только обновлённые товары"
+
+#: ../admin/CSVLoader.php:347
+msgid "Taxonomy"
+msgstr "Таксономия"
+#: ../admin/CSVLoader.php:355
+msgid "Select the type of taxonomy you want to use. Usually, select Categories (of products)."
+msgstr "Выберите тип таксономии для использования."
+
+#: ../admin/CSVLoader.php:356
+msgid "This action allows to select, later, the category term where to assign all the products."
+msgstr "Это действие позволяет выбрать, позднее, категорию терма, ассоциированного с товаром."
+
+#: ../admin/CSVLoader.php:357
+msgid "However, each product could be assigned to different terms if one of the columns, in the CSV file, is used to assign them."
+msgstr "Тем не менее, каждый из товаров может быть соотнесён с отдельным термом в колонке в CSV-файле."
+
+#: ../admin/CSVLoader.php:362
+msgid "Separator"
+msgstr "Разделитель"
+#: ../admin/CSVLoader.php:366
+msgid "Column titles in the first line"
+msgstr "В первой строке заголовки колонок"
+
+#: ../admin/CSVLoader.php:368
+msgid "These fields are used to define the format of the csv."
+msgstr "Данные поля используются для определения формата CSV-файла."
+
+#: ../admin/CSVLoader.php:369
+msgid "The Separator, usually, is a comma or the vertical slash \"|\". If the CSV has column titles in the first line, set the field \"Column titles in the first line\"."
+msgstr "Разделителем, обычно, является запятая или вертикальный слэш (|)."
+
+#: ../admin/CSVLoader.php:374
+msgid "Display Rows"
+msgstr "Показывать строки"
+
+#: ../admin/CSVLoader.php:377
+msgid "Display only four rows"
+msgstr "Показать только четыре строки"
+
+#: ../admin/CSVLoader.php:379
+msgid "Display all rows"
+msgstr "Показать все строки"
+
+#: ../admin/CSVLoader.php:384
+msgid "file"
+msgstr "файл"
+
+#: ../admin/CSVLoader.php:392
+msgid "Load"
+msgstr "Загрузить"
+
+#: ../admin/CSVLoader.php:393
+msgid "This action helps to you to test if the file is right. Only the first four rows will be displayed."
+msgstr "Данное действие позволит Вам проверить CSV-файл."
+
+#: ../admin/CSVLoader.php:397
+msgid "These lines are the first four products loaded from the CSV file. If you think they are correct continue with the process."
+msgstr "Данные строки являются первыми четырьмя строками CSV-файла. Если, по Вашему мнению, всё в порядке, продолжайте."
+
+#: ../admin/CSVLoader.php:430
+msgid "Assign the columns of the CSV file (left column) to the fields of the products (right column)."
+msgstr "Присвоение колонок CSV-файла (слева) полям товаров (справа)."
+
+#: ../admin/CSVLoader.php:442
+msgid "Imported columns"
+msgstr "Импортировано колонок"
+
+#: ../admin/CSVLoader.php:443 ../admin/CSVLoader.php:449
+msgid "TheCartPress columns"
+msgstr "Колонки в TheCartPress"
+
+#: ../admin/CSVLoader.php:448
+msgid "CSV columns"
+msgstr "Колонки в CSV-файле"
+
+#: ../admin/CSVLoader.php:461
+msgid "None"
+msgstr "нет"
+#: ../admin/CSVLoader.php:462
+msgid "Title"
+msgstr "Название"
+#: ../admin/CSVLoader.php:463
+msgid "Content"
+msgstr "Содержимое"
+#: ../admin/CSVLoader.php:464
+msgid "Excerpt"
+msgstr "Цитата"
+#: ../admin/CSVLoader.php:465
+msgid "Price"
+msgstr "Стоимость"
+#: ../admin/CSVLoader.php:466
+msgid "Stock"
+msgstr "Склад"
+#: ../admin/CSVLoader.php:467
+msgid "Weight"
+msgstr "Вес"
+#: ../admin/CSVLoader.php:468
+msgid "SKU"
+msgstr "SKU"
+#: ../admin/CSVLoader.php:469
+msgid "Order"
+msgstr "Заказ"
+#: ../admin/CSVLoader.php:470
+msgid "Tax"
+msgstr "Налоги"
+#: ../admin/CSVLoader.php:471 ../admin/CSVLoader.php:511
+msgid "Upload"
+msgstr "Загрузить"
+#: ../admin/CSVLoader.php:472
+msgid "Attachment"
+msgstr "Вложение"
+#: ../admin/CSVLoader.php:473
+msgid "Thumbnail"
+msgstr "Миниатюра"
+#: ../admin/CSVLoader.php:494
+msgid "Attach this products to the Taxonomy"
+msgstr "Назначить этому товару таксономию"
+
+#: ../admin/CSVLoader.php:496
+msgid "No one"
+msgstr "Ни одного"
+#: ../admin/CSVLoader.php:504
+msgid "Set new products status to"
+msgstr "Установить товару статус \"Новый\""
+
+#: ../admin/CSVLoader.php:506
+msgid "publish"
+msgstr "публичный"
+
+#: ../admin/CSVLoader.php:507
+msgid "draft"
+msgstr "черновик"
+
+#: ../admin/CSVLoader.php:512
+msgid "This action will load the products in the eCommerce. Be patient."
+msgstr "Это действие загружает товары в TheCartPress. Будьте терпеливы..."

@@ -12,8 +12,8 @@ $html .= '<form id="um_user_import_form" method="post" enctype="multipart/form-d
           
 $html .= "</form>";
 
-$html .= "<li>" . __( "First row of CSV file will treat as Field Name.", $userMeta->name ) . "</li>";
-$html .= "<li>" . __( "Field will separate with comma (,) and Enclosed with the double quotation (\" \").", $userMeta->name ) . "</li>";
+$html .= "<li>" . __( "First row of CSV file will be treated as Field Name.", $userMeta->name ) . "</li>";
+$html .= "<li>" . __( "Fields will be separated by comma (,) and enclosed with double quotation (\" \").", $userMeta->name ) . "</li>";
 
 echo $userMeta->metaBox( __( 'User Import', $userMeta->name ), $html );
 ?>

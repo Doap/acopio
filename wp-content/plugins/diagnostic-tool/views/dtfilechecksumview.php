@@ -24,9 +24,7 @@ class DTFileCheckSumView {
 	{
 		global $gDTSettingsVals;
 
-		echo '<div class="mwswrap">';
-		dtSubMenu();
-		echo '<div class="mwsmainpage">';
+		echo '<div class="wrap">';
 		echo '<h2>Altered Files</h2>';
 
 		if ($gDTSettingsVals->disable_filesum_check == true) { echo '<p><strong><em>File checks disabled. See <a href="'.DTADMINPAGE.'/views/dtsettings.php">settings</a></em></strong></p>'; }
@@ -34,8 +32,6 @@ class DTFileCheckSumView {
 		echo '<h3>About</h3>';
 		echo '<p>Altered Files looks at all files in your wordpress directory and records any alterations. This can be useful for spotting files that have changed without your knowledge. In managed environments, you can query your hosting company as to when and if updates have taken place. This is run as a &quot;cron&quot; - every 1 hour - and produces a report that you can view by clicking on the below.</p>';
 		echo '<p><a href="'.DTADMINPAGE.'/views/dtfilechecksumview.php&stage=2" class="like-a-button">View Report</a></p>';
-		echo '<div style="clear:both"></div>';
-		echo '</div>';
 		echo '</div>';
 	}
 
@@ -43,9 +39,7 @@ class DTFileCheckSumView {
 	{
 		global $gDTSettingsVals;
 
-		echo '<div class="mwswrap">';
-		dtSubMenu();
-		echo '<div class="mwsmainpage">';
+		echo '<div class="wrap">';
 		echo '<h2>Altered Files</h2>';
 
 		if ($gDTSettingsVals->disable_filesum_check == true) { echo '<p><strong><em>File checks disabled. See <a href="'.DTADMINPAGE.'/views/dtsettings.php">settings</a></em></strong></p>'; }
@@ -91,8 +85,6 @@ class DTFileCheckSumView {
 		}
 		echo '</tbody>';
 		echo '</table>';
-		echo '<div class="clear"></div>';
-		echo '</div>';
 		echo '</div>';
 
 	} // displayReport

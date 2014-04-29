@@ -85,7 +85,7 @@ class umLoginWidget extends WP_Widget {
             'label'     => __( 'Guest Title:', $userMeta->name ),
             'id'        => $this->get_field_id( 'guest_title' ),
             'class'     => 'widefat',
-            'after'     => '<i>' . __( 'Only guest user can see this title', $userMeta->name ) . '</i>',
+            'after'     => '<i>' . __( 'Only guest users can see this title', $userMeta->name ) . '</i>',
             'enclose'   => 'p'
         ) );
         
@@ -94,7 +94,7 @@ class umLoginWidget extends WP_Widget {
             'label'     => __( 'Logged-In User Title:', $userMeta->name ),
             'id'        => $this->get_field_id( 'user_title' ),
             'class'     => 'widefat',
-            'after'     => '<i>' . __( 'Only logged-in user can see this title', $userMeta->name ) . '</i>',
+            'after'     => '<i>' . __( 'Only logged-in users can see this title', $userMeta->name ) . '</i>',
             'enclose'   => 'p'
         ) );        
         

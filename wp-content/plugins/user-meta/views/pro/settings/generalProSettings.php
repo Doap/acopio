@@ -26,7 +26,7 @@ $html .= $userMeta->createInput( "general[recaptcha_private_key]", "text", array
     "style"         => "width: 400px;",        
 ) );   
 
-$html .= __( "<p>User Meta plugin use reCAPTCHA as Captcha field. reCAPTCHA Public Key and reCAPTCHA Private Key are required for using Captcha validation. Get those key for free. <a href='http://www.google.com/recaptcha/whyrecaptcha' target='_blank'>Sign up now</a>.</p>", $userMeta->name );   
+$html .= __( "<p>User Meta Pro use reCAPTCHA as Captcha field. reCAPTCHA public and private Keys are required for using Captcha validation. Get these keys for free. <a href='http://www.google.com/recaptcha/whyrecaptcha' target='_blank'>Sign up now</a>.</p>", $userMeta->name );   
 
 
 ?>

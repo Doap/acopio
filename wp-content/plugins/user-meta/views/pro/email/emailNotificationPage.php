@@ -39,19 +39,19 @@ global $userMeta;
                  */
                 $html   = null; 
                    
-                $html .= '<p>'. __( 'This email will be sent to user after email verified.', $userMeta->name ) .'</p>';
+                $html .= '<p>'. __( 'This email will be sent to user after email is verified.', $userMeta->name ) .'</p>';
                 $html .= '<h3>'. __( 'User Notification', $userMeta->name ) . '</h3>';           
                 $html .= $userMeta->buildRolesEmailTabs( array( 'email_verification', 'user_email' ), $data );               
 
                 $html .= '<div class="clear"></div>'; 
                 $html .= '<div class="pf_divider"></div>';  
                           
-                $html .= '<p>'. __( 'This email will be sent to admin after user email verified.', $userMeta->name ) .'</p>';                                                  
+                $html .= '<p>'. __( 'This email will be sent to admin after user email is verified.', $userMeta->name ) .'</p>';                                                  
                 $html .= '<h3>'. __( 'Admin Notification', $userMeta->name ) . '</h3>';
                 $html .= $userMeta->buildRolesEmailTabs( array( 'email_verification', 'admin_email' ), $data );
                 $html .= '<p><i>' . sprintf( __( 'Use placeholder %s if needed.', $userMeta->name ), '%activation_url%' ) . '</i></p>';                          
 
-                echo $userMeta->metaBox( __( 'After email verified', $userMeta->name ), $html, false, false );                 
+                echo $userMeta->metaBox( __( 'After email is verified', $userMeta->name ), $html, false, false );                 
                 
                 
                 /**
@@ -82,11 +82,11 @@ global $userMeta;
                  * LostPassword Email
                  */
                 $html   = null;    
-                $html  .= '<p>'. __( 'This e-mail will be sent to user when requested for reset password.', $userMeta->name ) .'</p>';
+                $html  .= '<p>'. __( 'This e-mail will be sent to user when requested to reset password.', $userMeta->name ) .'</p>';
 
                 $html .= '<h3>'. __( 'User Notification', $userMeta->name ) . '</h3>';           
                 $html .= $userMeta->buildRolesEmailTabs( array( 'lostpassword', 'user_email' ), $data );    
-                $html .= '<p><i>'. __( 'Use placeholder %reset_password_link% or it will automatically included.', $userMeta->name ) . '</i></p>';         
+                $html .= '<p><i>'. sprintf( __( 'Use placeholder %s or it will included automatically.', $userMeta->name ), '%reset_password_link%') . '</i></p>';         
                                      
                 echo $userMeta->metaBox( __( 'Lost Password E-mail', $userMeta->name ), $html, false, false );     
                 
@@ -151,11 +151,11 @@ global $userMeta;
                 $variable .= "<strong>" . __( 'Custom Field', $userMeta->name ) . "</strong><p>";      
                 $variable .= "%your_custom_user_meta_key%</p>";                     
 
-                $variable .= "<p><em>" . __( "Use those placeholders to email subject or body. Placeholder will be replaced with proper value.", $userMeta->name ) . "</em></p>";                
+                $variable .= "<p><em>(" . __( "Placeholder will be replaced with the relevant value when used in email subject or body.", $userMeta->name ) . ")</em></p>";                
                 
                 echo $userMeta->metaBox( __( 'Placeholder', $userMeta->name ), $variable );                
                 
-                echo $userMeta->metaBox( __( '3 steps to getting started', $userMeta->name ),  $userMeta->boxHowToUse() );               
+                echo $userMeta->metaBox( __( '3 steps to get started', $userMeta->name ),  $userMeta->boxHowToUse(), false, false );               
                 if( !@$userMeta->isPro )
                     echo $userMeta->metaBox( __( 'User Meta Pro', $userMeta->name ),   $userMeta->boxGetPro() );
                 //echo $userMeta->metaBox( __( 'Shortcode', $userMeta->name ),   $userMeta->boxShortcodesDocs() );

@@ -16,9 +16,7 @@ class DTOutboundConnectionsView {
 
 		?>
 
-		<div class="mwswrap">
-		<?php dtSubMenu(); ?>
-		<div class="mwsmainpage">
+		<div class="wrap">
 		<h2>Outbound Connections</h2>
 
 		<?php if ($gDTSettingsVals->disable_http_filter == true) { echo '<p><strong><em>Outbound connections logging disabled. See <a href="'.DTADMINPAGE.'/views/dtsettings.php">settings</a></em></strong></p>'; } ?>
@@ -75,9 +73,6 @@ class DTOutboundConnectionsView {
 
 		</tbody>
 		</table>
-
-		<div style="clear:both"></div>
-		</div>
 		</div>
 
 		<?php
