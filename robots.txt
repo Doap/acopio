@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /wp-content/ 
+Disallow: /wp-admin/ 
+Disallow: /wp-login.php
+Disallow: /wp-signup.php
+Disallow: /wp-register.php
+User-agent: *
+Disallow: /
