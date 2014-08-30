@@ -80,12 +80,12 @@ for($i=0;$i<$rowCount;$i++) {
           <input type="button" value="Add Record" id="add_new_<?php echo $_POST["products"][$i]; ?>"><?php echo $_POST["product_descriptions"][$i]; ?>
           <table width="70%" border="0" cellpadding="0" cellspacing="0" class="table-list" id="table-list_<?php echo $_POST["products"][$i]; ?>">
                 <tr>
-                        <th width="20%">Product ID</th>
-                        <th width="20%">Product Description</th>
-                        <th width="40%">Peso Bruto</th>
-                        <th width="20%">Cajillas</th>
-                        <th width="20%">Peso Neto</th>
-                        <th width="20%">Remove</th>
+                        <th width="10%">Product ID</th>
+                        <th width="30%">Product Description</th>
+                        <th width="20%">Peso Bruto (kg)</th>
+                        <th width="10%">Cajillas</th>
+                        <th width="15%">Peso Neto (kg)</th>
+                        <th width="15%">Remove</th>
                 </tr>
           </table>
         </div>
@@ -105,7 +105,7 @@ for($i=0;$i<$rowCount;$i++) {
                                 <td><input type="hidden" name="product_description" value="<?php echo $_POST["product_descriptions"][$i]; ?>"><?php echo $_POST["product_descriptions"][$i]; ?></td>
                         </tr>
                         <tr>
-                                <td>Peso Bruto</td>
+                                <td>Peso Bruto (kg)</td>
                                 <td><input type="text" name="peso_bruto" id="peso_bruto_<?php echo $_POST["products"][$i]; ?>" value="" autofocus></td>
                         </tr>
                         <tr>
@@ -113,7 +113,7 @@ for($i=0;$i<$rowCount;$i++) {
                                 <td><input type="number" name="cajillas" value="3"></td>
                         </tr>
                         <tr>
-                                <td>Peso Neto</td>
+                                <td>Peso Neto (kg)</td>
                                 <td><input type="hidden" name="peso_neto" value="0"></td>
                         </tr>
                         <tr>

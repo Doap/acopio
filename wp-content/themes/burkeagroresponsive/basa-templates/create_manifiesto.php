@@ -85,9 +85,10 @@ $manifiesto_meta_id = $wpdb->insert_id;
 <tr><td>Fecha: <?php echo $date;?></td></tr>
 <tr><td>Comprador: <?php echo $username;?></td></tr>
 <tr class="listheader">
+                        <td># Productor</td>
                         <td># de la Compra</td>
                         <td>Producto</td>
-                        <td>Peso</td>
+                        <td>Peso (kg)</td>
                         <td>Unidades</td>
 </tr>
 
@@ -118,6 +119,8 @@ $order_id = $manifiesto_order['order_id'];
 	{
 
 	echo '<tr class="$classname">';
+	$cust_id = $wpdb->get_var("SELECT customer_id FROM wp_tcp_orders where order_id = ABS($order_detail['order_id']);");
+	echo '<td>' . $cust_id . '</td>';
 	echo '<td>' . $order_detail['order_id'] . '</td>';
 	echo '<td>' . $order_detail['name'] . '</td>';
 $weight = $order_detail['weight']/100;

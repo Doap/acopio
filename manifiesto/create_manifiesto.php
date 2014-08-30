@@ -32,6 +32,7 @@ if (!current_user_can( 'switch_to_user', $user_id ) && current_user_switched())
 }
 
 $ordersCount = count($_POST["orders"]);
+//var_dump($_POST);
 if(isset($ordersCount))
 {
 //header("Location:list_user.php");
@@ -85,9 +86,10 @@ $manifiesto_meta_id = $wpdb->insert_id;
 <tr><td>Fecha: <?php echo $date;?></td></tr>
 <tr><td>Comprador: <?php echo $username;?></td></tr>
 <tr class="listheader">
+                        <td># Productor</td>
                         <td># de la Compra</td>
                         <td>Producto</td>
-                        <td>Peso</td>
+                        <td>Peso (kg)</td>
                         <td>Unidades</td>
 </tr>
 
@@ -118,10 +120,82 @@ $order_id = $manifiesto_order['order_id'];
 	{
 
 	echo '<tr class="$classname">';
-	echo '<td>' . $order_detail['order_id'] . '</td>';
-	echo '<td>' . $order_detail['name'] . '</td>';
+	$cust_id = $wpdb->get_var("SELECT customer_id FROM wp_tcp_orders where order_id = ABS($order_id);");
+	$cust_info = get_user_by('id', $cust_id);
+	$producer_id = $cust_info->user_login;
+	$product_id = $order_detail['post_id'];
 $weight = $order_detail['weight']/100;
 $qty= $order_detail['qty_ordered'];
+//echo "prod id = $producer_id";
+$acopio_ids = $wpdb->get_col('SELECT acopio_id FROM wp_acopio where customer = "' . $producer_id . '" and DATE(created) = DATE(NOW());');
+//var_dump($acopio_ids);
+$qty_counter = $qty;
+foreach ($acopio_ids as $acopio_id)
+{
+	$acopiometa_id = '';
+	$num_lines = $wpdb->get_var("SELECT COUNT(acopiometa_id) FROM wp_acopiometa where acopio_id = $acopio_id and product_id = $product_id and status = 0;");
+	if ($num_lines > 1)
+	{
+		$qty_product = $wpdb->get_var("SELECT SUM(quantity) FROM wp_acopiometa where acopio_id = $acopio_id and product_id = $product_id and status = 0;");
+	}
+	else
+	{
+		$qty_product = $wpdb->get_var("SELECT quantity FROM wp_acopiometa where acopio_id = $acopio_id and product_id = $product_id and status = 0;");
+		$acopiometa_id = $wpdb->get_var("SELECT acopiometa_id FROM wp_acopiometa where acopio_id = $acopio_id and product_id = $product_id and quantity = $qty_product and status = 0;");
+	}
+	if ($qty_product == $qty && $qty_counter > 0)
+	{
+		$num_cajillas = $wpdb->get_var("SELECT SUM(cajillas) FROM wp_acopiometa where acopio_id = $acopio_id and product_id = $product_id;;");
+		$acopio_cajillas += $num_cajillas;
+		//echo "num = $num_cajillas    acopio = $acopio_cajillas";
+		if ($acopiometa_id)
+		{
+		$wpdb->update( 
+			'wp_acopiometa', 
+			array( 
+				'status' => 1	// string
+			), 
+			array( 'acopiometa_id' => $acopiometa_id ), 
+			array( 
+				'%d'	// value2
+			), 
+			array( '%d' ) 
+		);
+		}
+		else
+		{
+		$wpdb->update( 
+			'wp_acopiometa', 
+			array( 
+				'status' => 1	// string
+			), 
+			array( 'acopio_id' => $acopio_id ), 
+			array( 
+				'%d'	// value2
+			), 
+			array( '%d' ) 
+		);
+		}
+	$qty_counter -= $qty_product;
+/*
+		$wpdb->update( 
+			'wp_acopio', 
+			array( 
+				'status' => 1	// string
+			), 
+			array( 'acopio_id' => $acopio_id ), 
+			array( 
+				'%d'	// value2
+			), 
+			array( '%d' ) 
+		);
+*/
+	}
+}
+
+	echo '<td>' . $producer_id . '</td>';
+	echo '<td>' . $order_detail['order_id'] . '</td>';
+	echo '<td>' . $order_detail['name'] . '</td>';
 //if ($order_detail['weight'])
 if ($weight)
 	{
@@ -136,6 +210,7 @@ if ($weight)
 	echo '</tr>';
 	}
  }
+echo "<tr><td># de Cajillas : $acopio_cajillas </td></tr>";
 ?>
 <form>
 <input type="button" value="Imprimir" onClick="window.print()">
