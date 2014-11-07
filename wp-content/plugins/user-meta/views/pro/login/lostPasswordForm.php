@@ -20,6 +20,13 @@ if ( isset( $userMeta->um_post_method_status->$methodName ) ) {
     $displayNone = null;
 }
 
+if ( $userMeta->isHookEnable( 'lost_password' ) ) {
+    ob_start();
+    do_action( 'lost_password' );
+    $html .= ob_get_contents();
+    ob_end_clean();
+} 
+
 $onSubmit   = $disableAjax ? null : "onsubmit=\"pfAjaxRequest(this); return false;\"";
 
 if ( isset( $config['before_form'] ) )
@@ -54,12 +61,16 @@ $html .= $userMeta->createInput( 'user_login', 'text', array(
     'enclose'       => 'p',
 ) );
 
+if ( $userMeta->isHookEnable( 'lostpassword_form' ) ) {
+    ob_start();
+    do_action( 'lostpassword_form' );
+    $html .= ob_get_contents();
+    ob_end_clean();
+} 
+
 $html .= $userMeta->methodPack( $methodName );
 
-if ( $userMeta->isActionEnable( 'lostpassword_form' ) );
-    do_action('lostpassword_form');
-
-if ( !empty( $_REQUEST['redirect_to'] ) ) {
+if ( ! empty( $_REQUEST['redirect_to'] ) ) {
     $html .= $userMeta->createInput( 'redirect_to', 'hidden', array(
         'value' => esc_attr( $_REQUEST['redirect_to'] ),
     ) );
@@ -70,7 +81,7 @@ if ( isset( $config['before_button'] ) )
 
 $html .= $userMeta->createInput( 'wp-submit', 'submit', array(
     'value'     => ! empty( $config['button_value'] ) ? $config['button_value'] : $userMeta->getMsg( 'lostpassword_button' ),
-    'id'        => ! empty( $config['input_id'] ) ? $config['input_id'] : 'um_lostpass_button' . $uniqueID,
+    'id'        => ! empty( $config['button_id'] ) ? $config['button_id'] : 'um_lostpass_button' . $uniqueID,
     'class'     => ! empty( $config['button_class'] ) ? $config['button_class'] : 'um_lostpass_button',
     'enclose'   => 'p',
 ) );

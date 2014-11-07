@@ -18,9 +18,9 @@ $wp->register_globals(); $wp->send_headers();
 $acopio_id = $_POST['acopio_id'];
 $products_to_add = $wpdb->get_results(
         "
-        SELECT acopiometa_id, acopio_id, product_id, item_id, SUM( quantity ) as quantity, cajillas, status 
-        FROM wp_acopiometa
-        WHERE acopio_id = $acopio_id
+        SELECT receptionmeta_id, reception_id, product_id, item_id, SUM( quantity ) as quantity, cajillas, status 
+        FROM wp_receptionmeta
+        WHERE reception_id = $acopio_id
 	GROUP BY product_id
         ORDER BY product_id ASC;
         " 
@@ -30,8 +30,8 @@ if (!empty($products_to_add))
 {        
 foreach ($products_to_add as $product_to_add)
  {
-	$acopiometa_id = $product_to_add['acopiometa_id'];
-	$acopio_id = $product_to_add['acopio_id'];
+	$acopiometa_id = $product_to_add['receptionmeta_id'];
+	$acopio_id = $product_to_add['reception_id'];
 	$product_id = $product_to_add['product_id'];
 	$item_id = $product_to_add['item_id'];
 	$quantity = $product_to_add['quantity'];

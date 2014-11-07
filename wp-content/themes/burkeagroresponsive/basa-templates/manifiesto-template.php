@@ -57,7 +57,7 @@ $pending_orders = $wpdb->get_results(
         "
         SELECT order_id, created_at, billing_company 
         FROM wp_tcp_orders
-        WHERE status = 'PROCESSING' and order_id NOT IN ($orders_imported); 
+        WHERE (status = 'PROCESSING' OR status = 'PENDING') AND order_id NOT IN ($orders_imported); 
         "
 ,ARRAY_A);
 if (!empty($pending_orders))

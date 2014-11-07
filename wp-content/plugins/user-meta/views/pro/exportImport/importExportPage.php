@@ -35,7 +35,7 @@ global $userMeta;
                 echo $userMeta->metaBox( __( '3 steps to get started', $userMeta->name ),  $userMeta->boxHowToUse());               
                 if( !@$userMeta->isPro )
                     echo $userMeta->metaBox( __( 'User Meta Pro', $userMeta->name ),   $userMeta->boxGetPro());
-                echo $userMeta->metaBox( __( 'Shortcode', $userMeta->name ),   $userMeta->boxShortcodesDocs());
+                echo $userMeta->metaBox( 'Shortcodes',   $userMeta->boxShortcodesDocs());
                 ?>
             </div>
         </div>

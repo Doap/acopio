@@ -1,105 +1,78 @@
 <?php
 
-if( !class_exists( 'umEmailNotificationController' ) ) :
+if( ! class_exists( 'umEmailNotificationController' ) ) :
 class umEmailNotificationController {
     
     function __construct() {
-        add_action( 'user_meta_after_user_register',array( $this, 'registrationEmail' )); 
-        add_action( 'user_meta_after_user_update',  array( $this, 'profileUpdateEmail' ));
-        add_action( 'user_meta_user_activate',      array( $this, 'userActivate' ) ); 
-        add_action( 'user_meta_user_deactivate',    array( $this, 'userDeactivate' ) );
-        add_action( 'user_meta_email_verified',     array( $this, 'emailVerified' ) );
-        add_action( 'pf_lostpassword_email',        array( $this, 'lostPasswordEmail' ), 10, 3 );        
+        add_action( 'user_meta_after_user_register',    array( $this, 'registrationEmail' ) ); 
+        add_action( 'user_meta_after_user_update',      array( $this, 'profileUpdateEmail' ) );
+        add_action( 'user_meta_user_activate',          array( $this, 'userActivate' ) ); 
+        add_action( 'user_meta_user_deactivate',        array( $this, 'userDeactivate' ) );
+        add_action( 'user_meta_email_verified',         array( $this, 'emailVerified' ) );
+        add_action( 'user_meta_after_reset_password',   array( $this, 'resetPasswordEmail' ) );   
         
-        add_filter( 'user_meta_raw_email',          array( $this, 'addPlaceholder' ) );
+        add_filter( 'user_meta_raw_email',              array( $this, 'addPlaceholder' ), 10, 3 );
     }
 
-    function registrationEmail( $userdata ) {                
+    
+    function registrationEmail( $userdata ) {
+        global $userMeta;  
+        
         $user = new WP_User( $userdata->ID );
         $user->password = $userdata->user_pass;
-        $this->_sendEmail( 'registration', $user );
+        $userMeta->prepareEmail( 'registration', $user );
     }
     
-    function profileUpdateEmail( $userdata ) {                
+    
+    function profileUpdateEmail( $userdata ) {
+        global $userMeta;  
+        
         $user = new WP_User( $userdata->ID );
         if( !empty( $userdata->user_pass ) )
             $user->password = $userdata->user_pass;
-        $this->_sendEmail( 'profile_update', $user );
-    }    
+        
+        $userMeta->prepareEmail( 'profile_update', $user );
+    }
+    
     
     function userActivate( $userID ) {
+        global $userMeta;  
+        
         $user = new WP_User( $userID );
-        $this->_sendEmail( 'activation', $user );     
+        $userMeta->prepareEmail( 'activation', $user );     
     }
+    
     
     function userDeactivate( $userID ) {
+        global $userMeta;  
+        
         $user = new WP_User( $userID );
-        $this->_sendEmail( 'deactivation', $user );                 
+        $userMeta->prepareEmail( 'deactivation', $user );                 
     }
+    
     
     function emailVerified( $userID ) {
+        global $userMeta;  
+        
         $user = new WP_User( $userID );
-        $this->_sendEmail( 'email_verification', $user );                  
+        $userMeta->prepareEmail( 'email_verification', $user );                  
     }
     
-    function lostPasswordEmail( $passwordResetLink, $resetKey, $userID ) {
-        global $userMeta;        
-        $user = new WP_User( $userID ); 
+
+    function resetPasswordEmail( $user ) {
+        global $userMeta;  
         
-        $data = $userMeta->getEmailsData( 'lostpassword' );        
-        $role = $userMeta->getUserRole( $user->ID );
-                
-        if ( ! @$data['user_email']['um_disable'] ) {
-            $mailData = @$data['user_email'][ $role ];
-            $mailData['email']        = $user->user_email;
-            $mailData['email_type']   = 'lostpassword';  
-            
-            if ( strpos( @$mailData['body'], '%reset_password_link%' ) === false )
-                $mailData[ 'body' ] .= sprintf( __('To reset your password, please visit the following address: \r\n\r\n %s', $userMeta->name), "%reset_password_link%");
-                                             
-            $mailData['body'] = str_replace( '%reset_password_link%', $passwordResetLink, @$mailData[ 'body' ] );            
-            $userMeta->sendEmail( $this->_prepareEmail( $mailData, $user ) );      
-        }                
+        $userMeta->prepareEmail( 'reset_password', $user );  
     }
     
-    function _sendEmail( $key, $user ) {
-        global $userMeta;        
-        $data = $userMeta->getEmailsData( $key );        
-        $role = $userMeta->getUserRole( $user->ID );
-        
-        if ( ! @$data['admin_email']['um_disable'] ) {
-            $mailData = @$data['admin_email'][ $role ];
-            $mailData['email']        = !empty( $data['admin_email']['um_all_admin'] ) ? $userMeta->getAllAdminEmail() : get_bloginfo( 'admin_email' );
-            $mailData['email_type']   = $key;
-            $mailData['receipt_type'] = 'admin';
-            $userMeta->sendEmail( self::_prepareEmail( $mailData, $user ) ); 
-        }
-        
-        if ( ! @$data[ 'user_email' ][ 'um_disable' ] ) {
-            $mailData = @$data['user_email'][ $role ];
-            $mailData['email']        = $user->user_email;
-            $mailData['email_type']   = $key;
-            $mailData['receipt_type'] = 'user';
-            $userMeta->sendEmail( self::_prepareEmail( $mailData, $user ) );      
-        }  
-       
-    }    
-    
-    function _prepareEmail( $mailData, $user ) {
+
+    function addPlaceholder( $mailData, $user, $extra ) {
         global $userMeta;
         
-        $mailData = apply_filters( 'user_meta_raw_email', $mailData );
+        if ( 'lostpassword' == $mailData['email_type'])
+            return self::_lostpasswordIntegration( $mailData, $user, $extra );
         
-        $mailData['subject']  = $userMeta->convertUserContent( $user, @$mailData['subject'] );
-        $mailData['body']     = $userMeta->convertUserContent( $user, @$mailData['body'] );        
-        
-        return $mailData;
-    }
-    
-    function addPlaceholder( $mailData ) {
-        global $userMeta;
-        
-        if( $mailData[ 'email_type' ] <> 'registration' )
+        if ( 'registration' <> $mailData['email_type'])
             return $mailData;
         
         $registration       = $userMeta->getSettings( 'registration' );
@@ -131,7 +104,27 @@ class umEmailNotificationController {
         $mailData[ 'body' ] = $mailBody;          
         
         return $mailData;              
-    }    
+    }
+    
+    
+    function _lostpasswordIntegration( $mailData, $user, $extra ) {
+        global $userMeta;
+        
+        $mailData['body'] = ! empty( $mailData['body'] ) ? $mailData['body'] : '';
+        
+        if ( strpos( $mailData['body'], '%reset_password_link%' ) === false )
+            $mailData['body'] .= sprintf( __('To reset your password, please visit the following address: \r\n\r\n %s', $userMeta->name), "%reset_password_link%");
+
+        $mailData['body'] = str_replace( '%reset_password_link%', ! empty( $extra['reset_password_link'] ) ? $extra['reset_password_link'] : '', $mailData['body'] );   
+        
+        if ( $userMeta->isHookEnable( 'retrieve_password_title' ) )
+            $mailData['subject'] = apply_filters( 'retrieve_password_title', ! empty( $mailData['subject'] ) ? $mailData['subject'] : '' );
+        
+        if ( $userMeta->isHookEnable( 'retrieve_password_message' ) )
+            $mailData['body'] = apply_filters( 'retrieve_password_message', $mailData['body'], ! empty( $extra['key'] ) ? $extra['key'] : '' );
+        
+        return $mailData;
+    }
     
 }
 endif;

@@ -26,24 +26,36 @@ $html .= "<div class='pf_divider'></div>";
 $html .= "<h4>". __( 'Login Page', $userMeta->name ) . "</h4>";              
 $html .= wp_dropdown_pages(array(
     'name'      => 'login[login_page]',
-    'id'        => 'login_page_css_id',
+    'id'        => 'um_login_login_page',
     'selected'  => @$login[ 'login_page' ],
     'echo'      => 0,
     'show_option_none'=>'None ',      
 ));
-$html .= "<span>" . sprintf( __( 'Login page should contain shortcode: %s', $userMeta->name ), "[user-meta type=\"login\"]") . "</span>";
-//$html .= '<p><em>' . __( 'Login page will be used for login, lost password, reset password and email verification process.', $userMeta->name ) .'</em></p><p>&nbsp;</p>';
-$html .= "<p>&nbsp;</p>";
-$html .= $userMeta->createInput( "login[disable_wp_login_php]", "checkbox", array(
+
+$createPageUrl = admin_url( 'admin-ajax.php' );
+$createPageUrl = add_query_arg( array(
+    'page'          => 'login',
+    'method_name'   => 'generatePage',
+    'action'        => 'pf_ajax_request',
+), $createPageUrl );
+$createPageUrl = wp_nonce_url( $createPageUrl, 'generate_page' );
+$html .= "<a href='$createPageUrl' id='um_login_login_page_create' class='button-secondary'>Create Page</a>";
+
+$html .= "<p>" . sprintf( __( 'Login page should contain shortcode like: %s', $userMeta->name ), "[user-meta-login]") . "</p>";
+
+$html2 = $userMeta->createInput( "login[disable_wp_login_php]", "checkbox", array(
     "label" => sprintf( __( 'Disable default login url (%s)', $userMeta->name ), site_url( 'wp-login.php' ) ),
     "value" => @$login[ 'disable_wp_login_php' ],
     "id"    => "um_login_disable_wp_login_php",
-    "onchange"  => "umAdminLoginResetpassError()",
+    "onchange"  => "umSettingsToggleError()",
     "enclose"=> "p",
 ) ); 
 
 $loginUrl = !empty( $login[ 'login_page' ] ) ? get_permalink( $login[ 'login_page' ] ) : null;
-$html .= '<em>' . sprintf( __( 'Disable wp-login.php and redirect to front-end login page %s', $userMeta->name ), $loginUrl )  .'</em>';
+$html2 .= '<p><em>' . sprintf( __( 'Disable wp-login.php and redirect to front-end login page %s', $userMeta->name ), $loginUrl )  .'</em></p>';
+
+$html .= "<div id=\"um_login_disable_wp_login_php_block\">$html2</div>";
+
 $html .= "<div class='pf_divider'></div>";
 
 
@@ -70,12 +82,21 @@ $html .= $userMeta->createInput( "login[disable_lostpassword]", "checkbox", arra
     "enclose"   => "p",
 ) ); 
 
+/*
 $html .= $userMeta->createInput( "login[default_lostpassword]", "checkbox", array( 
     "value"     => @$login[ 'default_lostpassword' ],
     "id"        => "um_login_default_lostpassword",
     "label"     => __( 'Use default lostpassword url', $userMeta->name ),
     "enclose"   => "p",
-) ); 
+) );
+*/
+
+$html .= $userMeta->createInput( "login[disable_registration_link]", "checkbox", array( 
+    "value"     => @$login[ 'disable_registration_link' ],
+    "id"        => "um_login_disable_registration_link",
+    "label"     => __( 'Hide registration link', $userMeta->name ),
+    "enclose"   => "p",
+) );
 
 $html .= $userMeta->createInput( "login[disable_ajax]", "checkbox", array( 
     "value"     => @$login[ 'disable_ajax' ],
@@ -106,7 +127,7 @@ $createPageUrl = add_query_arg( array(
 $createPageUrl = wp_nonce_url( $createPageUrl, 'generate_page' );
 $html .= "<a href='$createPageUrl' id='um_login_resetpass_page_create' class='button-secondary'>Create Page</a>";
 
-$html .= " <span class='required_resetpass_page_page' style='color:red'><em><strong>(" . __( 'Please select any page for resetting password as your default login url is disabled!', $userMeta->name ) . ")</strong></em></span>";
+$html .= " <span class='um_required_resetpass_page_page' style='color:red'><em><strong>(" . __( 'Please select any page for resetting password as your default login url is disabled!', $userMeta->name ) . ")</strong></em></span>";
 $html .= '<p><em>' . __( 'This is the page a user will be redirected to when they want to retrieve/reset their password.', $userMeta->name ) .'</em></p>';
 
 $html .= "<div class='pf_divider'></div>";
@@ -148,19 +169,3 @@ if( is_multisite() ){
         'enclode'   => 'p',
 	 ) );		
 }
-
-
-$html .= "\n\r" . '<script type="text/javascript">';
-    $html .= 'jQuery(document).ready(function(){';
-        $html .= 'jQuery( "#loggedin_profile_tabs" ).tabs();';
-        $html .= 'jQuery( "#login_page_css_id" ).change(function(){';
-            $html .= 'page = jQuery( "#login_page_css_id" ).val();';
-            $html .= 'if( page )';
-                $html .= 'jQuery( "#um_login_page_error" ).hide();';
-            $html .= 'else';
-                $html .= 'jQuery( "#um_login_page_error" ).show();';
-        $html .= '});';
-    $html .= '});';
-$html .= '</script>' . "\n\r";
-
-?>

@@ -1,30 +1,44 @@
 <?php
 
-if( !class_exists( 'umAjaxProModel' ) ) :
+if ( ! class_exists( 'umAjaxProModel' ) ) :
 class umAjaxProModel {
     
-    function postLostpassword(){
+    function postLostpassword() {
         global $userMeta;
         
-        $settings = $userMeta->getSettings('login');
-        if( !empty( $settings['resetpass_page'] ) ){
+        $settings = $userMeta->getSettings( 'login' );
+        if ( ! empty( $settings['resetpass_page'] ) ) {
             $pageID     = (int) $settings['resetpass_page'];
             $permalink  = get_permalink( $pageID );
         }
         
         // Commented from 1.1.5rc2
         //$pageID = $userMeta->getExecutionPage( 'page_id' );
-
-        $resetPassLink = !empty( $permalink ) ? $permalink : null;                
-        $response = $userMeta->retrieve_password( $resetPassLink );
         
         $output = null;
-        if( $response === true ){
+        
+        if ( $userMeta->isHookEnable( 'login_form_retrievepassword' ) ) {
+            ob_start();
+            do_action( 'login_form_retrievepassword' );
+            $output .= ob_get_contents();
+            ob_end_clean();
+        }  
+
+        $resetPassLink = ! empty( $permalink ) ? $permalink : null;                
+        $response = $userMeta->retrieve_password( $resetPassLink );
+        
+        
+        if ( $response === true ) {
             $output .= $userMeta->showMessage( $userMeta->getMsg( 'check_email_for_link' ) , 'success', false );
-            $redirect_to = apply_filters( 'lostpassword_redirect', !empty( $_POST['redirect_to'] ) ? $_POST['redirect_to'] : '' );
-            if( !empty( $redirect_to ) )
+            $redirect_to = ! empty( $_POST['redirect_to'] ) ? $_POST['redirect_to'] : '';
+            
+            if ( $userMeta->isHookEnable( 'lostpassword_redirect' ) )
+                $redirect_to = apply_filters( 'lostpassword_redirect', $redirect_to );
+            
+            if ( ! empty( $redirect_to ) )
                 $output .= $userMeta->jsRedirect( $redirect_to, 5 );
-        }elseif( is_wp_error( $response ) )
+            
+        } elseif ( is_wp_error( $response ) )
             $output .= $userMeta->showError( $response->get_error_message(), false );   
             
         return $userMeta->printAjaxOutput( $output );
@@ -34,27 +48,27 @@ class umAjaxProModel {
     /**
      * ajaxLogin function will call with um_login action
      */
-    function postLogin(){
+    function postLogin() {
         global $userMeta;        
         $userMeta->verifyNonce(); 
 
         $output = null;
          
         $captchaValidation = $userMeta->isInvalidateCaptcha();
-        if( $captchaValidation ){
+        if ( $captchaValidation ) {
             $error = new WP_Error( 'invalid_captcha', $captchaValidation );  
             $output = $userMeta->showError( $error, false );
         }
         
-        if( !empty( $output ) )
+        if ( ! empty( $output ) )
             return $userMeta->printAjaxOutput( $output );
         
         
         $user = $userMeta->doLogin();
-        if( $user ){
-            if( !is_wp_error( $user ) ){
+        if ( $user ) {
+            if ( ! is_wp_error( $user ) ) {
                 
-                if( empty( $_REQUEST['is_ajax'] ) ){
+                if ( empty( $_REQUEST['is_ajax'] ) ) {
                     wp_redirect( $user->redirect_to );
                     exit();
                 }
@@ -69,18 +83,20 @@ class umAjaxProModel {
                 //$output     = "<div status=\"success\" $redirect >$html</div>"; 
                           
                 $output     = "<div status=\"success\" $redirect ></div>"; 
-            }else{
+            } else { 
+                if ( $userMeta->isHookEnable( 'wp_login_errors' ) ) 
+                    $user = apply_filters( 'wp_login_errors', $user, '' ); //$errors = $user, $redirect_to = ''
+                
                 $output    = $userMeta->showError( $user->get_error_message() . $userMeta->reloadCaptcha(), false );
             }
         }   
         
         return $userMeta->printAjaxOutput( $output );
-          
     }
     
-    function ajaxSaveEmailTemplate(){
+    function ajaxSaveEmailTemplate() {
         global $userMeta;
-        if( ! isset( $_REQUEST ) )
+        if ( ! isset( $_REQUEST ) )
             $userMeta->showError( __( 'Error occurred while updating', $userMeta->name ) );
         
         $data = $userMeta->arrayRemoveEmptyValue( $_REQUEST );  
@@ -93,26 +109,26 @@ class umAjaxProModel {
     /**
      * Export UMP fields,forms,settings etc to txt file.
      */
-    function ajaxExportUmp(){
+    function ajaxExportUmp() {
         global $userMeta;
         
         $userMeta->verifyNonce(); 
                
         $result = array();      
-        $result[ 'fields' ] = $userMeta->getData( 'fields' );
+        $result['fields'] = $userMeta->getData( 'fields' );
         
-        if( is_array(@$_REQUEST['includes']) ){
-            foreach( $_REQUEST['includes'] as $key ){
+        if ( is_array( @$_REQUEST['includes'] ) ) {
+            foreach ( $_REQUEST['includes'] as $key ) {
                 $data = $userMeta->getData( $key );
-                if( $data )
+                if ( $data )
                     $result[ $key ] = $data;
             }
         }       
         
-        $result = base64_encode( serialize($result) );     
+        $result = base64_encode( serialize( $result ) );     
         
         $fileName = 'User Meta Pro (' . get_bloginfo('name') . ') ' . date('Y-m-d_H-i') . '.txt';      
-        $userMeta->generateTextFile( $fileName, $result);
+        $userMeta->generateTextFile( $fileName, $result );
         exit();
     }
     
@@ -120,7 +136,7 @@ class umAjaxProModel {
      * Import UMP fields,forms,settings etc exported by UMP export tools.
      * Give user choice to replace existing data or add new data.
      */
-    function ajaxImportUmp(){
+    function ajaxImportUmp() {
         global $userMeta;
         
         $userMeta->verifyNonce(); 
@@ -128,7 +144,7 @@ class umAjaxProModel {
         /**
          * Reading uploaded file and asssign file content to $data 
          */
-        if( empty( $_REQUEST['filepath'] ) )
+        if ( empty( $_REQUEST['filepath'] ) )
             return $userMeta->showError( __( 'Something went wrong. File has not been uploaded', $userMeta->name ) );
         
         $uploads = $userMeta->determinFileDir( $_REQUEST['filepath'], true );
@@ -146,20 +162,20 @@ class umAjaxProModel {
         /**
          * Run Import 
          */
-        if( isset( $_REQUEST[ 'do_import' ] ) ){
-            if( empty( $_REQUEST[ 'includes' ] ) || !is_array( $_REQUEST[ 'includes' ] ) )
+        if ( isset( $_REQUEST[ 'do_import' ] ) ) {
+            if ( empty( $_REQUEST[ 'includes' ] ) || !is_array( $_REQUEST[ 'includes' ] ) )
                 return $userMeta->showError( __( 'Nothing to import!', $userMeta->name ) );
             
-            foreach( $_REQUEST[ 'includes' ] as $key => $action ){
+            foreach ( $_REQUEST[ 'includes' ] as $key => $action ) {
                 if( empty( $data[ $key ] ) ) continue;
                 
-                if( $action == 'replace' ){
+                if ( $action == 'replace' ) {
                     $userMeta->updateData( $key, $data[ $key ] );
                     $imported = true;
-                }elseif( $action == 'add' ){
-                    if( is_array( $data[ $key ] ) ){
+                } elseif ( $action == 'add' ) {
+                    if ( is_array( $data[ $key ] ) ) {
                         $existingData = $userMeta->getData( $key );
-                        if( is_array( $existingData ) )
+                        if ( is_array( $existingData ) )
                             $data[ $key ] = $existingData + $data[ $key ];
                         $userMeta->updateData( $key, $data[ $key ] );
                         $imported = true;
@@ -167,7 +183,7 @@ class umAjaxProModel {
                 }
             }
 
-            if( !empty( $imported ) )
+            if ( ! empty( $imported ) )
                 echo $userMeta->showMessage( __( 'Import completed.', $userMeta->name ) );
             else
                 echo $userMeta->showError( __( 'Nothing to import!', $userMeta->name ) );
@@ -177,7 +193,7 @@ class umAjaxProModel {
         /**
          * Attempt for import
          */
-        }elseif( @$_REQUEST[ 'field_id' ] == 'txt_upload_ump_import' ){               
+        } elseif ( @$_REQUEST[ 'field_id' ] == 'txt_upload_ump_import' ){               
             echo $userMeta->renderPro( 'importUmStep2', array(
                 'data' => $data
             ), 'exportImport' );           
@@ -187,19 +203,19 @@ class umAjaxProModel {
     /**
      * Perform user exports by ajax call also save user export template.
      */
-    function ajaxUserExport(){
+    function ajaxUserExport() {
         global $userMeta, $wpdb, $blog_id;
         //$userMeta->dump($_REQUEST);die();
         $userMeta->verifyNonce( true );        
         
         $fieldsSelected = array();
-        if( is_array( @$_REQUEST[ 'fields' ] ) )
+        if ( is_array( @$_REQUEST[ 'fields' ] ) )
             $fieldsSelected = array_slice( $_REQUEST['fields'], 0, $_REQUEST['field_count'], true );
         
         /**
          * Saving Data 
          */
-        if( $_REQUEST['action_type'] == 'save' || $_REQUEST['action_type'] == 'save_export' ){           
+        if ( $_REQUEST['action_type'] == 'save' || $_REQUEST['action_type'] == 'save_export' ) {           
             $data = array();          
             $data['fields']         = $fieldsSelected;
             $data['exclude_roles']  = @$_REQUEST['exclude_roles'];
@@ -218,10 +234,10 @@ class umAjaxProModel {
         /**
          * Export to csv 
          */
-        if( $_REQUEST['action_type'] == 'export' || $_REQUEST['action_type'] == 'save_export' ){
+        if ( $_REQUEST['action_type'] == 'export' || $_REQUEST['action_type'] == 'save_export' ) {
             $meta_query = array();
-            if( is_array( @$_REQUEST['exclude_roles'] ) ){
-                foreach( @$_REQUEST['exclude_roles'] as $role ){
+            if ( is_array( @$_REQUEST['exclude_roles'] ) ) {
+                foreach ( @$_REQUEST['exclude_roles'] as $role ) {
                     $meta_query[] = array(
                         'key'       => $wpdb->get_blog_prefix( $blog_id ) . 'capabilities',
                         'value'     => "\"$role\"",
@@ -247,13 +263,13 @@ class umAjaxProModel {
             $fileData[] = $fieldsSelected;
      
             /// Add user data for csv
-            foreach( $users as $user ){
+            foreach ( $users as $user ) {
                 $userData = array();
-                foreach( $fieldsSelected as $key => $val ){
+                foreach ( $fieldsSelected as $key => $val ) {
                     $fieldValue     = !empty( $user->$key ) ? $user->$key : null;
-                    if( $key == 'role' )
+                    if ( $key == 'role' )
                         $fieldValue = is_array( $user->roles ) ? array_shift($user->roles) : null;
-                    if( is_array( $fieldValue ) || is_object( $fieldValue ) )
+                    if ( is_array( $fieldValue ) || is_object( $fieldValue ) )
                         $userData[$key] = implode( ',', (array) $fieldValue ); 
                     else
                         $userData[$key]   = $fieldValue;
@@ -270,7 +286,7 @@ class umAjaxProModel {
      * Build user export forms in admin section and generate new form by ajax call.
      * verifyNonce is calling inside.
      */    
-    function ajaxUserExportForm( $populateAll=false ){
+    function ajaxUserExportForm( $populateAll=false ) {
         global $userMeta;
                 
         $fieldsDefault  = $userMeta->defaultUserFieldsArray();
@@ -278,9 +294,9 @@ class umAjaxProModel {
         
         $fieldsMeta     = array();       
         $extraFields    = $userMeta->getData('fields');
-        if( is_array( $extraFields ) ){
-            foreach($extraFields as $data){
-                if( !empty( $data['meta_key'] ) ){
+        if ( is_array( $extraFields ) ) {
+            foreach ($extraFields as $data) {
+                if ( ! empty( $data['meta_key'] ) ) {
                     $fieldTitle = ! empty( $data['field_title'] ) ? $data['field_title'] : $data['meta_key'] ;
                     $fieldsMeta[ $data['meta_key'] ] = $fieldTitle;
                 }
@@ -290,15 +306,15 @@ class umAjaxProModel {
         
         $roles = $userMeta->getRoleList();
         
-        if( $populateAll ){
+        if ( $populateAll ) {
             $export      = $userMeta->getData('export');
             $formsSaved = @$export[ 'user' ];
-            if( is_array( $formsSaved ) && !empty( $formsSaved ) ){
+            if ( is_array( $formsSaved ) && ! empty( $formsSaved ) ) {
                 foreach( $formsSaved as $formID => $formData ){
                     $fieldsSelected = $formData[ 'fields' ];
                     $fieldsAvailable = $fieldsAll;
-                    if( is_array( $fieldsSelected ) ){
-                        foreach( $fieldsSelected as $key => $val )
+                    if ( is_array( $fieldsSelected ) ) {
+                        foreach ( $fieldsSelected as $key => $val )
                             unset( $fieldsAvailable[$key] );
                     } 
                     
@@ -319,9 +335,9 @@ class umAjaxProModel {
         }
         
         /// For default or new form
-        if( !@$break ){            
+        if ( ! @$break ) {            
             $formID = !empty($_REQUEST['form_id']) ? $_REQUEST['form_id'] : 'default';           
-            if( $formID <> 'default' )
+            if ( $formID <> 'default' )
                 $userMeta->verifyNonce( true );
             
              echo $userMeta->renderPro( 'exportForm', array(
@@ -337,34 +353,37 @@ class umAjaxProModel {
     /**
      * Remove User Export Template by ajax call
      */
-    function ajaxRemoveExportForm(){
+    function ajaxRemoveExportForm() {
         global $userMeta;
         $userMeta->verifyNonce( true );
         
         $export     = $userMeta->getData('export');
         
-        if( !empty( $export[ 'user' ][ $_REQUEST['form_id'] ] ) ){
+        if ( ! empty( $export[ 'user' ][ $_REQUEST['form_id'] ] ) ) {
             unset( $export[ 'user' ][ $_REQUEST['form_id'] ] );
             $userMeta->updateData( 'export', $export );
         }
     }
     
-    function ajaxGeneratePage(){
+    function ajaxGeneratePage() {
         global $userMeta;
         
         check_admin_referer( 'generate_page' );
         
         $pages = array(
-            'resetpass' => 'Lost password',
+            'login'         => 'Login',
+            'resetpass'     => 'Reset password',
             'verify-email'  => 'Email verification' 
         );
                 
         if ( ! empty( $_REQUEST['page'] ) ) {
             $page = $_REQUEST['page'];
-            if( isset( $pages[ $page ] ) ){
+            if ( isset( $pages[ $page ] ) ) {  
+                $content = ( 'login' == $page ) ? '[user-meta-login]' : '';
+                
                 $pageID = wp_insert_post( array(
                     'post_title'    => $pages[ $page ],
-                    'post_content'  => '',
+                    'post_content'  => $content,
                     'post_status'   => 'publish',
                     'post_name'     => $page,
                     'post_type'     => 'page',
@@ -375,15 +394,22 @@ class umAjaxProModel {
         if ( ! empty( $pageID ) ) {
             $settings = $userMeta->getData( 'settings' );
             switch ( $page ) {
+                case 'login' :
+                    $settings['login']['login_page'] = $pageID;
+                    $userMeta->updateData( 'settings', $settings );
+                    wp_redirect( $userMeta->adminPageUrl( 'settings', false ) . '#um_settings_login' );
+                    exit();
+                break;
+                
                 case 'resetpass' :
-                    $settings['login'][ 'resetpass_page' ] = $pageID;
+                    $settings['login']['resetpass_page'] = $pageID;
                     $userMeta->updateData( 'settings', $settings );
                     wp_redirect( $userMeta->adminPageUrl( 'settings', false ) . '#um_settings_login' );
                     exit();
                 break;
             
                 case 'verify-email' :
-                    $settings['registration'][ 'email_verification_page' ] = $pageID;
+                    $settings['registration']['email_verification_page'] = $pageID;
                     $userMeta->updateData( 'settings', $settings );
                     wp_redirect( $userMeta->adminPageUrl( 'settings', false ) . '#um_settings_registration' );
                     exit();

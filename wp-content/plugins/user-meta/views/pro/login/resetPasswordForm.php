@@ -1,6 +1,6 @@
 <?php
 global $userMeta;
-// Expected: $config, $error
+// Expected: $config, $user, $errors
 
 $html = null;
 
@@ -26,8 +26,8 @@ if ( isset( $config['intro_text'] ) ) {
     $html .= "<p>" . $userMeta->getMsg( 'resetpassword_intro' ) . "</p>";
 
 
-if ( is_wp_error( $error ) )
-    $html .= $userMeta->showError( $error->get_error_message(), false );
+if ( $errors->get_error_code() )
+    $html .= $userMeta->showError( $errors->get_error_message(), false );
 
 $html .= $userMeta->createInput( 'pass1', 'password', array(
     'label'         => ! empty( $config['pass1_label'] ) ? $config['pass1_label'] : $userMeta->getMsg( 'resetpassword_pass1_label' ),
@@ -40,7 +40,7 @@ $html .= $userMeta->createInput( 'pass1', 'password', array(
 ) );
 
 $html .= $userMeta->createInput( 'pass2', 'password', array(
-    'label'         => ! empty( $config['pass2_label'] ) ? $config['pass2_label'] : $userMeta->getMsg( 'resetpassword_pass2_label '),
+    'label'         => ! empty( $config['pass2_label'] ) ? $config['pass2_label'] : $userMeta->getMsg( 'resetpassword_pass2_label'),
     'placeholder'   => ! empty( $config['pass2_placeholder'] ) ? $config['pass2_placeholder'] : '',
     'id'            => ! empty( $config['pass2_id'] ) ? $config['pass2_id'] : 'um_pass2',
     'class'         => ! empty( $config['pass2_class'] ) ? $config['pass2_class'] . ' ' : '' . 'um_input validate[required,equals[um_pass1]]',
@@ -49,14 +49,21 @@ $html .= $userMeta->createInput( 'pass2', 'password', array(
     'enclose'       => 'p',
 ) );
 
+if ( $userMeta->isHookEnable( 'resetpass_form' ) ) {
+    ob_start();
+    do_action( 'resetpass_form', $user );
+    $html .= ob_get_contents();
+    ob_end_clean();
+} 
+
 $html .= $userMeta->nonceField();
 
 if ( isset( $config['before_button'] ) )
     $html .= $config['before_button'];
 
-$html .= $userMeta->createInput( 'login', 'submit', array(
+$html .= $userMeta->createInput( 'wp-submit', 'submit', array(
     'value'     => !empty( $config['button_value'] ) ? $config['button_value'] : $userMeta->getMsg('resetpassword_button'),
-    'id'        => !empty( $config['input_id'] ) ? $config['input_id'] : 'um_resetpassword_button',
+    'id'        => !empty( $config['button_id'] ) ? $config['button_id'] : 'um_resetpassword_button',
     'class'     => !empty( $config['button_class'] ) ? $config['button_class'] : '',
     'enclose'   => 'p',
 ) );

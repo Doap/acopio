@@ -14,7 +14,8 @@ $current_user = wp_get_current_user();
 $username = $current_user->user_login;
 $user_display_name = $current_user->display_name;
 echo '<br><b>Persona recibiendo la fruta: </b>' . $user_display_name . '<br><b># Usuario: </b>' . $username;
-if(isset($_POST["submit"]) && $_POST["submit"]!="") {
+//var_dump($_POST);
+if(isset($_POST["products"]) && $_POST["products"]!="") {
 $productCount = count($_POST["products"]);
 $manifiesto_id = $_POST["manifiesto_id"];
 if (!isset($acopio_insert)){ 
@@ -31,14 +32,23 @@ $acopio_insert = $wpdb->insert(
                 '%d'
         )
 );
+//	echo '<h5>ERROR acopio insert already set  = ' . $acopio_insert . '</h5>';
+}
+else
+{
+//	echo '<h5>ERROR acopio insert already set  = ' . $acopio_insert . '</h5>';
 }
 if ($acopio_insert) {
 $acopio_id = $wpdb->insert_id;
+//	echo '<h5>ERROR acopio insert already set  = ' . $acopio_insert . '</h5>';
 }
-
+else
+{
+//	echo '<h5>ERROR</h5>';
+}
 for($i=0;$i<$productCount;$i++) {
 //mysql_query("UPDATE users set userName='" . $_POST["userName"][$i] . "', password='" . $_POST["password"][$i] . "', firstName='" . $_POST["firstName"][$i] . "', lastName='" . $_POST["lastName"][$i] . "' WHERE userId='" . $_POST["userId"][$i] . "'");
-echo '<br>Submitted!';
+//echo '<br>Submitted!';
 }
 //header("Location:list_user.php");
 }

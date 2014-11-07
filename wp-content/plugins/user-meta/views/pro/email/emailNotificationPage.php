@@ -30,7 +30,7 @@ global $userMeta;
                 $html .= '<h3>'. __( 'Admin Notification', $userMeta->name ) . '</h3>';    
                 $html .= $userMeta->buildRolesEmailTabs( array( 'registration', 'admin_email' ), $data );
                 $html .= '<p><i>' . sprintf( __( 'Use placeholder %s if needed.', $userMeta->name ), '%activation_url%' ) . '</i></p>'; 
-    
+                
                 echo $userMeta->metaBox( __( 'User Registration E-mail', $userMeta->name ), $html, false, false );
 
                 
@@ -90,6 +90,25 @@ global $userMeta;
                                      
                 echo $userMeta->metaBox( __( 'Lost Password E-mail', $userMeta->name ), $html, false, false );     
                 
+
+                /**
+                 * Password change email
+                 */
+                $html  = null;    
+                
+                //$html .= '<p>'. __( 'This e-mail will be sent to user when they reset their password.', $userMeta->name ) .'</p>';
+                //$html .= '<h3>'. __( 'User Notification', $userMeta->name ) . '</h3>';              
+                //$html .= $userMeta->buildRolesEmailTabs( array( 'reset_password', 'user_email' ), $data );     
+                                  
+                //$html .= '<div class="clear"></div>'; 
+                //$html .= '<div class="pf_divider"></div>';            
+
+                $html .= '<p>'. __( 'This e-mail will be sent to admin when user reset their password.', $userMeta->name ) .'</p>';                                                  
+                $html .= '<h3>'. __( 'Admin Notification', $userMeta->name ) . '</h3>';    
+                $html .= $userMeta->buildRolesEmailTabs( array( 'reset_password', 'admin_email' ), $data );
+    
+                echo $userMeta->metaBox( __( 'Reset Password E-mail', $userMeta->name ), $html, false, false );                
+
                 
                 /**
                  * Profile update Email

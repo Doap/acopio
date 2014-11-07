@@ -19,9 +19,9 @@ require_once("../wp-load.php");
 	if($action == $save_action){
 		// Add code to save data into mysql
         $acopio_meta_insert = $wpdb->insert(
-                'wp_acopiometa',
+                'wp_receptionmeta',
                 array(
-                        'acopio_id' => $acopio_id,
+                        'reception_id' => $acopio_id,
                         'product_id' => $product_id,
                         'item_id' => $row_id,
                         'quantity' => $quantity,
@@ -57,7 +57,7 @@ require_once("../wp-load.php");
 	else if($action == "delete"){
 		// Add code to remove record from database
 		 $acopio_meta_delete = $wpdb->delete(
-                		'wp_acopiometa',
+                		'wp_receptionmeta',
                 		array(
                 		        'item_id' => $item_id
                 		),

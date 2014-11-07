@@ -5,27 +5,19 @@ class umExecutionPageController {
 
     function __construct() {
         global $userMeta;
-                    
-        // commented since 1.1.5rc2
-        //add_action( 'user_meta_load_admin_pages',   array( $this, 'loadExecutionPage' ) );
+
+        add_filter( 'wp_list_pages_excludes',       array( &$this, 'excludeExecutionPage' ) );
         
-        add_filter( 'wp_list_pages_excludes',       array( $this, 'excludeExecutionPage' ) );
-        
-        add_action( 'wp',                           array( $this, 'executionPage' ) );
+        add_action( 'wp',                           array( &$this, 'executionPage' ) );
                 
-        add_filter( 'logout_url',                   array( $this, 'logoutUrl' ), 30, 2 ); 
-        add_filter( 'allowed_redirect_hosts',       array( $this, 'addRedirectHosts' ), 30, 2 );  
-        add_filter( 'lostpassword_url',             array( $this, 'lostpasswordUrl' ), 30, 2 );
-    }
-    
-    /**
-     * Not in use from 1.1.5rc2
-     *
-    function loadExecutionPage(){
-        global $userMeta;
+        add_filter( 'register_url',                 array( &$this, 'registerUrl' ), 30 );
+        add_filter( 'logout_url',                   array( &$this, 'logoutUrl' ), 30, 2 ); 
+        add_filter( 'lostpassword_url',             array( &$this, 'lostpasswordUrl' ), 30, 2 );
         
-        $userMeta->getExecutionPage( 'page_id' );
-    }*/
+        add_filter( 'allowed_redirect_hosts',       array( &$this, 'addRedirectHosts' ), 30, 2 ); 
+        
+    }
+   
     
     function excludeExecutionPage( $ids ) {
         global $userMeta;
@@ -76,6 +68,9 @@ class umExecutionPageController {
         $action = isset( $_REQUEST['action'] ) ? $_REQUEST['action'] : '';
         if ( $action <> 'logout' ) return false;
         
+        if ( $userMeta->isHookEnable( 'login_form_logout' ) )
+            do_action( 'login_form_logout' );
+        
         check_admin_referer( 'log-out' );
         wp_logout();
 
@@ -93,9 +88,7 @@ class umExecutionPageController {
 
         wp_logout();
 
-        $redirect_to = isset( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : null;
-        if( $userMeta->isFilterEnable( 'logout_redirect' ) )
-            $redirect_to = apply_filters('logout_redirect', $redirect_to, $redirect_to, $user);            
+        $redirect_to = isset( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : null;     
 
         if( !$redirect_to ){
             $login = $userMeta->getSettings( 'login' );
@@ -114,7 +107,6 @@ class umExecutionPageController {
         global $userMeta, $post;
         
         $userMeta->enqueueScripts( array(
-            'plugin-framework', 
             'user-meta',           
             'validationEngine',
             'password_strength',
@@ -146,7 +138,6 @@ class umExecutionPageController {
         if ( ! in_array( @$settings['user_activation'], array( 'email_verification', 'both_email_admin' ) ) ) return;
                 
         $userMeta->enqueueScripts( array(
-            'plugin-framework', 
             'user-meta',           
             'validationEngine',
             'password_strength',
@@ -164,71 +155,16 @@ class umExecutionPageController {
         }
     }
     
-    // not in use since 1.1.5rc2
-    function executionPageOld(){
-        global $userMeta, $post;
+    
+    function registerUrl( $url ) {
+        global $userMeta;
         
-        if( ! is_page() ) return;
+        $registration = $userMeta->getSettings( 'registration' );
+        if ( ! empty( $registration['user_registration_page'] ) ) {
+            $url = get_permalink( $registration['user_registration_page'] );
+        }
         
-        $pageName = $userMeta->getExecutionPage( 'page_name' );
-        if( $pageName <> $post->post_name ) return;
-            
-        $userMeta->enqueueScripts( array(
-            'plugin-framework', 
-            'user-meta',           
-            'validationEngine',
-            'password_strength',
-        ) );                      
-        $userMeta->runLocalization(); 
-
-        $action = isset( $_REQUEST['action'] ) ? $_REQUEST['action'] : '';
-        switch ($action) {
-            
-            case 'logout':
-            	check_admin_referer('log-out');
-                    
-                $user = wp_get_current_user();
-                if( empty( $user->ID ) )
-                    return false;
-                               
-            	wp_logout();
-                
-                $redirect_to = isset( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : null;
-                if( $userMeta->isFilterEnable( 'logout_redirect' ) )
-                    $redirect_to = apply_filters('logout_redirect', $redirect_to, $redirect_to, $user);            
-                
-                if( !$redirect_to ){
-                    $login = $userMeta->getSettings( 'login' );
-                    $redirect_to = get_permalink( @$login[ 'login_page' ] );
-                    if( !$redirect_to )
-                        $redirect_to = home_url();
-                }
-                    
-            	wp_redirect( $redirect_to );
-            	exit();                
-            break;  
-
-            case 'email_verification' :
-            case 'ev' :
-                $config = $userMeta->getExecutionPageConfig( 'email_verification' );
-                $post->post_title   = isset( $config['title'] ) ? $config['title'] : '';
-                $post->post_content = $userMeta->emailVerification( $config );
-            break;
-        
-            case 'resetpass' :
-            case 'rp' :
-                $config = $userMeta->getExecutionPageConfig( 'resetpass' );
-                $post->post_title   = isset( $config['title'] ) ? $config['title'] : '';
-                $post->post_content = $userMeta->resetPassword( $config );
-            break; 
-
-            default:
-                $config = $userMeta->getExecutionPageConfig( 'lostpassword' );
-                $config[ 'only_lost_pass_form' ] = true;
-                $post->post_title   = isset( $config['title'] ) ? $config['title'] : '';
-                $post->post_content = $userMeta->lostPasswordForm( $config ); 
-            break;     
-        }  
+        return $url;
     }
     
     
@@ -245,8 +181,7 @@ class umExecutionPageController {
         
         $redirect = $userMeta->getRedirectionUrl( $redirect, 'logout' );     
         
-        if ( $userMeta->isFilterEnable( 'logout_redirect' ) )
-            $redirect = apply_filters( 'logout_redirect', $redirect, wp_get_current_user() );
+        $redirect = apply_filters( 'user_meta_logout_redirect', $redirect, wp_get_current_user() );
           
         if ( ! empty( $redirect ) ) {
             $args['redirect_to'] = urlencode( $redirect ); 

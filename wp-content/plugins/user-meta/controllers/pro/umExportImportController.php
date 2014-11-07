@@ -4,7 +4,7 @@ if ( ! class_exists( 'umExportImportController' ) ) :
 class umExportImportController {
     
     function __construct() {             
-        add_action( 'wp_ajax_um_user_import',   array( $this, 'ajaxUserImport' ) );     
+        add_action( 'wp_ajax_um_user_import',       array( &$this, 'ajaxUserImport' ) );   
     }        
     
     
@@ -24,6 +24,7 @@ class umExportImportController {
 
         die();
     }
+    
         
     // Not in use since 1.1.5rc1
     function showCsvFiels() {
@@ -233,19 +234,20 @@ class umExportImportController {
             //Implementation user add/update action
 		    if ( $trigger == 'user_register' ) {
                 $response = $userMeta->insertUser( $userdata );
-                if ( !is_wp_error( $response ) ) {
-                    do_action( 'user_meta_after_user_import', (object) $response, $trigger );
+                if ( ! is_wp_error( $response ) ) {
+                    $this->_updateRawPassword( $userdata, $response );
+                    do_action( 'user_meta_after_user_import', (object) $response, $trigger, $userdata );
                     if ( isset( $_POST['send_email'] ) )
                         do_action( 'user_meta_after_user_register', (object) $response );
                     $import_count['create']++; 
-                }	   	                       
-                else
-                    $import_count['skip']++;             
-		    }                            
-            elseif ( $trigger == 'user_update' ) {
+                } else
+                    $import_count['skip']++;
+            
+		    } elseif ( $trigger == 'user_update' ) {
                 $response = $userMeta->insertUser( $userdata, $user_id );   
-                if ( !is_wp_error( $response ) ) {
-                    do_action( 'user_meta_after_user_import', (object) $response, $trigger );
+                if ( ! is_wp_error( $response ) ) {
+                    $this->_updateRawPassword( $userdata, $response );
+                    do_action( 'user_meta_after_user_import', (object) $response, $trigger, $userdata );
                     $import_count['update']++;    
                 } else
                     $import_count['skip']++;                            
@@ -306,6 +308,16 @@ class umExportImportController {
         $cache = $userMeta->getData( 'cache' );
         $cache['last_users_import'] = $lastImport;
         $userMeta->updateData( 'cache', $cache ); 
+    }
+    
+    
+    function _updateRawPassword( $userdata, $response ) {
+        global $wpdb;
+        
+        if ( empty( $userdata['user_pass'] ) || ( 34 <> strlen( $userdata['user_pass'] ) ) )
+            return;
+        
+        $wpdb->update( $wpdb->users, array( 'user_pass' => $userdata['user_pass'] ), array( 'ID' => $response['ID'] ) );
     }
     
               

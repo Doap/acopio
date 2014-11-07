@@ -7,50 +7,10 @@ class umBackendProfileController {
         add_action( 'show_user_profile',        array( $this, 'profileField') );
         add_action( 'edit_user_profile',        array( $this, 'profileField') );
         add_action( 'personal_options_update',  array( $this, 'profileUpdate') );
-        add_action( 'edit_user_profile_update', array( $this, 'profileUpdate') ); 
-          
-        //Commented since 1.1.5rc3
-        //$this->loadScripts( 'profile.php' );  
-        //$this->loadScripts( 'user-edit.php' );          
+        add_action( 'edit_user_profile_update', array( $this, 'profileUpdate') );        
     }
     
-    
-    // Not in use since 1.1.5rc3
-    function loadScripts( $page ) {
-        global $userMeta;
-          
-        $userMeta->addScript( 'jquery',             'admin', $page );
-        $userMeta->addScript( 'jquery-ui-core',     'admin', $page );                      
-        $userMeta->addScript( 'jquery-ui-widget',   'admin', $page );
-        $userMeta->addScript( 'jquery-ui-mouse',    'admin', $page );
-        $userMeta->addScript( 'jquery-ui-slider',   'admin', $page );
-        
-        $userMeta->addScript( 'jquery.ui.datepicker.js',        'admin', $page, 'jqueryui' );
-        $userMeta->addScript( 'jquery-ui-timepicker-addon.js',  'admin', $page, 'jqueryui' );            
-        $userMeta->addScript( 'jquery.ui.all.css',              'admin', $page, 'jqueryui' );
-
-        $userMeta->addScript( 'jquery.wysiwyg.js',              'admin', $page, 'jquery' );
-        $userMeta->addScript( 'wysiwyg.image.js',               'admin', $page, 'jquery' );
-        $userMeta->addScript( 'wysiwyg.link.js',                'admin', $page, 'jquery' );
-        $userMeta->addScript( 'wysiwyg.table.js',               'admin', $page, 'jquery' );
-        $userMeta->addScript( 'jquery.wysiwyg.css',             'admin', $page, 'jquery' );
-        $userMeta->addScript( 'jquery.tools.min.js',            'admin', $page, 'jquery' );                         
-
-        $userMeta->addScript( 'validationEngine-en.js',         'admin', $page, 'jquery' );
-        $userMeta->addScript( 'validationEngine.js',            'admin', $page, 'jquery' );   
-        $userMeta->addScript( 'validationEngine.css',           'admin', $page, 'jquery' );       
-        $userMeta->addScript( 'jquery.password_strength.js',    'admin', $page, 'jquery' );
-                                                       
-        $userMeta->addScript( 'fileuploader.js',                'admin', $page, 'jquery' );
-        $userMeta->addScript( 'fileuploader.css',               'admin', $page, 'jquery' );                        
-                                           
-        $userMeta->addScript( 'plugin-framework.js',    'admin', $page );
-        $userMeta->addScript( 'plugin-framework.css',   'admin', $page );                        
-        $userMeta->addScript( 'user-meta.js',           'admin', $page );
-        $userMeta->addScript( 'user-meta.css',          'admin', $page );     
-    }
-    
-             
+                
     function profileField( $user ) {
         global $userMeta, $pagenow;
         

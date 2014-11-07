@@ -14,7 +14,7 @@ $html .= '<div class="clear"></div>';
 $html .= '<div class="um_selected_fields um_left um_dropme">';
 if( is_array( $fieldsSelected ) ){
     foreach( $fieldsSelected as $key => $val ){
-        $html .= "<div class=\"postbox\">Title:<input style=\"width:50%\" type=\"text\" name=\"fields[$key]\" value=\"$val\" /> ($key)</div>";    
+        $html .= "<div class=\"postbox\">Title: <input style=\"width:50%\" type=\"text\" name=\"fields[$key]\" value=\"$val\" /> ($key)</div>";    
     }
 }
 $html .= "</div>";
@@ -23,7 +23,7 @@ $html .= "</div>";
 $html .= '<div class="um_availabele_fields um_right um_dropme">';
 if( is_array( $fieldsAvailable ) ){
     foreach( $fieldsAvailable as $key => $val ){
-        $html .= "<div class=\"postbox\">Title:<input style=\"width:50%\" type=\"text\" name=\"fields[$key]\" value=\"$val\" /> ($key)</div>";    
+        $html .= "<div class=\"postbox\">Title: <input style=\"width:50%\" type=\"text\" name=\"fields[$key]\" value=\"$val\" /> ($key)</div>";    
     }
 }
 $html .= "</div>";
@@ -139,5 +139,3 @@ $html .= "</form>";
 $isOpen = ($formID == 'default' || !empty($_REQUEST['form_id']) ) ? true : false ;
 
 $html = $userMeta->metaBox( sprintf( __( 'User Export (%s)', $userMeta->name ), $formID ), $html, false, $isOpen );
-
-?>

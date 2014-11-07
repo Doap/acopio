@@ -11,9 +11,21 @@ class umField {
     
     private $options = array();
     
-    public function __construct( $id, $data, $options = array() ) {
-        $this->data     = $data;
+    public function __construct( $id, $data = array(), $options = array() ) {
+        global $userMeta;
+        
+        $this->data     = ! empty( $data ) ? $data : $userMeta->getFieldData( $id );
         $this->options  = $options;
+    }
+    
+    public function getConfig( $key = null ) {
+        if ( empty( $key ) )
+            return $this->data;
+        
+        if ( isset( $this->data[ $key ] ) )
+            return $this->data[ $key ];
+        
+        return false;
     }
     
     public function addRule( $rule ) {
@@ -32,7 +44,7 @@ class umField {
                 'insert_type'   => isset( $this->options['insert_type'] ) ? $this->options['insert_type'] : null,
             ) );
             
-            if ( 'custom' == $rule ){
+            if ( 'custom' == $rule ) {
                 $regex = @$this->data['regex'];
                 $regex = ! empty( $regex ) ? "/$regex/" : null;
                 $validate->setProperty( $regex, @$this->data['error_text'] );
@@ -45,7 +57,7 @@ class umField {
         return empty( $this->errors ) ? true : false;
     }
     
-    private function assignRules(){
+    private function assignRules() {
         if ( isset( $this->data['field_type'] ) ) {
             switch ( $this->data['field_type'] ) {
                 case 'user_login':
@@ -93,7 +105,7 @@ class umField {
     
     public function getErrors() {
         $errors = array();
-        foreach ( $this->errors as $rule => $error ){
+        foreach ( $this->errors as $rule => $error ) {
             $title = isset( $this->data['field_title'] ) ? $this->data['field_title'] : null;
             $errors["validate_$rule"] = sprintf( $error, $title );
         }
@@ -102,5 +114,3 @@ class umField {
     
 }
 endif;
-
-?>

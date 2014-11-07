@@ -2,7 +2,13 @@
 
 $html = null;
 
-if( $field_type == 'blogname' ):
+if( $field_type == 'multiselect' ):
+    $html .= "$fieldDescription $fieldMetaKey";
+    $html .= "<div class='um_segment'>$fieldRequired $fieldAdminOnly $fieldReadOnly</div>";
+    $html .= "$fieldDefaultValue $fieldOptions";
+    $html .= "$fieldDivider $fieldSize $fieldCssClass $fieldCssStyle";
+
+elseif( $field_type == 'blogname' ):
 	$html .= "$fieldDescription $fieldMaxChar";
 	$html .= "<div class='um_segment'>$fieldRequired $fieldAdminOnly $fieldReadOnly</div>";
 	$html .= "$fieldDivider $fieldSize $fieldCssClass $fieldCssStyle";
@@ -45,7 +51,7 @@ elseif( $field_type == 'phone' ):
 
 elseif( $field_type == 'number' ):    
     $html .= "$fieldDescription $fieldMetaKey";
-    $html .= "<div class='um_segment'>$fieldRequired $fieldAdminOnly $fieldReadOnly $fieldUnique</div>";
+    $html .= "<div class='um_segment'>$fieldRequired $fieldAdminOnly $fieldReadOnly $fieldUnique $fieldIntegerOnly</div>";
     $html .= "$fieldDefaultValue $fieldMinNumber $fieldMaxNumber";  
     $html .= "$fieldDivider $fieldSize $fieldCssClass $fieldCssStyle";
     

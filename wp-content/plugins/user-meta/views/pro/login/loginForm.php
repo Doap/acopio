@@ -16,8 +16,8 @@ $formClass  = isset( $config['form_class'] ) ? $config['form_class'] : 'um_login
 
 $html .= "<form id=\"$formID\" class=\"$formClass\" method=\"post\" $onSubmit >";
 
-$html .= $userMeta->createInput( 'user_login', 'text', array(
-    'value'         => isset( $_REQUEST['user_login'] ) ? stripslashes( $_REQUEST['user_login'] ) : '',
+$html .= $userMeta->createInput( 'log', 'text', array(
+    'value'         => isset( $_REQUEST['log'] ) ? stripslashes( $_REQUEST['log'] ) : '',
     'label'         => ! empty( $config['login_label'] ) ? $config['login_label'] : $loginTitle,
     'placeholder'   => ! empty( $config['login_placeholder'] ) ? $config['login_placeholder'] : '',
     'id'            => ! empty( $config['login_id'] ) ? $config['login_id'] : 'user_login' . $uniqueID,
@@ -26,17 +26,24 @@ $html .= $userMeta->createInput( 'user_login', 'text', array(
     'enclose'       => 'p',
 ) );
 
-$html .= $userMeta->createInput( 'user_pass', 'password', array(
+$html .= $userMeta->createInput( 'pwd', 'password', array(
     'label'         => ! empty( $config['pass_label'] ) ? $config['pass_label'] : $userMeta->getMsg('login_pass_label'),
     'placeholder'   => ! empty( $config['pass_placeholder'] ) ? $config['pass_placeholder'] : '',
     'id'            => ! empty( $config['pass_id'] ) ? $config['pass_id'] : 'user_pass' . $uniqueID,
     'class'         => ! empty( $config['pass_class'] ) ? $config['pass_class'] : 'um_pass_field um_input',
     'label_class'   => ! empty( $config['pass_label_class'] ) ? $config['pass_label_class'] : 'pf_label',
     'enclose'       => 'p',
-) );            
+) );
 
-$html .= $userMeta->createInput( 'remember', 'checkbox', array(    
-    'value'         => isset( $_REQUEST['remember'] ) ? true : false,
+if ( $userMeta->isHookEnable( 'login_form' ) ) {
+    ob_start();
+    do_action( 'login_form' );
+    $html .= ob_get_contents();
+    ob_end_clean();
+} 
+
+$html .= $userMeta->createInput( 'rememberme', 'checkbox', array(    
+    'value'         => isset( $_REQUEST['rememberme'] ) ? true : false,
     'label'         => ! empty( $config['remember_label'] ) ? $config['remember_label'] : $userMeta->getMsg('login_remember_label'), 
     'id'            => ! empty( $config['remember_id'] ) ? $config['remember_id'] : 'remember' . $uniqueID,
     'class'         => ! empty( $config['remember_class'] ) ? $config['remember_class'] : 'um_remember_field',
@@ -58,9 +65,9 @@ if ( ! empty( $_REQUEST['redirect_to'] ) ) {
 if ( isset( $config['before_button'] ) )
     $html .= $config['before_button'];
     
-$html .= $userMeta->createInput( 'login', 'submit', array(
+$html .= $userMeta->createInput( 'wp-submit', 'submit', array(
     'value'     => !empty( $config['button_value'] ) ? $config['button_value'] : $userMeta->getMsg('login_button'), 
-    'id'        => !empty( $config['input_id'] ) ? $config['input_id'] : 'um_login_button' . $uniqueID,
+    'id'        => !empty( $config['button_id'] ) ? $config['button_id'] : 'um_login_button' . $uniqueID,
     'class'     => !empty( $config['button_class'] ) ? $config['button_class'] : 'um_login_button',
     'enclose'   => 'p',
 ) );

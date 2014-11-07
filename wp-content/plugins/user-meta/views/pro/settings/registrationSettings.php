@@ -17,12 +17,27 @@ $html .= $userMeta->createInput( "registration[user_activation]", "radio", array
     'value'         => @$registration[ 'user_activation' ],
     'id'            => 'um_registration_user_activation',
     'class'         => 'um_registration_user_activation',
-    'onchange'      => 'umAdminRegistratioUserActivationChange()',
+    'onchange'      => 'umSettingsRegistratioUserActivationChange()',
     'label_class'   => 'pf_label',
     'option_before' => '<p>',
     'option_after'  => '</p>',
     'by_key'        => true,
  ), $registrationSettings ); 
+
+
+
+$html .= "<div class='pf_divider'></div>";
+$html .= "<p><strong>". __( 'User registration page', $userMeta->name ) . "  </strong></p>";              
+$html .= wp_dropdown_pages(array(
+    'name'      => 'registration[user_registration_page]',
+    'id'        => 'um_registration_user_registration_page',
+    'selected'  => @$registration[ 'user_registration_page' ],
+    'echo'      => 0,
+    'show_option_none'=>'None ',      
+));
+
+$html .= '<p>Registration page should contain shortcode like: [user-meta-registration form="your_form_name"]</p>';
+
  
 
 $html .= "<div id='um_settings_registration_block_1'>";
@@ -41,7 +56,7 @@ $html .= "<div id='um_settings_registration_block_2'>";
     $html .= "<p><strong>". __( 'Email verification page', $userMeta->name ) . "  </strong></p>";              
     $html .= wp_dropdown_pages(array(
         'name'      => 'registration[email_verification_page]',
-        'id'        => 'registration_email_verification_page',
+        'id'        => 'um_registration_email_verification_page',
         'selected'  => @$registration[ 'email_verification_page' ],
         'echo'      => 0,
         'show_option_none'=>'None ',      
@@ -54,9 +69,9 @@ $html .= "<div id='um_settings_registration_block_2'>";
         'action'        => 'pf_ajax_request',
     ), $createPageUrl );
     $createPageUrl = wp_nonce_url( $createPageUrl, 'generate_page' );
-    $html .= "<a href='$createPageUrl' id='registration_email_verification_page_create' class='button-secondary'>Create Page</a>";
+    $html .= "<a href='$createPageUrl' id='um_registration_email_verification_page_create' class='button-secondary'>Create Page</a>";
 
-    $html .= " <span class='required_email_verification_page' style='color:red'><em><strong>(" . __( 'Email verification will not work until a page is selected here!', $userMeta->name ) . ")</strong></em></span>";
+    $html .= " <span class='um_required_email_verification_page' style='color:red'><em><strong>(" . __( 'Email verification will not work until a page is selected here!', $userMeta->name ) . ")</strong></em></span>";
     $html .= '<p><em>' . __( 'This is the page a user will be redirected to when they want to verify their email address.', $userMeta->name ) .'</em></p>';
 $html .= "</div>";
 

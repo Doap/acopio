@@ -125,11 +125,3 @@ $html .= "<div id=\"redirection_tabs\">";
             
     }//End foreach
 $html .= "</div>";
-
-?>
-
-<script type="text/javascript">
-    jQuery(document).ready(function(){
-        jQuery( "#redirection_tabs" ).tabs();
-    });
-</script>

@@ -45,19 +45,19 @@ class umValidationRule {
             'datetime'  => "/^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])\s?([01][0-9]|[2][0-4]):[0-6][0-9]:[0-6][0-9]\s?$/",
 		);
         
-        if ( ! empty( $regexes[$this->rule] ) )
+        if ( ! empty( $regexes[ $this->rule ] ) )
             $this->regex = $regexes[ $this->rule ];
         
         $this->regex = isset( $this->regex ) ? $this->regex : null;
     }
     
-    private function setMessage(){
+    private function setMessage() {
         global $userMeta;
         
 		$messages = Array(
-            'required'  => $userMeta->getMsg('validate_required', '%s'),
-            'email'     => $userMeta->getMsg('validate_email'),
-            'equals'    => $userMeta->getMsg('validate_equals', '%s'),
+            'required'  => $userMeta->getMsg( 'validate_required', '%s' ),
+            'email'     => $userMeta->getMsg( 'validate_email' ),
+            'equals'    => $userMeta->getMsg( 'validate_equals', '%s' ),
             'unique'    => sprintf( __( '%1$s: "%2$s" already taken', $userMeta->name ), '%s', $this->value ),
 		); 
         
@@ -130,7 +130,7 @@ class umValidationRule {
         if ( isset( $this->options['insert_type'] ) )
             $userID = 'registration' == $this->options['insert_type'] ? 0 : $userID;
         
-        if( isset( $this->options['field_name'] ) )
+        if ( isset( $this->options['field_name'] ) )
             return $userMeta->isUserFieldAvailable( $this->options['field_name'], $this->value, $userID );
         
         return false;
@@ -140,7 +140,7 @@ class umValidationRule {
         global $userMeta;
         
         $fieldName = $this->options['field_name'] . '_current';
-        if( !empty( $this->value ) && empty( $_REQUEST[$fieldName] ) ){
+        if ( !empty( $this->value ) && empty( $_REQUEST[$fieldName] ) ) {
             $this->message = $userMeta->getMsg('validate_current_required', '%s');
             return false;
         }
@@ -148,10 +148,10 @@ class umValidationRule {
         $userID = isset( $this->options['user_id'] ) ? $this->options['user_id'] : 0;
         $user = new WP_User( $userID );
         
-        if( !empty($user->user_login) ){
-            $user = wp_authenticate( $user->user_login, esc_attr( $_REQUEST[$fieldName] ) );
-            if(is_wp_error( $user ) ){
-                $this->message = $userMeta->getMsg('validate_current_password');
+        if ( ! empty($user->user_login) ) {
+            $user = wp_authenticate( $user->user_login, esc_attr( $_REQUEST[ $fieldName ] ) );
+            if ( is_wp_error( $user ) ) {
+                $this->message = $userMeta->getMsg( 'validate_current_password' );
                 return false;
             }     
         }
@@ -161,4 +161,3 @@ class umValidationRule {
     
 }
 endif;
-?>

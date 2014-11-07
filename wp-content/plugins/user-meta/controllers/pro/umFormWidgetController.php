@@ -1,7 +1,7 @@
 <?php
 
 
-if( !class_exists( 'umFormWidget' ) ) :
+if ( ! class_exists( 'umFormWidget' ) ) :
 class umFormWidget extends WP_Widget {
     
     /**
@@ -44,9 +44,9 @@ class umFormWidget extends WP_Widget {
         // Replace "both" to "profile-registration" and "none" to "public"
         $actionType = str_replace( array( 'both', 'none' ), array( 'profile-registration', 'public' ), $actionType );
         
-        if( in_array( $actionType, array( 'registration', 'profile', 'profile-registration', 'public' ) ) )
+        if ( in_array( $actionType, array( 'registration', 'profile', 'profile-registration', 'public' ) ) )
             echo $userMeta->userUpdateRegisterProcess( $actionType, $form, $diff ); 
-        elseif( $actionType == 'login' )
+        elseif ( $actionType == 'login' )
             echo $userMeta->userLoginProcess( $form );
         else
             echo $userMeta->showError( sprintf( __( 'type="%s" is invalid.', $userMeta->name ), $actionType ), false );    
@@ -144,4 +144,3 @@ endif;
 
 // register umLoginWidget widget
 add_action( 'widgets_init', create_function( '', 'register_widget( "umFormWidget" );' ) );
-?>

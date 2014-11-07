@@ -6,7 +6,7 @@
  */
    
 
-if( !class_exists( 'umLoginWidget' ) ) :
+if ( ! class_exists( 'umLoginWidget' ) ) :
 class umLoginWidget extends WP_Widget {
     
     /**
@@ -34,13 +34,13 @@ class umLoginWidget extends WP_Widget {
      
         extract( $args );
         
-        if( @$instance[ 'hide_from_login_page' ] ){
+        if ( ! empty( $instance[ 'hide_from_login_page' ] ) ) {
             $login = $userMeta->getSettings( 'login' );
-            if( @$login[ 'login_page' ] == $post->ID )
+            if ( @$login[ 'login_page' ] == $post->ID )
                 return;
         }
         
-        $title = is_user_logged_in() ? @$instance[ 'user_title' ] : @$instance[ 'guest_title' ];        
+        $title = is_user_logged_in() ? @$instance['user_title'] : @$instance['guest_title'];        
         $title = apply_filters( 'widget_title', $title );
                 
         echo $before_widget;
@@ -61,9 +61,9 @@ class umLoginWidget extends WP_Widget {
      */
     public function update( $new_instance, $old_instance ) {
         $instance = array();
-        $instance[ 'guest_title' ]  = strip_tags( $new_instance[ 'guest_title' ] );
-        $instance[ 'user_title' ]   = strip_tags( $new_instance[ 'user_title' ] );
-        $instance[ 'hide_from_login_page' ]   = strip_tags( $new_instance[ 'hide_from_login_page' ] );
+        $instance['guest_title']  = strip_tags( $new_instance['guest_title'] );
+        $instance['user_title']   = strip_tags( $new_instance['user_title'] );
+        $instance['hide_from_login_page']   = strip_tags( $new_instance['hide_from_login_page'] );
                 
         return $instance;
     }
@@ -76,9 +76,9 @@ class umLoginWidget extends WP_Widget {
     public function form( $instance ) {
         global $userMeta;
         
-        $guest_title    = isset( $instance[ 'guest_title' ] )   ? $instance[ 'guest_title' ]    : __( 'Login', $userMeta->name );
-        $user_title     = isset( $instance[ 'user_title' ] )    ? $instance[ 'user_title' ]     : null;
-        $hide_from_login_page     = isset( $instance[ 'hide_from_login_page' ] )    ? $instance[ 'hide_from_login_page' ]     : false;    
+        $guest_title    = isset( $instance['guest_title'] )   ? $instance['guest_title']    : __( 'Login', $userMeta->name );
+        $user_title     = isset( $instance['user_title'] )    ? $instance['user_title']     : null;
+        $hide_from_login_page     = isset( $instance['hide_from_login_page'] )    ? $instance['hide_from_login_page'] : false;    
         
         echo $userMeta->createInput( $this->get_field_name( 'guest_title' ), 'text', array(
             'value'     => esc_attr( $guest_title ),
@@ -112,4 +112,3 @@ endif;
 
 // register umLoginWidget widget
 add_action( 'widgets_init', create_function( '', 'register_widget( "umLoginWidget" );' ) );
-?>

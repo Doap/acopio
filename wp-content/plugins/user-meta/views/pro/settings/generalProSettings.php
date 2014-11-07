@@ -28,5 +28,16 @@ $html .= $userMeta->createInput( "general[recaptcha_private_key]", "text", array
 
 $html .= __( "<p>User Meta Pro use reCAPTCHA as Captcha field. reCAPTCHA public and private Keys are required for using Captcha validation. Get these keys for free. <a href='http://www.google.com/recaptcha/whyrecaptcha' target='_blank'>Sign up now</a>.</p>", $userMeta->name );   
 
+/*
+$html .= "<div class='pf_divider'></div>";
 
-?>
+$html .= "<h4>" . __( 'Advanced mode', $userMeta->name ) . "</h4>";
+
+$html .= $userMeta->createInput( "general[advanced_mode_enabled]", "checkbox", array(
+    'value' => isset( $general[ 'advanced_mode_enabled' ] )? $general[ 'advanced_mode_enabled' ] : null,
+    'id'    => 'um_general_advanced_mode_enabled',
+    'label' => __( 'Enable advanced mode', $userMeta->name ),
+) );
+
+$html .= '<p>' . __( 'Advanced mode gives even more options over the plugin.', $userMeta->name ) . '</p>';
+ */
