@@ -19,7 +19,7 @@
 define('DB_NAME', 'wp');
 
 /** MySQL database username */
-define('DB_USER', 'wpburke');
+define('DB_USER', 'acopio');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'GoGreenElSalvador9987');
