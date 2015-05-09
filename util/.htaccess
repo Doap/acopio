@@ -1,0 +1,7 @@
+order deny,allow
+Deny from all
+Allow from 127.0.0.1
+php_flag display_errors on
+php_value error_reporting 2039
+php_value memory_limit  1024M
+
