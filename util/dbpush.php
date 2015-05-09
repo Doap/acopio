@@ -40,7 +40,11 @@ function backup_table_scripts()
 			}
 			else
 			{
-				$script .= 'mysql -u root -pfr1ck0ff wp -e "SELECT * FROM ' . $mykey . ' WHERE ' . $table_ids[$mykey] . ' > ' . $myvalue . ';" > /home/shawn/' . $ac . '/' . $ac . '_' . $mykey . PHP_EOL;
+				$new_query='SELECT * FROM ' . $mykey . ' WHERE ' . $table_ids[$mykey] . ' > ' . $myvalue . ' LIMIT 1;';
+				if ($result = $mysqli->query($new_query)) 
+				{
+					$script .= 'mysql -u root -pfr1ck0ff wp -e "SELECT * FROM ' . $mykey . ' WHERE ' . $table_ids[$mykey] . ' > ' . $myvalue . ';" > /home/shawn/' . $ac . '/' . $ac . '_' . $mykey . PHP_EOL;
+				}
 			}
 		}
 		/* free result set */
