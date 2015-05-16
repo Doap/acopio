@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-function backup_table_scripts()
+function update_table_counters()
 {
 	$mysqli = new mysqli("localhost", "root", "fr1ck0ff", "wp");
 
@@ -34,10 +34,6 @@ function backup_table_scripts()
 			$mykey = $key;
 			//echo $mykey . PHP_EOL;
 			$myvalue = $value;
-			if (empty($myvalue))
-			{
-				$myvalue=0;
-			}
 			if ($mykey == 'acopio_machine')
 			{
 				$ac= 'ac' . $myvalue;
@@ -45,11 +41,12 @@ function backup_table_scripts()
 			}
 			else
 			{
-				$new_query='SELECT * FROM ' . $mykey . ' WHERE ' . $table_ids[$mykey] . ' > ' . $myvalue . ' LIMIT 1;';
+				$new_query='UPDATE acopio_config SET ' . $mykey . ' = (SELECT ' . $table_ids[$mykey] . ' FROM ' . $mykey . ' ORDER BY ' .$table_ids[$mykey] . ' DESC LIMIT 1);';
 				echo $new_query . PHP_EOL;
 				if ($result = $mysqli->query($new_query)) 
 				{
-					$script .= 'mysql -u root -pfr1ck0ff wp -e "SELECT * FROM ' . $mykey . ' WHERE ' . $table_ids[$mykey] . ' > ' . $myvalue . ';" > /home/shawn/' . $ac . '/' . $ac . '_' . $mykey . PHP_EOL;
+//					$script .= 'mysql -u root -pfr1ck0ff wp -e "SELECT * FROM ' . $mykey . ' WHERE ' . $table_ids[$mykey] . ' > ' . $myvalue . ';" > /home/shawn/' . $ac . '/' . $ac . '_' . $mykey . PHP_EOL;
+				echo $result;
 				}
 			}
 		}
@@ -96,6 +93,6 @@ echo $script . PHP_EOL;
 	fclose($handle);
 }
  
-backup_table_scripts();
+update_table_counters();
 ?>
 
